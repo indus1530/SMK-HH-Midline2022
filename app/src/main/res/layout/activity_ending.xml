@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="smk_hh_midline2022.ui.EndingActivity">
+    tools:context="smkHhMl2022.ui.EndingActivity">
 
     <data>
 
@@ -10,7 +10,7 @@
 
         <variable
             name="form"
-            type="edu.aku.hassannaqvi.smk_hh_midline2022.models.Form" />
+            type="edu.aku.hassannaqvi.smkHhMl2022.models.Form" />
     </data>
 
 

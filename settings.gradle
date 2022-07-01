@@ -9,5 +9,5 @@ dependencyResolutionManagement {
         }
     }
 }
-rootProject.name = "SMK-HH-Midline2022"
+rootProject.name = "smkHhMl2022"
 include ':app'

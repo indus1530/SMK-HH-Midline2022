@@ -8,7 +8,7 @@
 
         <variable
             name="form"
-            type="edu.aku.hassannaqvi.smk_hh_midline2022.models.Child" />
+            type="edu.aku.hassannaqvi.smkHhMl2022.models.Child" />
 
     </data>
 

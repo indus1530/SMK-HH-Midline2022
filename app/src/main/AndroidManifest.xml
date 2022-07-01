@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="edu.aku.hassannaqvi.smk_hh_midline2022">
+    package="edu.aku.hassannaqvi.smkHhMl2022">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- Needed only if your app targets Android 5.0 (API level 21) or higher. -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Needed only if your app targets Android 5.0 (API level 21) or higher. -->
@@ -16,7 +16,7 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
-        android:name="edu.aku.hassannaqvi.smk_hh_midline2022.core.MainApp"
+        android:name="edu.aku.hassannaqvi.smkHhMl2022.core.MainApp"
         android:allowBackup="false"
         android:hardwareAccelerated="true"
         android:icon="@drawable/app_icon"
@@ -30,12 +30,12 @@
         android:usesCleartextTraffic="false"
         tools:replace="android:allowBackup">
         <activity
-            android:name="edu.aku.hassannaqvi.smk_hh_midline2022.ui.ChildEndingActivity"
+            android:name="edu.aku.hassannaqvi.smkHhMl2022.ui.ChildEndingActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.smk_hh_midline2022.ui.LoginActivity"
+            android:name="edu.aku.hassannaqvi.smkHhMl2022.ui.LoginActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
@@ -47,119 +47,119 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="edu.aku.hassannaqvi.smk_hh_midline2022.ui.ChangePasswordActivity"
+            android:name="edu.aku.hassannaqvi.smkHhMl2022.ui.ChangePasswordActivity"
             android:exported="true" />
         <activity
-            android:name="edu.aku.hassannaqvi.smk_hh_midline2022.ui.EndingActivity"
+            android:name="edu.aku.hassannaqvi.smkHhMl2022.ui.EndingActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.smk_hh_midline2022.ui.SyncActivity"
+            android:name="edu.aku.hassannaqvi.smkHhMl2022.ui.SyncActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.smk_hh_midline2022.database.AndroidManager"
+            android:name="edu.aku.hassannaqvi.smkHhMl2022.database.AndroidManager"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light" />
         <activity
-            android:name="edu.aku.hassannaqvi.smk_hh_midline2022.ui.lists.FormsReportPending"
+            android:name="edu.aku.hassannaqvi.smkHhMl2022.ui.lists.FormsReportPending"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name="edu.aku.hassannaqvi.smk_hh_midline2022.ui.lists.FormsReportCluster"
+            android:name="edu.aku.hassannaqvi.smkHhMl2022.ui.lists.FormsReportCluster"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name="edu.aku.hassannaqvi.smk_hh_midline2022.ui.lists.FormsReportDate"
+            android:name="edu.aku.hassannaqvi.smkHhMl2022.ui.lists.FormsReportDate"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
 
         <activity
-            android:name="edu.aku.hassannaqvi.smk_hh_midline2022.ui.TakePhoto"
+            android:name="edu.aku.hassannaqvi.smkHhMl2022.ui.TakePhoto"
             android:exported="false"
             android:hardwareAccelerated="true"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="edu.aku.hassannaqvi.smk_hh_midline2022.MainActivity"
+            android:name="edu.aku.hassannaqvi.smkHhMl2022.MainActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.smk_hh_midline2022.ui.lists.HouseholdScreenActivity"
+            android:name="edu.aku.hassannaqvi.smkHhMl2022.ui.lists.HouseholdScreenActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.smk_hh_midline2022.ui.IdentificationActivity"
+            android:name="edu.aku.hassannaqvi.smkHhMl2022.ui.IdentificationActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="edu.aku.hassannaqvi.smk_hh_midline2022.ui.sections.ConsentActivity"
+            android:name="edu.aku.hassannaqvi.smkHhMl2022.ui.sections.ConsentActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
 
         <activity
-            android:name="edu.aku.hassannaqvi.smk_hh_midline2022.ui.sections.SectionCBActivity"
+            android:name="edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionCBActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="edu.aku.hassannaqvi.smk_hh_midline2022.ui.sections.SectionCHActivity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize" />
-
-        <activity
-            android:name="edu.aku.hassannaqvi.smk_hh_midline2022.ui.sections.SectionIM1Activity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name="edu.aku.hassannaqvi.smk_hh_midline2022.ui.sections.SectionIM2Activity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name="edu.aku.hassannaqvi.smk_hh_midline2022.ui.sections.SectionRIActivity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name="edu.aku.hassannaqvi.smk_hh_midline2022.ui.sections.SectionSS_1Activity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name="edu.aku.hassannaqvi.smk_hh_midline2022.ui.sections.SectionSS_2Activity"
+            android:name="edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionCHActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize" />
 
         <activity
-            android:name="edu.aku.hassannaqvi.smk_hh_midline2022.ui.WebViewActivity"
+            android:name="edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionIM1Activity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionIM2Activity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionRIActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionSS_1Activity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionSS_2Activity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.smkHhMl2022.ui.WebViewActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"

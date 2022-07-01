@@ -11,7 +11,7 @@
         <!--DO NOT BIND FIELDS IN IDENTIFICATION SECTION WITH ANY MODEL CLASS
         <variable
             name="form"
-            type="edu.aku.hassannaqvi.smk_hh_midline2022.models.Form" />-->
+            type="edu.aku.hassannaqvi.smkHhMl2022.models.Form" />-->
 
     </data>
 
