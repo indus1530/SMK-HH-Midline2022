@@ -632,9 +632,9 @@ public class LoginActivity extends AppCompatActivity {
             clicks = 0;
             Toast.makeText(this, "TEAM CREDITS: " +
                             "\r\nHassan Naqvi, " +
-                            "Ali Azaz, " +
+                            "Sajid Latif, " +
                             "Gul Sanober, " +
-                            "Ramsha Ahmed, " +
+                            "Muhammad Ibrahim, " +
                             "Javed Khan",
                     Toast.LENGTH_LONG)
                     .show();
