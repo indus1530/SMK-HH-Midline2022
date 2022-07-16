@@ -3309,8 +3309,8 @@
     <string name="k101a16">Family planning corners at public health facility</string>
     <string name="k101a96">Other (specify)</string>
     <string name="k101b">Do you think it is important to use any family planning methods?</string>
-    <string name="k101ba">Agree</string>
-    <string name="k101bb">Disagree</string>
+    <string name="k101b01">Agree</string>
+    <string name="k101b02">Disagree</string>
     <string name="k102">Have you or your husband ever done something or used any method to delay or avoid getting pregnant?</string>
     <string name="k10201">Yes</string>
     <string name="k10202">No</string>
