@@ -33,7 +33,7 @@
             android:name=".ui.sections.SectionAH2Activity"
             android:exported="true" />
         <activity
-            android:name=".ui.sections.SectionAHActivity"
+            android:name=".ui.sections.SectionAH1Activity"
             android:exported="true" />
         <activity
             android:name=".ui.sections.SectionIMActivity"
