@@ -6,11 +6,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import edu.aku.hassannaqvi.smkHhMl2022.R;
 
-public class SectionEActivity extends AppCompatActivity {
+public class SectionE2Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_section_e);
+        setContentView(R.layout.activity_section_e2);
     }
 }
