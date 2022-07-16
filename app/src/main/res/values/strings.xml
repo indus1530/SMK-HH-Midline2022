@@ -3016,8 +3016,8 @@
     <string name="h1366">Dai/TBA (Traditional Birth Attendant)</string>
     <string name="h13696">Other (Please Specify)</string>
     <string name="h13601">Do you think it is important to seek care for the danger signs for the newborn?</string>
-    <string name="h13601a">Agree</string>
-    <string name="h13601b">Disagree</string>
+    <string name="h1360101">Agree</string>
+    <string name="h1360102">Disagree</string>
     <string name="h13602">Did your new-born experience any danger signs/problems?</string>
     <string name="h1t09">Circle all that are mentioned, but do not prompt with any suggestions.</string>
     <string name="h1360201">Convulsions/fits</string>
