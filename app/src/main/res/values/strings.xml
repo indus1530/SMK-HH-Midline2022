@@ -977,7 +977,7 @@
     <string name="sectionh1newbornhealth_mainheading">Section H1: Newborn Health: </string>
     <string name="sectionh2postnatalcarepnc_mainheading">Section H2: Postnatal Care (PNC): </string>
     <string name="sectionkfamilyplanning_mainheading">Section K: Family Planning: </string>
-    <string name="sectionununmetneeds_mainheading">Section UN: Unmet Needs: </string>
+    <string name="sectionununmetneeds_mainheading">Section UN:</string>
     <string name="sectionlwomenempowerment_mainheading">Section L: Women Empowerment: </string>
     <string name="app_name">  </string>
     <string name="btnSync">Download Data</string>
