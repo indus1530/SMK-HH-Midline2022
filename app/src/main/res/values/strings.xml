@@ -1756,9 +1756,9 @@
     <string name="ah2203c">Never</string>
     <string name="ah22x">Other (Specify)</string>
     <string name="ah23">Since When?</string>
-    <string name="ah23a">Days</string>
-    <string name="ah23b">Month</string>
-    <string name="ah23c">Year</string>
+    <string name="ah2301">Days</string>
+    <string name="ah2302">Month</string>
+    <string name="ah2303">Year</string>
     <string name="ah24">Have You Ever Experienced In Last 2 Months?</string>
     <string name="ah2401">Respiratory Infections</string>
     <string name="ah2401a">Yes</string>
