@@ -12976,7 +12976,7 @@ public class Forms extends BaseObservable implements Observable {
         if (string != null) {
             JSONObject json = null;
             json = new JSONObject(string);
-            this.hh01 = json.getString("hh01");
+            /*this.hh01 = json.getString("hh01");
             this.hh02 = json.getString("hh02");
             this.hh03 = json.getString("hh03");
             this.hh03a = json.getString("hh03a");
@@ -13003,7 +13003,7 @@ public class Forms extends BaseObservable implements Observable {
             this.hh20 = json.getString("hh20");
             this.hh20a = json.getString("hh20a");
             this.hh21 = json.getString("hh21");
-            this.hh21xx = json.getString("hh21xx");
+            this.hh21xx = json.getString("hh21xx");*/
             this.iStatus96x = json.has("iStatus96x") ? json.getString("iStatus96x") : "";
         }
     }
@@ -13013,7 +13013,7 @@ public class Forms extends BaseObservable implements Observable {
         if (string != null) {
             JSONObject json = null;
             json = new JSONObject(string);
-            this.ss01 = json.getString("ss01");
+           /* this.ss01 = json.getString("ss01");
             this.ss01xx = json.getString("ss01xx");
             this.ss02 = json.getString("ss02");
             this.ss02xx = json.getString("ss02xx");
@@ -13083,7 +13083,7 @@ public class Forms extends BaseObservable implements Observable {
             this.ss25g = json.getString("ss25g");
             this.ss26 = json.getString("ss26");
             this.ss27 = json.getString("ss27");
-            this.ss28 = json.getString("ss28");
+            this.ss28 = json.getString("ss28");*/
 
         }
 
@@ -13137,7 +13137,7 @@ public class Forms extends BaseObservable implements Observable {
     public String sHHtoString() throws JSONException {
         Log.d(TAG, "sHHtoString: ");
         JSONObject json = new JSONObject();
-        json.put("hh01", hh01)
+        json/*.put("hh01", hh01)
                 .put("hh02", hh02)
                 .put("hh03", hh03)
                 .put("hh03a", hh03a)
@@ -13164,7 +13164,7 @@ public class Forms extends BaseObservable implements Observable {
                 .put("hh20", hh20)
                 .put("hh20a", hh20a)
                 .put("hh21", hh21)
-                .put("hh21xx", hh21xx)
+                .put("hh21xx", hh21xx)*/
                 .put("iStatus96x", iStatus96x);
         return json.toString();
     }
@@ -13172,7 +13172,7 @@ public class Forms extends BaseObservable implements Observable {
     public String sSStoString() throws JSONException {
         Log.d(TAG, "sSStoString: ");
         JSONObject json = new JSONObject();
-        json.put("ss01", ss01)
+        json/*.put("ss01", ss01)
                 .put("ss01xx", ss01xx)
                 .put("ss02", ss02)
                 .put("ss02xx", ss02xx)
@@ -13242,7 +13242,7 @@ public class Forms extends BaseObservable implements Observable {
                 .put("ss25g", ss25g)
                 .put("ss26", ss26)
                 .put("ss27", ss27)
-                .put("ss28", ss28);
+                .put("ss28", ss28)*/;
         return json.toString();
     }
 
