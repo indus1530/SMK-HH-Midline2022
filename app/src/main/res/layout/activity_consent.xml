@@ -602,7 +602,7 @@
                             android:padding="24dp"
                             android:paddingStart="24dp"
                             android:paddingEnd="24dp"
-                            android:text="@string/hh18t"
+                            android:text="@string/splashText"
                             android:textColor="@color/gray"
                             android:textSize="22sp"
                             android:textStyle="normal" />
