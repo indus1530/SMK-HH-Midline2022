@@ -3277,8 +3277,11 @@
                                 android:checked="@{form.f13410.equals(`10`)}"
                                 android:onClick="@{()->form.setF13410(form.f13410.equals(`10`)?``:`10`)}"
                                 android:text="@string/f13410" />
+
                         </LinearLayout>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
 
