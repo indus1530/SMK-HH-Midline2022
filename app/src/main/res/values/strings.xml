@@ -1754,7 +1754,10 @@
     <string name="ah2203a">Yes</string>
     <string name="ah2203b">No</string>
     <string name="ah2203c">Never</string>
-    <string name="ah22x">Other (Specify)</string>
+    <string name="ah2296"> Other (Specify) </string>
+    <string name="ah2296a">Yes</string>
+    <string name="ah2296b">No</string>
+    <string name="ah2296c">Never</string>
     <string name="ah23">Since When?</string>
     <string name="ah2301">Days</string>
     <string name="ah2302">Month</string>
@@ -1829,7 +1832,6 @@
     <string name="ah31c">A Friend’s House</string>
     <string name="ah31d">At A Family Member’S House</string>
     <string name="ah31e">At A Store/Shop</string>
-    <string name="ah31f">At A Store/Shop</string>
     <string name="ahgntitle">Gender Norms</string>
     <string name="ah3201">Girls And Boys Should Be Treated Equally By Their Parents.</string>
     <string name="ah3201a">Strongly Agree</string>
