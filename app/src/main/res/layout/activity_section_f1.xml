@@ -427,9 +427,9 @@
                             android:tag="0">
 
                             <TextView
+                                style="@style/textView"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="12dp"
                                 android:text="@string/f1t04" />
 
                             <CheckBox
@@ -489,13 +489,14 @@
                                 android:text="@string/f10207" />
 
                             <TextView
+                                style="@style/textView"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="12dp"
                                 android:text="@string/f1t05" />
 
                             <CheckBox
                                 android:id="@+id/f10208"
+
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.f10208.equals(`8`)}"
