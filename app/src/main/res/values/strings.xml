@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <!--<string name="app_name"> SMK Household - Midline</string>-->
@@ -60,7 +61,7 @@
     <string name="cancel" translatable="false">Cancel</string>
     <string name="complete" translatable="false">complete</string>
     <string name="updatingError" translatable="false">Error in updating db!!</string>
-    <string name="updateDbError1" translatable="false">"Sorry. You can't go further."</string>
+    <string name="updateDbError1" translatable="false">"Sorry. You can`t go further."</string>
     <string name="updateDbError2" translatable="false">"Please contact IT Team (Failed to update DB)"</string>
     <string name="bckbtn" translatable="false">You Cant go back</string>
     <string name="processing" translatable="false">Processing</string>
@@ -69,7 +70,7 @@
     <string name="cntbtn" translatable="false">Are you sure, you want to continue - interview</string>
     <string name="failedUpdateDb" translatable="false">SORRY! Failed to update DB</string>
     <string name="invalidDate" translatable="false">Invalid date!</string>
-    <string name="ageCalc" translatable="false">"Both Month and Year don't be zero!!"</string>
+    <string name="ageCalc" translatable="false">"Both Month and Year don`t be zero!!"</string>
     <string name="actiondatabase" translatable="false">Database Manager</string>
     <string name="actiondatasync" translatable="false">Sync Data</string>
     <!--<string name="dkn"> Don’t Know </string>
@@ -360,7 +361,7 @@
     <string name="ss12"> How many households in total use this toilet facility, including your own household? </string>
     <string name="ss12a">LESS THAN 10 </string>
     <string name="ss12b">TEN OR MORE HOUSEHOLDS </string>
-    <string name="ss12c">Dont Know</string>
+    <string name="ss12c">Don`t Know</string>
     <string name="ss13">What is done to dispose the stools of the youngest child?</string>
     <string name="ss13a">Child uses toilet/latrine</string>
     <string name="ss12hh">Number of Households</string>
@@ -534,7 +535,7 @@
     <string name="ss23">If yes, how many acres or canals of agricultural land do members of this household own?  If less than 1, record ‘00’.</string>
     <string name="ss23a">Acres</string>
     <string name="ss23b">Kanals</string>
-    <string name="ss23c">Dont Know</string>
+    <string name="ss23c">Don`t Know</string>
     <string name="ss23land">Land</string>
     <string name="ss24">Do you have your own livestock, animals or poultry?</string>
     <string name="ss24a">Yes</string>
@@ -668,44 +669,44 @@
     <!--<string name="im08">Has (name) ever received any vaccinations to prevent (him/her) from getting diseases, including vaccinations received in a campaign, immunization day or child health day?</string>-->
     <string name="im081">Yes </string>
     <string name="im082">No  </string>
-    <string name="im083">Dont Know</string>
+    <string name="im083">Don`t Know</string>
     <!--<string name="im09">. Has (name) ever received a BCG vaccination against tuberculosis – that is, an injection in the arm or shoulder that usually causes a scar?</string>-->
     <string name="im091">Yes </string>
     <string name="im092">No  </string>
-    <string name="im093">Dont know</string>
+    <string name="im093">Don`t Know</string>
     <!-- <string name="im10"> Has (name) ever received any vaccination drops in the mouth to protect (him/her) from polio?   Probe by indicating that the first drop is usually given at birth and later at the same time as injections to prevent other diseases.</string>-->
     <string name="im101">Yes </string>
     <string name="im102">No </string>
-    <string name="im103">Dont know</string>
+    <string name="im103">Don`t Know</string>
     <string name="im10a">Has (name) ever received Hepatitis B vaccination- that is, an injection in the arm or shoulder. Hepatitis B vaccine protects against a viral infection that causes inflammation and damage to the liver۔</string>
     <!--<string name="im10_1">Yes </string>-->
     <string name="im10a1">Yes </string>
     <!--<string name="im10_2">No </string>-->
     <string name="im10a2">No </string>
-    <!--<string name="im10_3">Dont know</string>-->
-    <string name="im10a98">Dont know</string>
+    <!--<string name="im10_3">Don`t Know</string>-->
+    <string name="im10a98">Don`t Know</string>
 
     <!--<string name="im11">Were the first polio drops received in the first two weeks after birth?</string>-->
     <string name="im111">Yes</string>
     <string name="im112">No  </string>
-    <string name="im113">Dont know</string>
+    <string name="im113">Don`t Know</string>
     <!-- <string name="im12">How many times were the polio drops received at Govt or Private Health Facility or from Govt Outreach services?  </string>-->
     <string name="im12a">How many times was Polio vaccine received during a large campaign? </string>
-    <string name="im12d">Dont Know</string>
+    <string name="im12d">Don`t Know</string>
     <!--<string name="im14">Has (name) ever received a Pentavalent vaccination – that is, an injection in the thigh to prevent (him/her) from getting tetanus, whooping cough, diphtheria, Hepatitis B disease, and Haemophilus influenza type B?   Probe by indicating that Pentavalent vaccination is sometimes given at the same time as the Polio drops</string>-->
     <string name="im141">Yes </string>
     <string name="im142">No </string>
-    <string name="im143">Dont know</string>
+    <string name="im143">Don`t Know</string>
     <!--<string name="im15">How many times was the Pentavalent vaccine received? Number of times</string>
     <string name="im16">Has (name) ever received a Pneumococcal Conjugate vaccination – that is, an injection to prevent (him/her) from getting pneumococcal disease, including ear infections and meningitis caused by pneumococcus? Probe by indicating that Pneumococcal Conjugate vaccination is sometimes given at the same time as the Pentavalent vaccination.</string>-->
     <string name="im161">Yes </string>
     <string name="im162">No  </string>
-    <string name="im163">Dont know</string>
+    <string name="im163">Don`t Know</string>
     <!--<string name="im17">How many times was the pneumococcal vaccine received? Number of times</string>
     <string name="im18">Has (name) ever received drops for Rotavirus vaccine (RV) vaccination- A vaccine given orally soon after 6 weeks birth to protect against rotavirus infections, which are the leading cause of severe diarrhea among young children.</string>-->
     <string name="im181">Yes </string>
     <string name="im182">No  </string>
-    <string name="im183">Dont know</string>
+    <string name="im183">Don`t Know</string>
     <!--<string name="im19">How many times were the drops received? Number of times</string>
     <string name="im20">Has (name) ever received an inactivated polio vaccine (IPV) – that is, a shot in the thigh at the age of 14 weeks or older - to prevent (him/her) from getting polio?</string>-->
     <string name="im201">Yes </string>
@@ -714,12 +715,12 @@
 
     <string name="im2101">Yes </string>
     <string name="im2102">No  </string>
-    <string name="im21a98">Dont know</string>
-    <string name="im203">Dont know</string>
+    <string name="im21a98">Don`t Know</string>
+    <string name="im203">Don`t Know</string>
     <!--    <string name="im21">Has (name) ever received a Measles Injection – that is, a shot in the arm at the age of 9 months or older - to prevent (him/her) from getting measles?</string>-->
     <string name="im211">Yes </string>
     <string name="im212">No  </string>
-    <string name="im213">Dont know</string>
+    <string name="im213">Don`t Know</string>
     <!-- <string name="im22">How many times was a Measles Injection vaccine received? Number of times</string>
      <string name="im22a">Has (name) ever received a Typhoid Injection – that is, a shot in the arm at the age of 9 months or older - to prevent (him/her) from getting Typhoid?</string>
      <string name="im23">Where from (name) is usually vaccinated?   If the child is vaccinated from multiple sources, mention the usual source with higher frequency of vaccine doses.</string>
@@ -755,17 +756,17 @@
     <!--<string name="im24a">Has the child ever received polio drops during a national polo campaign?</string>-->
     <string name="im24a1">Yes</string>
     <string name="im24a2">No</string>
-    <string name="im24a98">Dont Know</string>
+    <string name="im24a98">Don`t Know</string>
     <!--<string name="im24b">How many times has the child received Polio vaccine drops during national polio campaign?</string>-->
-    <!--<string name="im24b98">Dont Know</string>-->
+    <!--<string name="im24b98">Don`t Know</string>-->
     <!--<string name="im24c">Did the child receive polio drops during the last national polio campaign?</string>-->
     <string name="im24d">The last time (name) received the polio drops, did (he/she) also get an injection to protect against polio?</string>
     <string name="im24c1">Yes</string>
     <string name="im24d1">Yes</string>
     <string name="im24c2">No</string>
     <string name="im24d2">No</string>
-    <string name="im24c98">Dont know</string>
-    <string name="im24d98">Dont know</string>
+    <string name="im24c98">Don`t Know</string>
+    <string name="im24d98">Don`t Know</string>
     <string name="im2501">Scar Present</string>
     <string name="im2502">Scar Absent</string>
     <string name="im2503">Child Not Available</string>
@@ -979,7 +980,7 @@
     <string name="sectionkfamilyplanning_mainheading">Section K: Family Planning: </string>
     <string name="sectionununmetneeds_mainheading">Section UN:</string>
     <string name="sectionlwomenempowerment_mainheading">Section L: Women Empowerment: </string>
-    <string name="app_name">  </string>
+    <string name="app_name">SMK-HH-ML22</string>
     <string name="btnSync">Download Data</string>
     <string name="btnUpload">Upload Data</string>
     <string name="prompt_email">Email</string>
@@ -1099,7 +1100,7 @@
     <string name="d11008">PhD</string>
     <string name="d11009">Diploma (IT/Electric,Mechanical,civil)</string>
     <string name="d11010">Religious Education (Hafiz/Aalim)</string>
-    <string name="d11098">Don&#039;t Know</string>
+    <string name="d11098">Don`t Know</string>
     <string name="d11099">Not Applicable</string>
     <string name="d111">Occupation</string>
     <string name="d11101">Housewife </string>
@@ -2152,18 +2153,18 @@
     <string name="im08">Has (name) ever received any vaccinations to prevent (him/her) from getting diseases, including vaccinations received in a campaign, immunization day or child health day?</string>
     <string name="im08_1">Yes </string>
     <string name="im08_2">No  </string>
-    <string name="im08_3">Dont Know</string>
+    <string name="im08_3">Don`t Know</string>
     <string name="im09">. Has (name) ever received a BCG vaccination against tuberculosis – that is, an injection in the arm or shoulder that usually causes a scar?</string>
     <string name="im09_1">Yes </string>
     <string name="im09_2">No  </string>
-    <string name="im09_3">Dont know</string>
+    <string name="im09_3">Don`t Know</string>
     <string name="im10">. Has (name) ever received any vaccination drops in the mouth to protect (him/her) from polio?   Probe by indicating that the first drop is usually given at birth and later at the same time as injections to prevent other diseases.</string>
     <string name="im10_1">Yes </string>
     <string name="im10_2">No </string>
     <string name="im12">How many times were the polio drops received at Govt or Private Health Facility or from Govt Outreach services?  Number of times</string>
     <string name="im12_1">Number of times</string>
     <string name="im12_98">Don’t know</string>
-    <string name="im10_3">Dont know</string>
+    <string name="im10_3">Don`t Know</string>
     <string name="im11">Were the first polio drops received in the first two weeks after birth?</string>
     <string name="im11_1">Yes</string>
     <string name="im11a">Has (name) ever received Hepatitis B vaccination- that is, an injection in the arm or shoulder. Hepatitis B vaccine protects against a viral infection that causes inflammation and damage to the liver۔</string>
@@ -2171,42 +2172,42 @@
     <string name="im11a_02">No</string>
     <string name="im11a_98">Don’t know</string>
     <string name="im11_2">No  </string>
-    <string name="im11_3">Dont know</string>
+    <string name="im11_3">Don`t Know</string>
     <string name="im14">Has (name) ever received a Pentavalent vaccination – that is, an injection in the thigh to prevent (him/her) from getting tetanus, whooping cough, diphtheria, Hepatitis B disease, and Haemophilus influenza type B?   Probe by indicating that Pentavalent vaccination is sometimes given at the same time as the Polio drops</string>
     <string name="im14_1">Yes </string>
     <string name="im14_2">No </string>
-    <string name="im14_3">Dont know</string>
+    <string name="im14_3">Don`t Know</string>
     <string name="im15">How many times was the Pentavalent vaccine received? Number of times</string>
     <string name="im15_1">Number of times</string>
-    <string name="im15_98">Don&#039;t know</string>
+    <string name="im15_98">Don`t Know</string>
     <string name="im16">Has (name) ever received a Pneumococcal Conjugate vaccination – that is, an injection to prevent (him/her) from getting pneumococcal disease, including ear infections and meningitis caused by pneumococcus? Probe by indicating that Pneumococcal Conjugate vaccination is sometimes given at the same time as the Pentavalent vaccination.</string>
     <string name="im16_1">Yes </string>
     <string name="im16_2">No  </string>
-    <string name="im16_3">Dont know</string>
+    <string name="im16_3">Don`t Know</string>
     <string name="im17">How many times was the pneumococcal vaccine received? Number of times</string>
     <string name="im17_1">Number of times</string>
-    <string name="im17_98">Don&#039;t know</string>
+    <string name="im17_98">Don`t Know</string>
     <string name="im18">Has (name) ever received drops for Rotavirus vaccine (RV) vaccination- A vaccine given orally soon after 6 weeks birth to protect against rotavirus infections, which are the leading cause of severe diarrhea among young children.</string>
     <string name="im18_1">Yes </string>
     <string name="im18_2">No  </string>
-    <string name="im18_3">Dont know</string>
+    <string name="im18_3">Don`t Know</string>
     <string name="im19">How many times were the drops received? Number of times</string>
     <string name="im19_1">Number of times</string>
-    <string name="im19_98">Don&#039;t know</string>
+    <string name="im19_98">Don`t Know</string>
     <string name="im20">Has (name) ever received an inactivated polio vaccine (IPV) – that is, a shot in the thigh at the age of 14 weeks and at 9 months  to prevent children from getting polio?</string>
     <string name="im20_1">Yes </string>
     <string name="im20a">How many times was a IPV injection vaccine received? </string>
     <string name="im20a_01">Number of times</string>
     <string name="im20a98">Don’t know</string>
     <string name="im20_2">No  </string>
-    <string name="im20_3">Dont know</string>
+    <string name="im20_3">Don`t Know</string>
     <string name="im21">Has (name) ever received a measles injection – that is, a shot in the arm at the age of 9 months and 15 months -of age to prevent children from getting measles?</string>
     <string name="im21_1">Yes </string>
     <string name="im21_2">No  </string>
-    <string name="im21_3">Dont know</string>
+    <string name="im21_3">Don`t Know</string>
     <string name="im22">How many times was a Measles Injection vaccine received? Number of times</string>
     <string name="im22_1">Number of times</string>
-    <string name="im22_98">Don&#039;t know</string>
+    <string name="im22_98">Don`t Know</string>
     <string name="im22a">Has (name) ever received a Typhoid vaccination – that is, a shot in the upper part of the arm at the age of 9 months or older - to prevent (him/her) from getting Typhoid disease?</string>
     <string name="im22a_01">Yes</string>
     <string name="im22a_02">No</string>
@@ -2931,27 +2932,27 @@
     <string name="h1291">Examine the cord</string>
     <string name="h129101">Yes</string>
     <string name="h129102">No</string>
-    <string name="h129103">Don&#039;t Know</string>
+    <string name="h129103">Don`t Know</string>
     <string name="h1292">Danger signs</string>
     <string name="h129201">Yes</string>
     <string name="h129202">No</string>
-    <string name="h129203">Don&#039;t Know</string>
+    <string name="h129203">Don`t Know</string>
     <string name="h1293">Temperature</string>
     <string name="h129301">Yes</string>
     <string name="h129302">No</string>
-    <string name="h129303">Don&#039;t Know</string>
+    <string name="h129303">Don`t Know</string>
     <string name="h1294">Breastfeeding counselling</string>
     <string name="h129401">Yes</string>
     <string name="h129402">No</string>
-    <string name="h129403">Don&#039;t Know</string>
+    <string name="h129403">Don`t Know</string>
     <string name="h1295">Weigh baby</string>
     <string name="h129501">Yes</string>
     <string name="h129502">No</string>
-    <string name="h129503">Don&#039;t Know</string>
+    <string name="h129503">Don`t Know</string>
     <string name="h1296">Vaccination</string>
     <string name="h129601">Yes</string>
     <string name="h129602">No</string>
-    <string name="h129603">Don&#039;t Know</string>
+    <string name="h129603">Don`t Know</string>
     <string name="h130">Did the health care provider recommended vaccines for {child NAME}? </string>
     <string name="h13001">Yes</string>
     <string name="h13002">No</string>
@@ -3404,7 +3405,7 @@
     <string name="un05">Do You think you are physically able to get pregnant at this time?</string>
     <string name="un0501">Yes</string>
     <string name="un0502">No</string>
-    <string name="un0598">Dont know</string>
+    <string name="un0598">Don`t Know</string>
     <string name="un06">Why do you think you are not able physically able to get pregnant?</string>
     <string name="un0601">Infrequent Sex/ No sex</string>
     <string name="un0602">Menopausal</string>
