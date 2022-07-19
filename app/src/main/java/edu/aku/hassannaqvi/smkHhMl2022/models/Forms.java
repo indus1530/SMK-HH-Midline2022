@@ -544,7 +544,8 @@ public class Forms extends BaseObservable implements Observable {
     private String im24 = _EMPTY_;
     private String im24_96x = _EMPTY_;
     private String im24a = _EMPTY_;
-    private String im24b_01 = _EMPTY_;
+    private String im24b = _EMPTY_;
+    private String im24bax = _EMPTY_;
     private String im24c = _EMPTY_;
     private String im30 = _EMPTY_;
     private String im30_01 = _EMPTY_;
@@ -6366,13 +6367,24 @@ public class Forms extends BaseObservable implements Observable {
     }
 
     @Bindable
-    public String getIm24b_01() {
-        return im24b_01;
+    public String getIm24b() {
+        return im24b;
     }
 
-    public void setIm24b_01(String im24b_01) {
-        this.im24b_01 = im24b_01;
-        notifyPropertyChanged(BR.im24b_01);
+    public void setIm24b(String im24b) {
+        this.im24b = im24b;
+        setIm24bax(im24b.equals("1") ? this.im24bax : "");
+        notifyPropertyChanged(BR.im24b);
+    }
+
+    @Bindable
+    public String getIm24bax() {
+        return im24bax;
+    }
+
+    public void setIm24bax(String im24bax) {
+        this.im24bax = im24bax;
+        notifyPropertyChanged(BR.im24bax);
     }
 
     @Bindable

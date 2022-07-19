@@ -50,7 +50,7 @@
 
                 <!-- im01  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim01"
+                    android:id="@+id/cVim01"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -107,7 +107,7 @@
 
                 <!-- im02  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim02"
+                    android:id="@+id/cVim02"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -164,7 +164,7 @@
 
                 <!-- im02a  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim02a"
+                    android:id="@+id/cVim02a"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -247,7 +247,7 @@
 
                 <!-- im03  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim03"
+                    android:id="@+id/cVim03"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -354,7 +354,7 @@
 
                 <!-- im04  Title   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim04"
+                    android:id="@+id/cVim04"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -422,7 +422,7 @@
 
                 <!-- im05_title1  Title   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim05_title1"
+                    android:id="@+id/cVim05_title1"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -439,7 +439,7 @@
 
                 <!-- im05_01  Title   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim05_01"
+                    android:id="@+id/cVim05_01"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -507,7 +507,7 @@
 
                 <!-- im05_02  Title   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim05_02"
+                    android:id="@+id/cVim05_02"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -575,7 +575,7 @@
 
                 <!-- im05_02a  Title   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim05_02a"
+                    android:id="@+id/cVim05_02a"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -643,7 +643,7 @@
 
                 <!-- im05_03  Title   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim05_03"
+                    android:id="@+id/cVim05_03"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -711,7 +711,7 @@
 
                 <!-- im05_04  Title   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim05_04"
+                    android:id="@+id/cVim05_04"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -779,7 +779,7 @@
 
                 <!-- im05_05  Title   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim05_05"
+                    android:id="@+id/cVim05_05"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -847,7 +847,7 @@
 
                 <!-- im05_06  Title   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim05_06"
+                    android:id="@+id/cVim05_06"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -915,7 +915,7 @@
 
                 <!-- im05_07  Title   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim05_07"
+                    android:id="@+id/cVim05_07"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -983,7 +983,7 @@
 
                 <!-- im05_08  Title   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim05_08"
+                    android:id="@+id/cVim05_08"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -1051,7 +1051,7 @@
 
                 <!-- im05_09  Title   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim05_09"
+                    android:id="@+id/cVim05_09"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -1119,7 +1119,7 @@
 
                 <!-- im05_10  Title   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim05_10"
+                    android:id="@+id/cVim05_10"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -1187,7 +1187,7 @@
 
                 <!-- im05_11  Title   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim05_11"
+                    android:id="@+id/cVim05_11"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -1255,7 +1255,7 @@
 
                 <!-- im05_12  Title   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim05_12"
+                    android:id="@+id/cVim05_12"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -1323,7 +1323,7 @@
 
                 <!-- im05_13  Title   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim05_13"
+                    android:id="@+id/cVim05_13"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -1391,7 +1391,7 @@
 
                 <!-- im05_14  Title   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim05_14"
+                    android:id="@+id/cVim05_14"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -1459,7 +1459,7 @@
 
                 <!-- im05_15  Title   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim05_15"
+                    android:id="@+id/cVim05_15"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -1527,7 +1527,7 @@
 
                 <!-- im05_15a  Title   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim05_15a"
+                    android:id="@+id/cVim05_15a"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -1595,7 +1595,7 @@
 
                 <!-- im05_15b  Title   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim05_15b"
+                    android:id="@+id/cVim05_15b"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -1663,7 +1663,7 @@
 
                 <!-- im05_16  Title   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim05_16"
+                    android:id="@+id/cVim05_16"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -1731,7 +1731,7 @@
 
                 <!-- im07  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim07"
+                    android:id="@+id/cVim07"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -1787,7 +1787,7 @@
 
                 <!-- im08  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim08"
+                    android:id="@+id/cVim08"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -1851,7 +1851,7 @@
 
                 <!-- im09  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim09"
+                    android:id="@+id/cVim09"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -1915,7 +1915,7 @@
 
                 <!-- im10  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim10"
+                    android:id="@+id/cVim10"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -1979,7 +1979,7 @@
 
                 <!-- im12  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim12"
+                    android:id="@+id/cVim12"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -2049,7 +2049,7 @@
 
                 <!-- im11  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim11"
+                    android:id="@+id/cVim11"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -2113,7 +2113,7 @@
 
                 <!-- im11a  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim11a"
+                    android:id="@+id/cVim11a"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -2177,7 +2177,7 @@
 
                 <!-- im14  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim14"
+                    android:id="@+id/cVim14"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -2241,7 +2241,7 @@
 
                 <!-- im15  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim15"
+                    android:id="@+id/cVim15"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -2311,7 +2311,7 @@
 
                 <!-- im16  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim16"
+                    android:id="@+id/cVim16"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -2375,7 +2375,7 @@
 
                 <!-- im17  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim17"
+                    android:id="@+id/cVim17"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -2445,7 +2445,7 @@
 
                 <!-- im18  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim18"
+                    android:id="@+id/cVim18"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -2509,7 +2509,7 @@
 
                 <!-- im19  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim19"
+                    android:id="@+id/cVim19"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -2579,7 +2579,7 @@
 
                 <!-- im20  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim20"
+                    android:id="@+id/cVim20"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -2643,7 +2643,7 @@
 
                 <!-- im20a  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim20a"
+                    android:id="@+id/cVim20a"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -2713,7 +2713,7 @@
 
                 <!-- im21  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim21"
+                    android:id="@+id/cVim21"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -2777,7 +2777,7 @@
 
                 <!-- im22  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim22"
+                    android:id="@+id/cVim22"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -2847,7 +2847,7 @@
 
                 <!-- im22a  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim22a"
+                    android:id="@+id/cVim22a"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -2911,7 +2911,7 @@
 
                 <!-- im23  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim23"
+                    android:id="@+id/cVim23"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -3001,7 +3001,7 @@
 
                 <!-- im23a  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim23a"
+                    android:id="@+id/cVim23a"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -3099,7 +3099,7 @@
 
                 <!-- im23b  Title   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim23b"
+                    android:id="@+id/cVim23b"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -3150,7 +3150,7 @@
 
                 <!-- im24  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim24"
+                    android:id="@+id/cVim24"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -3352,7 +3352,7 @@
 
                 <!-- im24a  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim24a"
+                    android:id="@+id/cVim24a"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -3382,28 +3382,32 @@
                         <RadioGroup
                             android:id="@+id/im24a"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
 
                             <RadioButton
                                 android:id="@+id/im24a_01"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
                                 android:checked="@{form.im24a.equals(`1`)}"
                                 android:onClick="@{()->form.setIm24a(`1`)}"
                                 android:text="@string/im24a_01" />
 
                             <RadioButton
                                 android:id="@+id/im2a_02"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
                                 android:checked="@{form.im24a.equals(`2`)}"
                                 android:onClick="@{()->form.setIm24a(`2`)}"
                                 android:text="@string/im2a_02" />
 
                             <RadioButton
                                 android:id="@+id/im24a_98"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
                                 android:checked="@{form.im24a.equals(`98`)}"
                                 android:onClick="@{()->form.setIm24a(`98`)}"
                                 android:text="@string/im24a_98" />
@@ -3414,9 +3418,10 @@
 
                 </androidx.cardview.widget.CardView>
 
+
                 <!-- im24b  Title   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim24b"
+                    android:id="@+id/cVim24b"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -3424,41 +3429,71 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <TextView
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/im24b" />
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/im24b_01" />
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_im24b" />
 
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/im24b_01"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="@string/im24b_01"
-                            android:inputType="number"
-                            android:maxLength="2"
-                            android:text="@={form.im24b_01}"
-                            app:maxValue="10"
-                            app:minValue="1"
-                            app:type="range" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/im24b" />
 
-                        <RadioButton
-                            android:id="@+id/im24b_98"
+                        </LinearLayout>
+
+                        <RadioGroup
+                            android:id="@+id/im24b"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:checked="@{form.im24b.equals(`98`)}"
-                            android:onClick="@{()->form.setIm24b(`98`)}"
-                            android:text="@string/im24b_98" />
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/im24ba"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:checked="@{form.im24b.equals(`1`)}"
+                                android:onClick="@{()->form.setIm24b(`1`)}"
+                                android:text="@string/im24ba" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/im24bax"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text="@={form.im24bax}"
+                                app:maxValue="10"
+                                app:minValue="1"
+                                app:type="range" />
+
+                            <RadioButton
+                                android:id="@+id/im24b98"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:checked="@{form.im24b.equals(`98`)}"
+                                android:onClick="@{()->form.setIm24b(`98`)}"
+                                android:text="@string/im24b98" />
+
+                        </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- im24c  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim24c"
+                    android:id="@+id/cVim24c"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -3522,7 +3557,7 @@
 
                 <!-- im30  CheckBox   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim30"
+                    android:id="@+id/cVim30"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -3705,7 +3740,7 @@
 
                 <!-- im25  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVim25"
+                    android:id="@+id/cVim25"
                     style="@style/cardView">
 
                     <LinearLayout

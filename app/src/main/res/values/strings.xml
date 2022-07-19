@@ -757,7 +757,7 @@
     <string name="im24a2">No</string>
     <string name="im24a98">Dont Know</string>
     <!--<string name="im24b">How many times has the child received Polio vaccine drops during national polio campaign?</string>-->
-    <string name="im24b98">Dont Know</string>
+    <!--<string name="im24b98">Dont Know</string>-->
     <!--<string name="im24c">Did the child receive polio drops during the last national polio campaign?</string>-->
     <string name="im24d">The last time (name) received the polio drops, did (he/she) also get an injection to protect against polio?</string>
     <string name="im24c1">Yes</string>
@@ -2240,8 +2240,8 @@
     <string name="im24a_98">Don’t know </string>
     <string name="im24_3">Mother too busy </string>
     <string name="im24b">How many times has (name) received polio drops during the national polio campaigns?</string>
-    <string name="im24b_01">Number of times</string>
-    <string name="im24b_98">Don’t know</string>
+    <string name="im24ba">Number of times</string>
+    <string name="im24b98">Don’t know</string>
     <string name="im24_4">Family problem including mother ill</string>
     <string name="im24_5">Child ill, not brought </string>
     <string name="im24c">Did (name) receive polio drops during the last campaign</string>
