@@ -2481,8 +2481,8 @@
     <string name="f12807">Convulsions/fits</string>
     <string name="f12808">No, I did not experience any danger sign</string>
     <string name="f129">Did you seek care for the danger signs/problems mentioned above?</string>
-    <string name="f12901">Yes 1</string>
-    <string name="f12902">No 2</string>
+    <string name="f12901">Yes</string>
+    <string name="f12902">No</string>
     <string name="f130">Why did you not seek care from a health care provider for the danger signs/problems mentioned above during your pregnancy with {NAME}?</string>
     <string name="f13001">No transportation</string>
     <string name="f13002">Poor attitude of staff</string>
@@ -2593,8 +2593,8 @@
     <string name="g10801">Yes</string>
     <string name="g10802">No</string>
     <string name="g109">How was {NAME} delivered? </string>
-    <string name="g1t06">Definition of Vacuum delivery: During vacuum extraction, a health care provider applies the vacuum (a soft or rigid cup with a handle and a vacuum pump) to the b’by&#039;s head to help guide the baby out of the birth canal.</string>
-    <string name="g1t07">Definition of Forceps delivery: In a forceps delivery, a health care provider applies forceps (an instrument shaped like a pair of large spoons or salad tongs) to the b’by&#039;s head to help guide the baby out of the birth canal.</string>
+    <string name="g1t06">Definition of Vacuum delivery: During vacuum extraction, a health care provider applies the vacuum (a soft or rigid cup with a handle and a vacuum pump) to the baby`s head to help guide the baby out of the birth canal.</string>
+    <string name="g1t07">Definition of Forceps delivery: In a forceps delivery, a health care provider applies forceps (an instrument shaped like a pair of large spoons or salad tongs) to the baby`s head to help guide the baby out of the birth canal.</string>
     <string name="g10901">Normal Vaginal Delivery (NVD)</string>
     <string name="g10902">Caesarian Section (C-Section)</string>
     <string name="g10903">Vacuum</string>
