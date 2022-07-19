@@ -19,20 +19,20 @@ import edu.aku.hassannaqvi.smkHhMl2022.R;
 import edu.aku.hassannaqvi.smkHhMl2022.contracts.TableContracts;
 import edu.aku.hassannaqvi.smkHhMl2022.core.MainApp;
 import edu.aku.hassannaqvi.smkHhMl2022.database.DatabaseHelper;
-import edu.aku.hassannaqvi.smkHhMl2022.databinding.ActivitySectionF1Binding;
+import edu.aku.hassannaqvi.smkHhMl2022.databinding.ActivitySectionF2Binding;
 
-public class SectionF1Activity extends AppCompatActivity {
+public class SectionF2Activity extends AppCompatActivity {
 
 
     private static final String TAG = "SectionFActivity";
-    ActivitySectionF1Binding bi;
+    ActivitySectionF2Binding bi;
     private DatabaseHelper db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTheme(MainApp.langRTL ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_f1);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_f2);
         setSupportActionBar(bi.toolbar);
         db = MainApp.appInfo.dbHelper;
         bi.setForm(frm);
@@ -65,7 +65,7 @@ public class SectionF1Activity extends AppCompatActivity {
         if (updateDB()) {
             setResult(RESULT_OK);
             Intent i;
-            i = new Intent(this, SectionF2Activity.class).putExtra("complete", true).setFlags(Intent.FLAG_ACTIVITY_FORWARD_RESULT);
+            i = new Intent(this, SectionGActivity.class).putExtra("complete", true).setFlags(Intent.FLAG_ACTIVITY_FORWARD_RESULT);
             startActivity(i);
             finish();
         } else {
