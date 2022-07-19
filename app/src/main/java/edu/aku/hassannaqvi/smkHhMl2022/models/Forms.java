@@ -309,7 +309,7 @@ public class Forms extends BaseObservable implements Observable {
     private String ah33a = _EMPTY_;
     private String ah33b = _EMPTY_;
     private String ah33c = _EMPTY_;
-    private String ah33d = _EMPTY_;
+    private String ah3398 = _EMPTY_;
     private String ah34 = _EMPTY_;
     private String ah35a = _EMPTY_;
     private String ah35b = _EMPTY_;
@@ -3983,6 +3983,7 @@ public class Forms extends BaseObservable implements Observable {
     }
 
     public void setAh33a(String ah33a) {
+        if (this.ah33a.equals(ah33a)) return;
         this.ah33a = ah33a;
         notifyPropertyChanged(BR.ah33a);
     }
@@ -3993,6 +3994,7 @@ public class Forms extends BaseObservable implements Observable {
     }
 
     public void setAh33b(String ah33b) {
+        if (this.ah33b.equals(ah33b)) return;
         this.ah33b = ah33b;
         notifyPropertyChanged(BR.ah33b);
     }
@@ -4003,18 +4005,23 @@ public class Forms extends BaseObservable implements Observable {
     }
 
     public void setAh33c(String ah33c) {
+        if (this.ah33c.equals(ah33c)) return;
         this.ah33c = ah33c;
         notifyPropertyChanged(BR.ah33c);
     }
 
     @Bindable
-    public String getAh33d() {
-        return ah33d;
+    public String getAh3398() {
+        return ah3398;
     }
 
-    public void setAh33d(String ah33d) {
-        this.ah33d = ah33d;
-        notifyPropertyChanged(BR.ah33d);
+    public void setAh3398(String ah3398) {
+        if (this.ah3398.equals(ah3398)) return;
+        this.ah3398 = ah3398;
+        setAh33a(ah3398.equals("98") ? "" : this.ah33a);
+        setAh33b(ah3398.equals("98") ? "" : this.ah33b);
+        setAh33c(ah3398.equals("98") ? "" : this.ah33c);
+        notifyPropertyChanged(BR.ah3398);
     }
 
     @Bindable
@@ -4134,6 +4141,7 @@ public class Forms extends BaseObservable implements Observable {
 
     public void setAh36(String ah36) {
         this.ah36 = ah36;
+        setAh36ax(ah36.equals("1") ? this.ah36ax : "");
         notifyPropertyChanged(BR.ah36);
     }
 
