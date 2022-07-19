@@ -1080,12 +1080,8 @@
     <string name="d109d">Day(s)</string>
     <string name="d106">Serial no of Father</string>
     <string name="d106t">If father’s relation is Not Applicable in the members list then record code Not Applicable</string>
-    <string name="d10601">Serial no of Father</string>
-    <string name="d10697">Not Applicable</string>
     <string name="d107">Serial no. of Mother</string>
     <string name="d107t">If mother’s relation is Not Applicable in the members list then record code Not Applicable</string>
-    <string name="d10701">Serial no. of Mother</string>
-    <string name="d10797">Not Applicable</string>
     <string name="d105">Marital Status</string>
     <string name="d10501">Married</string>
     <string name="d10502">Unmarried</string>

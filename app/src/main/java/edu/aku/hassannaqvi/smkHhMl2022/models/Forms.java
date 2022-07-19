@@ -83,7 +83,6 @@ public class Forms extends BaseObservable implements Observable {
     private String d109m = _EMPTY_;
     private String d109d = _EMPTY_;
     private String d106 = _EMPTY_;
-    private String d10601x = _EMPTY_;
     private String d107 = _EMPTY_;
     private String d10701x = _EMPTY_;
     private String d105 = _EMPTY_;
@@ -1731,16 +1730,6 @@ public class Forms extends BaseObservable implements Observable {
     public void setD106(String d106) {
         this.d106 = d106;
         notifyPropertyChanged(BR.d106);
-    }
-
-    @Bindable
-    public String getD10601x() {
-        return d10601x;
-    }
-
-    public void setD10601x(String d10601x) {
-        this.d10601x = d10601x;
-        notifyPropertyChanged(BR.d10601x);
     }
 
     @Bindable
