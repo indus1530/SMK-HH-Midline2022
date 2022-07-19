@@ -254,7 +254,8 @@ public class Forms extends BaseObservable implements Observable {
     private String ah7f = _EMPTY_;
     private String ah7g = _EMPTY_;
     private String ah7h = _EMPTY_;
-    private String ah7x = _EMPTY_;
+    private String ah796 = _EMPTY_;
+    private String ah796x = _EMPTY_;
     private String ah8 = _EMPTY_;
     private String ah9 = _EMPTY_;
     private String ah10 = _EMPTY_;
@@ -3441,13 +3442,24 @@ public class Forms extends BaseObservable implements Observable {
     }
 
     @Bindable
-    public String getAh7x() {
-        return ah7x;
+    public String getAh796() {
+        return ah796;
     }
 
-    public void setAh7x(String ah7x) {
-        this.ah7x = ah7x;
-        notifyPropertyChanged(BR.ah7x);
+    public void setAh796(String ah796) {
+        this.ah796 = ah796;
+        setAh796x(ah796.equals("96") ? this.ah796x : "");
+        notifyPropertyChanged(BR.ah796);
+    }
+
+    @Bindable
+    public String getAh796x() {
+        return ah796x;
+    }
+
+    public void setAh796x(String ah796x) {
+        this.ah796x = ah796x;
+        notifyPropertyChanged(BR.ah796x);
     }
 
     @Bindable
