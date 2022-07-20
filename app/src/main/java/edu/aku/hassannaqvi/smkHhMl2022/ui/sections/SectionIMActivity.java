@@ -36,6 +36,13 @@ public class SectionIMActivity extends AppCompatActivity {
         setSupportActionBar(bi.toolbar);
         db = MainApp.appInfo.dbHelper;
         bi.setForm(frm);
+        String motherRelation;
+        /*if (child.getCb03().equals("1")) {
+            motherRelation = " S/o ";
+        } else {
+            motherRelation = " D/o ";
+        }
+        bi.toolbar.setSubtitle(child.getCb02() + " " + motherRelation + " " + child.getCb07());*/
     }
 
 
