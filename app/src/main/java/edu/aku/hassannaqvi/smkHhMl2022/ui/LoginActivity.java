@@ -528,7 +528,7 @@ public class LoginActivity extends AppCompatActivity {
 
         switch (countryCode) {
             case 1:
-                lang = "ur";
+                lang = "sd";
                 country = "PK";
                 MainApp.editor
                         .putString("lang", "1")
@@ -583,7 +583,7 @@ public class LoginActivity extends AppCompatActivity {
             case R.id.NO:
                 return true;
 
-            case R.id.UR:
+            case R.id.SD:
                 MainApp.selectedLanguage = 1;
                 MainApp.langRTL = true;
                 break;

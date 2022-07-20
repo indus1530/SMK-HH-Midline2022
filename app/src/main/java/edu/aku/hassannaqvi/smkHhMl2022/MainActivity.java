@@ -29,19 +29,20 @@ import edu.aku.hassannaqvi.smkHhMl2022.models.Child;
 import edu.aku.hassannaqvi.smkHhMl2022.models.Form;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.ChangePasswordActivity;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.EndingActivity;
-import edu.aku.hassannaqvi.smkHhMl2022.ui.IdentificationActivity;
+import edu.aku.hassannaqvi.smkHhMl2022.ui.IdentificationActivityy;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.SyncActivity;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.TakePhoto;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.lists.FormsReportCluster;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.lists.FormsReportDate;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.lists.FormsReportPending;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.ConsentActivity;
-import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionCBActivity;
-import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionCHActivity;
-import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionIM1Activity;
-import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionRIActivity;
-import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionSS_1Activity;
-import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionSS_2Activity;
+import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionAH1Activity;
+import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionDActivity;
+import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionE1Activity;
+import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionF1Activity;
+import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionG1Activity;
+import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionH1Activity;
+import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionIMAActivity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -134,39 +135,39 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.startInterview:
                 MainApp.form = new Form();
-                startActivity(new Intent(this, IdentificationActivity.class));
+                startActivity(new Intent(this, IdentificationActivityy.class));
                 break;
             case R.id.seca1:
-                /*MainApp.form = new Form();
-                startActivity(new Intent(this, SectionHHActivity.class));
-                break;*/
+                MainApp.form = new Form();
+                startActivity(new Intent(this, SectionAH1Activity.class));
+                break;
             case R.id.secri:
                 MainApp.form = new Form();
-                startActivity(new Intent(this, SectionRIActivity.class));
+                startActivity(new Intent(this, SectionDActivity.class));
                 break;
 
             case R.id.secss1:
                 MainApp.form = new Form();
-                startActivity(new Intent(this, SectionSS_1Activity.class));
+                startActivity(new Intent(this, SectionE1Activity.class));
                 break;
 
             case R.id.secess2:
                 MainApp.form = new Form();
-                startActivity(new Intent(this, SectionSS_2Activity.class));
+                startActivity(new Intent(this, SectionF1Activity.class));
                 break;
 
             case R.id.seceCH:
                 MainApp.form = new Form();
-                startActivity(new Intent(this, SectionCHActivity.class));
+                startActivity(new Intent(this, SectionG1Activity.class));
                 break;
             case R.id.secCB:
                 MainApp.child = new Child();
-                startActivity(new Intent(this, SectionCBActivity.class));
+                startActivity(new Intent(this, SectionH1Activity.class));
                 break;
 
             case R.id.secIM:
                 MainApp.child = new Child();
-                startActivity(new Intent(this, SectionIM1Activity.class));
+                startActivity(new Intent(this, SectionIMAActivity.class));
                 break;
 
             case R.id.seccs:

@@ -13,7 +13,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/app_bg"
+        android:background="@drawable/all_round_corners"
         android:fitsSystemWindows="true"
         android:gravity="center_horizontal"
         android:orientation="vertical">
@@ -44,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:background="@drawable/vignette_effect"
+            android:background="@drawable/app_bg"
             android:padding="16dp">
 
             <LinearLayout
@@ -62,7 +62,7 @@
                     android:layout_height="180dp"
                     android:layout_gravity="center"
                     android:paddingTop="24dp"
-                    android:src="@drawable/app_icon" />
+                    android:src="@drawable/healthcare_hh" />
 
                 <TextView
                     android:layout_width="match_parent"
