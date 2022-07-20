@@ -65,7 +65,7 @@ public class SectionH1Activity extends AppCompatActivity {
         if (updateDB()) {
             setResult(RESULT_OK);
             Intent i;
-            i = new Intent(this, SectionH2Activity.class).putExtra("complete", true).setFlags(Intent.FLAG_ACTIVITY_FORWARD_RESULT);
+            i = new Intent(this, SectionH21Activity.class).putExtra("complete", true).setFlags(Intent.FLAG_ACTIVITY_FORWARD_RESULT);
             startActivity(i);
             finish();
         } else {
