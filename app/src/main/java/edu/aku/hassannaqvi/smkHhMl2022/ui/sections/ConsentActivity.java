@@ -17,10 +17,7 @@ import androidx.databinding.DataBindingUtil;
 
 import com.validatorcrawler.aliazaz.Validator;
 
-import org.json.JSONException;
-
 import edu.aku.hassannaqvi.smkHhMl2022.R;
-import edu.aku.hassannaqvi.smkHhMl2022.contracts.TableContracts;
 import edu.aku.hassannaqvi.smkHhMl2022.core.MainApp;
 import edu.aku.hassannaqvi.smkHhMl2022.database.DatabaseHelper;
 import edu.aku.hassannaqvi.smkHhMl2022.databinding.ActivityConsentBinding;
@@ -49,7 +46,7 @@ public class ConsentActivity extends AppCompatActivity {
 
 
     private boolean insertNewRecord() {
-        if (!form.getUid().equals("") || MainApp.superuser) return true;
+       /* if (!form.getUid().equals("") || MainApp.superuser) return true;
 
         MainApp.form.populateMeta();
 
@@ -69,10 +66,11 @@ public class ConsentActivity extends AppCompatActivity {
         } else {
             Toast.makeText(this, R.string.upd_db_error + " FORM-update", Toast.LENGTH_SHORT).show();
             return false;
-        }
+        }*/
+        return true;
     }
 
-    private boolean updateDB() {
+    private boolean updateDB() {/*
         if (MainApp.superuser) return true;
 
         db = MainApp.appInfo.getDbHelper();
@@ -88,7 +86,8 @@ public class ConsentActivity extends AppCompatActivity {
         else {
             Toast.makeText(this, R.string.upd_db_error, Toast.LENGTH_SHORT).show();
             return false;
-        }
+        }*/
+        return true;
     }
 
     public void btnContinue(View view) {

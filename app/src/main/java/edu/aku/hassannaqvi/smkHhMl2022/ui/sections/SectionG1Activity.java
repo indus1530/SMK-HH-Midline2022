@@ -4,7 +4,6 @@ import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.frm;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -13,10 +12,7 @@ import androidx.databinding.DataBindingUtil;
 
 import com.validatorcrawler.aliazaz.Validator;
 
-import org.json.JSONException;
-
 import edu.aku.hassannaqvi.smkHhMl2022.R;
-import edu.aku.hassannaqvi.smkHhMl2022.contracts.TableContracts;
 import edu.aku.hassannaqvi.smkHhMl2022.core.MainApp;
 import edu.aku.hassannaqvi.smkHhMl2022.database.DatabaseHelper;
 import edu.aku.hassannaqvi.smkHhMl2022.databinding.ActivitySectionG1Binding;
@@ -40,7 +36,7 @@ public class SectionG1Activity extends AppCompatActivity {
 
 
     private boolean updateDB() {
-        if (MainApp.superuser) return true;
+        /*if (MainApp.superuser) return true;
 
         db = MainApp.appInfo.getDbHelper();
         long updcount = 0;
@@ -55,7 +51,8 @@ public class SectionG1Activity extends AppCompatActivity {
         else {
             Toast.makeText(this, R.string.upd_db_error, Toast.LENGTH_SHORT).show();
             return false;
-        }
+        }*/
+        return true;
     }
 
     public void btnContinue(View view) {
