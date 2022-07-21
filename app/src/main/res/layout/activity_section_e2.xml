@@ -30,9 +30,9 @@
             android:minHeight="?attr/actionBarSize"
             android:theme="@style/CustomToolbarTheme"
             app:popupTheme="@style/CustomPopupTheme"
-            app:subtitle="@string/cbsubheading"
+            app:subtitle="@string/etitle4"
             app:subtitleTextAppearance="@style/Toolbar.SubtitleText"
-            app:title="@string/sectionkfamilyplanning_mainheading"
+            app:title="@string/e2maternalmortalitystatus_mainheading"
             app:titleTextAppearance="@style/Toolbar.TitleText" />
 
 
@@ -47,26 +47,10 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <!-- etitle4  Title   -->
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVetitle4"
-                    style="@style/cardView">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/etitle4" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
 
                 <!-- einst  Title   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVeinst"
+                    android:id="@+id/cVeinst"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -75,15 +59,19 @@
                         android:orientation="vertical">
 
                         <TextView
+                            style="@style/sub_labels"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/einst" />
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- edef  Title   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVedef"
+                    android:id="@+id/cVedef"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -92,15 +80,19 @@
                         android:orientation="vertical">
 
                         <TextView
+                            style="@style/info"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/edef" />
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- e116  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVe116"
+                    android:id="@+id/cVe116"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -147,13 +139,17 @@
                                 android:checked="@{form.e116.equals(`2`)}"
                                 android:onClick="@{()->form.setE116(`2`)}"
                                 android:text="@string/e11602" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- e117  Input-Numeric   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVe117"
+                    android:id="@+id/cVe117"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -196,7 +192,7 @@
 
                 <!-- etitle5  Title   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVetitle5"
+                    android:id="@+id/cVetitle5"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -213,7 +209,7 @@
 
                 <!-- e118  Input   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVe118"
+                    android:id="@+id/cVe118"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -252,7 +248,7 @@
 
                 <!-- e119  Title   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVe119"
+                    android:id="@+id/cVe119"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -320,7 +316,7 @@
 
                 <!-- e120  Input-Numeric   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVe120"
+                    android:id="@+id/cVe120"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -363,7 +359,7 @@
 
                 <!-- e121  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVe121"
+                    android:id="@+id/cVe121"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -472,7 +468,7 @@
 
                 <!-- e122  Radio   -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVe122"
+                    android:id="@+id/cVe122"
                     style="@style/cardView">
 
                     <LinearLayout

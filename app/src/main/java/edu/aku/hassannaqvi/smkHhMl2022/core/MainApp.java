@@ -34,7 +34,7 @@ import java.util.List;
 import edu.aku.hassannaqvi.smkHhMl2022.R;
 import edu.aku.hassannaqvi.smkHhMl2022.models.Child;
 import edu.aku.hassannaqvi.smkHhMl2022.models.Clusters;
-import edu.aku.hassannaqvi.smkHhMl2022.models.Form;
+import edu.aku.hassannaqvi.smkHhMl2022.models.FamilyMembers;
 import edu.aku.hassannaqvi.smkHhMl2022.models.Forms;
 import edu.aku.hassannaqvi.smkHhMl2022.models.RandomHH;
 import edu.aku.hassannaqvi.smkHhMl2022.models.Users;
@@ -69,8 +69,12 @@ public class MainApp extends Application {
 
 
     //public static Samples samples;
-    public static Form form;
-    public static Forms frm;
+    public static Forms form;
+    public static RandomHH currentHousehold;
+    public static FamilyMembers familyMember;
+    public static int memberCount = 0;
+    public static List<FamilyMembers> fatherList;
+    public static List<FamilyMembers> motherList;
     // public static Pregnancy pregnancy;
     public static Child child;
     public static String DeviceURL = "devices.php";

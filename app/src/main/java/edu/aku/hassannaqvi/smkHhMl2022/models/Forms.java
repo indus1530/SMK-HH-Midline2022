@@ -2,7 +2,9 @@ package edu.aku.hassannaqvi.smkHhMl2022.models;
 
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.PROJECT_NAME;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp._EMPTY_;
-import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedCluster;
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedDistrict;
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedTehsil;
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedUC;
 
 import android.database.Cursor;
 import android.util.Log;
@@ -36,7 +38,7 @@ public class Forms extends BaseObservable implements Observable {
     private String uid = _EMPTY_;
     private String userName = _EMPTY_;
     private String sysDate = _EMPTY_;
-    private String ebCode = _EMPTY_;
+    private String clusterCode = _EMPTY_;
     private String hhid = _EMPTY_;
     private String sno = _EMPTY_;
     private String deviceId = _EMPTY_;
@@ -47,11 +49,6 @@ public class Forms extends BaseObservable implements Observable {
     private String iStatus96x = _EMPTY_;
     private String synced = _EMPTY_;
     private String syncDate = _EMPTY_;
-    private String entryType = _EMPTY_;
-    private String gpsLat = _EMPTY_;
-    private String gpsLng = _EMPTY_;
-    private String gpsDT = _EMPTY_;
-    private String gpsAcc = _EMPTY_;
 
     // FIELD VARIABLES
     private String a104 = _EMPTY_;
@@ -72,28 +69,9 @@ public class Forms extends BaseObservable implements Observable {
     private String c101 = _EMPTY_;
     private String c102 = _EMPTY_;
     private String c103 = _EMPTY_;
-    private String d101 = _EMPTY_;
-    private String d102 = _EMPTY_;
-    private String d104 = _EMPTY_;
-    private String d103 = _EMPTY_;
-    private String d108d = _EMPTY_;
-    private String d108m = _EMPTY_;
-    private String d108y = _EMPTY_;
-    private String d109y = _EMPTY_;
-    private String d109m = _EMPTY_;
-    private String d109d = _EMPTY_;
-    private String d106 = _EMPTY_;
-    private String d107 = _EMPTY_;
-    private String d10701x = _EMPTY_;
-    private String d105 = _EMPTY_;
-    private String d110 = _EMPTY_;
-    private String d111 = _EMPTY_;
-    private String d115 = _EMPTY_;
-    private String d112 = _EMPTY_;
-    private String d113 = _EMPTY_;
-    private String d114 = _EMPTY_;
-    private String d11601 = _EMPTY_;
-    private String d11602 = _EMPTY_;
+    private String e116 = _EMPTY_;
+    private String e117 = _EMPTY_;
+
     private String m101 = _EMPTY_;
     private String m102 = _EMPTY_;
     private String m103 = _EMPTY_;
@@ -229,8 +207,6 @@ public class Forms extends BaseObservable implements Observable {
     private String e113m = _EMPTY_;
     private String e114 = _EMPTY_;
     private String e115 = _EMPTY_;
-    private String e116 = _EMPTY_;
-    private String e117 = _EMPTY_;
     private String e118 = _EMPTY_;
     private String e119d = _EMPTY_;
     private String e119m = _EMPTY_;
@@ -1259,22 +1235,18 @@ public class Forms extends BaseObservable implements Observable {
         setSysDate(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.ENGLISH).format(new Date().getTime()));
         setUserName(MainApp.user.getUserName());
         setDeviceId(MainApp.deviceid);
-        //   setUuid(MainApp.form.getUid());  // not applicable in Form table
         setAppver(MainApp.appInfo.getAppVersion());
         setProjectName(PROJECT_NAME);
-        setEbCode(MainApp.selectedHousehold.getEbCode());
-        setHhid(MainApp.selectedHousehold.getHhid());
-        setSno(MainApp.selectedHousehold.getSno());
-        // setEntryType(String.valueOf(MainApp.entryType));
+        setClusterCode(MainApp.currentHousehold.getClusteCcode());
+        setHhid(MainApp.currentHousehold.getHhno());
+        setSno(MainApp.currentHousehold.getSno());
 
         //SECTION VARIABLES
-        setH104(MainApp.selectedHousehold.getEbCode());
-        setH105(selectedCluster.getGeoarea().split("\\|")[0]);
-        setH106(selectedCluster.getGeoarea().split("\\|")[1]);
-        setH107(selectedCluster.getGeoarea().split("\\|")[2]);
-        setH103(selectedCluster.getGeoarea().split("\\|")[3]);
-        //setHh12(selectedHousehold.getHhid());
-        //setHh11(selectedHousehold.getEbCode());
+        setA101(MainApp.currentHousehold.getClusteCcode());
+        setA105(selectedDistrict);
+        setA106(selectedTehsil);
+        setA107(selectedUC);
+        setA113(MainApp.currentHousehold.getHhno());
 
     }
 
@@ -1304,12 +1276,12 @@ public class Forms extends BaseObservable implements Observable {
     }
 
     @Bindable
-    public String getEbCode() {
-        return ebCode;
+    public String getClusterCode() {
+        return clusterCode;
     }
 
-    public void setEbCode(String ebCode) {
-        this.ebCode = ebCode;
+    public void setClusterCode(String clusterCode) {
+        this.clusterCode = clusterCode;
         notifyPropertyChanged(BR.ebCode);
     }
 
@@ -1365,13 +1337,6 @@ public class Forms extends BaseObservable implements Observable {
         this.deviceTag = deviceTag;
     }
 
-    public String getEntryType() {
-        return entryType;
-    }
-
-    public void setEntryType(String entryType) {
-        this.entryType = entryType;
-    }
 
     public String getAppver() {
         return appver;
@@ -1422,45 +1387,6 @@ public class Forms extends BaseObservable implements Observable {
         this.syncDate = syncDate;
     }
 
-    @Bindable
-    public String getGpsLat() {
-        return gpsLat;
-    }
-
-    public void setGpsLat(String gpsLat) {
-        this.gpsLat = gpsLat;
-        notifyPropertyChanged(BR.gpsLat);
-    }
-
-    @Bindable
-    public String getGpsLng() {
-        return gpsLng;
-    }
-
-    public void setGpsLng(String gpsLng) {
-        this.gpsLng = gpsLng;
-        notifyPropertyChanged(BR.gpsLng);
-    }
-
-    @Bindable
-    public String getGpsDT() {
-        return gpsDT;
-    }
-
-    public void setGpsDT(String gpsDT) {
-        this.gpsDT = gpsDT;
-        notifyPropertyChanged(BR.gpsDT);
-    }
-
-    @Bindable
-    public String getGpsAcc() {
-        return gpsAcc;
-    }
-
-    public void setGpsAcc(String gpsAcc) {
-        this.gpsAcc = gpsAcc;
-        notifyPropertyChanged(BR.gpsAcc);
-    }
 
 
     @Bindable
@@ -1647,225 +1573,8 @@ public class Forms extends BaseObservable implements Observable {
         notifyPropertyChanged(BR.c103);
     }
 
-    @Bindable
-    public String getD101() {
-        return d101;
-    }
 
-    public void setD101(String d101) {
-        this.d101 = d101;
-        notifyPropertyChanged(BR.d101);
-    }
 
-    @Bindable
-    public String getD102() {
-        return d102;
-    }
-
-    public void setD102(String d102) {
-        this.d102 = d102;
-        notifyPropertyChanged(BR.d102);
-    }
-
-    @Bindable
-    public String getD104() {
-        return d104;
-    }
-
-    public void setD104(String d104) {
-        this.d104 = d104;
-        notifyPropertyChanged(BR.d104);
-    }
-
-    @Bindable
-    public String getD103() {
-        return d103;
-    }
-
-    public void setD103(String d103) {
-        this.d103 = d103;
-        notifyPropertyChanged(BR.d103);
-    }
-
-    @Bindable
-    public String getD108d() {
-        return d108d;
-    }
-
-    public void setD108d(String d108d) {
-        this.d108d = d108d;
-        notifyPropertyChanged(BR.d108d);
-    }
-
-    @Bindable
-    public String getD108m() {
-        return d108m;
-    }
-
-    public void setD108m(String d108m) {
-        this.d108m = d108m;
-        notifyPropertyChanged(BR.d108m);
-    }
-
-    @Bindable
-    public String getD108y() {
-        return d108y;
-    }
-
-    public void setD108y(String d108y) {
-        this.d108y = d108y;
-        notifyPropertyChanged(BR.d108y);
-    }
-
-    @Bindable
-    public String getD109y() {
-        return d109y;
-    }
-
-    public void setD109y(String d109y) {
-        this.d109y = d109y;
-        notifyPropertyChanged(BR.d109y);
-    }
-
-    @Bindable
-    public String getD109m() {
-        return d109m;
-    }
-
-    public void setD109m(String d109m) {
-        this.d109m = d109m;
-        notifyPropertyChanged(BR.d109m);
-    }
-
-    @Bindable
-    public String getD109d() {
-        return d109d;
-    }
-
-    public void setD109d(String d109d) {
-        this.d109d = d109d;
-        notifyPropertyChanged(BR.d109d);
-    }
-
-    @Bindable
-    public String getD106() {
-        return d106;
-    }
-
-    public void setD106(String d106) {
-        this.d106 = d106;
-        notifyPropertyChanged(BR.d106);
-    }
-
-    @Bindable
-    public String getD107() {
-        return d107;
-    }
-
-    public void setD107(String d107) {
-        this.d107 = d107;
-        notifyPropertyChanged(BR.d107);
-    }
-
-    @Bindable
-    public String getD10701x() {
-        return d10701x;
-    }
-
-    public void setD10701x(String d10701x) {
-        this.d10701x = d10701x;
-        notifyPropertyChanged(BR.d10701x);
-    }
-
-    @Bindable
-    public String getD105() {
-        return d105;
-    }
-
-    public void setD105(String d105) {
-        this.d105 = d105;
-        notifyPropertyChanged(BR.d105);
-    }
-
-    @Bindable
-    public String getD110() {
-        return d110;
-    }
-
-    public void setD110(String d110) {
-        this.d110 = d110;
-        notifyPropertyChanged(BR.d110);
-    }
-
-    @Bindable
-    public String getD111() {
-        return d111;
-    }
-
-    public void setD111(String d111) {
-        this.d111 = d111;
-        notifyPropertyChanged(BR.d111);
-    }
-
-    @Bindable
-    public String getD115() {
-        return d115;
-    }
-
-    public void setD115(String d115) {
-        this.d115 = d115;
-        notifyPropertyChanged(BR.d115);
-    }
-
-    @Bindable
-    public String getD112() {
-        return d112;
-    }
-
-    public void setD112(String d112) {
-        this.d112 = d112;
-        notifyPropertyChanged(BR.d112);
-    }
-
-    @Bindable
-    public String getD113() {
-        return d113;
-    }
-
-    public void setD113(String d113) {
-        this.d113 = d113;
-        notifyPropertyChanged(BR.d113);
-    }
-
-    @Bindable
-    public String getD114() {
-        return d114;
-    }
-
-    public void setD114(String d114) {
-        this.d114 = d114;
-        notifyPropertyChanged(BR.d114);
-    }
-
-    @Bindable
-    public String getD11601() {
-        return d11601;
-    }
-
-    public void setD11601(String d11601) {
-        this.d11601 = d11601;
-        notifyPropertyChanged(BR.d11601);
-    }
-
-    @Bindable
-    public String getD11602() {
-        return d11602;
-    }
-
-    public void setD11602(String d11602) {
-        this.d11602 = d11602;
-        notifyPropertyChanged(BR.d11602);
-    }
 
     @Bindable
     public String getM101() {
@@ -13505,302 +13214,348 @@ public class Forms extends BaseObservable implements Observable {
         this.id = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_ID));
         this.uid = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_UID));
         this.projectName = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_PROJECT_NAME));
-        this.ebCode = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_EB_CODE));
+        this.clusterCode = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_CLUSTER_CODE));
         this.hhid = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_HHID));
         this.sno = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SNO));
         this.userName = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_USERNAME));
         this.sysDate = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SYSDATE));
         this.deviceId = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_DEVICEID));
         this.deviceTag = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_DEVICETAGID));
-        //   this.entryType = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_ENTRY_TYPE));
         this.appver = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_APPVERSION));
         this.iStatus = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_ISTATUS));
         this.synced = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SYNCED));
         this.syncDate = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SYNC_DATE));
-        this.gpsLat = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_GPSLAT));
-        this.gpsLng = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_GPSLNG));
-        this.gpsDT = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_GPSDATE));
-        this.gpsAcc = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_GPSACC));
 
-
-        sHHHydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SHH)));
-        sSSHydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SSS)));
-
+        sAHydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SA)));
+        sMHydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SM)));
+        sNHydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SN)));
+        sOHydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SO)));
+        sE2Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SE2)));
         return this;
     }
 
-    public void sHHHydrate(String string) throws JSONException {
-        Log.d(TAG, "sHHHydrate: " + string);
+    public void sAHydrate(String string) throws JSONException {
+        Log.d(TAG, "sAHydrate: " + string);
         if (string != null) {
             JSONObject json = null;
             json = new JSONObject(string);
-            /*this.hh01 = json.getString("hh01");
-            this.hh02 = json.getString("hh02");
-            this.hh03 = json.getString("hh03");
-            this.hh03a = json.getString("hh03a");
-            this.hh04 = json.getString("hh04");
-            this.hh04a = json.getString("hh04a");
-            this.hh05 = json.getString("hh05");
-            this.hh06 = json.getString("hh06");
-            this.hh07 = json.getString("hh07");
-            this.hh08 = json.getString("hh08");
-            this.hh09 = json.getString("hh09");
-            this.hh10 = json.getString("hh10");
-            this.hh11 = json.getString("hh11");
-            this.hh12 = json.getString("hh12");
-            this.hh13 = json.getString("hh13");
-            this.hh18 = json.getString("hh18");
-            this.hh13a = json.getString("hh13a");
-            this.hh14 = json.getString("hh14");
-            this.hh15 = json.getString("hh15");
-            this.hh16a = json.getString("hh16a");
-            this.hh16b = json.getString("hh16b");
-            this.hh19 = json.getString("hh19");
-            this.hh19a = json.getString("hh19a");
-            this.hh19b = json.getString("hh19b");
-            this.hh20 = json.getString("hh20");
-            this.hh20a = json.getString("hh20a");
-            this.hh21 = json.getString("hh21");
-            this.hh21xx = json.getString("hh21xx");*/
-            this.iStatus96x = json.has("iStatus96x") ? json.getString("iStatus96x") : "";
+            this.a104 = json.getString("a104");
+            this.a105 = json.getString("a105");
+            this.a106 = json.getString("a106");
+            this.a107 = json.getString("a107");
+            this.a101 = json.getString("a101");
+            this.a108 = json.getString("a108");
+            this.a103 = json.getString("a103");
+            this.a113 = json.getString("a113");
+            this.a109 = json.getString("a109");
+            this.a110 = json.getString("a110");
+            this.a111 = json.getString("a111");
+            this.a112 = json.getString("a112");
+            this.a11201 = json.getString("a11201");
+            this.a11201x = json.getString("a11201x");
+            this.a11203 = json.getString("a11203");
+            this.c101 = json.getString("c101");
+            this.c102 = json.getString("c102");
+            this.c103 = json.getString("c103");
+
         }
     }
 
-    public void sSSHydrate(String string) throws JSONException {
-        Log.d(TAG, "sSSHydrate: " + string);
+    public void sE2Hydrate(String string) throws JSONException {
+        Log.d(TAG, "sE2Hydrate: " + string);
         if (string != null) {
             JSONObject json = null;
             json = new JSONObject(string);
-           /* this.ss01 = json.getString("ss01");
-            this.ss01xx = json.getString("ss01xx");
-            this.ss02 = json.getString("ss02");
-            this.ss02xx = json.getString("ss02xx");
-            this.ss03 = json.getString("ss03");
-            this.ss03xx = json.getString("ss03xx");
-            this.ss04 = json.getString("ss04");
-            this.ss05 = json.getString("ss05");
-            this.ss05xx = json.getString("ss05xx");
-            this.ss06 = json.getString("ss06");
-            this.ss06xx = json.getString("ss06xx");
-            this.ss07 = json.getString("ss07");
-            this.ss07xx = json.getString("ss07xx");
-            this.ss08 = json.getString("ss08");
-            this.ss09 = json.getString("ss09");
-            this.ss11 = json.getString("ss11");
-            this.ss12 = json.getString("ss12");
-            this.ss12hhx = json.getString("ss12hhx");
-            this.ss13 = json.getString("ss13");
-            this.ss13xx = json.getString("ss13xx");
-            this.ss14a = json.getString("ss14a");
-            this.ss14b = json.getString("ss14b");
-            this.ss14c = json.getString("ss14c");
-            this.ss14d = json.getString("ss14d");
-            this.ss14e = json.getString("ss14e");
-            this.ss14f = json.getString("ss14f");
-            this.ss14g = json.getString("ss14g");
-            this.ss14h = json.getString("ss14h");
-            this.ss14i = json.getString("ss14i");
-            this.ss14j = json.getString("ss14j");
-            this.ss14k = json.getString("ss14k");
-            this.ss14l = json.getString("ss14l");
-            this.ss14m = json.getString("ss14m");
-            this.ss14n = json.getString("ss14n");
-            this.ss14o = json.getString("ss14o");
-            this.ss14p = json.getString("ss14p");
-            this.ss14q = json.getString("ss14q");
-            this.ss14r = json.getString("ss14r");
-            this.ss14s = json.getString("ss14s");
-            this.ss15a = json.getString("ss15a");
-            this.ss15b = json.getString("ss15b");
-            this.ss15c = json.getString("ss15c");
-            this.ss15d = json.getString("ss15d");
-            this.ss15e = json.getString("ss15e");
-            this.ss15f = json.getString("ss15f");
-            this.ss15g = json.getString("ss15g");
-            this.ss15h = json.getString("ss15h");
-            this.ss15i = json.getString("ss15i");
-            this.ss17 = json.getString("ss17");
-            this.ss17xx = json.getString("ss17xx");
-            this.ss18 = json.getString("ss18");
-            this.ss18xx = json.getString("ss18xx");
-            this.ss19 = json.getString("ss19");
-            this.ss19xx = json.getString("ss19xx");
-            this.ss20 = json.getString("ss20");
-            this.ss20xx = json.getString("ss20xx");
-            this.ss21a = json.getString("ss21a");
-            this.ss22 = json.getString("ss22");
-            this.ss23 = json.getString("ss23");
-            this.ss23landx = json.getString("ss23landx");
-            this.ss24 = json.getString("ss24");
-            this.ss25a = json.getString("ss25a");
-            this.ss25b = json.getString("ss25b");
-            this.ss25c = json.getString("ss25c");
-            this.ss25d = json.getString("ss25d");
-            this.ss25e = json.getString("ss25e");
-            this.ss25f = json.getString("ss25f");
-            this.ss25g = json.getString("ss25g");
-            this.ss26 = json.getString("ss26");
-            this.ss27 = json.getString("ss27");
-            this.ss28 = json.getString("ss28");*/
-
+            this.e116 = json.getString("e116");
+            this.e117 = json.getString("e117");
         }
+    }
 
+    public void sMHydrate(String string) throws JSONException {
+        Log.d(TAG, "sMHydrate: " + string);
+        if (string != null) {
+            JSONObject json = null;
+            json = new JSONObject(string);
+            this.m101 = json.getString("m101");
+            this.m102 = json.getString("m102");
+            this.m103 = json.getString("m103");
+            this.m104 = json.getString("m104");
+            this.m105 = json.getString("m105");
+            this.m106 = json.getString("m106");
+            this.m1071 = json.getString("m1071");
+            this.m1072 = json.getString("m1072");
+            this.m1073 = json.getString("m1073");
+            this.m1074 = json.getString("m1074");
+            this.m1075 = json.getString("m1075");
+            this.m1076 = json.getString("m1076");
+            this.m1077 = json.getString("m1077");
+            this.m1078 = json.getString("m1078");
+            this.m1079 = json.getString("m1079");
+            this.m018 = json.getString("m018");
+            this.m109 = json.getString("m109");
+            this.m110 = json.getString("m110");
+            this.m11001x = json.getString("m11001x");
+            this.m11002x = json.getString("m11002x");
+            this.m111 = json.getString("m111");
+            this.m11201 = json.getString("m11201");
+            this.m11201x = json.getString("m11201x");
+            this.m11202 = json.getString("m11202");
+            this.m11202x = json.getString("m11202x");
+            this.m11203 = json.getString("m11203");
+            this.m11203x = json.getString("m11203x");
+            this.m11204 = json.getString("m11204");
+            this.m11204x = json.getString("m11204x");
+            this.m11205 = json.getString("m11205");
+            this.m11205x = json.getString("m11205x");
+            this.m11206 = json.getString("m11206");
+            this.m11206x = json.getString("m11206x");
+            this.m11207 = json.getString("m11207");
+            this.m11207x = json.getString("m11207x");
+            this.m113 = json.getString("m113");
+            this.m1141 = json.getString("m1141");
+            this.m1142 = json.getString("m1142");
+            this.m1143 = json.getString("m1143");
+            this.m1144 = json.getString("m1144");
+            this.m1145 = json.getString("m1145");
+            this.m1146 = json.getString("m1146");
+            this.m1147 = json.getString("m1147");
+            this.m1148 = json.getString("m1148");
+            this.m1149 = json.getString("m1149");
+            this.m11410 = json.getString("m11410");
+            this.m11411 = json.getString("m11411");
+            this.m11412 = json.getString("m11412");
+            this.m11413 = json.getString("m11413");
+            this.m11414 = json.getString("m11414");
+            this.m11415 = json.getString("m11415");
+            this.m11416 = json.getString("m11416");
+            this.m11417 = json.getString("m11417");
+            this.m11418 = json.getString("m11418");
+            this.m115 = json.getString("m115");
+            this.m116 = json.getString("m116");
+        }
+    }
+
+    public void sNHydrate(String string) throws JSONException {
+        Log.d(TAG, "sNHydrate: " + string);
+        if (string != null) {
+            JSONObject json = null;
+            json = new JSONObject(string);
+            this.n101 = json.getString("n101");
+            this.n102 = json.getString("n102");
+            this.n103 = json.getString("n103");
+            this.n104 = json.getString("n104");
+            this.n10401x = json.getString("n10401x");
+            this.n105 = json.getString("n105");
+            this.n106 = json.getString("n106");
+            this.n107 = json.getString("n107");
+            this.n108 = json.getString("n108");
+            this.n10901 = json.getString("n10901");
+            this.n10902 = json.getString("n10902");
+            this.n10903 = json.getString("n10903");
+            this.n10904 = json.getString("n10904");
+            this.n10905 = json.getString("n10905");
+            this.n10906 = json.getString("n10906");
+            this.n10907 = json.getString("n10907");
+            this.n110 = json.getString("n110");
+            this.n111 = json.getString("n111");
+            this.n112 = json.getString("n112");
+            this.n113 = json.getString("n113");
+            this.n11301x = json.getString("n11301x");
+        }
+    }
+
+    public void sOHydrate(String string) throws JSONException {
+        Log.d(TAG, "sOHydrate: " + string);
+        if (string != null) {
+            JSONObject json = null;
+            json = new JSONObject(string);
+            this.o101 = json.getString("o101");
+            this.o102 = json.getString("o102");
+            this.o103 = json.getString("o103");
+            this.o10401 = json.getString("o10401");
+            this.o10402 = json.getString("o10402");
+            this.o10403 = json.getString("o10403");
+            this.o10404 = json.getString("o10404");
+            this.o10497 = json.getString("o10497");
+            this.o105 = json.getString("o105");
+            this.o106 = json.getString("o106");
+            this.o10701 = json.getString("o10701");
+            this.o10702 = json.getString("o10702");
+            this.o10703 = json.getString("o10703");
+            this.o10704 = json.getString("o10704");
+            this.o10797 = json.getString("o10797");
+            this.o108 = json.getString("o108");
+            this.o10896x = json.getString("o10896x");
+        }
     }
 
 
     public JSONObject toJSONObject() throws JSONException {
         JSONObject json = new JSONObject();
-
         json.put(FormsTable.COLUMN_ID, this.id);
         json.put(FormsTable.COLUMN_UID, this.uid);
         json.put(FormsTable.COLUMN_PROJECT_NAME, this.projectName);
-        json.put(FormsTable.COLUMN_EB_CODE, this.ebCode);
+        json.put(FormsTable.COLUMN_CLUSTER_CODE, this.clusterCode);
         json.put(FormsTable.COLUMN_HHID, this.hhid);
         json.put(FormsTable.COLUMN_SNO, this.sno);
         json.put(FormsTable.COLUMN_USERNAME, this.userName);
         json.put(FormsTable.COLUMN_SYSDATE, this.sysDate);
         json.put(FormsTable.COLUMN_DEVICEID, this.deviceId);
         json.put(FormsTable.COLUMN_DEVICETAGID, this.deviceTag);
-        //    json.put(FormsTable.COLUMN_ENTRY_TYPE, this.entryType);
         json.put(FormsTable.COLUMN_ISTATUS, this.iStatus);
         json.put(FormsTable.COLUMN_SYNCED, this.synced);
         json.put(FormsTable.COLUMN_SYNC_DATE, this.syncDate);
         json.put(FormsTable.COLUMN_APPVERSION, this.appver);
-        json.put(FormsTable.COLUMN_GPSLAT, this.gpsLat);
-        json.put(FormsTable.COLUMN_GPSLNG, this.gpsLng);
-        json.put(FormsTable.COLUMN_GPSDATE, this.gpsDT);
-        json.put(FormsTable.COLUMN_GPSACC, this.gpsAcc);
-
-        json.put(FormsTable.COLUMN_ID, this.id);
-        json.put(FormsTable.COLUMN_UID, this.uid);
-        json.put(FormsTable.COLUMN_USERNAME, this.userName);
-        json.put(FormsTable.COLUMN_SYSDATE, this.sysDate);
-        json.put(FormsTable.COLUMN_DEVICEID, this.deviceId);
-        json.put(FormsTable.COLUMN_DEVICETAGID, this.deviceTag);
-        json.put(FormsTable.COLUMN_SYNCED, this.synced);
-
-        json.put(FormsTable.COLUMN_SHH, new JSONObject(sHHtoString()));
-        json.put(FormsTable.COLUMN_SSS, new JSONObject(sSStoString()));
-
-//        json.put(FormsTable.COLUMN_SYNCED_DATE, this.syncDate);
-//        json.put(FormsTable.COLUMN_DISTRICT_CODE, this.districtCode);
-//        json.put(FormsTable.COLUMN_TEHSIL_CODE, this.tehsilCode);
-//        json.put(FormsTable.COLUMN_UC_CODE, this.ucCode);
-//        json.put(FormsTable.COLUMN_HF_CODE, this.hfCode);
-//        json.put(FormsTable.COLUMN_SA, new JSONObject(sAtoString()));
-
+        json.put(FormsTable.COLUMN_SA, new JSONObject(sAtoString()));
+        json.put(FormsTable.COLUMN_SM, new JSONObject(sMtoString()));
+        json.put(FormsTable.COLUMN_SN, new JSONObject(sNtoString()));
+        json.put(FormsTable.COLUMN_SO, new JSONObject(sOtoString()));
+        json.put(FormsTable.COLUMN_SE2, new JSONObject(sE2toString()));
         return json;
     }
 
-    public String sHHtoString() throws JSONException {
-        Log.d(TAG, "sHHtoString: ");
+    public String sAtoString() throws JSONException {
+        Log.d(TAG, "sAtoString: ");
         JSONObject json = new JSONObject();
-        json/*.put("hh01", hh01)
-                .put("hh02", hh02)
-                .put("hh03", hh03)
-                .put("hh03a", hh03a)
-                .put("hh04", hh04)
-                .put("hh04a", hh04a)
-                .put("hh05", hh05)
-                .put("hh06", hh06)
-                .put("hh07", hh07)
-                .put("hh08", hh08)
-                .put("hh09", hh09)
-                .put("hh10", hh10)
-                .put("hh11", hh11)
-                .put("hh12", hh12)
-                .put("hh13", hh13)
-                .put("hh18", hh18)
-                .put("hh13a", hh13a)
-                .put("hh14", hh14)
-                .put("hh15", hh15)
-                .put("hh16a", hh16a)
-                .put("hh16b", hh16b)
-                .put("hh19", hh19)
-                .put("hh19a", hh19a)
-                .put("hh19b", hh19b)
-                .put("hh20", hh20)
-                .put("hh20a", hh20a)
-                .put("hh21", hh21)
-                .put("hh21xx", hh21xx)*/
-                .put("iStatus96x", iStatus96x);
+        json.put("a101", a101)
+                .put("a104", a104)
+                .put("a105", a105)
+                .put("a106", a106)
+                .put("a107", a107)
+                .put("a101", a101)
+                .put("a108", a108)
+                .put("a103", a103)
+                .put("a113", a113)
+                .put("a109", a109)
+                .put("a110", a110)
+                .put("a111", a111)
+                .put("a112", a112)
+                .put("a11201", a11201)
+                .put("a11201x", a11201x)
+                .put("a11203", a11203)
+                .put("c101", c101)
+                .put("c102", c102)
+                .put("c103", c103);
         return json.toString();
     }
 
-    public String sSStoString() throws JSONException {
-        Log.d(TAG, "sSStoString: ");
+    public String sE2toString() throws JSONException {
+        Log.d(TAG, "sE2toString: ");
         JSONObject json = new JSONObject();
-        /*json.put("ss01", ss01)
-                .put("ss01xx", ss01xx)
-                .put("ss02", ss02)
-                .put("ss02xx", ss02xx)
-                .put("ss03", ss03)
-                .put("ss03xx", ss03xx)
-                .put("ss04", ss04)
-                .put("ss05", ss05)
-                .put("ss05xx", ss05xx)
-                .put("ss06", ss06)
-                .put("ss06xx", ss06xx)
-                .put("ss07", ss07)
-                .put("ss07xx", ss07xx)
-                .put("ss08", ss08)
-                .put("ss09", ss09)
-                .put("ss11", ss11)
-                .put("ss12", ss12)
-                .put("ss12hhx", ss12hhx)
-                .put("ss13", ss13)
-                .put("ss13xx", ss13xx)
-                .put("ss14a", ss14a)
-                .put("ss14b", ss14b)
-                .put("ss14c", ss14c)
-                .put("ss14d", ss14d)
-                .put("ss14e", ss14e)
-                .put("ss14f", ss14f)
-                .put("ss14g", ss14g)
-                .put("ss14h", ss14h)
-                .put("ss14i", ss14i)
-                .put("ss14j", ss14j)
-                .put("ss14k", ss14k)
-                .put("ss14l", ss14l)
-                .put("ss14m", ss14m)
-                .put("ss14n", ss14n)
-                .put("ss14o", ss14o)
-                .put("ss14p", ss14p)
-                .put("ss14q", ss14q)
-                .put("ss14r", ss14r)
-                .put("ss14s", ss14s)
-                .put("ss15a", ss15a)
-                .put("ss15b", ss15b)
-                .put("ss15c", ss15c)
-                .put("ss15d", ss15d)
-                .put("ss15e", ss15e)
-                .put("ss15f", ss15f)
-                .put("ss15g", ss15g)
-                .put("ss15h", ss15h)
-                .put("ss15i", ss15i)
-                .put("ss17", ss17)
-                .put("ss17xx", ss17xx)
-                .put("ss18", ss18)
-                .put("ss18xx", ss18xx)
-                .put("ss19", ss19)
-                .put("ss19xx", ss19xx)
-                .put("ss20", ss20)
-                .put("ss20xx", ss20xx)
-                .put("ss21a", ss21a)
-                .put("ss22", ss22)
-                .put("ss23", ss23)
-                .put("ss23landx", ss23landx)
-                .put("ss24", ss24)
-                .put("ss25a", ss25a)
-                .put("ss25b", ss25b)
-                .put("ss25c", ss25c)
-                .put("ss25d", ss25d)
-                .put("ss25e", ss25e)
-                .put("ss25f", ss25f)
-                .put("ss25g", ss25g)
-                .put("ss26", ss26)
-                .put("ss27", ss27)
-                .put("ss28", ss28);*/
+        json.put("e116", e116)
+                .put("e117", e117);
+        return json.toString();
+    }
+
+    public String sMtoString() throws JSONException {
+        Log.d(TAG, "sMtoString: ");
+        JSONObject json = new JSONObject();
+        json.put("m101", m101)
+                .put("m102", m102)
+                .put("m103", m103)
+                .put("m104", m104)
+                .put("m105", m105)
+                .put("m106", m106)
+                .put("m1071", m1071)
+                .put("m1072", m1072)
+                .put("m1073", m1073)
+                .put("m1074", m1074)
+                .put("m1075", m1075)
+                .put("m1076", m1076)
+                .put("m1077", m1077)
+                .put("m1078", m1078)
+                .put("m1079", m1079)
+                .put("m018", m018)
+                .put("m109", m109)
+                .put("m110", m110)
+                .put("m11001x", m11001x)
+                .put("m11002x", m11002x)
+                .put("m111", m111)
+                .put("m11201", m11201)
+                .put("m11201x", m11201x)
+                .put("m11202", m11202)
+                .put("m11202x", m11202x)
+                .put("m11203", m11203)
+                .put("m11203x", m11203x)
+                .put("m11204", m11204)
+                .put("m11204x", m11204x)
+                .put("m11205", m11205)
+                .put("m11205x", m11205x)
+                .put("m11206", m11206)
+                .put("m11206x", m11206x)
+                .put("m11207", m11207)
+                .put("m11207x", m11207x)
+                .put("m113", m113)
+                .put("m1141", m1141)
+                .put("m1142", m1142)
+                .put("m1143", m1143)
+                .put("m1144", m1144)
+                .put("m1145", m1145)
+                .put("m1146", m1146)
+                .put("m1147", m1147)
+                .put("m1148", m1148)
+                .put("m1149", m1149)
+                .put("m11410", m11410)
+                .put("m11411", m11411)
+                .put("m11412", m11412)
+                .put("m11413", m11413)
+                .put("m11414", m11414)
+                .put("m11415", m11415)
+                .put("m11416", m11416)
+                .put("m11417", m11417)
+                .put("m11418", m11418)
+                .put("m115", m115)
+                .put("m116", m116);
+        return json.toString();
+    }
+
+    public String sNtoString() throws JSONException {
+        Log.d(TAG, "sNtoString: ");
+        JSONObject json = new JSONObject();
+        json.put("n101", n101)
+                .put("n102", n102)
+                .put("n103", n103)
+                .put("n104", n104)
+                .put("n10401x", n10401x)
+                .put("n105", n105)
+                .put("n106", n106)
+                .put("n107", n107)
+                .put("n108", n108)
+                .put("n10901", n10901)
+                .put("n10902", n10902)
+                .put("n10903", n10903)
+                .put("n10904", n10904)
+                .put("n10905", n10905)
+                .put("n10906", n10906)
+                .put("n10907", n10907)
+                .put("n110", n110)
+                .put("n111", n111)
+                .put("n112", n112)
+                .put("n113", n113)
+                .put("n11301x", n11301x);
+        return json.toString();
+    }
+
+    public String sOtoString() throws JSONException {
+        Log.d(TAG, "sOtoString: ");
+        JSONObject json = new JSONObject();
+        json.put("o101", o101)
+                .put("o102", o102)
+                .put("o103", o103)
+                .put("o10401", o10401)
+                .put("o10402", o10402)
+                .put("o10403", o10403)
+                .put("o10404", o10404)
+                .put("o10497", o10497)
+                .put("o105", o105)
+                .put("o106", o106)
+                .put("o10701", o10701)
+                .put("o10702", o10702)
+                .put("o10703", o10703)
+                .put("o10704", o10704)
+                .put("o10797", o10797)
+                .put("o108", o108)
+                .put("o10896x", o10896x);
         return json.toString();
     }
 

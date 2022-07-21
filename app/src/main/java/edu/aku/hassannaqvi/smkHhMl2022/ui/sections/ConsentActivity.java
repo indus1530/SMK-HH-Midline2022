@@ -1,7 +1,6 @@
 package edu.aku.hassannaqvi.smkHhMl2022.ui.sections;
 
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.form;
-import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.frm;
 
 import android.content.Context;
 import android.content.Intent;
@@ -37,7 +36,7 @@ public class ConsentActivity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_consent);
         setSupportActionBar(bi.toolbar);
         db = MainApp.appInfo.dbHelper;
-        bi.setForm(frm);
+        bi.setForm(form);
         setGPS();
 
         String consentText = getString(R.string.concent, MainApp.user.getFullname());
@@ -95,7 +94,7 @@ public class ConsentActivity extends AppCompatActivity {
         if (!insertNewRecord()) return;
         if (updateDB()) {
             finish();
-            if (frm.getC103().equals("1")) {
+            if (form.getC103().equals("1")) {
                 startActivity(new Intent(this, SectionDActivity.class));
             } else {
                 Intent endingActivityIntent = new Intent(this, EndingActivity.class);

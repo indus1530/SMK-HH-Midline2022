@@ -1,6 +1,6 @@
 package edu.aku.hassannaqvi.smkHhMl2022.ui.sections;
 
-import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.frm;
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.form;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -31,7 +31,7 @@ public class SectionIMBActivity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_imb);
         setSupportActionBar(bi.toolbar);
         db = MainApp.appInfo.dbHelper;
-        bi.setForm(frm);
+        bi.setForm(form);
         String motherRelation;
         /*if (child.getCb03().equals("1")) {
             motherRelation = " S/o ";

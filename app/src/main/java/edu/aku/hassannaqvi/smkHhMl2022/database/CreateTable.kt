@@ -12,7 +12,7 @@ object CreateTable {
             + FormsTable.COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
             + FormsTable.COLUMN_PROJECT_NAME + " TEXT,"
             + FormsTable.COLUMN_UID + " TEXT,"
-            + FormsTable.COLUMN_EB_CODE + " TEXT,"
+            + FormsTable.COLUMN_CLUSTER_CODE + " TEXT,"
             + FormsTable.COLUMN_HHID + " TEXT,"
             + FormsTable.COLUMN_SNO + " TEXT,"
             + FormsTable.COLUMN_USERNAME + " TEXT,"
@@ -20,20 +20,17 @@ object CreateTable {
             + FormsTable.COLUMN_ISTATUS + " TEXT,"
             + FormsTable.COLUMN_DEVICEID + " TEXT,"
             + FormsTable.COLUMN_DEVICETAGID + " TEXT,"
-            + FormsTable.COLUMN_GPSLAT + " TEXT,"
-            + FormsTable.COLUMN_GPSLNG + " TEXT,"
-            + FormsTable.COLUMN_GPSDATE + " TEXT,"
-            + FormsTable.COLUMN_GPSACC + " TEXT,"
-/*
-            + FormsTable.COLUMN_ENTRY_TYPE + " TEXT,"
-*/
             + FormsTable.COLUMN_SYNCED + " TEXT,"
             + FormsTable.COLUMN_SYNC_DATE + " TEXT,"
             + FormsTable.COLUMN_APPVERSION + " TEXT,"
-            + FormsTable.COLUMN_SHH + " TEXT,"
-            + FormsTable.COLUMN_SSS + " TEXT"
+            + FormsTable.COLUMN_SA + " TEXT,"
+            + FormsTable.COLUMN_SM + " TEXT,"
+            + FormsTable.COLUMN_SN + " TEXT,"
+            + FormsTable.COLUMN_SO + " TEXT,"
+            + FormsTable.COLUMN_SE2 + " TEXT"
             + " );"
             )
+
     const val SQL_CREATE_ENTRYLOGS = ("CREATE TABLE "
             + EntryLogTable.TABLE_NAME + "("
             + EntryLogTable.COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
@@ -52,6 +49,32 @@ object CreateTable {
             + EntryLogTable.COLUMN_SYNCED + " TEXT,"
             + EntryLogTable.COLUMN_SYNC_DATE + " TEXT,"
             + EntryLogTable.COLUMN_APPVERSION + " TEXT"
+            + " );"
+            )
+
+
+    const val SQL_CREATE_FAMILYMEMBERS = ("CREATE TABLE "
+            + FamilyMembersTable.TABLE_NAME + "("
+            + FamilyMembersTable.COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+            + FamilyMembersTable.COLUMN_PROJECT_NAME + " TEXT,"
+            + FamilyMembersTable.COLUMN_UID + " TEXT,"
+            + FamilyMembersTable.COLUMN_UUID + " TEXT,"
+            + FamilyMembersTable.COLUMN_CLUSTER_CODE + " TEXT,"
+            + FamilyMembersTable.COLUMN_HHID + " TEXT,"
+            + FamilyMembersTable.COLUMN_SNO + " TEXT,"
+            + FamilyMembersTable.COLUMN_AGE_MONTHS + " TEXT,"
+            + FamilyMembersTable.COLUMN_MUID + " TEXT,"
+            + FamilyMembersTable.COLUMN_MOTHER_PRESENT + " TEXT,"
+            + FamilyMembersTable.COLUMN_USERNAME + " TEXT,"
+            + FamilyMembersTable.COLUMN_SYSDATE + " TEXT,"
+            + FamilyMembersTable.COLUMN_INDEXED + " TEXT,"
+            + FamilyMembersTable.COLUMN_ISTATUS + " TEXT,"
+            + FamilyMembersTable.COLUMN_DEVICEID + " TEXT,"
+            + FamilyMembersTable.COLUMN_DEVICETAGID + " TEXT,"
+            + FamilyMembersTable.COLUMN_SYNCED + " TEXT,"
+            + FamilyMembersTable.COLUMN_SYNC_DATE + " TEXT,"
+            + FamilyMembersTable.COLUMN_APPVERSION + " TEXT,"
+            + FamilyMembersTable.COLUMN_SD + " TEXT"
             + " );"
             )
 
@@ -111,18 +134,14 @@ object CreateTable {
             + " );"
             )
 
-    const val SQL_CREATE_RANDOM_HH = ("CREATE TABLE " + RandomHHTable.TABLE_NAME + "("
-            + RandomHHTable.COLUMN_ID + " TEXT,"
-            + RandomHHTable.COLUMN_EB_CODE + " TEXT,"
-            + RandomHHTable.COLUMN_LUID + " TEXT,"
+    const val SQL_CREATE_RANDOM_HH = ("CREATE TABLE "
+            + RandomHHTable.TABLE_NAME + "("
+            + RandomHHTable.COLUMN_ID + " INTEGER PRIMARY KEY,"
+            + RandomHHTable.COLUMN_SNO + " TEXT,"
+            + RandomHHTable.COLUMN_CLUSTER_CODE + " TEXT,"
             + RandomHHTable.COLUMN_HH_NO + " TEXT,"
-            + RandomHHTable.COLUMN_STRUCTURE_NO + " TEXT,"
-            + RandomHHTable.COLUMN_FAMILY_EXT_CODE + " TEXT,"
-            + RandomHHTable.COLUMN_HH_HEAD + " TEXT,"
-            + RandomHHTable.COLUMN_CONTACT + " TEXT,"
-            + RandomHHTable.COLUMN_HH_SELECTED_STRUCT + " TEXT,"
-            + RandomHHTable.COLUMN_RANDOMDT + " TEXT,"
-            + RandomHHTable.COLUMN_SNO + " TEXT );"
+            + RandomHHTable.COLUMN_HEAD_HH + " TEXT"
+            + " );"
             )
 
 /*    const val SQL_CREATE_VERSIONAPP = ("CREATE TABLE "
@@ -134,7 +153,7 @@ object CreateTable {
             + ");"
             )*/
 
-    const val SQL_ALTER_FORMS_GPS_LAT =
+    /*const val SQL_ALTER_FORMS_GPS_LAT =
         ("ALTER TABLE " + FormsTable.TABLE_NAME + " ADD " + FormsTable.COLUMN_GPSLAT + " TEXT; ")
     const val SQL_ALTER_FORMS_GPS_LNG =
         ("ALTER TABLE " + FormsTable.TABLE_NAME + " ADD " + FormsTable.COLUMN_GPSLNG + " TEXT; ")
@@ -150,6 +169,6 @@ object CreateTable {
     const val SQL_ALTER_CHILD_GPS_DATE =
         ("ALTER TABLE " + ChildTable.TABLE_NAME + " ADD " + ChildTable.COLUMN_GPSDATE + " TEXT; ")
     const val SQL_ALTER_CHILD_GPS_ACC =
-        ("ALTER TABLE " + ChildTable.TABLE_NAME + " ADD " + ChildTable.COLUMN_GPSACC + " TEXT; ")
+        ("ALTER TABLE " + ChildTable.TABLE_NAME + " ADD " + ChildTable.COLUMN_GPSACC + " TEXT; ")*/
 
 }

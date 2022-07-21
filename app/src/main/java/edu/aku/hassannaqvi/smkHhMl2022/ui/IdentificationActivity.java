@@ -23,7 +23,6 @@ import edu.aku.hassannaqvi.smkHhMl2022.R;
 import edu.aku.hassannaqvi.smkHhMl2022.core.MainApp;
 import edu.aku.hassannaqvi.smkHhMl2022.database.DatabaseHelper;
 import edu.aku.hassannaqvi.smkHhMl2022.databinding.ActivityIdentificationBinding;
-import edu.aku.hassannaqvi.smkHhMl2022.models.Form;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.ConsentActivity;
 
 

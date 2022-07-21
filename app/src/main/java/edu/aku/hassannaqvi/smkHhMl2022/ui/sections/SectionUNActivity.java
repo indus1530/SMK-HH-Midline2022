@@ -1,6 +1,6 @@
 package edu.aku.hassannaqvi.smkHhMl2022.ui.sections;
 
-import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.frm;
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.form;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -32,7 +32,7 @@ public class SectionUNActivity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_un);
         setSupportActionBar(bi.toolbar);
         db = MainApp.appInfo.dbHelper;
-        bi.setForm(frm);
+        bi.setForm(form);
     }
 
 

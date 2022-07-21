@@ -17,7 +17,6 @@ import edu.aku.hassannaqvi.smkHhMl2022.adapters.FormsAdapter;
 import edu.aku.hassannaqvi.smkHhMl2022.core.MainApp;
 import edu.aku.hassannaqvi.smkHhMl2022.database.DatabaseHelper;
 import edu.aku.hassannaqvi.smkHhMl2022.databinding.ActivityFormsReportBinding;
-import edu.aku.hassannaqvi.smkHhMl2022.models.Form;
 
 public class FormsReportPending extends AppCompatActivity {
     DatabaseHelper db;

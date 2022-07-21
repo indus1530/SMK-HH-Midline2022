@@ -900,7 +900,7 @@ public class SectionIM1Activity extends AppCompatActivity {
 
         Intent intent = new Intent(this, TakePhoto.class);
 
-        intent.putExtra("picID", form.getEbCode() + "_" + form.getHhid() + "_" + MainApp.child.getSno() + "_");
+        intent.putExtra("picID", form.getClusterCode() + "_" + form.getHhid() + "_" + MainApp.child.getSno() + "_");
         intent.putExtra("childName", MainApp.child.getEc14());
 /*
         intent.putExtra("picID", "901001" + "_" + "A-0001-001" + "_" + "1" + "_");

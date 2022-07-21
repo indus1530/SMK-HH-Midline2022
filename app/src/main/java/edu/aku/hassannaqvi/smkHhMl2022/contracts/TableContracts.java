@@ -6,28 +6,50 @@ public class TableContracts {
 
 
     public static abstract class FormsTable implements BaseColumns {
-        public static final String TABLE_NAME = "Forms";
+        public static final String TABLE_NAME = "FormHH";
         public static final String COLUMN_NAME_NULLABLE = "NULLHACK";
         public static final String COLUMN_PROJECT_NAME = "projectName";
         public static final String COLUMN_ID = "_id";
         public static final String COLUMN_UID = "_uid";
-        public static final String COLUMN_EB_CODE = "ebCode";
+        public static final String COLUMN_CLUSTER_CODE = "clusterCode";
         public static final String COLUMN_HHID = "hhid";
         public static final String COLUMN_SNO = "sno";
         public static final String COLUMN_USERNAME = "username";
         public static final String COLUMN_SYSDATE = "sysdate";
-        public static final String COLUMN_GPSLAT = "xlt";
-        public static final String COLUMN_GPSLNG = "xlg";
-        public static final String COLUMN_GPSDATE = "xdt";
-        public static final String COLUMN_GPSACC = "xac";
-
-        public static final String COLUMN_SHH = "sHH";
-        public static final String COLUMN_SSS = "sSS";
+        public static final String COLUMN_SA = "sA";
+        public static final String COLUMN_SM = "sM";
+        public static final String COLUMN_SN = "sN";
+        public static final String COLUMN_SO = "sO";
+        public static final String COLUMN_SE2 = "sE2";
         public static final String COLUMN_DEVICEID = "deviceid";
         public static final String COLUMN_DEVICETAGID = "devicetagid";
         public static final String COLUMN_SYNCED = "synced";
         public static final String COLUMN_SYNC_DATE = "sync_date";
-        //  public static final String COLUMN_ENTRY_TYPE = "entry_type";
+        public static final String COLUMN_APPVERSION = "appversion";
+        public static final String COLUMN_ISTATUS = "istatus";
+    }
+
+    public static abstract class FamilyMembersTable implements BaseColumns {
+        public static final String TABLE_NAME = "FamilyMembers";
+        public static final String COLUMN_NAME_NULLABLE = "NULLHACK";
+        public static final String COLUMN_PROJECT_NAME = "projectName";
+        public static final String COLUMN_ID = "_id";
+        public static final String COLUMN_UID = "_uid";
+        public static final String COLUMN_UUID = "_uuid";
+        public static final String COLUMN_CLUSTER_CODE = "clusterCode";
+        public static final String COLUMN_HHID = "hhid";
+        public static final String COLUMN_SNO = "sno";
+        public static final String COLUMN_AGE_MONTHS = "ageinmonths";
+        public static final String COLUMN_MUID = "muid";
+        public static final String COLUMN_MOTHER_PRESENT = "motherPresent";
+        public static final String COLUMN_INDEXED = "indexed";
+        public static final String COLUMN_USERNAME = "username";
+        public static final String COLUMN_SYSDATE = "sysdate";
+        public static final String COLUMN_SD = "sd";
+        public static final String COLUMN_DEVICEID = "deviceid";
+        public static final String COLUMN_DEVICETAGID = "devicetagid";
+        public static final String COLUMN_SYNCED = "synced";
+        public static final String COLUMN_SYNC_DATE = "sync_date";
         public static final String COLUMN_APPVERSION = "appversion";
         public static final String COLUMN_ISTATUS = "istatus";
     }
@@ -101,20 +123,13 @@ public class TableContracts {
 
     public static abstract class RandomHHTable implements BaseColumns {
         public static final String COLUMN_NAME_NULLABLE = "NULLHACK";
-        public static final String TABLE_NAME = "Randomised";
+        public static final String TABLE_NAME = "bl_randomised";
         public static final String COLUMN_ID = "_id";
-        public static final String COLUMN_RANDOMDT = "randDT";
-        public static final String COLUMN_LUID = "UID";
-        public static final String COLUMN_EB_CODE = "hh02";
-        public static final String COLUMN_STRUCTURE_NO = "hh03";
-        public static final String COLUMN_FAMILY_EXT_CODE = "hh07";
-        public static final String COLUMN_HH_NO = "hh";
-        public static final String COLUMN_HH_HEAD = "hh08";
-        public static final String COLUMN_CONTACT = "hh09";
-        public static final String COLUMN_HH_SELECTED_STRUCT = "hhss";
         public static final String COLUMN_SNO = "sno";
-        public static final String COLUMN_TAB_NO = "tabNo";
-        public static String COLUMN_DIST_CODE = "dist_id";
+        public static final String COLUMN_CLUSTER_CODE = "hh02";
+        public static final String COLUMN_HEAD_HH = "hh08";
+        public static final String COLUMN_HH_NO = "hhno";
+
     }
 
 
