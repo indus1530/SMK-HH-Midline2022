@@ -3357,6 +3357,7 @@ public class Forms extends BaseObservable implements Observable {
 
     public void setE122(String e122) {
         this.e122 = e122;
+        setE12296x(e122.equals("96") ? this.e12296x : "");
         notifyPropertyChanged(BR.e122);
     }
 
@@ -3436,6 +3437,7 @@ public class Forms extends BaseObservable implements Observable {
     }
 
     public void setAh7a(String ah7a) {
+        if(this.ah7a.equals(ah7a)) return;      //For all checkboxes
         this.ah7a = ah7a;
         notifyPropertyChanged(BR.ah7a);
     }
@@ -3446,6 +3448,7 @@ public class Forms extends BaseObservable implements Observable {
     }
 
     public void setAh7b(String ah7b) {
+        if(this.ah7b.equals(ah7b)) return;      //For all checkboxes
         this.ah7b = ah7b;
         notifyPropertyChanged(BR.ah7b);
     }
@@ -3456,6 +3459,7 @@ public class Forms extends BaseObservable implements Observable {
     }
 
     public void setAh7c(String ah7c) {
+        if(this.ah7c.equals(ah7c)) return;      //For all checkboxes
         this.ah7c = ah7c;
         notifyPropertyChanged(BR.ah7c);
     }
@@ -3466,6 +3470,7 @@ public class Forms extends BaseObservable implements Observable {
     }
 
     public void setAh7d(String ah7d) {
+        if(this.ah7d.equals(ah7d)) return;      //For all checkboxes
         this.ah7d = ah7d;
         notifyPropertyChanged(BR.ah7d);
     }
@@ -3476,6 +3481,7 @@ public class Forms extends BaseObservable implements Observable {
     }
 
     public void setAh7e(String ah7e) {
+        if(this.ah7e.equals(ah7e)) return;      //For all checkboxes
         this.ah7e = ah7e;
         notifyPropertyChanged(BR.ah7e);
     }
@@ -3486,6 +3492,7 @@ public class Forms extends BaseObservable implements Observable {
     }
 
     public void setAh7f(String ah7f) {
+        if(this.ah7f.equals(ah7f)) return;      //For all checkboxes
         this.ah7f = ah7f;
         notifyPropertyChanged(BR.ah7f);
     }
@@ -3496,6 +3503,7 @@ public class Forms extends BaseObservable implements Observable {
     }
 
     public void setAh7g(String ah7g) {
+        if(this.ah7g.equals(ah7g)) return;      //For all checkboxes
         this.ah7g = ah7g;
         notifyPropertyChanged(BR.ah7g);
     }
@@ -3506,6 +3514,7 @@ public class Forms extends BaseObservable implements Observable {
     }
 
     public void setAh7h(String ah7h) {
+        if(this.ah7h.equals(ah7h)) return;      //For all checkboxes
         this.ah7h = ah7h;
         notifyPropertyChanged(BR.ah7h);
     }
@@ -3516,6 +3525,7 @@ public class Forms extends BaseObservable implements Observable {
     }
 
     public void setAh796(String ah796) {
+        if(this.ah796.equals(ah796)) return;      //For all checkboxes
         this.ah796 = ah796;
         setAh796x(ah796.equals("96") ? this.ah796x : "");
         notifyPropertyChanged(BR.ah796);
@@ -3749,6 +3759,9 @@ public class Forms extends BaseObservable implements Observable {
 
     public void setAh23(String ah23) {
         this.ah23 = ah23;
+        setAh2301x(ah23.equals("1") ? this.ah2301x : "");
+        setAh2302x(ah23.equals("2") ? this.ah2302x : "");
+        setAh2303x(ah23.equals("3") ? this.ah2303x : "");
         notifyPropertyChanged(BR.ah23);
     }
 
@@ -4108,6 +4121,7 @@ public class Forms extends BaseObservable implements Observable {
     }
 
     public void setAh35a(String ah35a) {
+        if (this.ah35a.equals(ah35a)) return;
         this.ah35a = ah35a;
         notifyPropertyChanged(BR.ah35a);
     }
@@ -4118,6 +4132,7 @@ public class Forms extends BaseObservable implements Observable {
     }
 
     public void setAh35b(String ah35b) {
+        if (this.ah35b.equals(ah35b)) return;
         this.ah35b = ah35b;
         notifyPropertyChanged(BR.ah35b);
     }
@@ -4128,6 +4143,7 @@ public class Forms extends BaseObservable implements Observable {
     }
 
     public void setAh35c(String ah35c) {
+        if (this.ah35c.equals(ah35c)) return;
         this.ah35c = ah35c;
         notifyPropertyChanged(BR.ah35c);
     }
@@ -4138,6 +4154,7 @@ public class Forms extends BaseObservable implements Observable {
     }
 
     public void setAh35d(String ah35d) {
+        if (this.ah35d.equals(ah35d)) return;
         this.ah35d = ah35d;
         notifyPropertyChanged(BR.ah35d);
     }
@@ -4148,6 +4165,7 @@ public class Forms extends BaseObservable implements Observable {
     }
 
     public void setAh35e(String ah35e) {
+        if (this.ah35e.equals(ah35e)) return;
         this.ah35e = ah35e;
         notifyPropertyChanged(BR.ah35e);
     }
@@ -4158,6 +4176,7 @@ public class Forms extends BaseObservable implements Observable {
     }
 
     public void setAh35f(String ah35f) {
+        if (this.ah35f.equals(ah35f)) return;
         this.ah35f = ah35f;
         notifyPropertyChanged(BR.ah35f);
     }
@@ -4168,6 +4187,7 @@ public class Forms extends BaseObservable implements Observable {
     }
 
     public void setAh35g(String ah35g) {
+        if (this.ah35g.equals(ah35g)) return;
         this.ah35g = ah35g;
         notifyPropertyChanged(BR.ah35g);
     }
@@ -4178,6 +4198,7 @@ public class Forms extends BaseObservable implements Observable {
     }
 
     public void setAh35h(String ah35h) {
+        if (this.ah35h.equals(ah35h)) return;
         this.ah35h = ah35h;
         notifyPropertyChanged(BR.ah35h);
     }
@@ -4188,6 +4209,7 @@ public class Forms extends BaseObservable implements Observable {
     }
 
     public void setAh35i(String ah35i) {
+        if (this.ah35i.equals(ah35i)) return;
         this.ah35i = ah35i;
         notifyPropertyChanged(BR.ah35i);
     }
@@ -4198,6 +4220,7 @@ public class Forms extends BaseObservable implements Observable {
     }
 
     public void setAh35j(String ah35j) {
+        if (this.ah35j.equals(ah35j)) return;
         this.ah35j = ah35j;
         notifyPropertyChanged(BR.ah35j);
     }
