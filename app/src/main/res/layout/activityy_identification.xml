@@ -211,18 +211,12 @@
                             android:layout_weight="1.2"
                             android:text="@string/a101" />
 
-                        <com.edittextpicker.aliazaz.EditTextPicker
+                        <androidx.appcompat.widget.AppCompatSpinner
                             android:id="@+id/a101"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="2"
-                            android:gravity="center"
-                            android:hint="######"
-                            android:inputType="number"
-                            android:maxLength="6"
-                            app:maxValue="999999"
-                            app:minValue="111111"
-                            app:type="range" />
+                            android:hint="@string/a101" />
 
                     </LinearLayout>
 
