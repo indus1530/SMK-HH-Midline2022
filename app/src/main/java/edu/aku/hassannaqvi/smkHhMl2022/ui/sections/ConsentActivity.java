@@ -43,7 +43,7 @@ public class ConsentActivity extends AppCompatActivity {
         bi.setForm(frm);
         setGPS();
 
-        String consentText = getString(R.string.hh18t, MainApp.user.getFullname());
+        String consentText = getString(R.string.concent, MainApp.user.getFullname());
         bi.consentTextView.setText(consentText);
     }
 

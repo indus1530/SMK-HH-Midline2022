@@ -955,10 +955,10 @@
 
     <!--SMK-HH-STRINGS-->
     <string name="householdidentification_mainheading">Household Identification: </string>
-    <string name="sectiondhouseholdmemberinformation_mainheading">Section D: Household Member Information: </string>
-    <string name="householdinformation_mainheading">Household Information: </string>
-    <string name="reproductivehealth_mainheading">Reproductive Health: </string>
-    <string name="e2maternalmortalitystatus_mainheading">E2: Maternal Mortality Status: </string>
+    <string name="sectiondhouseholdmemberinformation_mainheading">Section D: Household Member Information:</string>
+    <string name="householdinformation_mainheading">Household Information:</string>
+    <string name="reproductivehealth_mainheading">Reproductive Health:</string>
+    <string name="e2maternalmortalitystatus_mainheading">E2: Maternal Mortality Status:</string>
     <string name="education_mainheading">Education: </string>
     <string name="employment_mainheading">Employment: </string>
     <string name="healthandwellbeing_mainheading">Health and Well-being: </string>
