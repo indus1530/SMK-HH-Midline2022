@@ -70,8 +70,8 @@ public class ConsentActivity extends AppCompatActivity {
         return true;
     }
 
-    private boolean updateDB() {/*
-        if (MainApp.superuser) return true;
+    private boolean updateDB() {
+        /*if (MainApp.superuser) return true;
 
         db = MainApp.appInfo.getDbHelper();
         long updcount = 0;
