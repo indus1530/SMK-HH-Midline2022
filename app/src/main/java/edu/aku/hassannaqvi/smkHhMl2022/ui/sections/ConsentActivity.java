@@ -78,7 +78,7 @@ public class ConsentActivity extends AppCompatActivity {
         db = MainApp.appInfo.getDbHelper();
         long updcount = 0;
         try {
-            updcount = db.updatesFormColumn(TableContracts.FormsTable.COLUMN_SHH, form.sHHtoString());
+            updcount = db.updatesFormColumn(TableContracts.FormsTable.COLUMN_SHH, frm.sHHtoString());
         } catch (JSONException e) {
             e.printStackTrace();
             Log.d(TAG, R.string.upd_db + e.getMessage());
@@ -97,7 +97,7 @@ public class ConsentActivity extends AppCompatActivity {
         if (updateDB()) {
             finish();
             if (frm.getC103().equals("1")) {
-                startActivity(new Intent(this, SectionRIActivity.class));
+                startActivity(new Intent(this, SectionDActivity.class));
             } else {
                 Intent endingActivityIntent = new Intent(this, EndingActivity.class);
                 endingActivityIntent.putExtra("complete", false);
