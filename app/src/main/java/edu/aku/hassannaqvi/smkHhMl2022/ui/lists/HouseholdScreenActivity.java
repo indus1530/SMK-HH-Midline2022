@@ -37,7 +37,7 @@ import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionSS_1Activity;
 public class HouseholdScreenActivity extends AppCompatActivity {
 
 
-    private static final String TAG = "ChildListActivit";
+    private static final String TAG = "HouseholdScreenActivity";
     private final boolean selectionCheck = false;
     ActivityHouseholdScreenBinding bi;
     DatabaseHelper db;
@@ -217,16 +217,8 @@ public class HouseholdScreenActivity extends AppCompatActivity {
 
 
     private void addChild() {
-
-
-        if (childCount >= Integer.parseInt(MainApp.form.getHh20a())) {
-            displayAddMoreDialog();
-        } else {
-            addMoreMWRA();
-
-        }
-
-
+        if (childCount >= Integer.parseInt(MainApp.form.getHh20a())) displayAddMoreDialog();
+        else addMoreMWRA();
     }
 
     private void displayAddMoreDialog() {
@@ -268,11 +260,8 @@ public class HouseholdScreenActivity extends AppCompatActivity {
     }
 
     public void btnEnd(View view) {
-
         finish();
-
         startActivity(new Intent(this, EndingActivity.class).putExtra("complete", false));
-
     }
 
    /* @Override
