@@ -177,8 +177,6 @@ public class Child extends BaseObservable implements Observable {
     private String im3296x = _EMPTY_;
 
     public void Child() {
-
-
     }
 
 

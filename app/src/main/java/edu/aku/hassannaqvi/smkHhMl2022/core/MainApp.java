@@ -83,6 +83,9 @@ public class MainApp extends Application {
     public static RandomHH currentHousehold;
     public static int memberCount = 0;
     public static List<FamilyMembers> familyList;
+    public static List<Integer> mwraList;
+    public static List<Integer> childOfSelectedMWRAList;
+    public static List<FamilyMembers> allChildrenList;
     public static List<FamilyMembers> fatherList;
     public static List<FamilyMembers> motherList;
     public static String DeviceURL = "devices.php";
