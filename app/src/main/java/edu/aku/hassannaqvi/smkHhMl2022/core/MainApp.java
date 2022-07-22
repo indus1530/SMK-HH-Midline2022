@@ -29,6 +29,7 @@ import net.sqlcipher.database.SQLiteDatabase;
 import org.json.JSONArray;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 
 import edu.aku.hassannaqvi.smkHhMl2022.R;
@@ -36,6 +37,10 @@ import edu.aku.hassannaqvi.smkHhMl2022.models.Child;
 import edu.aku.hassannaqvi.smkHhMl2022.models.Clusters;
 import edu.aku.hassannaqvi.smkHhMl2022.models.FamilyMembers;
 import edu.aku.hassannaqvi.smkHhMl2022.models.Forms;
+import edu.aku.hassannaqvi.smkHhMl2022.models.MWRA;
+import edu.aku.hassannaqvi.smkHhMl2022.models.MaternalMortality;
+import edu.aku.hassannaqvi.smkHhMl2022.models.PregnancyDetails;
+import edu.aku.hassannaqvi.smkHhMl2022.models.PregnancyMaster;
 import edu.aku.hassannaqvi.smkHhMl2022.models.RandomHH;
 import edu.aku.hassannaqvi.smkHhMl2022.models.Users;
 
@@ -70,13 +75,16 @@ public class MainApp extends Application {
 
     //public static Samples samples;
     public static Forms form;
-    public static RandomHH currentHousehold;
-    public static FamilyMembers familyMember;
-    public static int memberCount = 0;
-    public static List<FamilyMembers> fatherList;
-    public static List<FamilyMembers> motherList;
+    public static MWRA mwra;
     // public static Pregnancy pregnancy;
     public static Child child;
+    public static FamilyMembers familyMember;
+    public static MaternalMortality mortality;
+    public static RandomHH currentHousehold;
+    public static int memberCount = 0;
+    public static List<FamilyMembers> familyList;
+    public static List<FamilyMembers> fatherList;
+    public static List<FamilyMembers> motherList;
     public static String DeviceURL = "devices.php";
     public static AppInfo appInfo;
     public static Users user;
@@ -106,6 +114,16 @@ public class MainApp extends Application {
     public static int selectedLanguage = 0;
     public static boolean langRTL = false;
     public static int ageOfIndexChild;
+    public static int totalPreg = 0;
+    public static int totalMortalities = 0;
+    public static int pregCount = 0;
+    public static int pregCountComplete = 0;
+    public static boolean pregComplete = false;
+    public static PregnancyMaster pregM;
+    public static PregnancyDetails pregD;
+    public static List<FamilyMembers> allMWRAList = new ArrayList<>();
+    public static List<PregnancyDetails> pregList;
+    public static int mortalityCounter = 0;
     public static Clusters selectedCluster;
     public static List<Integer> childCompleted;
     public static boolean householdChecked = false;

@@ -28,7 +28,6 @@ import edu.aku.hassannaqvi.smkHhMl2022.adapters.ChildAdapter;
 import edu.aku.hassannaqvi.smkHhMl2022.core.MainApp;
 import edu.aku.hassannaqvi.smkHhMl2022.database.DatabaseHelper;
 import edu.aku.hassannaqvi.smkHhMl2022.databinding.ActivityHouseholdScreenBinding;
-import edu.aku.hassannaqvi.smkHhMl2022.models.Child;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.EndingActivity;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionCHActivity;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionSS_1Activity;

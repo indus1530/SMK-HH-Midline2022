@@ -25,7 +25,6 @@ import java.util.Locale;
 import edu.aku.hassannaqvi.smkHhMl2022.core.MainApp;
 import edu.aku.hassannaqvi.smkHhMl2022.database.AndroidManager;
 import edu.aku.hassannaqvi.smkHhMl2022.databinding.ActivityMainBinding;
-import edu.aku.hassannaqvi.smkHhMl2022.models.Child;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.ChangePasswordActivity;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.EndingActivity;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.IdentificationActivityy;
@@ -37,7 +36,7 @@ import edu.aku.hassannaqvi.smkHhMl2022.ui.lists.FormsReportPending;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.ConsentActivity;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionAH1Activity;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionDActivity;
-import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionE1Activity;
+import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionE1AActivity;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionF1Activity;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionG1Activity;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionH1Activity;
@@ -147,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.secss1:
                 MainApp.form = new Form();
-                startActivity(new Intent(this, SectionE1Activity.class));
+                startActivity(new Intent(this, SectionE1AActivity.class));
                 break;
 
             case R.id.secess2:

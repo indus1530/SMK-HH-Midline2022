@@ -974,6 +974,12 @@
     <string name="sectionkfamilyplanning_mainheading">Section K: Family Planning: </string>
     <string name="sectionununmetneeds_mainheading">Section UN:</string>
     <string name="sectionlwomenempowerment_mainheading">Section L: Women Empowerment: </string>
+
+
+    <string name="title_preg_dialog">Pregnancy Count</string>
+    <string name="message_preg_dialog_proceed">You have entered only %1$s of %2$s Pregnancy. \nAre you sure you want to continue?</string>
+    <string name="message_preg_dialog_addmore">You have already entered %1$s Pregnancy. \nAre you sure you want to add more pregnancies?</string>
+
     <string name="app_name">SMK-HH-ML22</string>
     <string name="btnSync">Download Data</string>
     <string name="btnUpload">Upload Data</string>

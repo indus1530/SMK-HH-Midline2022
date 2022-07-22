@@ -11,9 +11,9 @@ import org.json.JSONObject
  */
 class Clusters {
     var ID: Long = 0
+    var clusterCode: String = _EMPTY_
     var geoarea: String = _EMPTY_
     var distId: String = _EMPTY_
-    var ebcode: String = _EMPTY_
 
 
     constructor() {
@@ -22,9 +22,9 @@ class Clusters {
 
     @Throws(JSONException::class)
     fun sync(jsonObject: JSONObject): Clusters {
+        clusterCode = jsonObject.getString(ClusterTable.COLUMN_CLUSTER_CODE)
         geoarea = jsonObject.getString(ClusterTable.COLUMN_GEOAREA)
         distId = jsonObject.getString(ClusterTable.COLUMN_DIST_ID)
-        ebcode = jsonObject.getString(ClusterTable.COLUMN_EB_CODE)
 
 
         return this
@@ -32,11 +32,10 @@ class Clusters {
 
     fun hydrate(cursor: Cursor): Clusters {
         ID = cursor.getLong(cursor.getColumnIndexOrThrow(ClusterTable.COLUMN_ID))
-
+        clusterCode =
+            cursor.getString(cursor.getColumnIndexOrThrow(ClusterTable.COLUMN_CLUSTER_CODE))
         geoarea = cursor.getString(cursor.getColumnIndexOrThrow(ClusterTable.COLUMN_GEOAREA))
         distId = cursor.getString(cursor.getColumnIndexOrThrow(ClusterTable.COLUMN_DIST_ID))
-        ebcode = cursor.getString(cursor.getColumnIndexOrThrow(ClusterTable.COLUMN_EB_CODE))
-
 
         return this
     }
