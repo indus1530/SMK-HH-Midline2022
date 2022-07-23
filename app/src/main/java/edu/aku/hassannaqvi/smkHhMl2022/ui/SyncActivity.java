@@ -52,10 +52,16 @@ import java.util.concurrent.TimeUnit;
 
 import edu.aku.hassannaqvi.smkHhMl2022.R;
 import edu.aku.hassannaqvi.smkHhMl2022.adapters.SyncListAdapter;
+import edu.aku.hassannaqvi.smkHhMl2022.contracts.TableContracts.AdolescentTable;
 import edu.aku.hassannaqvi.smkHhMl2022.contracts.TableContracts.ChildTable;
 import edu.aku.hassannaqvi.smkHhMl2022.contracts.TableContracts.ClusterTable;
 import edu.aku.hassannaqvi.smkHhMl2022.contracts.TableContracts.EntryLogTable;
+import edu.aku.hassannaqvi.smkHhMl2022.contracts.TableContracts.FamilyMembersTable;
 import edu.aku.hassannaqvi.smkHhMl2022.contracts.TableContracts.FormsTable;
+import edu.aku.hassannaqvi.smkHhMl2022.contracts.TableContracts.MaternalMortalityTable;
+import edu.aku.hassannaqvi.smkHhMl2022.contracts.TableContracts.MwraTable;
+import edu.aku.hassannaqvi.smkHhMl2022.contracts.TableContracts.PregnancyDetailsTable;
+import edu.aku.hassannaqvi.smkHhMl2022.contracts.TableContracts.PregnancyMasterTable;
 import edu.aku.hassannaqvi.smkHhMl2022.contracts.TableContracts.RandomHHTable;
 import edu.aku.hassannaqvi.smkHhMl2022.contracts.TableContracts.UsersTable;
 import edu.aku.hassannaqvi.smkHhMl2022.core.MainApp;
@@ -164,6 +170,57 @@ public class SyncActivity extends AppCompatActivity {
                     Toast.makeText(this, "JSONException(Forms): " + e.getMessage(), Toast.LENGTH_SHORT).show();
                 }
 
+                //FamilyMembers
+                uploadTables.add(new SyncModel(FamilyMembersTable.TABLE_NAME));
+                try {
+                    MainApp.uploadData.add(db.getUnsyncedFamilyMembers());
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    Log.d(TAG, "ProcessStart: JSONException(FamilyMembers): " + e.getMessage());
+                    Toast.makeText(SyncActivity.this, "JSONException(FamilyMembers)" + e.getMessage(), Toast.LENGTH_LONG).show();
+
+                }
+
+                //MWRA
+                uploadTables.add(new SyncModel(MwraTable.TABLE_NAME));
+                try {
+                    MainApp.uploadData.add(db.getUnsyncedMWRA());
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    Log.d(TAG, "ProcessStart: JSONException(MWRA): " + e.getMessage());
+                    Toast.makeText(SyncActivity.this, "JSONException(MWRA)" + e.getMessage(), Toast.LENGTH_LONG).show();
+
+                }
+
+                //PregnancyDetails
+                uploadTables.add(new SyncModel(PregnancyDetailsTable.TABLE_NAME));
+                try {
+                    MainApp.uploadData.add(db.getUnsyncedPregnancyDetails());
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    Log.d(TAG, "ProcessStart: JSONException(PregnancyDetails): " + e.getMessage());
+                    Toast.makeText(SyncActivity.this, "JSONException(PregnancyDetails)" + e.getMessage(), Toast.LENGTH_LONG).show();
+                }
+
+                //PregnancyMaster
+                uploadTables.add(new SyncModel(PregnancyMasterTable.TABLE_NAME));
+                try {
+                    MainApp.uploadData.add(db.getUnsyncedPregnancyMaster());
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    Log.d(TAG, "ProcessStart: JSONException(PregnancyMaster): " + e.getMessage());
+                    Toast.makeText(SyncActivity.this, "JSONException(PregnancyMaster)" + e.getMessage(), Toast.LENGTH_LONG).show();
+                }
+
+                //MaternalMortality
+                uploadTables.add(new SyncModel(MaternalMortalityTable.TABLE_NAME));
+                try {
+                    MainApp.uploadData.add(db.getUnsyncedMortalityTable());
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    Log.d(TAG, "ProcessStart: JSONException(MaternalMortality): " + e.getMessage());
+                    Toast.makeText(SyncActivity.this, "JSONException(MaternalMortality)" + e.getMessage(), Toast.LENGTH_LONG).show();
+                }
 
                 //Child
                 uploadTables.add(new SyncModel(ChildTable.TABLE_NAME));
@@ -176,6 +233,16 @@ public class SyncActivity extends AppCompatActivity {
 
                 }
 
+                //Adolescent
+                uploadTables.add(new SyncModel(AdolescentTable.TABLE_NAME));
+                try {
+                    MainApp.uploadData.add(db.getUnsyncedChild());
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    Log.d(TAG, "ProcessStart: JSONException(Adolescent): " + e.getMessage());
+                    Toast.makeText(SyncActivity.this, "JSONException(Adolescent)" + e.getMessage(), Toast.LENGTH_LONG).show();
+
+                }
 
                 //Entry Log
                 uploadTables.add(new SyncModel(EntryLogTable.TABLE_NAME));

@@ -3,6 +3,7 @@ package edu.aku.hassannaqvi.smkHhMl2022.database;
 
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.IBAHC;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.PROJECT_NAME;
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.adol;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.child;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedCluster;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedHousehold;
@@ -29,7 +30,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import edu.aku.hassannaqvi.smkHhMl2022.contracts.TableContracts;
+import edu.aku.hassannaqvi.smkHhMl2022.contracts.TableContracts.AdolescentTable;
 import edu.aku.hassannaqvi.smkHhMl2022.contracts.TableContracts.ChildTable;
 import edu.aku.hassannaqvi.smkHhMl2022.contracts.TableContracts.ClusterTable;
 import edu.aku.hassannaqvi.smkHhMl2022.contracts.TableContracts.EntryLogTable;
@@ -42,6 +43,7 @@ import edu.aku.hassannaqvi.smkHhMl2022.contracts.TableContracts.PregnancyMasterT
 import edu.aku.hassannaqvi.smkHhMl2022.contracts.TableContracts.RandomHHTable;
 import edu.aku.hassannaqvi.smkHhMl2022.contracts.TableContracts.UsersTable;
 import edu.aku.hassannaqvi.smkHhMl2022.core.MainApp;
+import edu.aku.hassannaqvi.smkHhMl2022.models.Adolescent;
 import edu.aku.hassannaqvi.smkHhMl2022.models.Child;
 import edu.aku.hassannaqvi.smkHhMl2022.models.Clusters;
 import edu.aku.hassannaqvi.smkHhMl2022.models.EntryLog;
@@ -92,6 +94,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(CreateTable.SQL_CREATE_PREGNANCY_MASTER);
         db.execSQL(CreateTable.SQL_CREATE_MATERNAL_MORTIALITY);
         db.execSQL(CreateTable.SQL_CREATE_CHILD);
+        db.execSQL(CreateTable.SQL_CREATE_ADOLESCENT);
 
     }
 
@@ -242,6 +245,40 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return newRowId;
     }
 
+    public Long addAdolescent(Adolescent adol) throws JSONException {
+        SQLiteDatabase db = this.getWritableDatabase(DATABASE_PASSWORD);
+        ContentValues values = new ContentValues();
+        values.put(AdolescentTable.COLUMN_PROJECT_NAME, adol.getProjectName());
+        values.put(AdolescentTable.COLUMN_UID, adol.getUid());
+        values.put(AdolescentTable.COLUMN_UUID, adol.getUuid());
+        values.put(AdolescentTable.COLUMN_FMUID, adol.getFmuid());
+        values.put(AdolescentTable.COLUMN_MUID, adol.getMuid());
+        values.put(AdolescentTable.COLUMN_SNO, adol.getSno());
+        values.put(AdolescentTable.COLUMN_PSU_CODE, adol.getpsuCode());
+        values.put(AdolescentTable.COLUMN_HHID, adol.getHhid());
+        values.put(AdolescentTable.COLUMN_USERNAME, adol.getUserName());
+        values.put(AdolescentTable.COLUMN_SYSDATE, adol.getSysDate());
+        values.put(AdolescentTable.COLUMN_SAH1, adol.sAH1toString());
+        values.put(AdolescentTable.COLUMN_SAH2, adol.sAH2toString());
+        values.put(AdolescentTable.COLUMN_SAH3, adol.sAH3toString());
+        values.put(AdolescentTable.COLUMN_SAH4, adol.sAH4toString());
+        values.put(AdolescentTable.COLUMN_SAH5, adol.sAH5toString());
+        values.put(AdolescentTable.COLUMN_SAH6, adol.sAH6toString());
+        values.put(AdolescentTable.COLUMN_SAH7, adol.sAH7toString());
+        values.put(AdolescentTable.COLUMN_ISTATUS, adol.getiStatus());
+        values.put(AdolescentTable.COLUMN_DEVICETAGID, adol.getDeviceTag());
+        values.put(AdolescentTable.COLUMN_DEVICEID, adol.getDeviceId());
+        values.put(AdolescentTable.COLUMN_APPVERSION, adol.getAppver());
+        values.put(AdolescentTable.COLUMN_SYNCED, adol.getSynced());
+        values.put(AdolescentTable.COLUMN_SYNC_DATE, adol.getSyncDate());
+        long newRowId;
+        newRowId = db.insert(
+                ChildTable.TABLE_NAME,
+                ChildTable.COLUMN_NAME_NULLABLE,
+                values);
+        return newRowId;
+    }
+
     public Long addEntryLog(EntryLog entryLog) throws SQLiteException {
         SQLiteDatabase db = this.getWritableDatabase(DATABASE_PASSWORD);
         ContentValues values = new ContentValues();
@@ -350,7 +387,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         long newRowId;
         newRowId = db.insert(
                 MaternalMortalityTable.TABLE_NAME,
-                TableContracts.MaternalMortalityTable.COLUMN_NAME_NULLABLE,
+                MaternalMortalityTable.COLUMN_NAME_NULLABLE,
                 values);
         return newRowId;
     }
@@ -399,7 +436,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 selectionArgs);
     }
 
-
     public int updatesChildColumn(String column, String value) {
         SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
 
@@ -410,6 +446,21 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String[] selectionArgs = {String.valueOf(child.getId())};
 
         return db.update(ChildTable.TABLE_NAME,
+                values,
+                selection,
+                selectionArgs);
+    }
+
+    public int updatesAdolColumn(String column, String value) {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+
+        ContentValues values = new ContentValues();
+        values.put(column, value);
+
+        String selection = AdolescentTable._ID + " =? ";
+        String[] selectionArgs = {String.valueOf(adol.getId())};
+
+        return db.update(AdolescentTable.TABLE_NAME,
                 values,
                 selection,
                 selectionArgs);
@@ -776,15 +827,190 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         }
 
-        if (c != null && !c.isClosed()) {
-            c.close();
-        }
+        c.close();
+        db.close();
 
         Log.d(TAG, "getUnsyncedFormHH: " + allForms.toString().length());
         Log.d(TAG, "getUnsyncedFormHH: " + allForms);
         return allForms;
     }
 
+    public JSONArray getUnsyncedFamilyMembers() throws JSONException {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        Cursor c = null;
+        String[] columns = null;
+        String whereClause;
+        whereClause = FamilyMembersTable.COLUMN_SYNCED + " = '' ";
+
+        String[] whereArgs = null;
+        String groupBy = null;
+        String having = null;
+        String orderBy = FamilyMembersTable.COLUMN_ID + " ASC";
+
+        JSONArray all = new JSONArray();
+        c = db.query(
+                FamilyMembersTable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
+            Log.d(TAG, "getUnsyncedFamilyMembers: " + c.getCount());
+            FamilyMembers fm = new FamilyMembers();
+            all.put(fm.Hydrate(c).toJSONObject());
+        }
+
+        c.close();
+
+        db.close();
+
+        Log.d(TAG, "getUnsyncedFamilyMembers: " + all.toString().length());
+        Log.d(TAG, "getUnsyncedFamilyMembers: " + all);
+        return all;
+    }
+
+    public JSONArray getUnsyncedMWRA() throws JSONException {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        Cursor c = null;
+        String[] columns = null;
+        String whereClause;
+        whereClause = MwraTable.COLUMN_SYNCED + " = '' ";
+
+        String[] whereArgs = null;
+        String groupBy = null;
+        String having = null;
+        String orderBy = MwraTable.COLUMN_ID + " ASC";
+
+        JSONArray all = new JSONArray();
+        c = db.query(
+                MwraTable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
+            Log.d(TAG, "getUnsyncedMWRA: " + c.getCount());
+            MWRA mwra = new MWRA();
+            all.put(mwra.Hydrate(c).toJSONObject());
+        }
+
+        c.close();
+
+        Log.d(TAG, "getUnsyncedMWRA: " + all.toString().length());
+        Log.d(TAG, "getUnsyncedMWRA: " + all);
+        return all;
+    }
+
+    public JSONArray getUnsyncedPregnancyDetails() throws JSONException {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        Cursor c = null;
+        String[] columns = null;
+        String whereClause;
+        whereClause = PregnancyDetailsTable.COLUMN_SYNCED + " = '' ";
+
+        String[] whereArgs = null;
+        String groupBy = null;
+        String having = null;
+        String orderBy = PregnancyDetailsTable.COLUMN_ID + " ASC";
+
+        JSONArray all = new JSONArray();
+        c = db.query(
+                PregnancyDetailsTable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
+            Log.d(TAG, "getUnsyncedPregnancy: " + c.getCount());
+            PregnancyDetails pregD = new PregnancyDetails();
+            all.put(pregD.Hydrate(c).toJSONObject());
+        }
+
+        c.close();
+
+        Log.d(TAG, "getUnsyncedPregnancy: " + all.toString().length());
+        Log.d(TAG, "getUnsyncedPregnancy: " + all);
+        return all;
+    }
+
+    public JSONArray getUnsyncedPregnancyMaster() throws JSONException {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        Cursor c = null;
+        String[] columns = null;
+        String whereClause;
+        whereClause = PregnancyMasterTable.COLUMN_SYNCED + " = '' ";
+
+        String[] whereArgs = null;
+        String groupBy = null;
+        String having = null;
+        String orderBy = PregnancyMasterTable.COLUMN_ID + " ASC";
+
+        JSONArray all = new JSONArray();
+        c = db.query(
+                PregnancyMasterTable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
+            Log.d(TAG, "getUnsyncedPregnancy: " + c.getCount());
+            PregnancyMaster pregM = new PregnancyMaster();
+            all.put(pregM.Hydrate(c).toJSONObject());
+        }
+
+        c.close();
+
+        Log.d(TAG, "getUnsyncedPregnancy: " + all.toString().length());
+        Log.d(TAG, "getUnsyncedPregnancy: " + all);
+        return all;
+    }
+
+    public JSONArray getUnsyncedMortalityTable() throws JSONException {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        Cursor c = null;
+        String[] columns = null;
+        String whereClause;
+        whereClause = MaternalMortalityTable.COLUMN_SYNCED + " = '' ";
+
+        String[] whereArgs = null;
+        String groupBy = null;
+        String having = null;
+        String orderBy = MaternalMortalityTable.COLUMN_ID + " ASC";
+
+        JSONArray all = new JSONArray();
+        c = db.query(
+                MaternalMortalityTable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
+            Log.d(TAG, "getUnsyncedMortalityTable: " + c.getCount());
+            MaternalMortality maternalMortality = new MaternalMortality();
+            all.put(maternalMortality.Hydrate(c).toJSONObject());
+        }
+
+        c.close();
+
+        Log.d(TAG, "getUnsyncedMortalityTable: " + all.toString().length());
+        Log.d(TAG, "getUnsyncedMortalityTable: " + all);
+        return all;
+    }
 
     public JSONArray getUnsyncedChild() throws JSONException {
         SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
@@ -819,6 +1045,38 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return allChild;
     }
 
+    public JSONArray getUnsyncedAdolescent() throws JSONException {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        Cursor c = null;
+        String[] columns = null;
+        String whereClause;
+        whereClause = AdolescentTable.COLUMN_SYNCED + " = '' ";
+
+        String[] whereArgs = null;
+        String groupBy = null;
+        String having = null;
+        String orderBy = AdolescentTable.COLUMN_ID + " ASC";
+
+        JSONArray all = new JSONArray();
+        c = db.query(
+                AdolescentTable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
+            Log.d(TAG, "getUnsyncedAdolescent: " + c.getCount());
+            Adolescent ch = new Adolescent();
+            all.put(ch.Hydrate(c).toJSONObject());
+        }
+
+        Log.d(TAG, "getUnsyncedAdolescent: " + all.toString().length());
+        Log.d(TAG, "getUnsyncedAdolescent: " + all);
+        return all;
+    }
 
     public JSONArray getUnsyncedEntryLog() throws JSONException {
         SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
@@ -854,7 +1112,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 
     //update SyncedTables
-    public void updateSyncedForms(String id) {
+    public void updateSyncedFormHH(String id) {
         SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
 
 // New value for one column
@@ -873,8 +1131,77 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 whereArgs);
     }
 
+    public void updateSyncedFamilyMembers(String id) {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        ContentValues values = new ContentValues();
+        values.put(FamilyMembersTable.COLUMN_SYNCED, true);
+        values.put(FamilyMembersTable.COLUMN_SYNC_DATE, new Date().toString());
+        String where = FamilyMembersTable.COLUMN_ID + " = ?";
+        String[] whereArgs = {id};
+        int count = db.update(
+                FamilyMembersTable.TABLE_NAME,
+                values,
+                where,
+                whereArgs);
+    }
 
-    public void updateSyncedChildren(String id) {
+    public void updateSyncedMWRA(String id) {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        ContentValues values = new ContentValues();
+        values.put(MwraTable.COLUMN_SYNCED, true);
+        values.put(MwraTable.COLUMN_SYNC_DATE, new Date().toString());
+        String where = MwraTable.COLUMN_ID + " = ?";
+        String[] whereArgs = {id};
+        int count = db.update(
+                MwraTable.TABLE_NAME,
+                values,
+                where,
+                whereArgs);
+    }
+
+    public void updateSyncedPregnancyDetails(String id) {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        ContentValues values = new ContentValues();
+        values.put(PregnancyDetailsTable.COLUMN_SYNCED, true);
+        values.put(PregnancyDetailsTable.COLUMN_SYNC_DATE, new Date().toString());
+        String where = PregnancyDetailsTable.COLUMN_ID + " = ?";
+        String[] whereArgs = {id};
+        int count = db.update(
+                PregnancyDetailsTable.TABLE_NAME,
+                values,
+                where,
+                whereArgs);
+    }
+
+    public void updateSyncedPregnancyMaster(String id) {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        ContentValues values = new ContentValues();
+        values.put(PregnancyMasterTable.COLUMN_SYNCED, true);
+        values.put(PregnancyMasterTable.COLUMN_SYNC_DATE, new Date().toString());
+        String where = PregnancyMasterTable.COLUMN_ID + " = ?";
+        String[] whereArgs = {id};
+        int count = db.update(
+                PregnancyMasterTable.TABLE_NAME,
+                values,
+                where,
+                whereArgs);
+    }
+
+    public void updateSyncedMaternalMortality(String id) {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        ContentValues values = new ContentValues();
+        values.put(MaternalMortalityTable.COLUMN_SYNCED, true);
+        values.put(MaternalMortalityTable.COLUMN_SYNC_DATE, new Date().toString());
+        String where = MaternalMortalityTable.COLUMN_ID + " = ?";
+        String[] whereArgs = {id};
+        int count = db.update(
+                MaternalMortalityTable.TABLE_NAME,
+                values,
+                where,
+                whereArgs);
+    }
+
+    public void updateSyncedChild(String id) {
         SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
         ContentValues values = new ContentValues();
         values.put(ChildTable.COLUMN_SYNCED, true);
@@ -883,6 +1210,20 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String[] whereArgs = {id};
         int count = db.update(
                 ChildTable.TABLE_NAME,
+                values,
+                where,
+                whereArgs);
+    }
+
+    public void updateSyncedAdolescent(String id) {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        ContentValues values = new ContentValues();
+        values.put(AdolescentTable.COLUMN_SYNCED, true);
+        values.put(AdolescentTable.COLUMN_SYNC_DATE, new Date().toString());
+        String where = AdolescentTable.COLUMN_ID + " = ?";
+        String[] whereArgs = {id};
+        int count = db.update(
+                AdolescentTable.TABLE_NAME,
                 values,
                 where,
                 whereArgs);
@@ -1361,7 +1702,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 
     public int getChildrenByUUID(String UUID) {
-        String countQuery = "SELECT  * FROM " + ChildTable.TABLE_NAME + " WHERE " + ChildTable.COLUMN_UUID + " = '" + UUID + "' AND " + ChildTable.COLUMN_CSTATUS + " = '1'";
+        String countQuery = "SELECT  * FROM " + ChildTable.TABLE_NAME + " WHERE " + ChildTable.COLUMN_UUID + " = '" + UUID + "' AND " + ChildTable.COLUMN_ISTATUS + " = '1'";
         SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
         Cursor cursor = db.rawQuery(countQuery, null);
         int count = cursor.getCount();
@@ -1372,7 +1713,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public int getChildrenPhotoCheck(String UID) {
         String countQuery = "SELECT  * FROM " + ChildTable.TABLE_NAME +
                 " WHERE " + ChildTable.COLUMN_UUID + " = '" + UID +
-                "' AND " + ChildTable.COLUMN_CSTATUS + " = '1' " +
+                "' AND " + ChildTable.COLUMN_ISTATUS + " = '1' " +
                 " AND (" + ChildTable.COLUMN_SIM + " NOT LIKE '%\"frontFileName\":\"\"%' " +
                 " OR " + ChildTable.COLUMN_SIM + " NOT LIKE '%\"backFileName\":\"\"%') ";
         SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
@@ -1385,7 +1726,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public int getChildrenCardCheck(String UID) {
         String countQuery = "SELECT  * FROM " + ChildTable.TABLE_NAME +
                 " WHERE " + ChildTable.COLUMN_UUID + " = '" + UID +
-                "' AND " + ChildTable.COLUMN_CSTATUS + " = '1' " +
+                "' AND " + ChildTable.COLUMN_ISTATUS + " = '1' " +
                 " AND " + ChildTable.COLUMN_SIM + " LIKE '%\"im01\":\"1\"%' ";
         SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
         Cursor cursor = db.rawQuery(countQuery, null);
@@ -1507,6 +1848,90 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
 
+    public List<FamilyMembers> getMemberBYUID(String uid) throws JSONException {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        Cursor c = null;
+        String[] columns = null;
+
+        String whereClause;
+        whereClause = FamilyMembersTable.COLUMN_UUID + "=?";
+
+        String[] whereArgs = {uid};
+
+        String groupBy = null;
+        String having = null;
+
+        String orderBy = FamilyMembersTable.COLUMN_ID + " ASC";
+
+        ArrayList<FamilyMembers> membersByUID = new ArrayList<>();
+        try {
+            c = db.query(
+                    FamilyMembersTable.TABLE_NAME,  // The table to query
+                    columns,                   // The columns to return
+                    whereClause,               // The columns for the WHERE clause
+                    whereArgs,                 // The values for the WHERE clause
+                    groupBy,                   // don't group the rows
+                    having,                    // don't filter by row groups
+                    orderBy                    // The sort order
+            );
+            while (c.moveToNext()) {
+                FamilyMembers mwra = new FamilyMembers().Hydrate(c);
+
+                membersByUID.add(mwra);
+            }
+        } finally {
+            if (c != null) {
+                c.close();
+            }
+            if (db != null) {
+                db.close();
+            }
+        }
+        return membersByUID;
+    }
+
+    public FamilyMembers getSelectedMemberBYUID(String uid) throws JSONException {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        Cursor c = null;
+        String[] columns = null;
+
+        String whereClause;
+        whereClause = FamilyMembersTable.COLUMN_UUID + "=? AND "
+                + FamilyMembersTable.COLUMN_INDEXED + "=?";
+
+        String[] whereArgs = {uid, "1"};
+
+        String groupBy = null;
+        String having = null;
+
+        String orderBy = FamilyMembersTable.COLUMN_ID + " ASC";
+
+        FamilyMembers membersByUID = new FamilyMembers();
+        try {
+            c = db.query(
+                    FamilyMembersTable.TABLE_NAME,  // The table to query
+                    columns,                   // The columns to return
+                    whereClause,               // The columns for the WHERE clause
+                    whereArgs,                 // The values for the WHERE clause
+                    groupBy,                   // don't group the rows
+                    having,                    // don't filter by row groups
+                    orderBy                    // The sort order
+            );
+            while (c.moveToNext()) {
+                membersByUID = new FamilyMembers().Hydrate(c);
+            }
+        } finally {
+            if (c != null) {
+                c.close();
+            }
+            if (db != null) {
+                db.close();
+            }
+        }
+        return membersByUID;
+    }
+
+
     public MaternalMortality getMortalityBySno(String sno) throws JSONException {
         SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
         Cursor c;
@@ -1577,6 +2002,44 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.close();
 
         return child;
+    }
+
+    public int getSNoYoungestChild() throws JSONException {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        Cursor c;
+        String[] columns = null;
+
+        String whereClause = FamilyMembersTable.COLUMN_UUID + "=? AND " +
+                FamilyMembersTable.COLUMN_MOTHER_PRESENT + "='1' AND " +
+                "CAST(" + FamilyMembersTable.COLUMN_AGE_MONTHS + " AS INTEGER) < 1825 ";
+
+        String[] whereArgs = {MainApp.form.getUid()};
+
+        String groupBy = null;
+        String having = null;
+
+        // Not working
+        String orderBy = "CAST(" + FamilyMembersTable.COLUMN_AGE_MONTHS + " AS INTEGER) ASC";
+        //String orderBy = null;
+
+        c = db.query(
+                FamilyMembersTable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy,                    // The sort order
+                "1"
+        );
+        int chSNo = 999;
+
+        c.moveToFirst();
+        chSNo = Integer.parseInt(new FamilyMembers().Hydrate(c).getD101());
+
+        db.close();
+
+        return chSNo;
     }
 
 
@@ -1651,6 +2114,86 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.close();
 
         return pregnancyM;
+    }
+
+    public Forms getFormByPsuHHNo(String psuCode, String hhid) throws JSONException {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        Cursor c = null;
+        String[] columns = null;
+
+        String whereClause;
+        whereClause = FormsTable.COLUMN_CLUSTER_CODE + "=? AND " +
+                FormsTable.COLUMN_HHID + " =? ";
+
+        String[] whereArgs = {psuCode, hhid};
+
+        String groupBy = null;
+        String having = null;
+
+        String orderBy = FormsTable.COLUMN_ID + " ASC";
+
+        Forms form = null;
+        try {
+            c = db.query(
+                    FormsTable.TABLE_NAME,  // The table to query
+                    columns,                   // The columns to return
+                    whereClause,               // The columns for the WHERE clause
+                    whereArgs,                 // The values for the WHERE clause
+                    groupBy,                   // don't group the rows
+                    having,                    // don't filter by row groups
+                    orderBy                    // The sort order
+            );
+            while (c.moveToNext()) {
+                form = new Forms().Hydrate(c);
+            }
+        } finally {
+            if (c != null) {
+                c.close();
+            }
+            if (db != null) {
+                db.close();
+            }
+        }
+        return form;
+    }
+
+    public Forms getFormByPSUHHNo(String psuCode, String hhid) throws JSONException {
+
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        Cursor c = null;
+
+        Boolean distinct = false;
+        String tableName = FormsTable.TABLE_NAME;
+        String[] columns = null;
+        String whereClause = FormsTable.COLUMN_CLUSTER_CODE + "= ? AND " +
+                FormsTable.COLUMN_HHID + "= ? ";
+        String[] whereArgs = {psuCode, hhid};
+        String groupBy = null;
+        String having = null;
+        String orderBy = FormsTable.COLUMN_SYSDATE + " ASC";
+        String limitRows = "1";
+
+        c = db.query(
+                distinct,       // Distinct values
+                tableName,      // The table to query
+                columns,        // The columns to return
+                whereClause,    // The columns for the WHERE clause
+                whereArgs,      // The values for the WHERE clause
+                groupBy,        // don't group the rows
+                having,         // don't filter by row groups
+                orderBy,
+                limitRows
+        );
+
+        Forms form = new Forms();
+        while (c.moveToNext()) {
+            form = (new Forms().Hydrate(c));
+        }
+
+        c.close();
+        db.close();
+        return form;
+
     }
 
 }

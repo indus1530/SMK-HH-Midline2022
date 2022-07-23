@@ -32,35 +32,7 @@
 
 
         <activity
-            android:name=".ui.sections.SectionAH7Activity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
-
-        <activity
-            android:name=".ui.sections.SectionAH6Activity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
-
-        <activity
-            android:name=".ui.sections.SectionAH5Activity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
-
-        <activity
-            android:name=".ui.sections.SectionAH4Activity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
-
-        <activity
-            android:name=".ui.sections.SectionAH3Activity"
+            android:name=".ui.sections.SectionAH1Activity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
@@ -74,98 +46,35 @@
             android:windowSoftInputMode="adjustResize|stateHidden" />
 
         <activity
-            android:name=".ui.sections.SectionAH1Activity"
+            android:name=".ui.sections.SectionAH3Activity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
 
         <activity
-            android:name=".ui.sections.SectionIMAActivity"
+            android:name=".ui.sections.SectionAH4Activity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
 
         <activity
-            android:name=".ui.sections.SectionLActivity"
+            android:name=".ui.sections.SectionAH5Activity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
 
         <activity
-            android:name=".ui.sections.SectionUNActivity"
+            android:name=".ui.sections.SectionAH6Activity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
 
         <activity
-            android:name=".ui.sections.SectionKActivity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
-
-        <activity
-            android:name=".ui.sections.SectionH22Activity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
-
-        <activity
-            android:name=".ui.sections.SectionH21Activity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
-
-        <activity
-            android:name=".ui.sections.SectionH1Activity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
-
-        <activity
-            android:name=".ui.sections.SectionG2Activity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
-
-        <activity
-            android:name=".ui.sections.SectionG1Activity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
-
-        <activity
-            android:name=".ui.sections.SectionF2Activity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
-
-        <activity
-            android:name=".ui.sections.SectionF1Activity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
-
-        <activity
-            android:name=".ui.sections.SectionE1AActivity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
-
-        <activity
-            android:name=".ui.sections.SectionMActivity"
+            android:name=".ui.sections.SectionAH7Activity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
@@ -179,16 +88,136 @@
             android:windowSoftInputMode="adjustResize|stateHidden" />
 
         <activity
-            android:name=".ui.IdentificationActivityy"
+            android:name=".ui.sections.SectionE1AActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
 
         <activity
-            android:name=".ui.ChildEndingActivity"
+            android:name=".ui.sections.SectionE1BActivity"
             android:exported="false"
             android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".ui.sections.SectionE2AActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".ui.sections.SectionE2BActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".ui.sections.SectionF1Activity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".ui.sections.SectionF2Activity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".ui.sections.SectionG1Activity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".ui.sections.SectionG2Activity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".ui.sections.SectionH1Activity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".ui.sections.SectionH21Activity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".ui.sections.SectionH22Activity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".ui.sections.SectionIMAActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".ui.sections.SectionIMBActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".ui.sections.SectionKActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".ui.sections.SectionLActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".ui.sections.SectionMActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".ui.sections.SectionNActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".ui.sections.SectionOActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".ui.sections.SectionUNActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
 
         <activity
@@ -204,15 +233,31 @@
             </intent-filter>
         </activity>
 
+
         <activity
-            android:name=".ui.ChangePasswordActivity"
-            android:exported="true" />
+            android:name=".ui.IdentificationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".ui.sections.ConsentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
         <activity
             android:name=".ui.EndingActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".ui.ChangePasswordActivity"
+            android:exported="true" />
         <activity
             android:name=".ui.SyncActivity"
             android:exported="false"
@@ -252,66 +297,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
-        <activity
-            android:name=".ui.lists.HouseholdScreenActivity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
-        <activity
-            android:name=".ui.IdentificationActivity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".ui.sections.ConsentActivity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
-        <activity
-            android:name=".ui.sections.SectionCBActivity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".ui.sections.SectionCHActivity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".ui.sections.SectionIM1Activity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".ui.sections.SectionIM2Activity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".ui.sections.SectionRIActivity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".ui.sections.SectionSS_1Activity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".ui.sections.SectionSS_2Activity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize" />
+
         <activity
             android:name=".ui.WebViewActivity"
             android:exported="false"

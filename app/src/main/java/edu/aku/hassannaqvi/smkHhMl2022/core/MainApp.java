@@ -33,6 +33,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import edu.aku.hassannaqvi.smkHhMl2022.R;
+import edu.aku.hassannaqvi.smkHhMl2022.models.Adolescent;
 import edu.aku.hassannaqvi.smkHhMl2022.models.Child;
 import edu.aku.hassannaqvi.smkHhMl2022.models.Clusters;
 import edu.aku.hassannaqvi.smkHhMl2022.models.FamilyMembers;
@@ -54,12 +55,12 @@ public class MainApp extends Application {
     // public static final String _IP = "https://cls-pae-fp51764";// .TEST server
     // public static final String _IP = "http://f49461:8080/prosystem";// .TEST server
     //public static final String _IP = "http://43.245.131.159:8080";// .TEST server
-    public static final String _HOST_URL = MainApp._IP + "/tpvics_r2/api/";// .TEST server;
+    public static final String _HOST_URL = MainApp._IP + "/uen_rs/api/";// .TEST server;
     public static final String _SERVER_URL = "syncgcm.php";
     public static final String _USER_URL = "resetpassword.php";
     public static final String _SERVER_GET_URL = "getDatagcm.php";
     public static final String _PHOTO_UPLOAD_URL = _HOST_URL + "uploads.php";
-    public static final String _UPDATE_URL = MainApp._IP + "/tpvics_r2/app/survey";
+    public static final String _UPDATE_URL = MainApp._IP + "/uen_rs/app/survey";
     public static final String _APP_FOLDER = "../app/survey";
     public static final String _EMPTY_ = "";
     private static final String TAG = "MainApp";
@@ -78,6 +79,7 @@ public class MainApp extends Application {
     public static MWRA mwra;
     // public static Pregnancy pregnancy;
     public static Child child;
+    public static Adolescent adol;
     public static FamilyMembers familyMember;
     public static MaternalMortality mortality;
     public static RandomHH currentHousehold;
@@ -100,11 +102,9 @@ public class MainApp extends Application {
     public static String versionName = edu.aku.hassannaqvi.smkHhMl2022.BuildConfig.VERSION_NAME;
     public static boolean permissionCheck = false;
     public static int entryType = 0;
-    public static List<Child> childList;
-    public static List<Integer> mwraList;
     public static int childCount = 0;
     public static String selectedMWRA;
-    public static int selectedChild;
+    public static String selectedChild;
     public static String selectedChildName = "";
     public static int memberCountComplete;
     public static boolean memberComplete;

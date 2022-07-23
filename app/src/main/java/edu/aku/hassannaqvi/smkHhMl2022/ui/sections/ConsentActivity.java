@@ -37,7 +37,7 @@ public class ConsentActivity extends AppCompatActivity {
         setSupportActionBar(bi.toolbar);
         db = MainApp.appInfo.dbHelper;
         bi.setForm(form);
-        setGPS();
+        //setGPS();
 
         String consentText = getString(R.string.concent, MainApp.user.getFullname());
         bi.consentTextView.setText(consentText);
@@ -144,10 +144,10 @@ public class ConsentActivity extends AppCompatActivity {
 
             String date = DateFormat.format("dd-MM-yyyy HH:mm", Long.parseLong(GPSPref.getString("Time", "0"))).toString();
 
-            form.setGpsLat(lat);
-            form.setGpsLng(lang);
-            form.setGpsAcc(acc);
-            form.setGpsDT(date); // Timestamp is converted to date above
+            //form.setGpsLat(lat);
+            //form.setGpsLng(lang);
+            //form.setGpsAcc(acc);
+            //form.setGpsDT(date); // Timestamp is converted to date above
 
 //            Toast.makeText(this, "GPS set", Toast.LENGTH_SHORT).show();
 

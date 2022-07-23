@@ -75,6 +75,8 @@ public class FamilyMembers extends BaseObservable implements Observable {
     private String d112 = _EMPTY_;
     private String d113 = _EMPTY_;
     private String d114 = _EMPTY_;
+    private String d11601 = _EMPTY_;
+    private String d11602 = _EMPTY_;
 
 
     private boolean expanded;
@@ -509,6 +511,26 @@ public class FamilyMembers extends BaseObservable implements Observable {
     }
 
     @Bindable
+    public String getD11601() {
+        return d11601;
+    }
+
+    public void setD11601(String d11601) {
+        this.d11601 = d11601;
+        notifyPropertyChanged(BR.d11601);
+    }
+
+    @Bindable
+    public String getD11602() {
+        return d11602;
+    }
+
+    public void setD11602(String d11602) {
+        this.d11602 = d11602;
+        notifyPropertyChanged(BR.d11602);
+    }
+
+    @Bindable
     public boolean isMwra() {
         return mwra;
     }
@@ -592,6 +614,8 @@ public class FamilyMembers extends BaseObservable implements Observable {
             this.d112 = json.getString("d112");
             this.d113 = json.getString("d113");
             this.d114 = json.getString("d114");
+            this.d11601 = json.getString("d11601");
+            this.d11602 = json.getString("d11602");
         }
     }
 
@@ -646,7 +670,9 @@ public class FamilyMembers extends BaseObservable implements Observable {
                 .put("d115", d115)
                 .put("d112", d112)
                 .put("d113", d113)
-                .put("d114", d114);
+                .put("d114", d114)
+                .put("d11601", d11601)
+                .put("d11602", d11602);
         return json.toString();
     }
 

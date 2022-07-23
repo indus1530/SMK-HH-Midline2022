@@ -144,11 +144,10 @@ public class SectionE1AActivity extends AppCompatActivity {
 
 
     public void btnEnd(View view) {
-
         finish();
         startActivity(new Intent(this, EndingActivity.class).putExtra("complete", false));
-
     }
+
 
     private boolean formValidation() {
         return Validator.emptyCheckingContainer(this, bi.GrpName);

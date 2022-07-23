@@ -170,6 +170,37 @@ public class TableContracts {
         public static final String COLUMN_ISTATUS = "istatus";
     }
 
+    public static abstract class AdolescentTable implements BaseColumns {
+        public static final String TABLE_NAME = "Adolescent";
+        public static final String COLUMN_NAME_NULLABLE = "NULLHACK";
+        public static final String COLUMN_PROJECT_NAME = "projectName";
+        public static final String COLUMN_ID = "_id";
+        public static final String COLUMN_UID = "_uid";
+        public static final String COLUMN_UUID = "_uuid";
+        public static final String COLUMN_FMUID = "_fmuid";
+        public static final String COLUMN_MUID = "_muid";
+        public static final String COLUMN_PSU_CODE = "psuCode";
+        public static final String COLUMN_HHID = "hhid";
+        public static final String COLUMN_USERNAME = "username";
+        public static final String COLUMN_SYSDATE = "sysdate";
+        public static final String COLUMN_INDEXED = "indexed";
+        public static final String COLUMN_SNO = "sno";
+        public static final String COLUMN_SAH1 = "sAH1";
+        public static final String COLUMN_SAH2 = "sAH2";
+        public static final String COLUMN_SAH3 = "sAH3";
+        public static final String COLUMN_SAH4 = "sAH4";
+        public static final String COLUMN_SAH5 = "sAH5";
+        public static final String COLUMN_SAH6 = "sAH6";
+        public static final String COLUMN_SAH7 = "sAH7";
+
+        public static final String COLUMN_DEVICEID = "deviceid";
+        public static final String COLUMN_DEVICETAGID = "devicetagid";
+        public static final String COLUMN_SYNCED = "synced";
+        public static final String COLUMN_SYNC_DATE = "sync_date";
+        public static final String COLUMN_APPVERSION = "appversion";
+        public static final String COLUMN_ISTATUS = "istatus";
+    }
+
 
     public static abstract class PregnancyDetailsTable implements BaseColumns {
         public static final String TABLE_NAME = "PregnancyDetails";

@@ -1,6 +1,6 @@
 package edu.aku.hassannaqvi.smkHhMl2022.ui.sections;
 
-import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.form;
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.adol;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -31,7 +31,7 @@ public class SectionAH7Activity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_ah7);
         setSupportActionBar(bi.toolbar);
         db = MainApp.appInfo.dbHelper;
-        bi.setForm(form);
+        bi.setForm(adol);
     }
 
 

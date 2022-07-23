@@ -15,6 +15,7 @@ import java.util.List;
 
 import edu.aku.hassannaqvi.smkHhMl2022.R;
 import edu.aku.hassannaqvi.smkHhMl2022.database.DatabaseHelper;
+import edu.aku.hassannaqvi.smkHhMl2022.models.Forms;
 
 /**
  * Created by hassan.naqvi on 8/1/2016.
@@ -23,10 +24,10 @@ public class FormsAdapter extends RecyclerView.Adapter<FormsAdapter.ViewHolder> 
     private static final String TAG = "FormsAdapter";
     Context c;
     DatabaseHelper db;
-    private List<Form> fc = new ArrayList<>();
+    private List<Forms> fc = new ArrayList<>();
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public FormsAdapter(List<Form> fc, Context c) {
+    public FormsAdapter(List<Forms> fc, Context c) {
         this.fc = fc;
         this.c = c;
         Log.d("TAG:count", String.valueOf(getItemCount()));
@@ -96,14 +97,11 @@ public class FormsAdapter extends RecyclerView.Adapter<FormsAdapter.ViewHolder> 
                 break;
 
         }
-
         holder.hhno.setText(fc.get(position).getHhid() + " \t\t(" + fc.get(position).getSysDate() + ")");
-        holder.cluster.setText(fc.get(position).getEbCode());
+        holder.cluster.setText(fc.get(position).getClusterCode());
         holder.istatus.setText(iStatus);
         holder.sysdate.setText("  Child Count: " + childCount + " \t\t\t Card Seen: " + cardChild + " \t\t\t Photo Child: " + photoChild);
         holder.istatus.setTextColor(iColor);
-
-
     }
 
 

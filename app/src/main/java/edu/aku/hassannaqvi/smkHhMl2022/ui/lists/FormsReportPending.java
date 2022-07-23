@@ -17,10 +17,11 @@ import edu.aku.hassannaqvi.smkHhMl2022.adapters.FormsAdapter;
 import edu.aku.hassannaqvi.smkHhMl2022.core.MainApp;
 import edu.aku.hassannaqvi.smkHhMl2022.database.DatabaseHelper;
 import edu.aku.hassannaqvi.smkHhMl2022.databinding.ActivityFormsReportBinding;
+import edu.aku.hassannaqvi.smkHhMl2022.models.Forms;
 
 public class FormsReportPending extends AppCompatActivity {
     DatabaseHelper db;
-    List<Form> fc;
+    List<Forms> fc;
     String sysdateToday = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
     ActivityFormsReportBinding bi;
     private RecyclerView.Adapter formsAdapter;

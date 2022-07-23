@@ -25,9 +25,11 @@ import java.util.Locale;
 import edu.aku.hassannaqvi.smkHhMl2022.core.MainApp;
 import edu.aku.hassannaqvi.smkHhMl2022.database.AndroidManager;
 import edu.aku.hassannaqvi.smkHhMl2022.databinding.ActivityMainBinding;
+import edu.aku.hassannaqvi.smkHhMl2022.models.Child;
+import edu.aku.hassannaqvi.smkHhMl2022.models.Forms;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.ChangePasswordActivity;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.EndingActivity;
-import edu.aku.hassannaqvi.smkHhMl2022.ui.IdentificationActivityy;
+import edu.aku.hassannaqvi.smkHhMl2022.ui.IdentificationActivity;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.SyncActivity;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.TakePhoto;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.lists.FormsReportCluster;
@@ -132,30 +134,30 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
 
             case R.id.startInterview:
-                MainApp.form = new Form();
-                startActivity(new Intent(this, IdentificationActivityy.class));
+                MainApp.form = new Forms();
+                startActivity(new Intent(this, IdentificationActivity.class));
                 break;
             case R.id.seca1:
-                MainApp.form = new Form();
+                MainApp.form = new Forms();
                 startActivity(new Intent(this, SectionAH1Activity.class));
                 break;
             case R.id.secri:
-                MainApp.form = new Form();
+                MainApp.form = new Forms();
                 startActivity(new Intent(this, SectionDActivity.class));
                 break;
 
             case R.id.secss1:
-                MainApp.form = new Form();
+                MainApp.form = new Forms();
                 startActivity(new Intent(this, SectionE1AActivity.class));
                 break;
 
             case R.id.secess2:
-                MainApp.form = new Form();
+                MainApp.form = new Forms();
                 startActivity(new Intent(this, SectionF1Activity.class));
                 break;
 
             case R.id.seceCH:
-                MainApp.form = new Form();
+                MainApp.form = new Forms();
                 startActivity(new Intent(this, SectionG1Activity.class));
                 break;
             case R.id.secCB:
@@ -169,12 +171,12 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.seccs:
-                MainApp.form = new Form();
+                MainApp.form = new Forms();
                 startActivity(new Intent(this, ConsentActivity.class));
                 break;
 
             case R.id.secis:
-                MainApp.form = new Form();
+                MainApp.form = new Forms();
                 startActivity(new Intent(this, EndingActivity.class));
                 break;
 

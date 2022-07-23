@@ -63,7 +63,6 @@ public class EntryLog extends BaseObservable implements Observable {
         setiStatus(MainApp.form.getiStatus());
         setiStatus96x(MainApp.form.getiStatus96x());
         setAppver(MainApp.appInfo.getAppVersion());
-        setEntryType(MainApp.form.getEntryType());
         setDeviceId(MainApp.deviceid);
 
     }

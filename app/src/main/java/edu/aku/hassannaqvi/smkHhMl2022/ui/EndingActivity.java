@@ -26,7 +26,7 @@ import edu.aku.hassannaqvi.smkHhMl2022.models.EntryLog;
 public class EndingActivity extends AppCompatActivity {
 
     ActivityEndingBinding bi;
-    int checkToEnable;
+    int sectionMainCheck;
     private DatabaseHelper db;
 
 
@@ -38,60 +38,23 @@ public class EndingActivity extends AppCompatActivity {
         bi.setForm(form);
 
         setSupportActionBar(bi.toolbar);
-        //setTitle(R.string.section1mainheading);
+        //setTitle(R.string.section1_mainheading);
         if (MainApp.superuser)
             bi.btnContinue.setText("End Review");
 
         db = MainApp.appInfo.dbHelper;
         boolean check = getIntent().getBooleanExtra("complete", false);
+        //sectionMainCheck = getIntent().getIntExtra("status", 0);
 
-        checkToEnable = getIntent().getIntExtra("checkToEnable", 0);
 
         bi.istatusa.setEnabled(check);
-        bi.istatusb.setEnabled(check);
-        bi.istatusc.setEnabled(check);
-        bi.istatusd.setEnabled(check);
-        bi.istatuse.setEnabled(check);
-        bi.istatusf.setEnabled(check);
-        bi.istatusg.setEnabled(check);
-        bi.istatus96.setEnabled(check);
+        bi.istatusb.setEnabled(!check);
+        bi.istatusc.setEnabled(!check);
+        bi.istatusd.setEnabled(!check);
+        bi.istatuse.setEnabled(!check);
+        bi.istatusf.setEnabled(!check);
+        bi.istatusg.setEnabled(!check);
 
-        switch (checkToEnable) {
-            case 1:
-                bi.istatusa.setEnabled(!check);
-                break;
-            case 2:
-                bi.istatusb.setEnabled(!check);
-                break;
-            case 3:
-                bi.istatusc.setEnabled(!check);
-                break;
-            case 4:
-                bi.istatusd.setEnabled(!check);
-                break;
-            case 5:
-                bi.istatuse.setEnabled(!check);
-                break;
-            case 6:
-                bi.istatusf.setEnabled(!check);
-                break;
-            case 7:
-                bi.istatusg.setEnabled(!check);
-                break;
-            case 8:
-                bi.istatus96.setEnabled(!check);
-                break;
-            default:
-                bi.istatusa.setEnabled(check);
-                bi.istatusb.setEnabled(!check);
-                bi.istatusc.setEnabled(!check);
-                bi.istatusd.setEnabled(!check);
-                bi.istatuse.setEnabled(!check);
-                bi.istatusf.setEnabled(!check);
-                bi.istatusg.setEnabled(!check);
-                bi.istatus96.setEnabled(!check);
-
-        }
 
     }
 
@@ -154,7 +117,7 @@ public class EndingActivity extends AppCompatActivity {
     private boolean UpdateDB() {
         if (MainApp.superuser) return true;
         try {
-            db.updatesFormColumn(TableContracts.FormsTable.COLUMN_SHH, form.sHHtoString());
+            db.updatesFormColumn(TableContracts.FormsTable.COLUMN_SA, form.sAtoString());
         } catch (JSONException e) {
             e.printStackTrace();
             Toast.makeText(this, "JSONException(Forms): ", Toast.LENGTH_SHORT).show();
@@ -171,9 +134,7 @@ public class EndingActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
-        setResult(RESULT_CANCELED);
-        finish();
+        Toast.makeText(getApplicationContext(), "Back Press Not Allowed", Toast.LENGTH_LONG).show();
     }
 
 }
