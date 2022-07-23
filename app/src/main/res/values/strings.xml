@@ -2366,6 +2366,7 @@
     <string name="f10702">Nobody accompany me, I went on my own</string>
     <string name="f10796">Other (Please Specify)</string>
     <string name="f108">How many weeks or months pregnant were you when you first received antenatal care during pregnancy with {NAME}? Record the answer as stated by respondent. </string>
+    <string name="f108t">Record the answer as stated by respondent. </string>
     <string name="f10801">Weeks</string>
     <string name="f10802">Month</string>
     <string name="f10898">Don’t Known</string>

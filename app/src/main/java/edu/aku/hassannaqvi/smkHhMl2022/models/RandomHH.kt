@@ -12,7 +12,7 @@ import org.json.JSONObject
 class RandomHH {
     var ID: Long = 0
     var sno: String = _EMPTY_
-    var clusteCcode: String = _EMPTY_
+    var clusterCode: String = _EMPTY_
     var hhno: String = _EMPTY_
     var headhh: String = _EMPTY_
 
@@ -22,9 +22,8 @@ class RandomHH {
 
     @Throws(JSONException::class)
     fun sync(jsonObject: JSONObject): RandomHH {
-        ID = jsonObject.getLong(RandomHHTable.COLUMN_ID)
         sno = jsonObject.getString(RandomHHTable.COLUMN_SNO)
-        clusteCcode = jsonObject.getString(RandomHHTable.COLUMN_CLUSTER_CODE)
+        clusterCode = jsonObject.getString(RandomHHTable.COLUMN_CLUSTER_CODE)
         hhno = jsonObject.getString(RandomHHTable.COLUMN_HH_NO)
         headhh = jsonObject.getString(RandomHHTable.COLUMN_HEAD_HH)
         return this
@@ -33,7 +32,7 @@ class RandomHH {
     fun hydrate(cursor: Cursor): RandomHH {
         ID = cursor.getLong(cursor.getColumnIndexOrThrow(RandomHHTable.COLUMN_ID))
         sno = cursor.getString(cursor.getColumnIndexOrThrow(RandomHHTable.COLUMN_SNO))
-        clusteCcode =
+        clusterCode =
             cursor.getString(cursor.getColumnIndexOrThrow(RandomHHTable.COLUMN_CLUSTER_CODE))
         hhno = cursor.getString(cursor.getColumnIndexOrThrow(RandomHHTable.COLUMN_HH_NO))
         headhh = cursor.getString(cursor.getColumnIndexOrThrow(RandomHHTable.COLUMN_HEAD_HH))

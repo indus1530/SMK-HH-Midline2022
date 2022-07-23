@@ -586,7 +586,7 @@ public class MWRA extends BaseObservable implements Observable {
         setSno(selectedMWRA);
         setAppver(MainApp.appInfo.getAppVersion());
         setProjectName(PROJECT_NAME);
-        setpsuCode(MainApp.currentHousehold.getClusteCcode());
+        setpsuCode(MainApp.currentHousehold.getClusterCode());
         setHhid(MainApp.currentHousehold.getHhno());
         // setEntryType(String.valueOf(MainApp.entryType));
 

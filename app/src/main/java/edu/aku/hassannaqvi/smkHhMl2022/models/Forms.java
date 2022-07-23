@@ -1055,12 +1055,12 @@ public class Forms extends BaseObservable implements Observable {
         setDeviceId(MainApp.deviceid);
         setAppver(MainApp.appInfo.getAppVersion());
         setProjectName(PROJECT_NAME);
-        setClusterCode(MainApp.currentHousehold.getClusteCcode());
+        setClusterCode(MainApp.currentHousehold.getClusterCode());
         setHhid(MainApp.currentHousehold.getHhno());
         setSno(MainApp.currentHousehold.getSno());
 
         //SECTION VARIABLES
-        setA101(MainApp.currentHousehold.getClusteCcode());
+        setA101(MainApp.currentHousehold.getClusterCode());
         setA105(selectedDistrict);
         setA106(selectedTehsil);
         setA107(selectedUC);

@@ -1,5 +1,6 @@
 package edu.aku.hassannaqvi.smkHhMl2022.ui.sections;
 
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.form;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.sharedPref;
 
 import android.content.Intent;
@@ -18,63 +19,61 @@ import edu.aku.hassannaqvi.smkHhMl2022.R;
 import edu.aku.hassannaqvi.smkHhMl2022.contracts.TableContracts;
 import edu.aku.hassannaqvi.smkHhMl2022.core.MainApp;
 import edu.aku.hassannaqvi.smkHhMl2022.database.DatabaseHelper;
-import edu.aku.hassannaqvi.smkHhMl2022.databinding.ActivitySectionF1Binding;
-import edu.aku.hassannaqvi.smkHhMl2022.ui.EndingActivity;
+import edu.aku.hassannaqvi.smkHhMl2022.databinding.ActivitySectionABinding;
 
-public class SectionF1Activity extends AppCompatActivity {
+public class SectionAActivity extends AppCompatActivity {
 
-    private static final String TAG = "SectionF1Activity";
-    ActivitySectionF1Binding bi;
+
+    private static final String TAG = "SectionAActivity";
+    ActivitySectionABinding bi;
     private DatabaseHelper db;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTheme(sharedPref.getString("lang", "0").equals("2") ? R.style.AppThemeSindhi : sharedPref.getString("lang", "0").equals("1") ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
-
-
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_f1);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a);
+        setupSkips();
         setSupportActionBar(bi.toolbar);
         db = MainApp.appInfo.dbHelper;
+        form.setA103(MainApp.currentHousehold.getSno());
+        bi.setForm(form);
+    }
 
-        try {
-            MainApp.mwra = db.getMwraByUUid();
-        } catch (JSONException e) {
-            e.printStackTrace();
-            Toast.makeText(this, "JSONException(MWRA): " + e.getMessage(), Toast.LENGTH_SHORT).show();
-        }
-        bi.setMwra(MainApp.mwra);
+    private void setupSkips() {
+
     }
 
     private boolean insertNewRecord() {
-        if (!MainApp.mwra.getUid().equals("") || MainApp.superuser) return true;
-        MainApp.mwra.populateMeta();
+        if (!MainApp.form.getUid().equals("") || MainApp.superuser) return true;
+
+        MainApp.form.populateMeta();
+
         long rowId = 0;
         try {
-            rowId = db.addMWRA(MainApp.mwra);
+            rowId = db.addForm(MainApp.form);
         } catch (JSONException e) {
             e.printStackTrace();
             Toast.makeText(this, R.string.db_excp_error, Toast.LENGTH_SHORT).show();
             return false;
         }
-        MainApp.mwra.setId(String.valueOf(rowId));
+        MainApp.form.setId(String.valueOf(rowId));
         if (rowId > 0) {
-            MainApp.mwra.setUid(MainApp.mwra.getDeviceId() + MainApp.mwra.getId());
-            db.updatesMWRAColumn(TableContracts.MwraTable.COLUMN_UID, MainApp.mwra.getUid());
+            MainApp.form.setUid(MainApp.form.getDeviceId() + MainApp.form.getId());
+            db.updatesFormColumn(TableContracts.FormsTable.COLUMN_UID, MainApp.form.getUid());
             return true;
         } else {
             Toast.makeText(this, R.string.upd_db_error, Toast.LENGTH_SHORT).show();
             return false;
         }
-
     }
 
     private boolean updateDB() {
         if (MainApp.superuser) return true;
+
         int updcount = 0;
         try {
-            updcount = db.updatesMWRAColumn(TableContracts.MwraTable.COLUMN_SF, MainApp.mwra.sFtoString());
+            updcount = db.updatesFormColumn(TableContracts.FormsTable.COLUMN_SA, MainApp.form.sAtoString());
         } catch (JSONException e) {
             Toast.makeText(this, R.string.upd_db + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
@@ -84,17 +83,22 @@ public class SectionF1Activity extends AppCompatActivity {
             Toast.makeText(this, R.string.upd_db_error, Toast.LENGTH_SHORT).show();
             return false;
         }
-
     }
 
     public void btnContinue(View view) {
         if (!formValidation()) return;
-        if (MainApp.mwra.getUid().equals("") ? insertNewRecord() : updateDB()) {
+        if (!insertNewRecord()) return;
+        // saveDraft();
+        if (updateDB()) {
+            Intent i;
+            //      if (bi.h111a.isChecked()) {
+            i = new Intent(this, ConsentActivity.class).putExtra("complete", true);
+           /* } else {
+                i = new Intent(this, EndingActivity.class).putExtra("complete", false);
+            }*/
 
+            startActivity(i);
             finish();
-            startActivity(new Intent(this, SectionG1Activity.class).putExtra("complete", true));
-
-
         } else {
             Toast.makeText(this, R.string.fail_db_upd, Toast.LENGTH_SHORT).show();
         }
@@ -102,10 +106,9 @@ public class SectionF1Activity extends AppCompatActivity {
 
 
     public void btnEnd(View view) {
-
         finish();
-        startActivity(new Intent(this, EndingActivity.class).putExtra("complete", false));
-
+        //startActivity(new Intent(this, EndingActivity.class).putExtra("complete", false));
+        //startActivity(new Intent(this, MainActivity.class));
     }
 
     private boolean formValidation() {
@@ -118,4 +121,6 @@ public class SectionF1Activity extends AppCompatActivity {
         // Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
         setResult(RESULT_CANCELED);
     }
+
+
 }

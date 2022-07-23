@@ -751,39 +751,27 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             long rowID = db.insertOrThrow(ClusterTable.TABLE_NAME, null, values);
             if (rowID != -1) insertCount++;
         }
-
-
         return insertCount;
     }
 
-    public int syncRandom(JSONArray list) {
-//        SQLiteDatabase db = this.getWritableDatabase();
+
+    public int syncbl_randomised(JSONArray list) throws JSONException {
         SQLiteDatabase db = this.getWritableDatabase(DATABASE_PASSWORD);
         db.delete(RandomHHTable.TABLE_NAME, null, null);
         int insertCount = 0;
-        try {
-            for (int i = 0; i < list.length(); i++) {
-
-                JSONObject json = list.getJSONObject(i);
-
-                RandomHH ran = new RandomHH();
-                ran.sync(json);
-                ContentValues values = new ContentValues();
-                values.put(RandomHHTable.COLUMN_ID, ran.getID());
-                values.put(RandomHHTable.COLUMN_SNO, ran.getSno());
-                values.put(RandomHHTable.COLUMN_CLUSTER_CODE, ran.getClusteCcode());
-                values.put(RandomHHTable.COLUMN_HH_NO, ran.getHhno());
-                values.put(RandomHHTable.COLUMN_HEAD_HH, ran.getHeadhh());
-                long rowID = db.insert(RandomHHTable.TABLE_NAME, null, values);
-                if (rowID != -1) insertCount++;
-            }
-
-        } catch (Exception e) {
-            Log.d(TAG, "syncRandom(e): " + e);
-            db.close();
-        } finally {
-            db.close();
+        for (int i = 0; i < list.length(); i++) {
+            JSONObject json = list.getJSONObject(i);
+            RandomHH ran = new RandomHH();
+            ran.sync(json);
+            ContentValues values = new ContentValues();
+            values.put(RandomHHTable.COLUMN_SNO, ran.getSno());
+            values.put(RandomHHTable.COLUMN_CLUSTER_CODE, ran.getClusterCode());
+            values.put(RandomHHTable.COLUMN_HH_NO, ran.getHhno());
+            values.put(RandomHHTable.COLUMN_HEAD_HH, ran.getHeadhh());
+            long rowID = db.insertOrThrow(RandomHHTable.TABLE_NAME, null, values);
+            if (rowID != -1) insertCount++;
         }
+
         return insertCount;
     }
 

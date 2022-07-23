@@ -63,7 +63,7 @@ public class PregnancyMaster extends BaseObservable implements Observable {
 //        setMsno(MainApp.mwra.getBs1q1());
         setAppver(MainApp.appInfo.getAppVersion());
         setProjectName(PROJECT_NAME);
-        setClusterCode(MainApp.currentHousehold.getClusteCcode());
+        setClusterCode(MainApp.currentHousehold.getClusterCode());
         setHhid(MainApp.currentHousehold.getHhno());
     }
 

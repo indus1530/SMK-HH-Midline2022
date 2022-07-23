@@ -23,7 +23,7 @@ import edu.aku.hassannaqvi.smkHhMl2022.databinding.ActivityIdentificationBinding
 import edu.aku.hassannaqvi.smkHhMl2022.models.Clusters;
 import edu.aku.hassannaqvi.smkHhMl2022.models.Forms;
 import edu.aku.hassannaqvi.smkHhMl2022.models.RandomHH;
-import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.ConsentActivity;
+import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionAActivity;
 
 
 public class IdentificationActivity extends AppCompatActivity {
@@ -240,7 +240,7 @@ public class IdentificationActivity extends AppCompatActivity {
         } else {
             randHH = testRand;
         }*/
-        if (!randHH.getClusteCcode().equals("")) {
+        if (!randHH.getClusterCode().equals("")) {
          /*   bi.ahhead.setError(null);
             bi.ahhead.setText(randHH.getHeadhh());*/
             bi.btnContinue.setBackgroundTintList(ContextCompat.getColorStateList(IdentificationActivity.this, R.color.colorAccent));
@@ -270,7 +270,7 @@ public class IdentificationActivity extends AppCompatActivity {
             Toast.makeText(this, "This form has been locked.", Toast.LENGTH_SHORT).show();
         } else {
             finish();
-            startActivity(new Intent(this, ConsentActivity.class));
+            startActivity(new Intent(this, SectionAActivity.class));
         }
 
     }
@@ -325,7 +325,7 @@ public class IdentificationActivity extends AppCompatActivity {
 
         MainApp.form = new Forms();
         try {
-            MainApp.form = db.getFormByPSUHHNo(MainApp.currentHousehold.getClusteCcode(), MainApp.currentHousehold.getHhno());
+            MainApp.form = db.getFormByPSUHHNo(MainApp.currentHousehold.getClusterCode(), MainApp.currentHousehold.getHhno());
         } catch (JSONException e) {
             Log.d(TAG, getString(R.string.hh_exists_form) + e.getMessage());
             Toast.makeText(this, getString(R.string.hh_exists_form) + e.getMessage(), Toast.LENGTH_SHORT).show();

@@ -89,7 +89,7 @@ public class PregnancyDetails extends BaseObservable implements Observable {
         setUuid(MainApp.form.getUid());  // not applicable in Form table
         setAppver(MainApp.appInfo.getAppVersion());
         setProjectName(PROJECT_NAME);
-        setPsuCode(MainApp.currentHousehold.getClusteCcode());
+        setPsuCode(MainApp.currentHousehold.getClusterCode());
         setHhid(MainApp.currentHousehold.getHhno());
         setPSno(MainApp.pregM.getE101a());
 
