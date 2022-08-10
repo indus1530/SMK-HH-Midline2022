@@ -2,8 +2,7 @@ package edu.aku.hassannaqvi.smkHhMl2022.models;
 
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.PROJECT_NAME;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp._EMPTY_;
-import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedChild;
-import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedMWRA;
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedAdol;
 
 import android.database.Cursor;
 import android.util.Log;
@@ -278,9 +277,9 @@ public class Adolescent extends BaseObservable implements Observable {
         setUserName(MainApp.user.getUserName());
         setDeviceId(MainApp.deviceid);
         setUuid(MainApp.form.getUid());  // not applicable in Form table
-        setFmuid(MainApp.familyList.get(Integer.parseInt(selectedChild)).getUid()); //// not applicable in Form table
-        setMuid(MainApp.familyList.get(Integer.parseInt(selectedMWRA)).getUid());  // not applicable in Form table
-        setSno(selectedChild + 1);
+        setFmuid(MainApp.familyList.get(Integer.parseInt(selectedAdol)).getUid()); //// not applicable in Form table
+        //setMuid(MainApp.familyList.get(Integer.parseInt(selectedMWRA)).getUid());  // not applicable in Form table
+        setSno(selectedAdol + 1);
         setAppver(MainApp.appInfo.getAppVersion());
         setProjectName(PROJECT_NAME);
         setpsuCode(MainApp.currentHousehold.getClusterCode());

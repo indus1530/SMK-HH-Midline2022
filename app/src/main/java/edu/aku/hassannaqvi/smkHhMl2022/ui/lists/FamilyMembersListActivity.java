@@ -1,6 +1,7 @@
 package edu.aku.hassannaqvi.smkHhMl2022.ui.lists;
 
 import static android.view.View.VISIBLE;
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedAdol;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedChild;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedChildName;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedMWRA;
@@ -104,6 +105,14 @@ public class FamilyMembersListActivity extends AppCompatActivity {
 
                         }
 
+                        /**
+                         *  Populate All Adolescent between 10-19
+                         */
+                        if (Integer.parseInt(MainApp.familyMember.getD109y()) >= 10 && Integer.parseInt(MainApp.familyMember.getD109y()) <= 19) {
+                            MainApp.allAdolList.add(MainApp.familyMember);
+
+                        }
+
                         /** populateMothersList
                          *      Familymember has a value in mothers Serial Number (HL8)
                          *      Mother not already exists in the MWRA List
@@ -158,6 +167,7 @@ public class FamilyMembersListActivity extends AppCompatActivity {
         MainApp.mwraList = new ArrayList<>();
         MainApp.allMWRAList = new ArrayList<>();
         MainApp.allChildrenList = new ArrayList<>();
+        MainApp.allAdolList = new ArrayList<>();
 
 
         MainApp.fatherList = new ArrayList<>();
@@ -195,6 +205,11 @@ public class FamilyMembersListActivity extends AppCompatActivity {
                     MainApp.allChildrenList.add(fm);
                 }
 
+                // Populate All Adolescent
+                if (Integer.parseInt(MainApp.familyMember.getD109y()) >= 10 && Integer.parseInt(MainApp.familyMember.getD109y()) <= 19) {
+                    MainApp.allAdolList.add(fm);
+                }
+
                 // Populate mothers' list
                 String motherSno = fm.getD107(); // mother's line number from child
                 if (Integer.parseInt(fm.getD109y()) < 5 && fm.getD115().equals("1") &&
@@ -216,7 +231,8 @@ public class FamilyMembersListActivity extends AppCompatActivity {
             Toast.makeText(this, "JSONException(FamilyMembers): " + e.getMessage(), Toast.LENGTH_LONG).show();
         }
         selectedMWRA = "";
-        MainApp.selectedChild = "";
+        selectedChild = "";
+        selectedAdol = "";
 
         // Set Selected Members
         for (int i = 0; i < MainApp.familyList.size(); i++) {

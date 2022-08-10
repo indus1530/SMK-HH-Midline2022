@@ -106,6 +106,7 @@ public class MainApp extends Application {
     public static int childCount = 0;
     public static String selectedMWRA;
     public static String selectedChild;
+    public static String selectedAdol;
     public static String selectedChildName = "";
     public static int memberCountComplete;
     public static boolean memberComplete;
