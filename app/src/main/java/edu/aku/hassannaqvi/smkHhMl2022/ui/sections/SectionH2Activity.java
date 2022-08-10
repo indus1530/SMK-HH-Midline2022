@@ -18,39 +18,38 @@ import edu.aku.hassannaqvi.smkHhMl2022.R;
 import edu.aku.hassannaqvi.smkHhMl2022.contracts.TableContracts;
 import edu.aku.hassannaqvi.smkHhMl2022.core.MainApp;
 import edu.aku.hassannaqvi.smkHhMl2022.database.DatabaseHelper;
-import edu.aku.hassannaqvi.smkHhMl2022.databinding.ActivitySectionKBinding;
+import edu.aku.hassannaqvi.smkHhMl2022.databinding.ActivitySectionH2Binding;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.EndingActivity;
 
-public class SectionKActivity extends AppCompatActivity {
 
-
-    private static final String TAG = "SectionKActivity";
-    ActivitySectionKBinding bi;
+public class SectionH2Activity extends AppCompatActivity {
+    private static final String TAG = "SectionH2Activity";
+    ActivitySectionH2Binding bi;
     private DatabaseHelper db;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTheme(sharedPref.getString("lang", "0").equals("2") ? R.style.AppThemeSindhi : sharedPref.getString("lang", "0").equals("1") ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_k);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_h2);
         bi.setMwra(MainApp.mwra);
         setupSkips();
         setSupportActionBar(bi.toolbar);
-        setTitle(R.string.sectionkfamilyplanning_mainheading);
         db = MainApp.appInfo.dbHelper;
-
     }
+
 
     private void setupSkips() {
-
     }
+
 
     private boolean updateDB() {
         if (MainApp.superuser) return true;
 
         int updcount = 0;
         try {
-            updcount = db.updatesMWRAColumn(TableContracts.MwraTable.COLUMN_SK, MainApp.mwra.sKtoString());
+            updcount = db.updatesMWRAColumn(TableContracts.MwraTable.COLUMN_SH2, MainApp.mwra.sH2toString());
         } catch (JSONException e) {
             Toast.makeText(this, R.string.upd_db + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
@@ -61,19 +60,23 @@ public class SectionKActivity extends AppCompatActivity {
             return false;
         }
 
-
     }
+
 
     public void btnContinue(View view) {
         if (!formValidation()) return;
+        saveDraft();
         if (updateDB()) {
             finish();
-            startActivity(new Intent(this, SectionUNActivity.class).putExtra("complete", true));
+            startActivity(new Intent(this, SectionKActivity.class).putExtra("complete", true));
         } else {
             Toast.makeText(this, R.string.fail_db_upd, Toast.LENGTH_SHORT).show();
         }
     }
 
+
+    private void saveDraft() {
+    }
 
 
     public void btnEnd(View view) {
@@ -81,8 +84,15 @@ public class SectionKActivity extends AppCompatActivity {
         startActivity(new Intent(this, EndingActivity.class).putExtra("complete", false));
     }
 
+
     private boolean formValidation() {
-        return Validator.emptyCheckingContainer(this, bi.GrpName);
+        if (!Validator.emptyCheckingContainer(this, bi.GrpName))
+            return false;
+
+        if (MainApp.mwra.getH202().equals("1") && Integer.parseInt(MainApp.mwra.getH203d()) == 0 && Integer.parseInt(MainApp.mwra.getH203h()) == 0 && Integer.parseInt(MainApp.mwra.getH203w()) == 0)
+            return Validator.emptyCustomTextBox(this, bi.h203w, "All cannot be Zero");
+
+        return true;
     }
 
 
@@ -91,5 +101,4 @@ public class SectionKActivity extends AppCompatActivity {
         // Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
         setResult(RESULT_CANCELED);
     }
-
 }

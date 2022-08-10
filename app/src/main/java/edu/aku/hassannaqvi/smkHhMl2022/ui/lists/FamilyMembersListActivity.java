@@ -104,13 +104,6 @@ public class FamilyMembersListActivity extends AppCompatActivity {
 
                         }
 
-                        /**
-                         *  Populate All Adolescent Between 10-19
-                         */
-                        if (MainApp.familyMember.getD115().equals("1") && Integer.parseInt(MainApp.familyMember.getD109y()) > 9 && Integer.parseInt(MainApp.familyMember.getD109y()) < 20) {
-                            MainApp.allAdolList.add(MainApp.familyMember);
-                        }
-
                         /** populateMothersList
                          *      Familymember has a value in mothers Serial Number (HL8)
                          *      Mother not already exists in the MWRA List
@@ -165,7 +158,6 @@ public class FamilyMembersListActivity extends AppCompatActivity {
         MainApp.mwraList = new ArrayList<>();
         MainApp.allMWRAList = new ArrayList<>();
         MainApp.allChildrenList = new ArrayList<>();
-        MainApp.allAdolList = new ArrayList<>();
 
 
         MainApp.fatherList = new ArrayList<>();
@@ -201,11 +193,6 @@ public class FamilyMembersListActivity extends AppCompatActivity {
                 // Populate All U-5 Children
                 if (Integer.parseInt(fm.getD109y()) < 5) {
                     MainApp.allChildrenList.add(fm);
-                }
-
-                // Populate All B-10-19 Adolescent
-                if (Integer.parseInt(fm.getD109y()) > 9 && Integer.parseInt(fm.getD109y()) < 20) {
-                    MainApp.allAdolList.add(fm);
                 }
 
                 // Populate mothers' list

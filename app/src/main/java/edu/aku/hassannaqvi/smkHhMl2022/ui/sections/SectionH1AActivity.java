@@ -18,31 +18,37 @@ import edu.aku.hassannaqvi.smkHhMl2022.R;
 import edu.aku.hassannaqvi.smkHhMl2022.contracts.TableContracts;
 import edu.aku.hassannaqvi.smkHhMl2022.core.MainApp;
 import edu.aku.hassannaqvi.smkHhMl2022.database.DatabaseHelper;
-import edu.aku.hassannaqvi.smkHhMl2022.databinding.ActivitySectionKBinding;
+import edu.aku.hassannaqvi.smkHhMl2022.databinding.ActivitySectionH1aBinding;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.EndingActivity;
 
-public class SectionKActivity extends AppCompatActivity {
+public class SectionH1AActivity extends AppCompatActivity {
 
-
-    private static final String TAG = "SectionKActivity";
-    ActivitySectionKBinding bi;
+    private static final String TAG = "SectionH1Activity";
+    ActivitySectionH1aBinding bi;
+    int childAge;
     private DatabaseHelper db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTheme(sharedPref.getString("lang", "0").equals("2") ? R.style.AppThemeSindhi : sharedPref.getString("lang", "0").equals("1") ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_k);
+
+
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_h1a);
         bi.setMwra(MainApp.mwra);
+        childAge = Integer.parseInt(MainApp.familyList.get(Integer.parseInt(MainApp.selectedChild)).getD109y());
+        if (childAge < 6) bi.fldGrpCVh114.setVisibility(View.GONE);
         setupSkips();
         setSupportActionBar(bi.toolbar);
-        setTitle(R.string.sectionkfamilyplanning_mainheading);
         db = MainApp.appInfo.dbHelper;
-
     }
 
     private void setupSkips() {
-
+        bi.h113.setOnCheckedChangeListener((group, id) -> {
+            if (childAge > 5 && id == bi.h11301.getId())
+                bi.fldGrpCVh114.setVisibility(View.VISIBLE);
+            else bi.fldGrpCVh114.setVisibility(View.GONE);
+        });
     }
 
     private boolean updateDB() {
@@ -50,7 +56,7 @@ public class SectionKActivity extends AppCompatActivity {
 
         int updcount = 0;
         try {
-            updcount = db.updatesMWRAColumn(TableContracts.MwraTable.COLUMN_SK, MainApp.mwra.sKtoString());
+            updcount = db.updatesMWRAColumn(TableContracts.MwraTable.COLUMN_SH1, MainApp.mwra.sH1toString());
         } catch (JSONException e) {
             Toast.makeText(this, R.string.upd_db + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
@@ -66,14 +72,17 @@ public class SectionKActivity extends AppCompatActivity {
 
     public void btnContinue(View view) {
         if (!formValidation()) return;
+        saveDraft();
         if (updateDB()) {
             finish();
-            startActivity(new Intent(this, SectionUNActivity.class).putExtra("complete", true));
+            startActivity(new Intent(this, SectionH1BActivity.class).putExtra("complete", true));
         } else {
             Toast.makeText(this, R.string.fail_db_upd, Toast.LENGTH_SHORT).show();
         }
     }
 
+    private void saveDraft() {
+    }
 
 
     public void btnEnd(View view) {
@@ -91,5 +100,4 @@ public class SectionKActivity extends AppCompatActivity {
         // Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
         setResult(RESULT_CANCELED);
     }
-
 }
