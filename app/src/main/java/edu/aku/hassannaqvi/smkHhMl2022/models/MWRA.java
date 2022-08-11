@@ -91,11 +91,15 @@ public class MWRA extends BaseObservable implements Observable {
     private String f10303 = _EMPTY_;
     private String f10304 = _EMPTY_;
     private String f10305 = _EMPTY_;
+    public String f104 = _EMPTY_;;
+    public String f105 = _EMPTY_;;
+    public String f106 = _EMPTY_;;
     private String f107 = _EMPTY_;
     private String f10796x = _EMPTY_;
     private String f108 = _EMPTY_;
     private String f108wx = _EMPTY_;
     private String f108mx = _EMPTY_;
+
     private String f11001 = _EMPTY_;
     private String f11002 = _EMPTY_;
     private String f11003 = _EMPTY_;
@@ -112,6 +116,7 @@ public class MWRA extends BaseObservable implements Observable {
     private String f113 = _EMPTY_;
     private String f11301x = _EMPTY_;
     private String f114 = _EMPTY_;
+    private String f115 = _EMPTY_;
     private String f11601 = _EMPTY_;
     private String f11602 = _EMPTY_;
     private String f11603 = _EMPTY_;
@@ -130,6 +135,7 @@ public class MWRA extends BaseObservable implements Observable {
     private String f12001x = _EMPTY_;
     private String f121a = _EMPTY_;
     private String f121b = _EMPTY_;
+    private String f12101 = _EMPTY_;
     private String f121b96x = _EMPTY_;
     private String f122 = _EMPTY_;
     private String f12201x = _EMPTY_;
@@ -143,6 +149,26 @@ public class MWRA extends BaseObservable implements Observable {
     private String f12307 = _EMPTY_;
     private String f12308 = _EMPTY_;
     private String f12309 = _EMPTY_;
+    public String f124 = _EMPTY_;
+    public String f125 = _EMPTY_;
+    public String f12501 = _EMPTY_;
+    public String f12502 = _EMPTY_;
+    public String f12503 = _EMPTY_;
+    public String f12504 = _EMPTY_;
+    public String f12505 = _EMPTY_;
+    public String f12506 = _EMPTY_;
+    public String f12507 = _EMPTY_;
+    public String f126 = _EMPTY_;
+    public String f12601 = _EMPTY_;
+    public String f12602 = _EMPTY_;
+    public String f12603 = _EMPTY_;
+    public String f12604 = _EMPTY_;
+    public String f12605 = _EMPTY_;
+    public String f12606 = _EMPTY_;
+    public String f12607 = _EMPTY_;
+    public String f12608 = _EMPTY_;
+    public String f127 = _EMPTY_;
+    public String f12796x = _EMPTY_;
     private String f128 = _EMPTY_;
     private String f12801 = _EMPTY_;
     private String f12802 = _EMPTY_;
@@ -1304,6 +1330,36 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     @Bindable
+    public String getF104() {
+        return f104;
+    }
+
+    public void setF104(String f104) {
+        this.f104 = f104;
+        notifyPropertyChanged(BR.f104);
+    }
+
+    @Bindable
+    public String getF105() {
+        return f105;
+    }
+
+    public void setF105(String f105) {
+        this.f105 = f105;
+        notifyPropertyChanged(BR.f105);
+    }
+
+    @Bindable
+    public String getF106() {
+        return f106;
+    }
+
+    public void setF106(String f106) {
+        this.f106 = f106;
+        notifyPropertyChanged(BR.f106);
+    }
+
+    @Bindable
     public String getF107() {
         return f107;
     }
@@ -1536,6 +1592,16 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     @Bindable
+    public String getF115() {
+        return f115;
+    }
+
+    public void setF115(String f115) {
+        this.f115 = f115;
+        notifyPropertyChanged(BR.f115);
+    }
+
+    @Bindable
     public String getF11601() {
         return f11601;
     }
@@ -1722,6 +1788,16 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     @Bindable
+    public String getF12101() {
+        return f12101;
+    }
+
+    public void setF12101(String f12101) {
+        this.f12101 = f12101;
+        notifyPropertyChanged(BR.f12101);
+    }
+
+    @Bindable
     public String getF121b() {
         return f121b;
     }
@@ -1870,6 +1946,222 @@ public class MWRA extends BaseObservable implements Observable {
         if (this.f12309.equals(f12309)) return;     // For all checkboxes
         this.f12309 = f12309;
         notifyPropertyChanged(BR.f12309);
+    }
+
+    @Bindable
+    public String getF124() {
+        return f124;
+    }
+
+    public void setF124(String f124) {
+        this.f124 = f124;
+        notifyPropertyChanged(BR.f124);
+    }
+
+    @Bindable
+    public String getF125() {
+        return f125;
+    }
+
+    public void setF125(String f125) {
+        this.f125 = f125;
+        notifyPropertyChanged(BR.f125);
+    }
+
+    @Bindable
+    public String getF12501() {
+        return f12501;
+    }
+
+    public void setF12501(String f12501) {
+        if (this.f12501.equals(f12501)) return;     // For all checkboxes
+        this.f12501 = f12501;
+        notifyPropertyChanged(BR.f12501);
+    }
+
+    @Bindable
+    public String getF12502() {
+        return f12502;
+    }
+
+    public void setF12502(String f12502) {
+        if (this.f12502.equals(f12502)) return;     // For all checkboxes
+        this.f12502 = f12502;
+        notifyPropertyChanged(BR.f12502);
+    }
+
+    @Bindable
+    public String getF12503() {
+        return f12503;
+    }
+
+    public void setF12503(String f12503) {
+        if (this.f12503.equals(f12503)) return;     // For all checkboxes
+        this.f12503 = f12503;
+        notifyPropertyChanged(BR.f12503);
+    }
+
+    @Bindable
+    public String getF12504() {
+        return f12504;
+    }
+
+    public void setF12504(String f12504) {
+        if (this.f12504.equals(f12504)) return;     // For all checkboxes
+        this.f12504 = f12504;
+        notifyPropertyChanged(BR.f12504);
+    }
+
+    @Bindable
+    public String getF12505() {
+        return f12505;
+    }
+
+    public void setF12505(String f12505) {
+        if (this.f12505.equals(f12505)) return;     // For all checkboxes
+        this.f12505 = f12505;
+        notifyPropertyChanged(BR.f12505);
+    }
+
+    @Bindable
+    public String getF12506() {
+        return f12506;
+    }
+
+    public void setF12506(String f12506) {
+        if (this.f12506.equals(f12506)) return;     // For all checkboxes
+        this.f12506 = f12506;
+        notifyPropertyChanged(BR.f12506);
+    }
+
+    @Bindable
+    public String getF12507() {
+        return f12507;
+    }
+
+    public void setF12507(String f12507) {
+        if (this.f12507.equals(f12507)) return;     // For all checkboxes
+        this.f12507 = f12507;
+        notifyPropertyChanged(BR.f12507);
+    }
+
+    @Bindable
+    public String getF126() {
+        return f126;
+    }
+
+    public void setF126(String f126) {
+        this.f126 = f126;
+        notifyPropertyChanged(BR.f126);
+    }
+
+    @Bindable
+    public String getF12601() {
+        return f12601;
+    }
+
+    public void setF12601(String f12601) {
+        if (this.f12601.equals(f12601)) return;     // For all checkboxes
+        this.f12601 = f12601;
+        notifyPropertyChanged(BR.f12601);
+    }
+
+    @Bindable
+    public String getF12602() {
+        return f12602;
+    }
+
+    public void setF12602(String f12602) {
+        if (this.f12602.equals(f12602)) return;     // For all checkboxes
+        this.f12602 = f12602;
+        notifyPropertyChanged(BR.f12602);
+    }
+
+    @Bindable
+    public String getF12603() {
+        return f12603;
+    }
+
+    public void setF12603(String f12603) {
+        if (this.f12603.equals(f12603)) return;     // For all checkboxes
+        this.f12603 = f12603;
+        notifyPropertyChanged(BR.f12603);
+    }
+
+    @Bindable
+    public String getF12604() {
+        return f12604;
+    }
+
+    public void setF12604(String f12604) {
+        if (this.f12604.equals(f12604)) return;     // For all checkboxes
+        this.f12604 = f12604;
+        notifyPropertyChanged(BR.f12604);
+    }
+
+    @Bindable
+    public String getF12605() {
+        return f12605;
+    }
+
+    public void setF12605(String f12605) {
+        if (this.f12605.equals(f12605)) return;     // For all checkboxes
+        this.f12605 = f12605;
+        notifyPropertyChanged(BR.f12605);
+    }
+
+    @Bindable
+    public String getF12606() {
+        return f12606;
+    }
+
+    public void setF12606(String f12606) {
+        if (this.f12606.equals(f12606)) return;     // For all checkboxes
+        this.f12606 = f12606;
+        notifyPropertyChanged(BR.f12606);
+    }
+
+    @Bindable
+    public String getF12607() {
+        return f12607;
+    }
+
+    public void setF12607(String f12607) {
+        if (this.f12607.equals(f12607)) return;     // For all checkboxes
+        this.f12607 = f12607;
+        notifyPropertyChanged(BR.f12607);
+    }
+
+    @Bindable
+    public String getF12608() {
+        return f12608;
+    }
+
+    public void setF12608(String f12608) {
+        if (this.f12608.equals(f12608)) return;     // For all checkboxes
+        this.f12608 = f12608;
+        notifyPropertyChanged(BR.f12608);
+    }
+
+    @Bindable
+    public String getF127() {
+        return f127;
+    }
+
+    public void setF127(String f127) {
+        this.f127 = f127;
+        setF12796x(this.f127.equals("96") ? this.f12796x : "");
+        notifyPropertyChanged(BR.f127);
+    }
+
+    @Bindable
+    public String getF12796x() {
+        return f12796x;
+    }
+
+    public void setF12796x(String f12796x) {
+        this.f12796x = f12796x;
+        notifyPropertyChanged(BR.f12796x);
     }
 
     @Bindable

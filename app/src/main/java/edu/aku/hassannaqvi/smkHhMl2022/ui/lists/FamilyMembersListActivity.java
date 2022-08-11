@@ -206,9 +206,9 @@ public class FamilyMembersListActivity extends AppCompatActivity {
                 }
 
                 // Populate All Adolescent
-                if (Integer.parseInt(MainApp.familyMember.getD109y()) >= 10 && Integer.parseInt(MainApp.familyMember.getD109y()) <= 19) {
+                /*if (Integer.parseInt(MainApp.familyMember.getD109y()) >= 10 && Integer.parseInt(MainApp.familyMember.getD109y()) <= 19) {
                     MainApp.allAdolList.add(fm);
-                }
+                }*/
 
                 // Populate mothers' list
                 String motherSno = fm.getD107(); // mother's line number from child
