@@ -654,6 +654,50 @@ public class MWRA extends BaseObservable implements Observable {
     private String l1123 = _EMPTY_;
     private String l1124 = _EMPTY_;
     private String l1125 = _EMPTY_;
+
+    public String lg101 = _EMPTY_;
+    public String lg102 = _EMPTY_;
+    public String lg10201 = _EMPTY_;
+    public String lg10202 = _EMPTY_;
+    public String lg10203 = _EMPTY_;
+    public String lg10204 = _EMPTY_;
+    public String lg10205 = _EMPTY_;
+    public String lg10206 = _EMPTY_;
+    public String lg10207 = _EMPTY_;
+    public String lg10208 = _EMPTY_;
+    public String lg10209 = _EMPTY_;
+    public String lg10296 = _EMPTY_;
+    public String lg10296x = _EMPTY_;
+    public String lg103 = _EMPTY_;
+    public String lg104 = _EMPTY_;
+    public String lg10401 = _EMPTY_;
+    public String lg10402 = _EMPTY_;
+    public String lg10403 = _EMPTY_;
+    public String lg10404 = _EMPTY_;
+    public String lg10405 = _EMPTY_;
+    public String lg10406 = _EMPTY_;
+    public String lg10407 = _EMPTY_;
+    public String lg10408 = _EMPTY_;
+    public String lg10409 = _EMPTY_;
+    public String lg10410 = _EMPTY_;
+    public String lg10411 = _EMPTY_;
+    public String lg10412 = _EMPTY_;
+    public String lg10413 = _EMPTY_;
+    public String lg10414 = _EMPTY_;
+    public String lg10415 = _EMPTY_;
+    public String lg10416 = _EMPTY_;
+    public String lg105 = _EMPTY_;
+    public String lg106 = _EMPTY_;
+    public String lg10601 = _EMPTY_;
+    public String lg10602 = _EMPTY_;
+    public String lg10603 = _EMPTY_;
+    public String lg10604 = _EMPTY_;
+    public String lg10605 = _EMPTY_;
+    public String lg10606 = _EMPTY_;
+    public String lg10607 = _EMPTY_;
+    public String lg10696 = _EMPTY_;
+    public String lg10696x = _EMPTY_;
+
     private String l1131 = _EMPTY_;
     private String l1132 = _EMPTY_;
     private String l1133 = _EMPTY_;
@@ -7663,6 +7707,463 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     @Bindable
+    public String getLg101() {
+        return lg101;
+    }
+
+    public void setLg101(String lg101) {
+        this.lg101 = lg101;
+        notifyPropertyChanged(BR.lg101);
+    }
+
+    @Bindable
+    public String getLg102() {
+        return lg102;
+    }
+
+    public void setLg102(String lg102) {
+        this.lg102 = lg102;
+        notifyPropertyChanged(BR.lg102);
+    }
+
+    @Bindable
+    public String getLg10201() {
+        return lg10201;
+    }
+
+    public void setLg10201(String lg10201) {
+        if (this.lg10201.equals(lg10201)) return; // for all checkboxes
+        this.lg10201 = lg10201;
+        notifyPropertyChanged(BR.lg10201);
+    }
+
+    @Bindable
+    public String getLg10202() {
+        return lg10202;
+    }
+
+    public void setLg10202(String lg10202) {
+        if (this.lg10202.equals(lg10202)) return; // for all checkboxes
+        this.lg10202 = lg10202;
+        notifyPropertyChanged(BR.lg10202);
+    }
+
+    @Bindable
+    public String getLg10203() {
+        return lg10203;
+    }
+
+    public void setLg10203(String lg10203) {
+        if (this.lg10203.equals(lg10203)) return; // for all checkboxes
+        this.lg10203 = lg10203;
+        notifyPropertyChanged(BR.lg10203);
+    }
+
+    @Bindable
+    public String getLg10204() {
+        return lg10204;
+    }
+
+    public void setLg10204(String lg10204) {
+        if (this.lg10204.equals(lg10204)) return; // for all checkboxes
+        this.lg10204 = lg10204;
+        notifyPropertyChanged(BR.lg10204);
+    }
+
+    @Bindable
+    public String getLg10205() {
+        return lg10205;
+    }
+
+    public void setLg10205(String lg10205) {
+        if (this.lg10205.equals(lg10205)) return; // for all checkboxes
+        this.lg10205 = lg10205;
+        notifyPropertyChanged(BR.lg10205);
+    }
+
+    @Bindable
+    public String getLg10206() {
+        return lg10206;
+    }
+
+    public void setLg10206(String lg10206) {
+        if (this.lg10206.equals(lg10206)) return; // for all checkboxes
+        this.lg10206 = lg10206;
+        notifyPropertyChanged(BR.lg10206);
+    }
+
+    @Bindable
+    public String getLg10207() {
+        return lg10207;
+    }
+
+    public void setLg10207(String lg10207) {
+        if (this.lg10207.equals(lg10207)) return; // for all checkboxes
+        this.lg10207 = lg10207;
+        notifyPropertyChanged(BR.lg10207);
+    }
+
+    @Bindable
+    public String getLg10208() {
+        return lg10208;
+    }
+
+    public void setLg10208(String lg10208) {
+        if (this.lg10208.equals(lg10208)) return; // for all checkboxes
+        this.lg10208 = lg10208;
+        notifyPropertyChanged(BR.lg10208);
+    }
+
+    @Bindable
+    public String getLg10209() {
+        return lg10209;
+    }
+
+    public void setLg10209(String lg10209) {
+        if (this.lg10209.equals(lg10209)) return; // for all checkboxes
+        this.lg10209 = lg10209;
+        notifyPropertyChanged(BR.lg10209);
+    }
+
+    @Bindable
+    public String getLg10296() {
+        return lg10296;
+    }
+
+    public void setLg10296(String lg10296) {
+        if (this.lg10296.equals(lg10296)) return; // for all checkboxes
+        this.lg10296 = lg10296;
+        setLg10296(lg10296.equals("96") ? this.lg10296x : "");
+        notifyPropertyChanged(BR.lg10296);
+    }
+
+    @Bindable
+    public String getLg10296x() {
+        return lg10296x;
+    }
+
+    public void setLg10296x(String lg10296x) {
+        this.lg10296x = lg10296x;
+        notifyPropertyChanged(BR.lg10296x);
+    }
+
+    @Bindable
+    public String getLg103() {
+        return lg103;
+    }
+
+    public void setLg103(String lg103) {
+        this.lg103 = lg103;
+        notifyPropertyChanged(BR.lg103);
+    }
+
+    @Bindable
+    public String getLg104() {
+        return lg104;
+    }
+
+    public void setLg104(String lg104) {
+        this.lg104 = lg104;
+        notifyPropertyChanged(BR.lg104);
+    }
+
+    @Bindable
+    public String getLg10401() {
+        return lg10401;
+    }
+
+    public void setLg10401(String lg10401) {
+        if (this.lg10401.equals(lg10401)) return; // for all checkboxes
+        this.lg10401 = lg10401;
+        notifyPropertyChanged(BR.lg10401);
+    }
+
+    @Bindable
+    public String getLg10402() {
+        return lg10402;
+    }
+
+    public void setLg10402(String lg10402) {
+        if (this.lg10402.equals(lg10402)) return; // for all checkboxes
+        this.lg10402 = lg10402;
+        notifyPropertyChanged(BR.lg10402);
+    }
+
+    @Bindable
+    public String getLg10403() {
+        return lg10403;
+    }
+
+    public void setLg10403(String lg10403) {
+        if (this.lg10403.equals(lg10403)) return; // for all checkboxes
+        this.lg10403 = lg10403;
+        notifyPropertyChanged(BR.lg10403);
+    }
+
+    @Bindable
+    public String getLg10404() {
+        return lg10404;
+    }
+
+    public void setLg10404(String lg10404) {
+        if (this.lg10404.equals(lg10404)) return; // for all checkboxes
+        this.lg10404 = lg10404;
+        notifyPropertyChanged(BR.lg10404);
+    }
+
+    @Bindable
+    public String getLg10405() {
+        return lg10405;
+    }
+
+    public void setLg10405(String lg10405) {
+        if (this.lg10405.equals(lg10405)) return; // for all checkboxes
+        this.lg10405 = lg10405;
+        notifyPropertyChanged(BR.lg10405);
+    }
+
+    @Bindable
+    public String getLg10406() {
+        return lg10406;
+    }
+
+    public void setLg10406(String lg10406) {
+        if (this.lg10406.equals(lg10406)) return; // for all checkboxes
+        this.lg10406 = lg10406;
+        notifyPropertyChanged(BR.lg10406);
+    }
+
+    @Bindable
+    public String getLg10407() {
+        return lg10407;
+    }
+
+    public void setLg10407(String lg10407) {
+        if (this.lg10407.equals(lg10407)) return; // for all checkboxes
+        this.lg10407 = lg10407;
+        notifyPropertyChanged(BR.lg10407);
+    }
+
+    @Bindable
+    public String getLg10408() {
+        return lg10408;
+    }
+
+    public void setLg10408(String lg10408) {
+        if (this.lg10408.equals(lg10408)) return; // for all checkboxes
+        this.lg10408 = lg10408;
+        notifyPropertyChanged(BR.lg10408);
+    }
+
+    @Bindable
+    public String getLg10409() {
+        return lg10409;
+    }
+
+    public void setLg10409(String lg10409) {
+        if (this.lg10409.equals(lg10409)) return; // for all checkboxes
+        this.lg10409 = lg10409;
+        notifyPropertyChanged(BR.lg10409);
+    }
+
+    @Bindable
+    public String getLg10410() {
+        return lg10410;
+    }
+
+    public void setLg10410(String lg10410) {
+        if (this.lg10410.equals(lg10410)) return; // for all checkboxes
+        this.lg10410 = lg10410;
+        notifyPropertyChanged(BR.lg10410);
+    }
+
+    @Bindable
+    public String getLg10411() {
+        return lg10411;
+    }
+
+    public void setLg10411(String lg10411) {
+        if (this.lg10411.equals(lg10411)) return; // for all checkboxes
+        this.lg10411 = lg10411;
+        notifyPropertyChanged(BR.lg10411);
+    }
+
+    @Bindable
+    public String getLg10412() {
+        return lg10412;
+    }
+
+    public void setLg10412(String lg10412) {
+        if (this.lg10412.equals(lg10412)) return; // for all checkboxes
+        this.lg10412 = lg10412;
+        notifyPropertyChanged(BR.lg10412);
+    }
+
+    @Bindable
+    public String getLg10413() {
+        return lg10413;
+    }
+
+    public void setLg10413(String lg10413) {
+        if (this.lg10413.equals(lg10413)) return; // for all checkboxes
+        this.lg10413 = lg10413;
+        notifyPropertyChanged(BR.lg10413);
+    }
+
+    @Bindable
+    public String getLg10414() {
+        return lg10414;
+    }
+
+    public void setLg10414(String lg10414) {
+        if (this.lg10414.equals(lg10414)) return; // for all checkboxes
+        this.lg10414 = lg10414;
+        notifyPropertyChanged(BR.lg10414);
+    }
+
+    @Bindable
+    public String getLg10415() {
+        return lg10415;
+    }
+
+    public void setLg10415(String lg10415) {
+        if (this.lg10415.equals(lg10415)) return; // for all checkboxes
+        this.lg10415 = lg10415;
+        notifyPropertyChanged(BR.lg10415);
+    }
+
+    @Bindable
+    public String getLg10416() {
+        return lg10416;
+    }
+
+    public void setLg10416(String lg10416) {
+        if (this.lg10416.equals(lg10416)) return; // for all checkboxes
+        this.lg10416 = lg10416;
+        notifyPropertyChanged(BR.lg10416);
+    }
+
+    @Bindable
+    public String getLg105() {
+        return lg105;
+    }
+
+    public void setLg105(String lg105) {
+        this.lg105 = lg105;
+        notifyPropertyChanged(BR.lg105);
+    }
+
+    @Bindable
+    public String getLg106() {
+        return lg106;
+    }
+
+    public void setLg106(String lg106) {
+        this.lg106 = lg106;
+        notifyPropertyChanged(BR.lg106);
+    }
+
+    @Bindable
+    public String getLg10601() {
+        return lg10601;
+    }
+
+    public void setLg10601(String lg10601) {
+        if (this.lg10601.equals(lg10601)) return; // for all checkboxes
+        this.lg10601 = lg10601;
+        notifyPropertyChanged(BR.lg10601);
+    }
+
+    @Bindable
+    public String getLg10602() {
+        return lg10602;
+    }
+
+    public void setLg10602(String lg10602) {
+        if (this.lg10602.equals(lg10602)) return; // for all checkboxes
+        this.lg10602 = lg10602;
+        notifyPropertyChanged(BR.lg10602);
+    }
+
+    @Bindable
+    public String getLg10603() {
+        return lg10603;
+    }
+
+    public void setLg10603(String lg10603) {
+        if (this.lg10603.equals(lg10603)) return; // for all checkboxes
+        this.lg10603 = lg10603;
+        notifyPropertyChanged(BR.lg10603);
+    }
+
+    @Bindable
+    public String getLg10604() {
+        return lg10604;
+    }
+
+    public void setLg10604(String lg10604) {
+        if (this.lg10604.equals(lg10604)) return; // for all checkboxes
+        this.lg10604 = lg10604;
+        notifyPropertyChanged(BR.lg10604);
+    }
+
+    @Bindable
+    public String getLg10605() {
+        return lg10605;
+    }
+
+    public void setLg10605(String lg10605) {
+        if (this.lg10605.equals(lg10605)) return; // for all checkboxes
+        this.lg10605 = lg10605;
+        notifyPropertyChanged(BR.lg10605);
+    }
+
+    @Bindable
+    public String getLg10606() {
+        return lg10606;
+    }
+
+    public void setLg10606(String lg10606) {
+        if (this.lg10606.equals(lg10606)) return; // for all checkboxes
+        this.lg10606 = lg10606;
+        notifyPropertyChanged(BR.lg10606);
+    }
+
+    @Bindable
+    public String getLg10607() {
+        return lg10607;
+    }
+
+    public void setLg10607(String lg10607) {
+        if (this.lg10607.equals(lg10607)) return; // for all checkboxes
+        this.lg10607 = lg10607;
+        notifyPropertyChanged(BR.lg10607);
+    }
+
+    @Bindable
+    public String getLg10696() {
+        return lg10696;
+    }
+
+    public void setLg10696(String lg10696) {
+        if (this.lg10696.equals(lg10696)) return; // for all checkboxes
+        this.lg10696 = lg10696;
+        setLg10696x(lg10696.equals("96") ? this.l10696x : "");
+
+        notifyPropertyChanged(BR.lg10696);
+    }
+
+    @Bindable
+    public String getLg10696x() {
+        return lg10696x;
+    }
+
+    public void setLg10696x(String lg10696x) {
+        this.lg10696x = lg10696x;
+        notifyPropertyChanged(BR.lg10696x);
+    }
+
+    @Bindable
     public String getL1131() {
         return l1131;
     }
@@ -8587,6 +9088,45 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("l1123", l1123)
                 .put("l1124", l1124)
                 .put("l1125", l1125)
+                .put("lg101", lg101)
+                .put("lg10201", lg10201)
+                .put("lg10202", lg10202)
+                .put("lg10203", lg10203)
+                .put("lg10204", lg10204)
+                .put("lg10205", lg10205)
+                .put("lg10206", lg10206)
+                .put("lg10207", lg10207)
+                .put("lg10208", lg10208)
+                .put("lg10209", lg10209)
+                .put("lg10296", lg10296)
+                .put("lg10296x", lg10296x)
+                .put("lg103", lg103)
+                .put("lg10401", lg10401)
+                .put("lg10402", lg10402)
+                .put("lg10403", lg10403)
+                .put("lg10404", lg10404)
+                .put("lg10405", lg10405)
+                .put("lg10406", lg10406)
+                .put("lg10407", lg10407)
+                .put("lg10408", lg10408)
+                .put("lg10409", lg10409)
+                .put("lg10410", lg10410)
+                .put("lg10411", lg10411)
+                .put("lg10412", lg10412)
+                .put("lg10413", lg10413)
+                .put("lg10414", lg10414)
+                .put("lg10415", lg10415)
+                .put("lg10416", lg10416)
+                .put("lg105", lg105)
+                .put("lg10601", lg10601)
+                .put("lg10602", lg10602)
+                .put("lg10603", lg10603)
+                .put("lg10604", lg10604)
+                .put("lg10605", lg10605)
+                .put("lg10606", lg10606)
+                .put("lg10607", lg10607)
+                .put("lg10696", lg10696)
+                .put("lg10696x", lg10696x)
                 .put("l1131", l1131)
                 .put("l1132", l1132)
                 .put("l1133", l1133)
@@ -9286,6 +9826,45 @@ public class MWRA extends BaseObservable implements Observable {
             this.l1123 = json.getString("l1123");
             this.l1124 = json.getString("l1124");
             this.l1125 = json.getString("l1125");
+            this.lg101 = json.getString("lg101");
+            this.lg10201 = json.getString("lg10201");
+            this.lg10202 = json.getString("lg10202");
+            this.lg10203 = json.getString("lg10203");
+            this.lg10204 = json.getString("lg10204");
+            this.lg10205 = json.getString("lg10205");
+            this.lg10206 = json.getString("lg10206");
+            this.lg10207 = json.getString("lg10207");
+            this.lg10208 = json.getString("lg10208");
+            this.lg10209 = json.getString("lg10209");
+            this.lg10296 = json.getString("lg10296");
+            this.lg10296x = json.getString("lg10296x");
+            this.lg103 = json.getString("lg103");
+            this.lg10401 = json.getString("lg10401");
+            this.lg10402 = json.getString("lg10402");
+            this.lg10403 = json.getString("lg10403");
+            this.lg10404 = json.getString("lg10404");
+            this.lg10405 = json.getString("lg10405");
+            this.lg10406 = json.getString("lg10406");
+            this.lg10407 = json.getString("lg10407");
+            this.lg10408 = json.getString("lg10408");
+            this.lg10409 = json.getString("lg10409");
+            this.lg10410 = json.getString("lg10410");
+            this.lg10411 = json.getString("lg10411");
+            this.lg10412 = json.getString("lg10412");
+            this.lg10413 = json.getString("lg10413");
+            this.lg10414 = json.getString("lg10414");
+            this.lg10415 = json.getString("lg10415");
+            this.lg10416 = json.getString("lg10416");
+            this.lg105 = json.getString("lg105");
+            this.lg10601 = json.getString("lg10601");
+            this.lg10602 = json.getString("lg10602");
+            this.lg10603 = json.getString("lg10603");
+            this.lg10604 = json.getString("lg10604");
+            this.lg10605 = json.getString("lg10605");
+            this.lg10606 = json.getString("lg10606");
+            this.lg10607 = json.getString("lg10607");
+            this.lg10696 = json.getString("lg10696");
+            this.lg10696x = json.getString("lg10696x");
             this.l1131 = json.getString("l1131");
             this.l1132 = json.getString("l1132");
             this.l1133 = json.getString("l1133");
