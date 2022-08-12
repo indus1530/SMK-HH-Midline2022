@@ -1356,8 +1356,8 @@
                                 android:tag="m11002"
                                 android:text="@={form.m11002x}"
                                 app:mask="###.#"
-                                app:minValue="1"
                                 app:maxValue="100"
+                                app:minValue="1"
                                 app:pattern="^(\\d{3,1})$"
                                 app:type="range" />
 
@@ -1439,7 +1439,6 @@
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
-
 
                 <!-- m112  CheckBox   -->
                 <androidx.cardview.widget.CardView
@@ -1551,7 +1550,7 @@
                                 <com.edittextpicker.aliazaz.EditTextPicker
                                     android:id="@+id/m11201x"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="52dp"
                                     android:enabled="@{form.m11201.equals(`1`)}"
                                     android:gravity="center"
                                     android:hint="###"
@@ -1566,7 +1565,7 @@
                                 <com.edittextpicker.aliazaz.EditTextPicker
                                     android:id="@+id/m11202x"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="52dp"
                                     android:enabled="@{form.m11202.equals(`2`)}"
                                     android:gravity="center"
                                     android:hint="###"
@@ -1581,7 +1580,7 @@
                                 <com.edittextpicker.aliazaz.EditTextPicker
                                     android:id="@+id/m11203x"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="52dp"
                                     android:enabled="@{form.m11203.equals(`3`)}"
                                     android:gravity="center"
                                     android:hint="###"
@@ -1596,7 +1595,7 @@
                                 <com.edittextpicker.aliazaz.EditTextPicker
                                     android:id="@+id/m11204x"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="52dp"
                                     android:enabled="@{form.m11204.equals(`4`)}"
                                     android:gravity="center"
                                     android:hint="###"
@@ -1611,7 +1610,7 @@
                                 <com.edittextpicker.aliazaz.EditTextPicker
                                     android:id="@+id/m11205x"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="52dp"
                                     android:enabled="@{form.m11205.equals(`5`)}"
                                     android:gravity="center"
                                     android:hint="###"
@@ -1626,7 +1625,7 @@
                                 <com.edittextpicker.aliazaz.EditTextPicker
                                     android:id="@+id/m11206x"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="52dp"
                                     android:enabled="@{form.m11206.equals(`6`)}"
                                     android:gravity="center"
                                     android:hint="###"
@@ -1641,7 +1640,7 @@
                                 <com.edittextpicker.aliazaz.EditTextPicker
                                     android:id="@+id/m11207x"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="52dp"
                                     android:enabled="@{form.m11207.equals(`7`)}"
                                     android:gravity="center"
                                     android:hint="###"
