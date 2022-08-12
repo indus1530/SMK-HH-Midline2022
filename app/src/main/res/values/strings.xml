@@ -1055,6 +1055,8 @@
     <string name="d10402">Female</string>
     <string name="d103">Relationship to Head of HH</string>
     <string name="d103t">What is the relationship of [NAME] to the Head of the household?</string>
+    <string name="d103t1"> What is the relationship of  </string>
+    <string name="d103t2"> with the head of household </string>
     <string name="d10301">Head of HH</string>
     <string name="d10302">Wife/Husband</string>
     <string name="d10303">Son/DaughterS</string>

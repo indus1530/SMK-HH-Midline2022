@@ -6,6 +6,8 @@ import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.sharedPref;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -45,6 +47,27 @@ public class SectionDActivity extends AppCompatActivity {
         familyMember.setD101(String.valueOf(memberCount + 1));
         bi.setMember(familyMember);
         populateSpinner();
+        setupListener();
+    }
+
+    private void setupListener() {
+        bi.d102.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                bi.d102Name.setVisibility(View.VISIBLE);
+                bi.d102Name.setText(getString(R.string.d103t1) + " " + familyMember.getD102() + " " + getString(R.string.d103t2));
+            }
+        });
     }
 
 
