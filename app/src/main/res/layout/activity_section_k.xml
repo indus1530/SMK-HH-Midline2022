@@ -292,6 +292,59 @@
 
                 </androidx.cardview.widget.CardView>
 
+                <!-- k101b   Radio   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVk101b"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_k101b" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/k101b" />
+
+                        </LinearLayout>
+
+                        <RadioGroup
+                            android:id="@+id/k101b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/k101b01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{mwra.k101b .equals(`1`)}"
+                                android:onClick="@{()->mwra.setK101b (`1`)}"
+                                android:text="@string/k101b01" />
+
+                            <RadioButton
+                                android:id="@+id/k101b02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{mwra.k101b .equals(`2`)}"
+                                android:onClick="@{()->mwra.setK101b (`2`)}"
+                                android:text="@string/k101b02" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
 
                 <!-- k102  Radio   -->
                 <androidx.cardview.widget.CardView
@@ -931,6 +984,60 @@
                     </androidx.cardview.widget.CardView>
 
                 </LinearLayout>
+
+
+                <!-- k105b  Radio   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVk105b"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_k105b" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/k105b" />
+
+                        </LinearLayout>
+
+                        <RadioGroup
+                            android:id="@+id/k105b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/k105b01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{mwra.k105b.equals(`1`)}"
+                                android:onClick="@{()->mwra.setK105b(`1`)}"
+                                android:text="@string/k105b01" />
+
+                            <RadioButton
+                                android:id="@+id/k105b02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{mwra.k105b.equals(`2`)}"
+                                android:onClick="@{()->mwra.setK105b(`2`)}"
+                                android:text="@string/k105b02" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
 
                 <!-- k106  CheckBox   -->

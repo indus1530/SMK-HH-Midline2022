@@ -570,6 +570,7 @@ public class MWRA extends BaseObservable implements Observable {
     private String k101a13 = _EMPTY_;
     private String k101a96 = _EMPTY_;
     private String k101a96x = _EMPTY_;
+    private String k101b = _EMPTY_;
     private String k102 = _EMPTY_;
     private String k104 = _EMPTY_;
     private String k10401 = _EMPTY_;
@@ -604,6 +605,7 @@ public class MWRA extends BaseObservable implements Observable {
     private String k105a = _EMPTY_;
     private String k105a01x = _EMPTY_;
     private String k105a02x = _EMPTY_;
+    private String k105b = _EMPTY_;
     private String k106 = _EMPTY_;
     private String k10601 = _EMPTY_;
     private String k10602 = _EMPTY_;
@@ -6700,6 +6702,16 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     @Bindable
+    public String getK101b() {
+        return k101b;
+    }
+
+    public void setK101b(String k101b) {
+        this.k101b = k101b;
+        notifyPropertyChanged(BR.k101b);
+    }
+
+    @Bindable
     public String getK102() {
         return k102;
     }
@@ -7104,6 +7116,15 @@ public class MWRA extends BaseObservable implements Observable {
         setK10608(k105a.equals("444") ? this.k10608 : "");
         setK10696(k105a.equals("444") ? this.k10696 : "");
         notifyPropertyChanged(BR.k105a);
+    }
+    @Bindable
+    public String getK105b() {
+        return k105b;
+    }
+
+    public void setK105b(String k105b) {
+        this.k105b = k105b;
+        notifyPropertyChanged(BR.k105b);
     }
 
     @Bindable
@@ -8478,6 +8499,7 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("k101a13", k101a13)
                 .put("k101a96", k101a96)
                 .put("k101a96x", k101a96x)
+                .put("k101b", k101b)
                 .put("k102", k102)
                 .put("k10401", k10401)
                 .put("k10402", k10402)
@@ -8510,6 +8532,7 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("k105a", k105a)
                 .put("k105a01x", k105a01x)
                 .put("k105a02x", k105a02x)
+                .put("k105b", k105b)
                 .put("k10601", k10601)
                 .put("k10602", k10602)
                 .put("k10603", k10603)
@@ -9172,6 +9195,7 @@ public class MWRA extends BaseObservable implements Observable {
             this.k101a13 = json.getString("k101a13");
             this.k101a96 = json.getString("k101a96");
             this.k101a96x = json.getString("k101a96x");
+            this.k101b = json.getString("k101b");
             this.k102 = json.getString("k102");
             this.k10401 = json.getString("k10401");
             this.k10402 = json.getString("k10402");
@@ -9204,6 +9228,7 @@ public class MWRA extends BaseObservable implements Observable {
             this.k105a = json.getString("k105a");
             this.k105a01x = json.getString("k105a01x");
             this.k105a02x = json.getString("k105a02x");
+            this.k105b = json.getString("k105b");
             this.k10601 = json.getString("k10601");
             this.k10602 = json.getString("k10602");
             this.k10603 = json.getString("k10603");
