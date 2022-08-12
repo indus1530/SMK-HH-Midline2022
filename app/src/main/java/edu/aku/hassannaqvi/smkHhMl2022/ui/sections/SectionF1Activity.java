@@ -92,7 +92,7 @@ public class SectionF1Activity extends AppCompatActivity {
         if (MainApp.mwra.getUid().equals("") ? insertNewRecord() : updateDB()) {
 
             finish();
-            startActivity(new Intent(this, SectionG1Activity.class).putExtra("complete", true));
+            startActivity(new Intent(this, SectionF2Activity.class).putExtra("complete", true));
 
 
         } else {

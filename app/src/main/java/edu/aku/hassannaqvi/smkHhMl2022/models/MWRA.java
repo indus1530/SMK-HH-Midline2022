@@ -238,6 +238,7 @@ public class MWRA extends BaseObservable implements Observable {
     private String g109 = _EMPTY_;
     private String g110 = _EMPTY_;
     private String g126 = _EMPTY_;
+    private String g127 = _EMPTY_;
     private String g113 = _EMPTY_;
     private String g114 = _EMPTY_;
     private String g11496x = _EMPTY_;
@@ -264,6 +265,17 @@ public class MWRA extends BaseObservable implements Observable {
     private String g12096x = _EMPTY_;
     private String g121 = _EMPTY_;
     private String g12196x = _EMPTY_;
+    public String g122 = _EMPTY_;
+    public String g123 = _EMPTY_;
+    public String g12301 = _EMPTY_;
+    public String g12302 = _EMPTY_;
+    public String g12303 = _EMPTY_;
+    public String g12304 = _EMPTY_;
+    public String g12305 = _EMPTY_;
+    public String g12306 = _EMPTY_;
+    public String g12307 = _EMPTY_;
+    public String g12308 = _EMPTY_;
+
     private String g124 = _EMPTY_;
     private String g1241 = _EMPTY_;
     private String g1242 = _EMPTY_;
@@ -3007,6 +3019,16 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     @Bindable
+    public String getG127() {
+        return g127;
+    }
+
+    public void setG127(String g127) {
+        this.g127 = g127;
+        notifyPropertyChanged(BR.g127);
+    }
+
+    @Bindable
     public String getG113() {
         return g113;
     }
@@ -3295,6 +3317,113 @@ public class MWRA extends BaseObservable implements Observable {
         notifyPropertyChanged(BR.g12196x);
     }
 
+    @Bindable
+    public String getG122() {
+        return g122;
+    }
+
+    public void setG122(String g122) {
+        this.g122 = g122;
+        notifyPropertyChanged(BR.g122);
+    }
+
+    @Bindable
+    public String getG123() {
+        return g123;
+    }
+
+    public void setG123(String g123) {
+        this.g123 = g123;
+        notifyPropertyChanged(BR.g123);
+    }
+
+    @Bindable
+    public String getG12301() {
+        return g12301;
+    }
+
+    public void setG12301(String g12301) {
+        if (this.g12301.equals(g12301)) return;     // For all checkboxes
+        this.g12301 = g12301;
+        notifyPropertyChanged(BR.g12301);
+    }
+
+    @Bindable
+    public String getG12302() {
+        return g12302;
+    }
+
+    public void setG12302(String g12302) {
+        if (this.g12302.equals(g12302)) return;     // For all checkboxes
+        this.g12302 = g12302;
+        notifyPropertyChanged(BR.g12302);
+    }
+
+    @Bindable
+    public String getG12303() {
+        return g12303;
+    }
+
+    public void setG12303(String g12303) {
+        if (this.g12303.equals(g12303)) return;     // For all checkboxes
+        this.g12303 = g12303;
+        notifyPropertyChanged(BR.g12303);
+    }
+
+    @Bindable
+    public String getG12304() {
+        return g12304;
+    }
+
+    public void setG12304(String g12304) {
+        if (this.g12304.equals(g12304)) return;     // For all checkboxes
+        this.g12304 = g12304;
+        notifyPropertyChanged(BR.g12304);
+    }
+
+    @Bindable
+    public String getG12305() {
+        return g12305;
+    }
+
+    public void setG12305(String g12305) {
+        if (this.g12305.equals(g12305)) return;     // For all checkboxes
+        this.g12305 = g12305;
+        notifyPropertyChanged(BR.g12305);
+    }
+
+    @Bindable
+    public String getG12306() {
+        return g12306;
+    }
+
+    public void setG12306(String g12306) {
+        if (this.g12306.equals(g12306)) return;     // For all checkboxes
+        this.g12306 = g12306;
+        notifyPropertyChanged(BR.g12306);
+    }
+
+    @Bindable
+    public String getG12307() {
+        return g12307;
+    }
+
+    public void setG12307(String g12307) {
+        if (this.g12307.equals(g12307)) return;     // For all checkboxes
+        this.g12307 = g12307;
+        notifyPropertyChanged(BR.g12307);
+    }
+
+    @Bindable
+    public String getG12308() {
+        return g12308;
+    }
+
+    public void setG12308(String g12308) {
+        if (this.g12308.equals(g12308)) return;     // For all checkboxes
+        this.g12308 = g12308;
+        notifyPropertyChanged(BR.g12308);
+    }
 
     @Bindable
     public String getG124() {
@@ -7606,6 +7735,7 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("g109", g109)
                 .put("g110", g110)
                 .put("g126", g126)
+                .put("g127", g127)
                 .put("g113", g113)
                 .put("g114", g114)
                 .put("g11496x", g11496x)
@@ -7631,6 +7761,15 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("g12096x", g12096x)
                 .put("g121", g121)
                 .put("g12196x", g12196x)
+                .put("g122", g122)
+                .put("g12301", g12301)
+                .put("g12302", g12302)
+                .put("g12303", g12303)
+                .put("g12304", g12304)
+                .put("g12305", g12305)
+                .put("g12306", g12306)
+                .put("g12307", g12307)
+                .put("g12308", g12308)
                 .put("g124", g124)
                 .put("g1241", g1241)
                 .put("g1242", g1242)
@@ -8251,6 +8390,7 @@ public class MWRA extends BaseObservable implements Observable {
             this.g109 = json.getString("g109");
             this.g110 = json.getString("g110");
             this.g126 = json.getString("g126");
+            this.g127 = json.getString("g127");
             this.g113 = json.getString("g113");
             this.g114 = json.getString("g114");
             this.g11496x = json.getString("g11496x");
@@ -8276,6 +8416,15 @@ public class MWRA extends BaseObservable implements Observable {
             this.g12096x = json.getString("g12096x");
             this.g121 = json.getString("g121");
             this.g12196x = json.getString("g12196x");
+            this.g122 = json.getString("g122");
+            this.g12301 = json.getString("g12301");
+            this.g12302 = json.getString("g12302");
+            this.g12303 = json.getString("g12303");
+            this.g12304 = json.getString("g12304");
+            this.g12305 = json.getString("g12305");
+            this.g12306 = json.getString("g12306");
+            this.g12307 = json.getString("g12307");
+            this.g12308 = json.getString("g12308");
             this.g124 = json.getString("g124");
             this.g1241 = json.getString("g1241");
             this.g1242 = json.getString("g1242");
