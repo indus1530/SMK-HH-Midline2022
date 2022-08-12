@@ -177,6 +177,7 @@ public class MWRA extends BaseObservable implements Observable {
     private String f12805 = _EMPTY_;
     private String f12806 = _EMPTY_;
     private String f12807 = _EMPTY_;
+    private String f12808 = _EMPTY_;
     private String f129 = _EMPTY_;
     private String f130 = _EMPTY_;
     private String f13001 = _EMPTY_;
@@ -2248,7 +2249,7 @@ public class MWRA extends BaseObservable implements Observable {
     public void setF12807(String f12807) {
         if (this.f12807.equals(f12807)) return;     // For all checkboxes
         this.f12807 = f12807;
-        setF129(f12807.equals("7") ? "" : this.f129);
+        /*setF129(f12807.equals("7") ? "" : this.f129);
         setF12801(f12807.equals("7") ? "" : this.f12801);
         setF12802(f12807.equals("7") ? "" : this.f12802);
         setF12803(f12807.equals("7") ? "" : this.f12803);
@@ -2270,8 +2271,42 @@ public class MWRA extends BaseObservable implements Observable {
         setF13013(f12807.equals("7") ? "" : this.f13013);
         setF13014(f12807.equals("7") ? "" : this.f13014);
         setF13096(f12807.equals("7") ? "" : this.f13096);
-        setF131(f12807.equals("7") ? "" : this.f131);
+        setF131(f12807.equals("7") ? "" : this.f131);*/
         notifyPropertyChanged(BR.f12807);
+    }
+
+    @Bindable
+    public String getF12808() {
+        return f12808;
+    }
+
+    public void setF12808(String f12808) {
+        if (this.f12808.equals(f12808)) return;     // For all checkboxes
+        this.f12808 = f12808;
+        setF129(f12808.equals("8") ? "" : this.f129);
+        setF12801(f12808.equals("8") ? "" : this.f12801);
+        setF12802(f12808.equals("8") ? "" : this.f12802);
+        setF12803(f12808.equals("8") ? "" : this.f12803);
+        setF12804(f12808.equals("8") ? "" : this.f12804);
+        setF12805(f12808.equals("8") ? "" : this.f12805);
+        setF12806(f12808.equals("8") ? "" : this.f12806);
+        setF13001(f12808.equals("8") ? "" : this.f13001);
+        setF13002(f12808.equals("8") ? "" : this.f13002);
+        setF13003(f12808.equals("8") ? "" : this.f13003);
+        setF13004(f12808.equals("8") ? "" : this.f13004);
+        setF13005(f12808.equals("8") ? "" : this.f13005);
+        setF13006(f12808.equals("8") ? "" : this.f13006);
+        setF13007(f12808.equals("8") ? "" : this.f13007);
+        setF13008(f12808.equals("8") ? "" : this.f13008);
+        setF13009(f12808.equals("8") ? "" : this.f13009);
+        setF13010(f12808.equals("8") ? "" : this.f13010);
+        setF13011(f12808.equals("8") ? "" : this.f13011);
+        setF13012(f12808.equals("8") ? "" : this.f13012);
+        setF13013(f12808.equals("8") ? "" : this.f13013);
+        setF13014(f12808.equals("8") ? "" : this.f13014);
+        setF13096(f12808.equals("8") ? "" : this.f13096);
+        setF131(f12808.equals("8") ? "" : this.f131);
+        notifyPropertyChanged(BR.f12808);
     }
 
     @Bindable
@@ -7425,6 +7460,9 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("f10303", f10303)
                 .put("f10304", f10304)
                 .put("f10305", f10305)
+                .put("f104", f104)
+                .put("f105", f105)
+                .put("f106", f106)
                 .put("f107", f107)
                 .put("f10796x", f10796x)
                 .put("f108", f108)
@@ -7446,6 +7484,7 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("f113", f113)
                 .put("f11301x", f11301x)
                 .put("f114", f114)
+                .put("f115", f115)
                 .put("f11601", f11601)
                 .put("f11602", f11602)
                 .put("f11603", f11603)
@@ -7465,6 +7504,7 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("f121a", f121a)
                 .put("f121b", f121b)
                 .put("f121b96x", f121b96x)
+                .put("f12101", f12101)
                 .put("f122", f122)
                 .put("f12201x", f12201x)
                 .put("f12301", f12301)
@@ -7476,6 +7516,24 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("f12307", f12307)
                 .put("f12308", f12308)
                 .put("f12309", f12309)
+                .put("f124", f124)
+                .put("f12501", f12501)
+                .put("f12502", f12502)
+                .put("f12503", f12503)
+                .put("f12504", f12504)
+                .put("f12505", f12505)
+                .put("f12506", f12506)
+                .put("f12507", f12507)
+                .put("f12601", f12601)
+                .put("f12602", f12602)
+                .put("f12603", f12603)
+                .put("f12604", f12604)
+                .put("f12605", f12605)
+                .put("f12606", f12606)
+                .put("f12607", f12607)
+                .put("f12608", f12608)
+                .put("f127", f127)
+                .put("f12796x", f12796x)
                 .put("f12801", f12801)
                 .put("f12802", f12802)
                 .put("f12803", f12803)
@@ -7483,6 +7541,7 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("f12805", f12805)
                 .put("f12806", f12806)
                 .put("f12807", f12807)
+                .put("f12808", f12808)
                 .put("f129", f129)
                 .put("f13001", f13001)
                 .put("f13002", f13002)
@@ -8036,6 +8095,9 @@ public class MWRA extends BaseObservable implements Observable {
             this.f10303 = json.getString("f10303");
             this.f10304 = json.getString("f10304");
             this.f10305 = json.getString("f10305");
+            this.f104 = json.getString("f104");
+            this.f105 = json.getString("f105");
+            this.f106 = json.getString("f106");
             this.f107 = json.getString("f107");
             this.f10796x = json.getString("f10796x");
             this.f108 = json.getString("f108");
@@ -8057,6 +8119,7 @@ public class MWRA extends BaseObservable implements Observable {
             this.f113 = json.getString("f113");
             this.f11301x = json.getString("f11301x");
             this.f114 = json.getString("f114");
+            this.f115 = json.getString("f115");
             this.f11601 = json.getString("f11601");
             this.f11602 = json.getString("f11602");
             this.f11603 = json.getString("f11603");
@@ -8074,6 +8137,7 @@ public class MWRA extends BaseObservable implements Observable {
             this.f120 = json.getString("f120");
             this.f12001x = json.getString("f12001x");
             this.f121a = json.getString("f121a");
+            this.f12101 = json.getString("f12101");
             this.f121b = json.getString("f121b");
             this.f121b96x = json.getString("f121b96x");
             this.f122 = json.getString("f122");
@@ -8094,6 +8158,32 @@ public class MWRA extends BaseObservable implements Observable {
             this.f12805 = json.getString("f12805");
             this.f12806 = json.getString("f12806");
             this.f12807 = json.getString("f12807");
+            this.f124 = json.getString("f124");
+            this.f12501 = json.getString("f12501");
+            this.f12502 = json.getString("f12502");
+            this.f12503 = json.getString("f12503");
+            this.f12504 = json.getString("f12504");
+            this.f12505 = json.getString("f12505");
+            this.f12506 = json.getString("f12506");
+            this.f12507 = json.getString("f12507");
+            this.f12601 = json.getString("f12601");
+            this.f12602 = json.getString("f12602");
+            this.f12603 = json.getString("f12603");
+            this.f12604 = json.getString("f12604");
+            this.f12605 = json.getString("f12605");
+            this.f12606 = json.getString("f12606");
+            this.f12607 = json.getString("f12607");
+            this.f12608 = json.getString("f12608");
+            this.f127 = json.getString("f127");
+            this.f12796x = json.getString("f12796x");
+            this.f12801 = json.getString("f12801");
+            this.f12802 = json.getString("f12802");
+            this.f12803 = json.getString("f12803");
+            this.f12804 = json.getString("f12804");
+            this.f12805 = json.getString("f12805");
+            this.f12806 = json.getString("f12806");
+            this.f12807 = json.getString("f12807");
+            this.f12808 = json.getString("f12808");
             this.f129 = json.getString("f129");
             this.f13001 = json.getString("f13001");
             this.f13002 = json.getString("f13002");

@@ -3093,7 +3093,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{mwra.f12801.equals(`1`)}"
-                                android:enabled="@{!mwra.f12807.equals(`7`)}"
+                                android:enabled="@{!mwra.f12807.equals(`8`)}"
                                 android:onClick="@{()->mwra.setF12801(mwra.f12801.equals(`1`)?``:`1`)}"
                                 android:text="@string/f12801" />
 
@@ -3102,7 +3102,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{mwra.f12802.equals(`2`)}"
-                                android:enabled="@{!mwra.f12807.equals(`7`)}"
+                                android:enabled="@{!mwra.f12808.equals(`8`)}"
                                 android:onClick="@{()->mwra.setF12802(mwra.f12802.equals(`2`)?``:`2`)}"
                                 android:text="@string/f12802" />
 
@@ -3111,7 +3111,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{mwra.f12803.equals(`3`)}"
-                                android:enabled="@{!mwra.f12807.equals(`7`)}"
+                                android:enabled="@{!mwra.f12808.equals(`8`)}"
                                 android:onClick="@{()->mwra.setF12803(mwra.f12803.equals(`3`)?``:`3`)}"
                                 android:text="@string/f12803" />
 
@@ -3120,7 +3120,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{mwra.f12804.equals(`4`)}"
-                                android:enabled="@{!mwra.f12807.equals(`7`)}"
+                                android:enabled="@{!mwra.f12808.equals(`8`)}"
                                 android:onClick="@{()->mwra.setF12804(mwra.f12804.equals(`4`)?``:`4`)}"
                                 android:text="@string/f12804" />
 
@@ -3129,7 +3129,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{mwra.f12805.equals(`5`)}"
-                                android:enabled="@{!mwra.f12807.equals(`7`)}"
+                                android:enabled="@{!mwra.f12808.equals(`8`)}"
                                 android:onClick="@{()->mwra.setF12805(mwra.f12805.equals(`5`)?``:`5`)}"
                                 android:text="@string/f12805" />
 
@@ -3138,7 +3138,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{mwra.f12806.equals(`6`)}"
-                                android:enabled="@{!mwra.f12807.equals(`7`)}"
+                                android:enabled="@{!mwra.f12808.equals(`8`)}"
                                 android:onClick="@{()->mwra.setF12806(mwra.f12806.equals(`6`)?``:`6`)}"
                                 android:text="@string/f12806" />
 
@@ -3147,8 +3147,17 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{mwra.f12807.equals(`7`)}"
-                                android:onClick="@{()->mwra.setF12807(mwra.f12807.equals(`7`)?``:`7`) + f129.clearCheck() + f131.clearCheck()}"
+                                android:enabled="@{!mwra.f12808.equals(`8`)}"
+                                android:onClick="@{()->mwra.setF12807(mwra.f12807.equals(`7`)?``:`7`)}"
                                 android:text="@string/f12807" />
+
+                            <CheckBox
+                                android:id="@+id/f12808"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{mwra.f12808.equals(`8`)}"
+                                android:onClick="@{()->mwra.setF12808(mwra.f12807.equals(`8`)?``:`8`) + f129.clearCheck() + f131.clearCheck()}"
+                                android:text="@string/f12808" />
 
                         </LinearLayout>
 
@@ -3162,7 +3171,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:visibility="@{mwra.f12807.equals(`7`) ? View.GONE : View.VISIBLE}">
+                    android:visibility="@{mwra.f12808.equals(`8`) ? View.GONE : View.VISIBLE}">
 
 
                     <!-- f129  Radio   -->
