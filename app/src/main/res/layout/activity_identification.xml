@@ -202,6 +202,8 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:hint="#-####-###"
+                                app:mask="#-####-###"
+                                android:digits="ABCD-0123456789"
                                 android:inputType="textCapCharacters"
                                 android:maxLength="10"
                                 android:text="@={form.a113}" />

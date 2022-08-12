@@ -91,11 +91,15 @@ public class MWRA extends BaseObservable implements Observable {
     private String f10303 = _EMPTY_;
     private String f10304 = _EMPTY_;
     private String f10305 = _EMPTY_;
+    public String f104 = _EMPTY_;
+    public String f105 = _EMPTY_;
+    public String f106 = _EMPTY_;
     private String f107 = _EMPTY_;
     private String f10796x = _EMPTY_;
     private String f108 = _EMPTY_;
     private String f108wx = _EMPTY_;
     private String f108mx = _EMPTY_;
+
     private String f11001 = _EMPTY_;
     private String f11002 = _EMPTY_;
     private String f11003 = _EMPTY_;
@@ -112,6 +116,7 @@ public class MWRA extends BaseObservable implements Observable {
     private String f113 = _EMPTY_;
     private String f11301x = _EMPTY_;
     private String f114 = _EMPTY_;
+    private String f115 = _EMPTY_;
     private String f11601 = _EMPTY_;
     private String f11602 = _EMPTY_;
     private String f11603 = _EMPTY_;
@@ -130,6 +135,7 @@ public class MWRA extends BaseObservable implements Observable {
     private String f12001x = _EMPTY_;
     private String f121a = _EMPTY_;
     private String f121b = _EMPTY_;
+    private String f12101 = _EMPTY_;
     private String f121b96x = _EMPTY_;
     private String f122 = _EMPTY_;
     private String f12201x = _EMPTY_;
@@ -143,6 +149,26 @@ public class MWRA extends BaseObservable implements Observable {
     private String f12307 = _EMPTY_;
     private String f12308 = _EMPTY_;
     private String f12309 = _EMPTY_;
+    public String f124 = _EMPTY_;
+    public String f125 = _EMPTY_;
+    public String f12501 = _EMPTY_;
+    public String f12502 = _EMPTY_;
+    public String f12503 = _EMPTY_;
+    public String f12504 = _EMPTY_;
+    public String f12505 = _EMPTY_;
+    public String f12506 = _EMPTY_;
+    public String f12507 = _EMPTY_;
+    public String f126 = _EMPTY_;
+    public String f12601 = _EMPTY_;
+    public String f12602 = _EMPTY_;
+    public String f12603 = _EMPTY_;
+    public String f12604 = _EMPTY_;
+    public String f12605 = _EMPTY_;
+    public String f12606 = _EMPTY_;
+    public String f12607 = _EMPTY_;
+    public String f12608 = _EMPTY_;
+    public String f127 = _EMPTY_;
+    public String f12796x = _EMPTY_;
     private String f128 = _EMPTY_;
     private String f12801 = _EMPTY_;
     private String f12802 = _EMPTY_;
@@ -151,6 +177,7 @@ public class MWRA extends BaseObservable implements Observable {
     private String f12805 = _EMPTY_;
     private String f12806 = _EMPTY_;
     private String f12807 = _EMPTY_;
+    private String f12808 = _EMPTY_;
     private String f129 = _EMPTY_;
     private String f130 = _EMPTY_;
     private String f13001 = _EMPTY_;
@@ -211,6 +238,7 @@ public class MWRA extends BaseObservable implements Observable {
     private String g109 = _EMPTY_;
     private String g110 = _EMPTY_;
     private String g126 = _EMPTY_;
+    private String g127 = _EMPTY_;
     private String g113 = _EMPTY_;
     private String g114 = _EMPTY_;
     private String g11496x = _EMPTY_;
@@ -237,6 +265,17 @@ public class MWRA extends BaseObservable implements Observable {
     private String g12096x = _EMPTY_;
     private String g121 = _EMPTY_;
     private String g12196x = _EMPTY_;
+    public String g122 = _EMPTY_;
+    public String g123 = _EMPTY_;
+    public String g12301 = _EMPTY_;
+    public String g12302 = _EMPTY_;
+    public String g12303 = _EMPTY_;
+    public String g12304 = _EMPTY_;
+    public String g12305 = _EMPTY_;
+    public String g12306 = _EMPTY_;
+    public String g12307 = _EMPTY_;
+    public String g12308 = _EMPTY_;
+
     private String g124 = _EMPTY_;
     private String g1241 = _EMPTY_;
     private String g1242 = _EMPTY_;
@@ -293,21 +332,30 @@ public class MWRA extends BaseObservable implements Observable {
     private String h106 = _EMPTY_;
     private String h1061x = _EMPTY_;
     private String h107 = _EMPTY_;
+    public String h10800 = _EMPTY_;
+    public String h108a = _EMPTY_;
     private String h108 = _EMPTY_;
     private String h10896x = _EMPTY_;
+    public String h10900 = _EMPTY_;
+    public String h10901 = _EMPTY_;
     private String h109 = _EMPTY_;
-    private String h10901 = _EMPTY_;
-    private String h10902 = _EMPTY_;
-    private String h10903 = _EMPTY_;
-    private String h10904 = _EMPTY_;
-    private String h10905 = _EMPTY_;
-    private String h10906 = _EMPTY_;
-    private String h10907 = _EMPTY_;
+    private String h1091 = _EMPTY_;
+    private String h1092 = _EMPTY_;
+    private String h1093 = _EMPTY_;
+    private String h1094 = _EMPTY_;
+    private String h1095 = _EMPTY_;
+    private String h1096 = _EMPTY_;
+    private String h1097 = _EMPTY_;
     private String h10997 = _EMPTY_;
     private String h10996 = _EMPTY_;
     private String h10996x = _EMPTY_;
+    public String h11000 = _EMPTY_;
+    public String h11001 = _EMPTY_;
     private String h110 = _EMPTY_;
     private String h111 = _EMPTY_;
+    public String h11200 = _EMPTY_;
+    public String h11201 = _EMPTY_;
+    public String h11202 = _EMPTY_;
     private String h112 = _EMPTY_;
     private String h113 = _EMPTY_;
     private String h114 = _EMPTY_;
@@ -344,6 +392,17 @@ public class MWRA extends BaseObservable implements Observable {
     private String h12904 = _EMPTY_;
     private String h12905 = _EMPTY_;
     private String h12906 = _EMPTY_;
+    public String h130 = _EMPTY_;
+    public String h131 = _EMPTY_;
+    public String h13101 = _EMPTY_;
+    public String h1310101 = _EMPTY_;
+    public String h1310102 = _EMPTY_;
+    public String h1310103 = _EMPTY_;
+    public String h1310104 = _EMPTY_;
+    public String h1310105 = _EMPTY_;
+    public String h1310106 = _EMPTY_;
+    public String h1310107 = _EMPTY_;
+
     private String h132 = _EMPTY_;
     private String h132a = _EMPTY_;
     private String h132a96x = _EMPTY_;
@@ -369,14 +428,31 @@ public class MWRA extends BaseObservable implements Observable {
     private String h13509 = _EMPTY_;
     private String h13598 = _EMPTY_;
     private String h136 = _EMPTY_;
-    private String h13601 = _EMPTY_;
-    private String h13602 = _EMPTY_;
-    private String h13603 = _EMPTY_;
-    private String h13604 = _EMPTY_;
-    private String h13605 = _EMPTY_;
-    private String h13606 = _EMPTY_;
+    private String h1361 = _EMPTY_;
+    private String h1362 = _EMPTY_;
+    private String h1363 = _EMPTY_;
+    private String h1364 = _EMPTY_;
+    private String h1365 = _EMPTY_;
+    private String h1366 = _EMPTY_;
     private String h13696 = _EMPTY_;
     private String h13696x = _EMPTY_;
+
+    public String h13601 = _EMPTY_ ;
+    public String  h13602 = _EMPTY_;
+    public String  h1360201 = _EMPTY_;
+    public String  h1360202 = _EMPTY_;
+    public String  h1360203 = _EMPTY_;
+    public String  h1360204 = _EMPTY_;
+    public String  h1360205 = _EMPTY_;
+    public String  h1360206 = _EMPTY_;
+    public String  h1360207 = _EMPTY_;
+    public String  h1360208 = _EMPTY_;
+    public String  h1360209 = _EMPTY_;
+    public String  h1360210 = _EMPTY_;
+    public String  h1360298 = _EMPTY_;
+    public String h13603 = _EMPTY_;
+
+
     private String h137 = _EMPTY_;
     private String h137a = _EMPTY_;
     private String h137a96x = _EMPTY_;
@@ -494,6 +570,7 @@ public class MWRA extends BaseObservable implements Observable {
     private String k101a13 = _EMPTY_;
     private String k101a96 = _EMPTY_;
     private String k101a96x = _EMPTY_;
+    private String k101b = _EMPTY_;
     private String k102 = _EMPTY_;
     private String k104 = _EMPTY_;
     private String k10401 = _EMPTY_;
@@ -528,6 +605,7 @@ public class MWRA extends BaseObservable implements Observable {
     private String k105a = _EMPTY_;
     private String k105a01x = _EMPTY_;
     private String k105a02x = _EMPTY_;
+    private String k105b = _EMPTY_;
     private String k106 = _EMPTY_;
     private String k10601 = _EMPTY_;
     private String k10602 = _EMPTY_;
@@ -576,6 +654,50 @@ public class MWRA extends BaseObservable implements Observable {
     private String l1123 = _EMPTY_;
     private String l1124 = _EMPTY_;
     private String l1125 = _EMPTY_;
+
+    public String lg101 = _EMPTY_;
+    public String lg102 = _EMPTY_;
+    public String lg10201 = _EMPTY_;
+    public String lg10202 = _EMPTY_;
+    public String lg10203 = _EMPTY_;
+    public String lg10204 = _EMPTY_;
+    public String lg10205 = _EMPTY_;
+    public String lg10206 = _EMPTY_;
+    public String lg10207 = _EMPTY_;
+    public String lg10208 = _EMPTY_;
+    public String lg10209 = _EMPTY_;
+    public String lg10296 = _EMPTY_;
+    public String lg10296x = _EMPTY_;
+    public String lg103 = _EMPTY_;
+    public String lg104 = _EMPTY_;
+    public String lg10401 = _EMPTY_;
+    public String lg10402 = _EMPTY_;
+    public String lg10403 = _EMPTY_;
+    public String lg10404 = _EMPTY_;
+    public String lg10405 = _EMPTY_;
+    public String lg10406 = _EMPTY_;
+    public String lg10407 = _EMPTY_;
+    public String lg10408 = _EMPTY_;
+    public String lg10409 = _EMPTY_;
+    public String lg10410 = _EMPTY_;
+    public String lg10411 = _EMPTY_;
+    public String lg10412 = _EMPTY_;
+    public String lg10413 = _EMPTY_;
+    public String lg10414 = _EMPTY_;
+    public String lg10415 = _EMPTY_;
+    public String lg10416 = _EMPTY_;
+    public String lg105 = _EMPTY_;
+    public String lg106 = _EMPTY_;
+    public String lg10601 = _EMPTY_;
+    public String lg10602 = _EMPTY_;
+    public String lg10603 = _EMPTY_;
+    public String lg10604 = _EMPTY_;
+    public String lg10605 = _EMPTY_;
+    public String lg10606 = _EMPTY_;
+    public String lg10607 = _EMPTY_;
+    public String lg10696 = _EMPTY_;
+    public String lg10696x = _EMPTY_;
+
     private String l1131 = _EMPTY_;
     private String l1132 = _EMPTY_;
     private String l1133 = _EMPTY_;
@@ -818,6 +940,7 @@ public class MWRA extends BaseObservable implements Observable {
         // if F101 is No
         setF101b(f101.equals("2") ? "" : this.f101b);
         setF101b01x(f101.equals("2") ? "" : this.f101b01x);
+
         setF10201(f101.equals("2") ? "" : this.f10201);
         setF10202(f101.equals("2") ? "" : this.f10202);
         setF10203(f101.equals("2") ? "" : this.f10203);
@@ -830,11 +953,15 @@ public class MWRA extends BaseObservable implements Observable {
         setF10210(f101.equals("2") ? "" : this.f10210);
         setF10296(f101.equals("2") ? "" : this.f10296);
         setF10296x(f101.equals("2") ? "" : this.f10296x);
+
         setF10301(f101.equals("2") ? "" : this.f10301);
         setF10302(f101.equals("2") ? "" : this.f10302);
         setF10303(f101.equals("2") ? "" : this.f10303);
         setF10304(f101.equals("2") ? "" : this.f10304);
         setF10305(f101.equals("2") ? "" : this.f10305);
+        setF104(f101.equals("2") ? "" : this.f104);
+        setF105(f101.equals("2") ? "" : this.f105);
+        setF106(f101.equals("2") ? "" : this.f106);
         setF107(f101.equals("2") ? "" : this.f107);
         setF10796x(f101.equals("2") ? "" : this.f10796x);
         setF108(f101.equals("2") ? "" : this.f108);
@@ -1304,6 +1431,36 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     @Bindable
+    public String getF104() {
+        return f104;
+    }
+
+    public void setF104(String f104) {
+        this.f104 = f104;
+        notifyPropertyChanged(BR.f104);
+    }
+
+    @Bindable
+    public String getF105() {
+        return f105;
+    }
+
+    public void setF105(String f105) {
+        this.f105 = f105;
+        notifyPropertyChanged(BR.f105);
+    }
+
+    @Bindable
+    public String getF106() {
+        return f106;
+    }
+
+    public void setF106(String f106) {
+        this.f106 = f106;
+        notifyPropertyChanged(BR.f106);
+    }
+
+    @Bindable
     public String getF107() {
         return f107;
     }
@@ -1518,6 +1675,7 @@ public class MWRA extends BaseObservable implements Observable {
 
     public void setF114(String f114) {
         this.f114 = f114;
+        setF115(f114.equals("1") ? this.f115 : "");
         setF11601(f114.equals("1") ? this.f11601 : "");
         setF11602(f114.equals("1") ? this.f11602 : "");
         setF11603(f114.equals("1") ? this.f11603 : "");
@@ -1533,6 +1691,16 @@ public class MWRA extends BaseObservable implements Observable {
         setF119(f114.equals("1") ? this.f119 : "");
         setF120(f114.equals("1") ? this.f120 : "");
         notifyPropertyChanged(BR.f114);
+    }
+
+    @Bindable
+    public String getF115() {
+        return f115;
+    }
+
+    public void setF115(String f115) {
+        this.f115 = f115;
+        notifyPropertyChanged(BR.f115);
     }
 
     @Bindable
@@ -1706,6 +1874,7 @@ public class MWRA extends BaseObservable implements Observable {
 
     public void setF121a(String f121a) {
         this.f121a = f121a;
+        setF12101(f121a.equals("1") ? "" : this.f12101);
         setF121b(f121a.equals("1") ? "" : this.f121b);
         setF122(f121a.equals("2") ? "" : this.f122);
         setF12301(f121a.equals("2") ? "" : this.f12301);
@@ -1719,6 +1888,16 @@ public class MWRA extends BaseObservable implements Observable {
         setF12309(f121a.equals("2") ? "" : this.f12309);
 
         notifyPropertyChanged(BR.f121a);
+    }
+
+    @Bindable
+    public String getF12101() {
+        return f12101;
+    }
+
+    public void setF12101(String f12101) {
+        this.f12101 = f12101;
+        notifyPropertyChanged(BR.f12101);
     }
 
     @Bindable
@@ -1873,6 +2052,240 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     @Bindable
+    public String getF124() {
+        return f124;
+    }
+
+    public void setF124(String f124) {
+        this.f124 = f124;
+        setF12501(f124.equals("2") ? "" : this.f12501);
+        setF12502(f124.equals("2") ? "" : this.f12502);
+        setF12503(f124.equals("2") ? "" : this.f12503);
+        setF12504(f124.equals("2") ? "" : this.f12504);
+        setF12505(f124.equals("2") ? "" : this.f12505);
+        setF12506(f124.equals("2") ? "" : this.f12506);
+        setF12507(f124.equals("2") ? "" : this.f12507);
+
+        setF12601(f124.equals("2") ? "" : this.f12601);
+        setF12602(f124.equals("2") ? "" : this.f12602);
+        setF12603(f124.equals("2") ? "" : this.f12603);
+        setF12604(f124.equals("2") ? "" : this.f12604);
+        setF12605(f124.equals("2") ? "" : this.f12605);
+        setF12606(f124.equals("2") ? "" : this.f12606);
+        setF12607(f124.equals("2") ? "" : this.f12607);
+        setF12608(f124.equals("2") ? "" : this.f12608);
+
+        setF127(f124.equals("2") ? "" : this.f127);
+        notifyPropertyChanged(BR.f124);
+    }
+
+    @Bindable
+    public String getF125() {
+        return f125;
+    }
+
+    public void setF125(String f125) {
+        this.f125 = f125;
+        notifyPropertyChanged(BR.f125);
+    }
+
+    @Bindable
+    public String getF12501() {
+        return f12501;
+    }
+
+    public void setF12501(String f12501) {
+        if (this.f12501.equals(f12501)) return;     // For all checkboxes
+        this.f12501 = f12501;
+        notifyPropertyChanged(BR.f12501);
+    }
+
+    @Bindable
+    public String getF12502() {
+        return f12502;
+    }
+
+    public void setF12502(String f12502) {
+        if (this.f12502.equals(f12502)) return;     // For all checkboxes
+        this.f12502 = f12502;
+        notifyPropertyChanged(BR.f12502);
+    }
+
+    @Bindable
+    public String getF12503() {
+        return f12503;
+    }
+
+    public void setF12503(String f12503) {
+        if (this.f12503.equals(f12503)) return;     // For all checkboxes
+        this.f12503 = f12503;
+        notifyPropertyChanged(BR.f12503);
+    }
+
+    @Bindable
+    public String getF12504() {
+        return f12504;
+    }
+
+    public void setF12504(String f12504) {
+        if (this.f12504.equals(f12504)) return;     // For all checkboxes
+        this.f12504 = f12504;
+        notifyPropertyChanged(BR.f12504);
+    }
+
+    @Bindable
+    public String getF12505() {
+        return f12505;
+    }
+
+    public void setF12505(String f12505) {
+        if (this.f12505.equals(f12505)) return;     // For all checkboxes
+        this.f12505 = f12505;
+        notifyPropertyChanged(BR.f12505);
+    }
+
+    @Bindable
+    public String getF12506() {
+        return f12506;
+    }
+
+    public void setF12506(String f12506) {
+        if (this.f12506.equals(f12506)) return;     // For all checkboxes
+        this.f12506 = f12506;
+        notifyPropertyChanged(BR.f12506);
+    }
+
+    @Bindable
+    public String getF12507() {
+        return f12507;
+    }
+
+    public void setF12507(String f12507) {
+        if (this.f12507.equals(f12507)) return;     // For all checkboxes
+        this.f12507 = f12507;
+        notifyPropertyChanged(BR.f12507);
+    }
+
+    @Bindable
+    public String getF126() {
+        return f126;
+    }
+
+    public void setF126(String f126) {
+        this.f126 = f126;
+        notifyPropertyChanged(BR.f126);
+    }
+
+    @Bindable
+    public String getF12601() {
+        return f12601;
+    }
+
+    public void setF12601(String f12601) {
+        if (this.f12601.equals(f12601)) return;     // For all checkboxes
+        this.f12601 = f12601;
+        notifyPropertyChanged(BR.f12601);
+    }
+
+    @Bindable
+    public String getF12602() {
+        return f12602;
+    }
+
+    public void setF12602(String f12602) {
+        if (this.f12602.equals(f12602)) return;     // For all checkboxes
+        this.f12602 = f12602;
+        notifyPropertyChanged(BR.f12602);
+    }
+
+    @Bindable
+    public String getF12603() {
+        return f12603;
+    }
+
+    public void setF12603(String f12603) {
+        if (this.f12603.equals(f12603)) return;     // For all checkboxes
+        this.f12603 = f12603;
+        notifyPropertyChanged(BR.f12603);
+    }
+
+    @Bindable
+    public String getF12604() {
+        return f12604;
+    }
+
+    public void setF12604(String f12604) {
+        if (this.f12604.equals(f12604)) return;     // For all checkboxes
+        this.f12604 = f12604;
+        notifyPropertyChanged(BR.f12604);
+    }
+
+    @Bindable
+    public String getF12605() {
+        return f12605;
+    }
+
+    public void setF12605(String f12605) {
+        if (this.f12605.equals(f12605)) return;     // For all checkboxes
+        this.f12605 = f12605;
+        notifyPropertyChanged(BR.f12605);
+    }
+
+    @Bindable
+    public String getF12606() {
+        return f12606;
+    }
+
+    public void setF12606(String f12606) {
+        if (this.f12606.equals(f12606)) return;     // For all checkboxes
+        this.f12606 = f12606;
+        notifyPropertyChanged(BR.f12606);
+    }
+
+    @Bindable
+    public String getF12607() {
+        return f12607;
+    }
+
+    public void setF12607(String f12607) {
+        if (this.f12607.equals(f12607)) return;     // For all checkboxes
+        this.f12607 = f12607;
+        notifyPropertyChanged(BR.f12607);
+    }
+
+    @Bindable
+    public String getF12608() {
+        return f12608;
+    }
+
+    public void setF12608(String f12608) {
+        if (this.f12608.equals(f12608)) return;     // For all checkboxes
+        this.f12608 = f12608;
+        notifyPropertyChanged(BR.f12608);
+    }
+
+    @Bindable
+    public String getF127() {
+        return f127;
+    }
+
+    public void setF127(String f127) {
+        this.f127 = f127;
+        setF12796x(this.f127.equals("96") ? this.f12796x : "");
+        notifyPropertyChanged(BR.f127);
+    }
+
+    @Bindable
+    public String getF12796x() {
+        return f12796x;
+    }
+
+    public void setF12796x(String f12796x) {
+        this.f12796x = f12796x;
+        notifyPropertyChanged(BR.f12796x);
+    }
+
+    @Bindable
     public String getF128() {
         return f128;
     }
@@ -1956,7 +2369,7 @@ public class MWRA extends BaseObservable implements Observable {
     public void setF12807(String f12807) {
         if (this.f12807.equals(f12807)) return;     // For all checkboxes
         this.f12807 = f12807;
-        setF129(f12807.equals("7") ? "" : this.f129);
+        /*setF129(f12807.equals("7") ? "" : this.f129);
         setF12801(f12807.equals("7") ? "" : this.f12801);
         setF12802(f12807.equals("7") ? "" : this.f12802);
         setF12803(f12807.equals("7") ? "" : this.f12803);
@@ -1978,8 +2391,42 @@ public class MWRA extends BaseObservable implements Observable {
         setF13013(f12807.equals("7") ? "" : this.f13013);
         setF13014(f12807.equals("7") ? "" : this.f13014);
         setF13096(f12807.equals("7") ? "" : this.f13096);
-        setF131(f12807.equals("7") ? "" : this.f131);
+        setF131(f12807.equals("7") ? "" : this.f131);*/
         notifyPropertyChanged(BR.f12807);
+    }
+
+    @Bindable
+    public String getF12808() {
+        return f12808;
+    }
+
+    public void setF12808(String f12808) {
+        if (this.f12808.equals(f12808)) return;     // For all checkboxes
+        this.f12808 = f12808;
+        setF129(f12808.equals("8") ? "" : this.f129);
+        setF12801(f12808.equals("8") ? "" : this.f12801);
+        setF12802(f12808.equals("8") ? "" : this.f12802);
+        setF12803(f12808.equals("8") ? "" : this.f12803);
+        setF12804(f12808.equals("8") ? "" : this.f12804);
+        setF12805(f12808.equals("8") ? "" : this.f12805);
+        setF12806(f12808.equals("8") ? "" : this.f12806);
+        setF13001(f12808.equals("8") ? "" : this.f13001);
+        setF13002(f12808.equals("8") ? "" : this.f13002);
+        setF13003(f12808.equals("8") ? "" : this.f13003);
+        setF13004(f12808.equals("8") ? "" : this.f13004);
+        setF13005(f12808.equals("8") ? "" : this.f13005);
+        setF13006(f12808.equals("8") ? "" : this.f13006);
+        setF13007(f12808.equals("8") ? "" : this.f13007);
+        setF13008(f12808.equals("8") ? "" : this.f13008);
+        setF13009(f12808.equals("8") ? "" : this.f13009);
+        setF13010(f12808.equals("8") ? "" : this.f13010);
+        setF13011(f12808.equals("8") ? "" : this.f13011);
+        setF13012(f12808.equals("8") ? "" : this.f13012);
+        setF13013(f12808.equals("8") ? "" : this.f13013);
+        setF13014(f12808.equals("8") ? "" : this.f13014);
+        setF13096(f12808.equals("8") ? "" : this.f13096);
+        setF131(f12808.equals("8") ? "" : this.f131);
+        notifyPropertyChanged(BR.f12808);
     }
 
     @Bindable
@@ -2680,6 +3127,16 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     @Bindable
+    public String getG127() {
+        return g127;
+    }
+
+    public void setG127(String g127) {
+        this.g127 = g127;
+        notifyPropertyChanged(BR.g127);
+    }
+
+    @Bindable
     public String getG113() {
         return g113;
     }
@@ -2968,6 +3425,113 @@ public class MWRA extends BaseObservable implements Observable {
         notifyPropertyChanged(BR.g12196x);
     }
 
+    @Bindable
+    public String getG122() {
+        return g122;
+    }
+
+    public void setG122(String g122) {
+        this.g122 = g122;
+        notifyPropertyChanged(BR.g122);
+    }
+
+    @Bindable
+    public String getG123() {
+        return g123;
+    }
+
+    public void setG123(String g123) {
+        this.g123 = g123;
+        notifyPropertyChanged(BR.g123);
+    }
+
+    @Bindable
+    public String getG12301() {
+        return g12301;
+    }
+
+    public void setG12301(String g12301) {
+        if (this.g12301.equals(g12301)) return;     // For all checkboxes
+        this.g12301 = g12301;
+        notifyPropertyChanged(BR.g12301);
+    }
+
+    @Bindable
+    public String getG12302() {
+        return g12302;
+    }
+
+    public void setG12302(String g12302) {
+        if (this.g12302.equals(g12302)) return;     // For all checkboxes
+        this.g12302 = g12302;
+        notifyPropertyChanged(BR.g12302);
+    }
+
+    @Bindable
+    public String getG12303() {
+        return g12303;
+    }
+
+    public void setG12303(String g12303) {
+        if (this.g12303.equals(g12303)) return;     // For all checkboxes
+        this.g12303 = g12303;
+        notifyPropertyChanged(BR.g12303);
+    }
+
+    @Bindable
+    public String getG12304() {
+        return g12304;
+    }
+
+    public void setG12304(String g12304) {
+        if (this.g12304.equals(g12304)) return;     // For all checkboxes
+        this.g12304 = g12304;
+        notifyPropertyChanged(BR.g12304);
+    }
+
+    @Bindable
+    public String getG12305() {
+        return g12305;
+    }
+
+    public void setG12305(String g12305) {
+        if (this.g12305.equals(g12305)) return;     // For all checkboxes
+        this.g12305 = g12305;
+        notifyPropertyChanged(BR.g12305);
+    }
+
+    @Bindable
+    public String getG12306() {
+        return g12306;
+    }
+
+    public void setG12306(String g12306) {
+        if (this.g12306.equals(g12306)) return;     // For all checkboxes
+        this.g12306 = g12306;
+        notifyPropertyChanged(BR.g12306);
+    }
+
+    @Bindable
+    public String getG12307() {
+        return g12307;
+    }
+
+    public void setG12307(String g12307) {
+        if (this.g12307.equals(g12307)) return;     // For all checkboxes
+        this.g12307 = g12307;
+        notifyPropertyChanged(BR.g12307);
+    }
+
+    @Bindable
+    public String getG12308() {
+        return g12308;
+    }
+
+    public void setG12308(String g12308) {
+        if (this.g12308.equals(g12308)) return;     // For all checkboxes
+        this.g12308 = g12308;
+        notifyPropertyChanged(BR.g12308);
+    }
 
     @Bindable
     public String getG124() {
@@ -3551,6 +4115,26 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     @Bindable
+    public String getH10800() {
+        return h10800;
+    }
+
+    public void setH10800(String h10800) {
+        this.h10800 = h10800;
+        notifyPropertyChanged(BR.h10800);
+    }
+
+    @Bindable
+    public String getH108a() {
+        return h108a;
+    }
+
+    public void setH108a(String h108a) {
+        this.h108a = h108a;
+        notifyPropertyChanged(BR.h108a);
+    }
+
+    @Bindable
     public String getH108() {
         return h108;
     }
@@ -3572,6 +4156,26 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     @Bindable
+    public String getH10900() {
+        return h10900;
+    }
+
+    public void setH10900(String h10900) {
+        this.h10900 = h10900;
+        notifyPropertyChanged(BR.h10900);
+    }
+
+    @Bindable
+    public String getH10901() {
+        return h10901;
+    }
+
+    public void setH10901(String h10901) {
+        this.h10901 = h10901;
+        notifyPropertyChanged(BR.h10901);
+    }
+
+    @Bindable
     public String getH109() {
         return h109;
     }
@@ -3582,80 +4186,80 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     @Bindable
-    public String getH10901() {
-        return h10901;
+    public String getH1091() {
+        return h1091;
     }
 
-    public void setH10901(String h10901) {
-        if (this.h10901.equals(h10901)) return;
-        this.h10901 = h10901;
-        notifyPropertyChanged(BR.h10901);
-    }
-
-    @Bindable
-    public String getH10902() {
-        return h10902;
-    }
-
-    public void setH10902(String h10902) {
-        if (this.h10902.equals(h10902)) return;
-        this.h10902 = h10902;
-        notifyPropertyChanged(BR.h10902);
+    public void setH1091(String h1091) {
+        if (this.h1091.equals(h1091)) return;
+        this.h1091 = h1091;
+        notifyPropertyChanged(BR.h1091);
     }
 
     @Bindable
-    public String getH10903() {
-        return h10903;
+    public String getH1092() {
+        return h1092;
     }
 
-    public void setH10903(String h10903) {
-        if (this.h10903.equals(h10903)) return;
-        this.h10903 = h10903;
-        notifyPropertyChanged(BR.h10903);
-    }
-
-    @Bindable
-    public String getH10904() {
-        return h10904;
-    }
-
-    public void setH10904(String h10904) {
-        if (this.h10904.equals(h10904)) return;
-        this.h10904 = h10904;
-        notifyPropertyChanged(BR.h10904);
+    public void setH1092(String h1092) {
+        if (this.h1092.equals(h1092)) return;
+        this.h1092 = h1092;
+        notifyPropertyChanged(BR.h1092);
     }
 
     @Bindable
-    public String getH10905() {
-        return h10905;
+    public String getH1093() {
+        return h1093;
     }
 
-    public void setH10905(String h10905) {
-        if (this.h10905.equals(h10905)) return;
-        this.h10905 = h10905;
-        notifyPropertyChanged(BR.h10905);
-    }
-
-    @Bindable
-    public String getH10906() {
-        return h10906;
-    }
-
-    public void setH10906(String h10906) {
-        if (this.h10906.equals(h10906)) return;
-        this.h10906 = h10906;
-        notifyPropertyChanged(BR.h10906);
+    public void setH1093(String h1093) {
+        if (this.h1093.equals(h1093)) return;
+        this.h1093 = h1093;
+        notifyPropertyChanged(BR.h1093);
     }
 
     @Bindable
-    public String getH10907() {
-        return h10907;
+    public String getH1094() {
+        return h1094;
     }
 
-    public void setH10907(String h10907) {
-        if (this.h10907.equals(h10907)) return;
-        this.h10907 = h10907;
-        notifyPropertyChanged(BR.h10907);
+    public void setH1094(String h1094) {
+        if (this.h1094.equals(h1094)) return;
+        this.h1094 = h1094;
+        notifyPropertyChanged(BR.h1094);
+    }
+
+    @Bindable
+    public String getH1095() {
+        return h1095;
+    }
+
+    public void setH1095(String h1095) {
+        if (this.h1095.equals(h1095)) return;
+        this.h1095 = h1095;
+        notifyPropertyChanged(BR.h1095);
+    }
+
+    @Bindable
+    public String getH1096() {
+        return h1096;
+    }
+
+    public void setH1096(String h1096) {
+        if (this.h1096.equals(h1096)) return;
+        this.h1096 = h1096;
+        notifyPropertyChanged(BR.h1096);
+    }
+
+    @Bindable
+    public String getH1097() {
+        return h1097;
+    }
+
+    public void setH1097(String h1097) {
+        if (this.h1097.equals(h1097)) return;
+        this.h1097 = h1097;
+        notifyPropertyChanged(BR.h1097);
     }
 
     @Bindable
@@ -3666,13 +4270,13 @@ public class MWRA extends BaseObservable implements Observable {
     public void setH10997(String h10997) {
         if (this.h10997.equals(h10997)) return;
         this.h10997 = h10997;
-        setH10901(h10997.equals("97") ? "" : this.h10901);
-        setH10902(h10997.equals("97") ? "" : this.h10902);
-        setH10903(h10997.equals("97") ? "" : this.h10903);
-        setH10904(h10997.equals("97") ? "" : this.h10904);
-        setH10905(h10997.equals("97") ? "" : this.h10905);
-        setH10906(h10997.equals("97") ? "" : this.h10906);
-        setH10907(h10997.equals("97") ? "" : this.h10907);
+        setH1091(h10997.equals("97") ? "" : this.h1091);
+        setH1092(h10997.equals("97") ? "" : this.h1092);
+        setH1093(h10997.equals("97") ? "" : this.h1093);
+        setH1094(h10997.equals("97") ? "" : this.h1094);
+        setH1095(h10997.equals("97") ? "" : this.h1095);
+        setH1096(h10997.equals("97") ? "" : this.h1096);
+        setH1097(h10997.equals("97") ? "" : this.h1097);
         setH10996(h10997.equals("97") ? "" : this.h10996);
         notifyPropertyChanged(BR.h10997);
     }
@@ -3718,6 +4322,56 @@ public class MWRA extends BaseObservable implements Observable {
     public void setH111(String h111) {
         this.h111 = h111;
         notifyPropertyChanged(BR.h111);
+    }
+
+    @Bindable
+    public String getH11000() {
+        return h11000;
+    }
+
+    public void setH11000(String h11000) {
+        this.h11000 = h11000;
+        notifyPropertyChanged(BR.h11000);
+    }
+
+    @Bindable
+    public String getH11001() {
+        return h11001;
+    }
+
+    public void setH11001(String h11001) {
+        this.h11001 = h11001;
+        notifyPropertyChanged(BR.h11001);
+    }
+
+    @Bindable
+    public String getH11200() {
+        return h11200;
+    }
+
+    public void setH11200(String h11200) {
+        this.h11200 = h11200;
+        notifyPropertyChanged(BR.h11200);
+    }
+
+    @Bindable
+    public String getH11201() {
+        return h11201;
+    }
+
+    public void setH11201(String h11201) {
+        this.h11201 = h11201;
+        notifyPropertyChanged(BR.h11201);
+    }
+
+    @Bindable
+    public String getH11202() {
+        return h11202;
+    }
+
+    public void setH11202(String h11202) {
+        this.h11202 = h11202;
+        notifyPropertyChanged(BR.h11202);
     }
 
     @Bindable
@@ -4112,6 +4766,113 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     @Bindable
+    public String getH130() {
+        return h130;
+    }
+
+    public void setH130(String h130) {
+        this.h130 = h130;
+        notifyPropertyChanged(BR.h130);
+    }
+
+    @Bindable
+    public String getH131() {
+        return h131;
+    }
+
+    public void setH131(String h131) {
+        this.h131 = h131;
+        notifyPropertyChanged(BR.h131);
+    }
+
+    @Bindable
+    public String getH13101() {
+        return h13101;
+    }
+
+    public void setH13101(String h13101) {
+        this.h13101 = h13101;
+        notifyPropertyChanged(BR.h13101);
+    }
+
+    @Bindable
+    public String getH1310101() {
+        return h1310101;
+    }
+
+    public void setH1310101(String h1310101) {
+        if (this.h1310101.equals(h1310101)) return;     // For all checkboxes
+        this.h1310101 = h1310101;
+        notifyPropertyChanged(BR.h1310101);
+    }
+
+    @Bindable
+    public String getH1310102() {
+        return h1310102;
+    }
+
+    public void setH1310102(String h1310102) {
+        if (this.h1310102.equals(h1310102)) return;     // For all checkboxes
+        this.h1310102 = h1310102;
+        notifyPropertyChanged(BR.h1310102);
+    }
+
+    @Bindable
+    public String getH1310103() {
+        return h1310103;
+    }
+
+    public void setH1310103(String h1310103) {
+        if (this.h1310103.equals(h1310103)) return;     // For all checkboxes
+        this.h1310103 = h1310103;
+        notifyPropertyChanged(BR.h1310103);
+    }
+
+    @Bindable
+    public String getH1310104() {
+        return h1310104;
+    }
+
+    public void setH1310104(String h1310104) {
+        if (this.h1310104.equals(h1310104)) return;     // For all checkboxes
+        this.h1310104 = h1310104;
+        notifyPropertyChanged(BR.h1310104);
+    }
+
+    @Bindable
+    public String getH1310105() {
+        return h1310105;
+    }
+
+    public void setH1310105(String h1310105) {
+        if (this.h1310105.equals(h1310105)) return;     // For all checkboxes
+        this.h1310105 = h1310105;
+        notifyPropertyChanged(BR.h1310105);
+    }
+
+    @Bindable
+    public String getH1310106() {
+        return h1310106;
+    }
+
+    public void setH1310106(String h1310106) {
+        if (this.h1310106.equals(h1310106)) return;     // For all checkboxes
+        this.h1310106 = h1310106;
+        notifyPropertyChanged(BR.h1310106);
+    }
+
+    @Bindable
+    public String getH1310107() {
+        return h1310107;
+    }
+
+    public void setH1310107(String h1310107) {
+        if (this.h1310107.equals(h1310107)) return;     // For all checkboxes
+        this.h1310107 = h1310107;
+        notifyPropertyChanged(BR.h1310107);
+    }
+
+    @Bindable
     public String getH132() {
         return h132;
     }
@@ -4401,69 +5162,69 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     @Bindable
-    public String getH13601() {
-        return h13601;
+    public String getH1361() {
+        return h1361;
     }
 
-    public void setH13601(String h13601) {
-        if (this.h13601.equals(h13601)) return;     // For all checkboxes
-        this.h13601 = h13601;
-        notifyPropertyChanged(BR.h13601);
-    }
-
-    @Bindable
-    public String getH13602() {
-        return h13602;
-    }
-
-    public void setH13602(String h13602) {
-        if (this.h13602.equals(h13602)) return;     // For all checkboxes
-        this.h13602 = h13602;
-        notifyPropertyChanged(BR.h13602);
+    public void setH1361(String h1361) {
+        if (this.h1361.equals(h1361)) return;     // For all checkboxes
+        this.h1361 = h1361;
+        notifyPropertyChanged(BR.h1361);
     }
 
     @Bindable
-    public String getH13603() {
-        return h13603;
+    public String getH1362() {
+        return h1362;
     }
 
-    public void setH13603(String h13603) {
-        if (this.h13603.equals(h13603)) return;     // For all checkboxes
-        this.h13603 = h13603;
-        notifyPropertyChanged(BR.h13603);
-    }
-
-    @Bindable
-    public String getH13604() {
-        return h13604;
-    }
-
-    public void setH13604(String h13604) {
-        if (this.h13604.equals(h13604)) return;     // For all checkboxes
-        this.h13604 = h13604;
-        notifyPropertyChanged(BR.h13604);
+    public void setH1362(String h1362) {
+        if (this.h1362.equals(h1362)) return;     // For all checkboxes
+        this.h1362 = h1362;
+        notifyPropertyChanged(BR.h1362);
     }
 
     @Bindable
-    public String getH13605() {
-        return h13605;
+    public String getH1363() {
+        return h1363;
     }
 
-    public void setH13605(String h13605) {
-        if (this.h13605.equals(h13605)) return;     // For all checkboxes
-        this.h13605 = h13605;
-        notifyPropertyChanged(BR.h13605);
+    public void setH1363(String h1363) {
+        if (this.h1363.equals(h1363)) return;     // For all checkboxes
+        this.h1363 = h1363;
+        notifyPropertyChanged(BR.h1363);
     }
 
     @Bindable
-    public String getH13606() {
-        return h13606;
+    public String getH1364() {
+        return h1364;
     }
 
-    public void setH13606(String h13606) {
-        if (this.h13606.equals(h13606)) return;     // For all checkboxes
-        this.h13606 = h13606;
-        notifyPropertyChanged(BR.h13606);
+    public void setH1364(String h1364) {
+        if (this.h1364.equals(h1364)) return;     // For all checkboxes
+        this.h1364 = h1364;
+        notifyPropertyChanged(BR.h1364);
+    }
+
+    @Bindable
+    public String getH1365() {
+        return h1365;
+    }
+
+    public void setH1365(String h1365) {
+        if (this.h1365.equals(h1365)) return;     // For all checkboxes
+        this.h1365 = h1365;
+        notifyPropertyChanged(BR.h1365);
+    }
+
+    @Bindable
+    public String getH1366() {
+        return h1366;
+    }
+
+    public void setH1366(String h1366) {
+        if (this.h1366.equals(h1366)) return;     // For all checkboxes
+        this.h1366 = h1366;
+        notifyPropertyChanged(BR.h1366);
     }
 
     @Bindable
@@ -4486,6 +5247,157 @@ public class MWRA extends BaseObservable implements Observable {
     public void setH13696x(String h13696x) {
         this.h13696x = h13696x;
         notifyPropertyChanged(BR.h13696x);
+    }
+
+    @Bindable
+    public String getH13601() {
+        return h13601;
+    }
+
+    public void setH13601(String h13601) {
+        this.h13601 = h13601;
+        notifyPropertyChanged(BR.h13601);
+    }
+
+    @Bindable
+    public String getH13602() {
+        return h13602;
+    }
+
+    public void setH13602(String h13602) {
+        this.h13602 = h13602;
+        notifyPropertyChanged(BR.h13602);
+    }
+
+    @Bindable
+    public String getH1360201() {
+        return h1360201;
+    }
+
+    public void setH1360201(String h1360201) {
+        if (this.h1360201.equals(h1360201)) return;     // For all checkboxes
+        this.h1360201 = h1360201;
+        notifyPropertyChanged(BR.h1360201);
+    }
+
+    @Bindable
+    public String getH1360202() {
+        return h1360202;
+    }
+
+    public void setH1360202(String h1360202) {
+        if (this.h1360202.equals(h1360202)) return;     // For all checkboxes
+        this.h1360202 = h1360202;
+        notifyPropertyChanged(BR.h1360202);
+    }
+
+    @Bindable
+    public String getH1360203() {
+        return h1360203;
+    }
+
+    public void setH1360203(String h1360203) {
+        if (this.h1360203.equals(h1360203)) return;     // For all checkboxes
+        this.h1360203 = h1360203;
+        notifyPropertyChanged(BR.h1360203);
+    }
+
+    @Bindable
+    public String getH1360204() {
+        return h1360204;
+    }
+
+    public void setH1360204(String h1360204) {
+        if (this.h1360204.equals(h1360204)) return;     // For all checkboxes
+        this.h1360204 = h1360204;
+        notifyPropertyChanged(BR.h1360204);
+    }
+
+    @Bindable
+    public String getH1360205() {
+        return h1360205;
+    }
+
+    public void setH1360205(String h1360205) {
+        if (this.h1360205.equals(h1360205)) return;     // For all checkboxes
+        this.h1360205 = h1360205;
+        notifyPropertyChanged(BR.h1360205);
+    }
+
+    @Bindable
+    public String getH1360206() {
+        return h1360206;
+    }
+
+    public void setH1360206(String h1360206) {
+        if (this.h1360206.equals(h1360206)) return;     // For all checkboxes
+        this.h1360206 = h1360206;
+        notifyPropertyChanged(BR.h1360206);
+    }
+
+    @Bindable
+    public String getH1360207() {
+        return h1360207;
+    }
+
+    public void setH1360207(String h1360207) {
+        if (this.h1360207.equals(h1360207)) return;     // For all checkboxes
+        this.h1360207 = h1360207;
+        notifyPropertyChanged(BR.h1360207);
+    }
+
+    @Bindable
+    public String getH1360208() {
+        return h1360208;
+    }
+
+    public void setH1360208(String h1360208) {
+        if (this.h1360208.equals(h1360208)) return;     // For all checkboxes
+        this.h1360208 = h1360208;
+        notifyPropertyChanged(BR.h1360208);
+    }
+
+    @Bindable
+    public String getH1360209() {
+        return h1360209;
+    }
+
+    public void setH1360209(String h1360209) {
+        if (this.h1360209.equals(h1360209)) return;     // For all checkboxes
+        this.h1360209 = h1360209;
+        notifyPropertyChanged(BR.h1360209);
+    }
+
+    @Bindable
+    public String getH1360210() {
+        return h1360210;
+    }
+
+    public void setH1360210(String h1360210) {
+        if (this.h1360210.equals(h1360210)) return;     // For all checkboxes
+        this.h1360210 = h1360210;
+        notifyPropertyChanged(BR.h1360210);
+    }
+
+    @Bindable
+    public String getH1360298() {
+        return h1360298;
+    }
+
+    public void setH1360298(String h1360298) {
+        if (this.h1360298.equals(h1360298)) return;     // For all checkboxes
+        this.h1360298 = h1360298;
+        notifyPropertyChanged(BR.h1360298);
+    }
+
+    @Bindable
+    public String getH13603() {
+        return h13603;
+    }
+
+    public void setH13603(String h13603) {
+        this.h13603 = h13603;
+        notifyPropertyChanged(BR.h13603);
     }
 
     @Bindable
@@ -5834,6 +6746,16 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     @Bindable
+    public String getK101b() {
+        return k101b;
+    }
+
+    public void setK101b(String k101b) {
+        this.k101b = k101b;
+        notifyPropertyChanged(BR.k101b);
+    }
+
+    @Bindable
     public String getK102() {
         return k102;
     }
@@ -6238,6 +7160,15 @@ public class MWRA extends BaseObservable implements Observable {
         setK10608(k105a.equals("444") ? this.k10608 : "");
         setK10696(k105a.equals("444") ? this.k10696 : "");
         notifyPropertyChanged(BR.k105a);
+    }
+    @Bindable
+    public String getK105b() {
+        return k105b;
+    }
+
+    public void setK105b(String k105b) {
+        this.k105b = k105b;
+        notifyPropertyChanged(BR.k105b);
     }
 
     @Bindable
@@ -6776,6 +7707,463 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     @Bindable
+    public String getLg101() {
+        return lg101;
+    }
+
+    public void setLg101(String lg101) {
+        this.lg101 = lg101;
+        notifyPropertyChanged(BR.lg101);
+    }
+
+    @Bindable
+    public String getLg102() {
+        return lg102;
+    }
+
+    public void setLg102(String lg102) {
+        this.lg102 = lg102;
+        notifyPropertyChanged(BR.lg102);
+    }
+
+    @Bindable
+    public String getLg10201() {
+        return lg10201;
+    }
+
+    public void setLg10201(String lg10201) {
+        if (this.lg10201.equals(lg10201)) return; // for all checkboxes
+        this.lg10201 = lg10201;
+        notifyPropertyChanged(BR.lg10201);
+    }
+
+    @Bindable
+    public String getLg10202() {
+        return lg10202;
+    }
+
+    public void setLg10202(String lg10202) {
+        if (this.lg10202.equals(lg10202)) return; // for all checkboxes
+        this.lg10202 = lg10202;
+        notifyPropertyChanged(BR.lg10202);
+    }
+
+    @Bindable
+    public String getLg10203() {
+        return lg10203;
+    }
+
+    public void setLg10203(String lg10203) {
+        if (this.lg10203.equals(lg10203)) return; // for all checkboxes
+        this.lg10203 = lg10203;
+        notifyPropertyChanged(BR.lg10203);
+    }
+
+    @Bindable
+    public String getLg10204() {
+        return lg10204;
+    }
+
+    public void setLg10204(String lg10204) {
+        if (this.lg10204.equals(lg10204)) return; // for all checkboxes
+        this.lg10204 = lg10204;
+        notifyPropertyChanged(BR.lg10204);
+    }
+
+    @Bindable
+    public String getLg10205() {
+        return lg10205;
+    }
+
+    public void setLg10205(String lg10205) {
+        if (this.lg10205.equals(lg10205)) return; // for all checkboxes
+        this.lg10205 = lg10205;
+        notifyPropertyChanged(BR.lg10205);
+    }
+
+    @Bindable
+    public String getLg10206() {
+        return lg10206;
+    }
+
+    public void setLg10206(String lg10206) {
+        if (this.lg10206.equals(lg10206)) return; // for all checkboxes
+        this.lg10206 = lg10206;
+        notifyPropertyChanged(BR.lg10206);
+    }
+
+    @Bindable
+    public String getLg10207() {
+        return lg10207;
+    }
+
+    public void setLg10207(String lg10207) {
+        if (this.lg10207.equals(lg10207)) return; // for all checkboxes
+        this.lg10207 = lg10207;
+        notifyPropertyChanged(BR.lg10207);
+    }
+
+    @Bindable
+    public String getLg10208() {
+        return lg10208;
+    }
+
+    public void setLg10208(String lg10208) {
+        if (this.lg10208.equals(lg10208)) return; // for all checkboxes
+        this.lg10208 = lg10208;
+        notifyPropertyChanged(BR.lg10208);
+    }
+
+    @Bindable
+    public String getLg10209() {
+        return lg10209;
+    }
+
+    public void setLg10209(String lg10209) {
+        if (this.lg10209.equals(lg10209)) return; // for all checkboxes
+        this.lg10209 = lg10209;
+        notifyPropertyChanged(BR.lg10209);
+    }
+
+    @Bindable
+    public String getLg10296() {
+        return lg10296;
+    }
+
+    public void setLg10296(String lg10296) {
+        if (this.lg10296.equals(lg10296)) return; // for all checkboxes
+        this.lg10296 = lg10296;
+        setLg10296(lg10296.equals("96") ? this.lg10296x : "");
+        notifyPropertyChanged(BR.lg10296);
+    }
+
+    @Bindable
+    public String getLg10296x() {
+        return lg10296x;
+    }
+
+    public void setLg10296x(String lg10296x) {
+        this.lg10296x = lg10296x;
+        notifyPropertyChanged(BR.lg10296x);
+    }
+
+    @Bindable
+    public String getLg103() {
+        return lg103;
+    }
+
+    public void setLg103(String lg103) {
+        this.lg103 = lg103;
+        notifyPropertyChanged(BR.lg103);
+    }
+
+    @Bindable
+    public String getLg104() {
+        return lg104;
+    }
+
+    public void setLg104(String lg104) {
+        this.lg104 = lg104;
+        notifyPropertyChanged(BR.lg104);
+    }
+
+    @Bindable
+    public String getLg10401() {
+        return lg10401;
+    }
+
+    public void setLg10401(String lg10401) {
+        if (this.lg10401.equals(lg10401)) return; // for all checkboxes
+        this.lg10401 = lg10401;
+        notifyPropertyChanged(BR.lg10401);
+    }
+
+    @Bindable
+    public String getLg10402() {
+        return lg10402;
+    }
+
+    public void setLg10402(String lg10402) {
+        if (this.lg10402.equals(lg10402)) return; // for all checkboxes
+        this.lg10402 = lg10402;
+        notifyPropertyChanged(BR.lg10402);
+    }
+
+    @Bindable
+    public String getLg10403() {
+        return lg10403;
+    }
+
+    public void setLg10403(String lg10403) {
+        if (this.lg10403.equals(lg10403)) return; // for all checkboxes
+        this.lg10403 = lg10403;
+        notifyPropertyChanged(BR.lg10403);
+    }
+
+    @Bindable
+    public String getLg10404() {
+        return lg10404;
+    }
+
+    public void setLg10404(String lg10404) {
+        if (this.lg10404.equals(lg10404)) return; // for all checkboxes
+        this.lg10404 = lg10404;
+        notifyPropertyChanged(BR.lg10404);
+    }
+
+    @Bindable
+    public String getLg10405() {
+        return lg10405;
+    }
+
+    public void setLg10405(String lg10405) {
+        if (this.lg10405.equals(lg10405)) return; // for all checkboxes
+        this.lg10405 = lg10405;
+        notifyPropertyChanged(BR.lg10405);
+    }
+
+    @Bindable
+    public String getLg10406() {
+        return lg10406;
+    }
+
+    public void setLg10406(String lg10406) {
+        if (this.lg10406.equals(lg10406)) return; // for all checkboxes
+        this.lg10406 = lg10406;
+        notifyPropertyChanged(BR.lg10406);
+    }
+
+    @Bindable
+    public String getLg10407() {
+        return lg10407;
+    }
+
+    public void setLg10407(String lg10407) {
+        if (this.lg10407.equals(lg10407)) return; // for all checkboxes
+        this.lg10407 = lg10407;
+        notifyPropertyChanged(BR.lg10407);
+    }
+
+    @Bindable
+    public String getLg10408() {
+        return lg10408;
+    }
+
+    public void setLg10408(String lg10408) {
+        if (this.lg10408.equals(lg10408)) return; // for all checkboxes
+        this.lg10408 = lg10408;
+        notifyPropertyChanged(BR.lg10408);
+    }
+
+    @Bindable
+    public String getLg10409() {
+        return lg10409;
+    }
+
+    public void setLg10409(String lg10409) {
+        if (this.lg10409.equals(lg10409)) return; // for all checkboxes
+        this.lg10409 = lg10409;
+        notifyPropertyChanged(BR.lg10409);
+    }
+
+    @Bindable
+    public String getLg10410() {
+        return lg10410;
+    }
+
+    public void setLg10410(String lg10410) {
+        if (this.lg10410.equals(lg10410)) return; // for all checkboxes
+        this.lg10410 = lg10410;
+        notifyPropertyChanged(BR.lg10410);
+    }
+
+    @Bindable
+    public String getLg10411() {
+        return lg10411;
+    }
+
+    public void setLg10411(String lg10411) {
+        if (this.lg10411.equals(lg10411)) return; // for all checkboxes
+        this.lg10411 = lg10411;
+        notifyPropertyChanged(BR.lg10411);
+    }
+
+    @Bindable
+    public String getLg10412() {
+        return lg10412;
+    }
+
+    public void setLg10412(String lg10412) {
+        if (this.lg10412.equals(lg10412)) return; // for all checkboxes
+        this.lg10412 = lg10412;
+        notifyPropertyChanged(BR.lg10412);
+    }
+
+    @Bindable
+    public String getLg10413() {
+        return lg10413;
+    }
+
+    public void setLg10413(String lg10413) {
+        if (this.lg10413.equals(lg10413)) return; // for all checkboxes
+        this.lg10413 = lg10413;
+        notifyPropertyChanged(BR.lg10413);
+    }
+
+    @Bindable
+    public String getLg10414() {
+        return lg10414;
+    }
+
+    public void setLg10414(String lg10414) {
+        if (this.lg10414.equals(lg10414)) return; // for all checkboxes
+        this.lg10414 = lg10414;
+        notifyPropertyChanged(BR.lg10414);
+    }
+
+    @Bindable
+    public String getLg10415() {
+        return lg10415;
+    }
+
+    public void setLg10415(String lg10415) {
+        if (this.lg10415.equals(lg10415)) return; // for all checkboxes
+        this.lg10415 = lg10415;
+        notifyPropertyChanged(BR.lg10415);
+    }
+
+    @Bindable
+    public String getLg10416() {
+        return lg10416;
+    }
+
+    public void setLg10416(String lg10416) {
+        if (this.lg10416.equals(lg10416)) return; // for all checkboxes
+        this.lg10416 = lg10416;
+        notifyPropertyChanged(BR.lg10416);
+    }
+
+    @Bindable
+    public String getLg105() {
+        return lg105;
+    }
+
+    public void setLg105(String lg105) {
+        this.lg105 = lg105;
+        notifyPropertyChanged(BR.lg105);
+    }
+
+    @Bindable
+    public String getLg106() {
+        return lg106;
+    }
+
+    public void setLg106(String lg106) {
+        this.lg106 = lg106;
+        notifyPropertyChanged(BR.lg106);
+    }
+
+    @Bindable
+    public String getLg10601() {
+        return lg10601;
+    }
+
+    public void setLg10601(String lg10601) {
+        if (this.lg10601.equals(lg10601)) return; // for all checkboxes
+        this.lg10601 = lg10601;
+        notifyPropertyChanged(BR.lg10601);
+    }
+
+    @Bindable
+    public String getLg10602() {
+        return lg10602;
+    }
+
+    public void setLg10602(String lg10602) {
+        if (this.lg10602.equals(lg10602)) return; // for all checkboxes
+        this.lg10602 = lg10602;
+        notifyPropertyChanged(BR.lg10602);
+    }
+
+    @Bindable
+    public String getLg10603() {
+        return lg10603;
+    }
+
+    public void setLg10603(String lg10603) {
+        if (this.lg10603.equals(lg10603)) return; // for all checkboxes
+        this.lg10603 = lg10603;
+        notifyPropertyChanged(BR.lg10603);
+    }
+
+    @Bindable
+    public String getLg10604() {
+        return lg10604;
+    }
+
+    public void setLg10604(String lg10604) {
+        if (this.lg10604.equals(lg10604)) return; // for all checkboxes
+        this.lg10604 = lg10604;
+        notifyPropertyChanged(BR.lg10604);
+    }
+
+    @Bindable
+    public String getLg10605() {
+        return lg10605;
+    }
+
+    public void setLg10605(String lg10605) {
+        if (this.lg10605.equals(lg10605)) return; // for all checkboxes
+        this.lg10605 = lg10605;
+        notifyPropertyChanged(BR.lg10605);
+    }
+
+    @Bindable
+    public String getLg10606() {
+        return lg10606;
+    }
+
+    public void setLg10606(String lg10606) {
+        if (this.lg10606.equals(lg10606)) return; // for all checkboxes
+        this.lg10606 = lg10606;
+        notifyPropertyChanged(BR.lg10606);
+    }
+
+    @Bindable
+    public String getLg10607() {
+        return lg10607;
+    }
+
+    public void setLg10607(String lg10607) {
+        if (this.lg10607.equals(lg10607)) return; // for all checkboxes
+        this.lg10607 = lg10607;
+        notifyPropertyChanged(BR.lg10607);
+    }
+
+    @Bindable
+    public String getLg10696() {
+        return lg10696;
+    }
+
+    public void setLg10696(String lg10696) {
+        if (this.lg10696.equals(lg10696)) return; // for all checkboxes
+        this.lg10696 = lg10696;
+        setLg10696x(lg10696.equals("96") ? this.l10696x : "");
+
+        notifyPropertyChanged(BR.lg10696);
+    }
+
+    @Bindable
+    public String getLg10696x() {
+        return lg10696x;
+    }
+
+    public void setLg10696x(String lg10696x) {
+        this.lg10696x = lg10696x;
+        notifyPropertyChanged(BR.lg10696x);
+    }
+
+    @Bindable
     public String getL1131() {
         return l1131;
     }
@@ -7133,6 +8521,9 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("f10303", f10303)
                 .put("f10304", f10304)
                 .put("f10305", f10305)
+                .put("f104", f104)
+                .put("f105", f105)
+                .put("f106", f106)
                 .put("f107", f107)
                 .put("f10796x", f10796x)
                 .put("f108", f108)
@@ -7154,6 +8545,7 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("f113", f113)
                 .put("f11301x", f11301x)
                 .put("f114", f114)
+                .put("f115", f115)
                 .put("f11601", f11601)
                 .put("f11602", f11602)
                 .put("f11603", f11603)
@@ -7173,6 +8565,7 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("f121a", f121a)
                 .put("f121b", f121b)
                 .put("f121b96x", f121b96x)
+                .put("f12101", f12101)
                 .put("f122", f122)
                 .put("f12201x", f12201x)
                 .put("f12301", f12301)
@@ -7184,6 +8577,24 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("f12307", f12307)
                 .put("f12308", f12308)
                 .put("f12309", f12309)
+                .put("f124", f124)
+                .put("f12501", f12501)
+                .put("f12502", f12502)
+                .put("f12503", f12503)
+                .put("f12504", f12504)
+                .put("f12505", f12505)
+                .put("f12506", f12506)
+                .put("f12507", f12507)
+                .put("f12601", f12601)
+                .put("f12602", f12602)
+                .put("f12603", f12603)
+                .put("f12604", f12604)
+                .put("f12605", f12605)
+                .put("f12606", f12606)
+                .put("f12607", f12607)
+                .put("f12608", f12608)
+                .put("f127", f127)
+                .put("f12796x", f12796x)
                 .put("f12801", f12801)
                 .put("f12802", f12802)
                 .put("f12803", f12803)
@@ -7191,6 +8602,7 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("f12805", f12805)
                 .put("f12806", f12806)
                 .put("f12807", f12807)
+                .put("f12808", f12808)
                 .put("f129", f129)
                 .put("f13001", f13001)
                 .put("f13002", f13002)
@@ -7255,6 +8667,7 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("g109", g109)
                 .put("g110", g110)
                 .put("g126", g126)
+                .put("g127", g127)
                 .put("g113", g113)
                 .put("g114", g114)
                 .put("g11496x", g11496x)
@@ -7280,6 +8693,15 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("g12096x", g12096x)
                 .put("g121", g121)
                 .put("g12196x", g12196x)
+                .put("g122", g122)
+                .put("g12301", g12301)
+                .put("g12302", g12302)
+                .put("g12303", g12303)
+                .put("g12304", g12304)
+                .put("g12305", g12305)
+                .put("g12306", g12306)
+                .put("g12307", g12307)
+                .put("g12308", g12308)
                 .put("g124", g124)
                 .put("g1241", g1241)
                 .put("g1242", g1242)
@@ -7343,23 +8765,33 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("h106", h106)
                 .put("h1061x", h1061x)
                 .put("h107", h107)
+                .put("h10800", h10800)
+                .put("h108a", h108a)
                 .put("h108", h108)
                 .put("h10896x", h10896x)
+                .put("h10900", h10900)
                 .put("h10901", h10901)
-                .put("h10902", h10902)
-                .put("h10903", h10903)
-                .put("h10904", h10904)
-                .put("h10905", h10905)
-                .put("h10906", h10906)
-                .put("h10907", h10907)
+                .put("h1091", h1091)
+                .put("h1092", h1092)
+                .put("h1093", h1093)
+                .put("h1094", h1094)
+                .put("h1095", h1095)
+                .put("h1096", h1096)
+                .put("h1097", h1097)
                 .put("h10997", h10997)
                 .put("h10996", h10996)
                 .put("h10996x", h10996x)
+                .put("h11000", h11000)
+                .put("h11001", h11001)
                 .put("h110", h110)
                 .put("h111", h111)
+                .put("h11200", h11200)
+                .put("h11201", h11201)
+                .put("h11202", h11202)
                 .put("h112", h112)
                 .put("h113", h113)
                 .put("h114", h114)
+                .put("h115", h115)
                 .put("h11501", h11501)
                 .put("h11502", h11502)
                 .put("h11503", h11503)
@@ -7392,6 +8824,15 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("h12904", h12904)
                 .put("h12905", h12905)
                 .put("h12906", h12906)
+                .put("h130", h130)
+                .put("h131", h131)
+                .put("h1310101", h1310101)
+                .put("h1310102", h1310102)
+                .put("h1310103", h1310103)
+                .put("h1310104", h1310104)
+                .put("h1310105", h1310105)
+                .put("h1310106", h1310106)
+                .put("h1310107", h1310107)
                 .put("h132", h132)
                 .put("h132a", h132a)
                 .put("h132a96x", h132a96x)
@@ -7414,14 +8855,26 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("h13508", h13508)
                 .put("h13509", h13509)
                 .put("h13598", h13598)
-                .put("h13601", h13601)
-                .put("h13602", h13602)
-                .put("h13603", h13603)
-                .put("h13604", h13604)
-                .put("h13605", h13605)
-                .put("h13606", h13606)
+                .put("h1361", h1361)
+                .put("h1362", h1362)
+                .put("h1363", h1363)
+                .put("h1364", h1364)
+                .put("h1365", h1365)
+                .put("h1366", h1366)
                 .put("h13696", h13696)
                 .put("h13696x", h13696x)
+                .put("h13601", h13601)
+                .put("h1360201", h1360201)
+                .put("h1360202", h1360202)
+                .put("h1360203", h1360203)
+                .put("h1360204", h1360204)
+                .put("h1360205", h1360205)
+                .put("h1360206", h1360206)
+                .put("h1360207", h1360207)
+                .put("h1360208", h1360208)
+                .put("h1360209", h1360209)
+                .put("h1360210", h1360210)
+                .put("h1360298", h1360298)
                 .put("h137", h137)
                 .put("h137a", h137a)
                 .put("h137a96x", h137a96x)
@@ -7547,6 +9000,7 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("k101a13", k101a13)
                 .put("k101a96", k101a96)
                 .put("k101a96x", k101a96x)
+                .put("k101b", k101b)
                 .put("k102", k102)
                 .put("k10401", k10401)
                 .put("k10402", k10402)
@@ -7579,6 +9033,7 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("k105a", k105a)
                 .put("k105a01x", k105a01x)
                 .put("k105a02x", k105a02x)
+                .put("k105b", k105b)
                 .put("k10601", k10601)
                 .put("k10602", k10602)
                 .put("k10603", k10603)
@@ -7633,6 +9088,45 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("l1123", l1123)
                 .put("l1124", l1124)
                 .put("l1125", l1125)
+                .put("lg101", lg101)
+                .put("lg10201", lg10201)
+                .put("lg10202", lg10202)
+                .put("lg10203", lg10203)
+                .put("lg10204", lg10204)
+                .put("lg10205", lg10205)
+                .put("lg10206", lg10206)
+                .put("lg10207", lg10207)
+                .put("lg10208", lg10208)
+                .put("lg10209", lg10209)
+                .put("lg10296", lg10296)
+                .put("lg10296x", lg10296x)
+                .put("lg103", lg103)
+                .put("lg10401", lg10401)
+                .put("lg10402", lg10402)
+                .put("lg10403", lg10403)
+                .put("lg10404", lg10404)
+                .put("lg10405", lg10405)
+                .put("lg10406", lg10406)
+                .put("lg10407", lg10407)
+                .put("lg10408", lg10408)
+                .put("lg10409", lg10409)
+                .put("lg10410", lg10410)
+                .put("lg10411", lg10411)
+                .put("lg10412", lg10412)
+                .put("lg10413", lg10413)
+                .put("lg10414", lg10414)
+                .put("lg10415", lg10415)
+                .put("lg10416", lg10416)
+                .put("lg105", lg105)
+                .put("lg10601", lg10601)
+                .put("lg10602", lg10602)
+                .put("lg10603", lg10603)
+                .put("lg10604", lg10604)
+                .put("lg10605", lg10605)
+                .put("lg10606", lg10606)
+                .put("lg10607", lg10607)
+                .put("lg10696", lg10696)
+                .put("lg10696x", lg10696x)
                 .put("l1131", l1131)
                 .put("l1132", l1132)
                 .put("l1133", l1133)
@@ -7744,6 +9238,9 @@ public class MWRA extends BaseObservable implements Observable {
             this.f10303 = json.getString("f10303");
             this.f10304 = json.getString("f10304");
             this.f10305 = json.getString("f10305");
+            this.f104 = json.getString("f104");
+            this.f105 = json.getString("f105");
+            this.f106 = json.getString("f106");
             this.f107 = json.getString("f107");
             this.f10796x = json.getString("f10796x");
             this.f108 = json.getString("f108");
@@ -7765,6 +9262,7 @@ public class MWRA extends BaseObservable implements Observable {
             this.f113 = json.getString("f113");
             this.f11301x = json.getString("f11301x");
             this.f114 = json.getString("f114");
+            this.f115 = json.getString("f115");
             this.f11601 = json.getString("f11601");
             this.f11602 = json.getString("f11602");
             this.f11603 = json.getString("f11603");
@@ -7782,6 +9280,7 @@ public class MWRA extends BaseObservable implements Observable {
             this.f120 = json.getString("f120");
             this.f12001x = json.getString("f12001x");
             this.f121a = json.getString("f121a");
+            this.f12101 = json.getString("f12101");
             this.f121b = json.getString("f121b");
             this.f121b96x = json.getString("f121b96x");
             this.f122 = json.getString("f122");
@@ -7802,6 +9301,32 @@ public class MWRA extends BaseObservable implements Observable {
             this.f12805 = json.getString("f12805");
             this.f12806 = json.getString("f12806");
             this.f12807 = json.getString("f12807");
+            this.f124 = json.getString("f124");
+            this.f12501 = json.getString("f12501");
+            this.f12502 = json.getString("f12502");
+            this.f12503 = json.getString("f12503");
+            this.f12504 = json.getString("f12504");
+            this.f12505 = json.getString("f12505");
+            this.f12506 = json.getString("f12506");
+            this.f12507 = json.getString("f12507");
+            this.f12601 = json.getString("f12601");
+            this.f12602 = json.getString("f12602");
+            this.f12603 = json.getString("f12603");
+            this.f12604 = json.getString("f12604");
+            this.f12605 = json.getString("f12605");
+            this.f12606 = json.getString("f12606");
+            this.f12607 = json.getString("f12607");
+            this.f12608 = json.getString("f12608");
+            this.f127 = json.getString("f127");
+            this.f12796x = json.getString("f12796x");
+            this.f12801 = json.getString("f12801");
+            this.f12802 = json.getString("f12802");
+            this.f12803 = json.getString("f12803");
+            this.f12804 = json.getString("f12804");
+            this.f12805 = json.getString("f12805");
+            this.f12806 = json.getString("f12806");
+            this.f12807 = json.getString("f12807");
+            this.f12808 = json.getString("f12808");
             this.f129 = json.getString("f129");
             this.f13001 = json.getString("f13001");
             this.f13002 = json.getString("f13002");
@@ -7869,6 +9394,7 @@ public class MWRA extends BaseObservable implements Observable {
             this.g109 = json.getString("g109");
             this.g110 = json.getString("g110");
             this.g126 = json.getString("g126");
+            this.g127 = json.getString("g127");
             this.g113 = json.getString("g113");
             this.g114 = json.getString("g114");
             this.g11496x = json.getString("g11496x");
@@ -7894,6 +9420,15 @@ public class MWRA extends BaseObservable implements Observable {
             this.g12096x = json.getString("g12096x");
             this.g121 = json.getString("g121");
             this.g12196x = json.getString("g12196x");
+            this.g122 = json.getString("g122");
+            this.g12301 = json.getString("g12301");
+            this.g12302 = json.getString("g12302");
+            this.g12303 = json.getString("g12303");
+            this.g12304 = json.getString("g12304");
+            this.g12305 = json.getString("g12305");
+            this.g12306 = json.getString("g12306");
+            this.g12307 = json.getString("g12307");
+            this.g12308 = json.getString("g12308");
             this.g124 = json.getString("g124");
             this.g1241 = json.getString("g1241");
             this.g1242 = json.getString("g1242");
@@ -7960,23 +9495,31 @@ public class MWRA extends BaseObservable implements Observable {
             this.h106 = json.getString("h106");
             this.h1061x = json.getString("h1061x");
             this.h107 = json.getString("h107");
+            this.h10800 = json.getString("h10800");
+            this.h108a = json.getString("h108a");
             this.h108 = json.getString("h108");
             this.h10896x = json.getString("h10896x");
+            this.h10900 = json.getString("h10900");
             this.h10901 = json.getString("h10901");
-            this.h10902 = json.getString("h10902");
-            this.h10903 = json.getString("h10903");
-            this.h10904 = json.getString("h10904");
-            this.h10905 = json.getString("h10905");
-            this.h10906 = json.getString("h10906");
-            this.h10907 = json.getString("h10907");
+            this.h1091 = json.getString("h1091");
+            this.h1092 = json.getString("h1092");
+            this.h1093 = json.getString("h1093");
+            this.h1094 = json.getString("h1094");
+            this.h1095 = json.getString("h1095");
+            this.h1096 = json.getString("h1096");
+            this.h1097 = json.getString("h1097");
             this.h10997 = json.getString("h10997");
             this.h10996 = json.getString("h10996");
             this.h10996x = json.getString("h10996x");
             this.h110 = json.getString("h110");
             this.h111 = json.getString("h111");
+            this.h11200 = json.getString("h11200");
+            this.h11201 = json.getString("h11201");
+            this.h11202 = json.getString("h11202");
             this.h112 = json.getString("h112");
             this.h113 = json.getString("h113");
             this.h114 = json.getString("h114");
+            this.h115 = json.getString("h115");
             this.h11501 = json.getString("h11501");
             this.h11502 = json.getString("h11502");
             this.h11503 = json.getString("h11503");
@@ -8009,6 +9552,15 @@ public class MWRA extends BaseObservable implements Observable {
             this.h12904 = json.getString("h12904");
             this.h12905 = json.getString("h12905");
             this.h12906 = json.getString("h12906");
+            this.h130 = json.getString("h130");
+            this.h131 = json.getString("h131");
+            this.h1310101 = json.getString("h1310101");
+            this.h1310102 = json.getString("h1310102");
+            this.h1310103 = json.getString("h1310103");
+            this.h1310104 = json.getString("h1310104");
+            this.h1310105 = json.getString("h1310105");
+            this.h1310106 = json.getString("h1310106");
+            this.h1310107 = json.getString("h1310107");
             this.h132 = json.getString("h132");
             this.h132a = json.getString("h132a");
             this.h132a96x = json.getString("h132a96x");
@@ -8031,14 +9583,27 @@ public class MWRA extends BaseObservable implements Observable {
             this.h13508 = json.getString("h13508");
             this.h13509 = json.getString("h13509");
             this.h13598 = json.getString("h13598");
-            this.h13601 = json.getString("h13601");
-            this.h13602 = json.getString("h13602");
-            this.h13603 = json.getString("h13603");
-            this.h13604 = json.getString("h13604");
-            this.h13605 = json.getString("h13605");
-            this.h13606 = json.getString("h13606");
+            this.h1361 = json.getString("h1361");
+            this.h1362 = json.getString("h1362");
+            this.h1363 = json.getString("h1363");
+            this.h1364 = json.getString("h1364");
+            this.h1365 = json.getString("h1365");
+            this.h1366 = json.getString("h1366");
             this.h13696 = json.getString("h13696");
             this.h13696x = json.getString("h13696x");
+            this.h13601 = json.getString("h13601");
+            this.h1360201 = json.getString("h1360201");
+            this.h1360202 = json.getString("h1360202");
+            this.h1360203 = json.getString("h1360203");
+            this.h1360204 = json.getString("h1360204");
+            this.h1360205 = json.getString("h1360205");
+            this.h1360206 = json.getString("h1360206");
+            this.h1360207 = json.getString("h1360207");
+            this.h1360208 = json.getString("h1360208");
+            this.h1360209 = json.getString("h1360209");
+            this.h1360210 = json.getString("h1360210");
+            this.h1360298 = json.getString("h1360298");
+            this.h13603 = json.getString("h13603");
             this.h137 = json.getString("h137");
             this.h137a = json.getString("h137a");
             this.h137a96x = json.getString("h137a96x");
@@ -8170,6 +9735,7 @@ public class MWRA extends BaseObservable implements Observable {
             this.k101a13 = json.getString("k101a13");
             this.k101a96 = json.getString("k101a96");
             this.k101a96x = json.getString("k101a96x");
+            this.k101b = json.getString("k101b");
             this.k102 = json.getString("k102");
             this.k10401 = json.getString("k10401");
             this.k10402 = json.getString("k10402");
@@ -8202,6 +9768,7 @@ public class MWRA extends BaseObservable implements Observable {
             this.k105a = json.getString("k105a");
             this.k105a01x = json.getString("k105a01x");
             this.k105a02x = json.getString("k105a02x");
+            this.k105b = json.getString("k105b");
             this.k10601 = json.getString("k10601");
             this.k10602 = json.getString("k10602");
             this.k10603 = json.getString("k10603");
@@ -8259,6 +9826,45 @@ public class MWRA extends BaseObservable implements Observable {
             this.l1123 = json.getString("l1123");
             this.l1124 = json.getString("l1124");
             this.l1125 = json.getString("l1125");
+            this.lg101 = json.getString("lg101");
+            this.lg10201 = json.getString("lg10201");
+            this.lg10202 = json.getString("lg10202");
+            this.lg10203 = json.getString("lg10203");
+            this.lg10204 = json.getString("lg10204");
+            this.lg10205 = json.getString("lg10205");
+            this.lg10206 = json.getString("lg10206");
+            this.lg10207 = json.getString("lg10207");
+            this.lg10208 = json.getString("lg10208");
+            this.lg10209 = json.getString("lg10209");
+            this.lg10296 = json.getString("lg10296");
+            this.lg10296x = json.getString("lg10296x");
+            this.lg103 = json.getString("lg103");
+            this.lg10401 = json.getString("lg10401");
+            this.lg10402 = json.getString("lg10402");
+            this.lg10403 = json.getString("lg10403");
+            this.lg10404 = json.getString("lg10404");
+            this.lg10405 = json.getString("lg10405");
+            this.lg10406 = json.getString("lg10406");
+            this.lg10407 = json.getString("lg10407");
+            this.lg10408 = json.getString("lg10408");
+            this.lg10409 = json.getString("lg10409");
+            this.lg10410 = json.getString("lg10410");
+            this.lg10411 = json.getString("lg10411");
+            this.lg10412 = json.getString("lg10412");
+            this.lg10413 = json.getString("lg10413");
+            this.lg10414 = json.getString("lg10414");
+            this.lg10415 = json.getString("lg10415");
+            this.lg10416 = json.getString("lg10416");
+            this.lg105 = json.getString("lg105");
+            this.lg10601 = json.getString("lg10601");
+            this.lg10602 = json.getString("lg10602");
+            this.lg10603 = json.getString("lg10603");
+            this.lg10604 = json.getString("lg10604");
+            this.lg10605 = json.getString("lg10605");
+            this.lg10606 = json.getString("lg10606");
+            this.lg10607 = json.getString("lg10607");
+            this.lg10696 = json.getString("lg10696");
+            this.lg10696x = json.getString("lg10696x");
             this.l1131 = json.getString("l1131");
             this.l1132 = json.getString("l1132");
             this.l1133 = json.getString("l1133");

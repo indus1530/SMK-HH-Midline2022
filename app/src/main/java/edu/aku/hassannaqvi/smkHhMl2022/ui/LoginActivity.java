@@ -331,11 +331,11 @@ public class LoginActivity extends AppCompatActivity {
             }
 
             // UserName and Password cannot be same
-            if (username.equals(password)) {
+          /*  if (username.equals(password)) {
                 bi.username.setError(getString(R.string.username_password_same));
                 focusView = bi.username;
                 return;
-            }
+            }*/
 
             //if(!Validator.emptySpinner(this, bi.countrySwitch)) return;
             /*if (bi.countrySwitch.getSelectedItemPosition() == 0) {

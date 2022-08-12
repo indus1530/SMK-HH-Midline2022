@@ -1,9 +1,11 @@
 package edu.aku.hassannaqvi.smkHhMl2022.ui.sections;
 
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.form;
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.mwra;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -12,7 +14,10 @@ import androidx.databinding.DataBindingUtil;
 
 import com.validatorcrawler.aliazaz.Validator;
 
+import org.json.JSONException;
+
 import edu.aku.hassannaqvi.smkHhMl2022.R;
+import edu.aku.hassannaqvi.smkHhMl2022.contracts.TableContracts;
 import edu.aku.hassannaqvi.smkHhMl2022.core.MainApp;
 import edu.aku.hassannaqvi.smkHhMl2022.database.DatabaseHelper;
 import edu.aku.hassannaqvi.smkHhMl2022.databinding.ActivitySectionH21Binding;
@@ -36,12 +41,12 @@ public class SectionH21Activity extends AppCompatActivity {
 
 
     private boolean updateDB() {
-        /*if (MainApp.superuser) return true;
+        if (MainApp.superuser) return true;
 
         db = MainApp.appInfo.getDbHelper();
         long updcount = 0;
         try {
-            updcount = db.updatesFormColumn(TableContracts.FormsTable.COLUMN_SSS, frm.sSStoString());
+            updcount = db.updatesFormColumn(TableContracts.MwraTable.COLUMN_SH2, mwra.sH2toString());
         } catch (JSONException e) {
             e.printStackTrace();
             Log.d(TAG, R.string.upd_db + e.getMessage());
@@ -51,8 +56,8 @@ public class SectionH21Activity extends AppCompatActivity {
         else {
             Toast.makeText(this, R.string.upd_db_error, Toast.LENGTH_SHORT).show();
             return false;
-        }*/
-        return true;
+        }
+        //return true;
     }
 
     public void btnContinue(View view) {
@@ -62,7 +67,7 @@ public class SectionH21Activity extends AppCompatActivity {
         if (updateDB()) {
             setResult(RESULT_OK);
             Intent i;
-            i = new Intent(this, SectionH21Activity.class).putExtra("complete", true).setFlags(Intent.FLAG_ACTIVITY_FORWARD_RESULT);
+            i = new Intent(this, SectionH22Activity.class).putExtra("complete", true).setFlags(Intent.FLAG_ACTIVITY_FORWARD_RESULT);
             startActivity(i);
             finish();
         } else {
