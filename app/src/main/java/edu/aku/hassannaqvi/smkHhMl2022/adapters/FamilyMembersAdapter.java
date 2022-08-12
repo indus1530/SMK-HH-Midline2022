@@ -71,18 +71,11 @@ public class FamilyMembersAdapter extends RecyclerView.Adapter<FamilyMembersAdap
         /** Select mother IF
          *  Mother is alive and present in house
          */
-        if (!members.getD107().equals("") && !members.getD107().equals("...") && !members.getD107().equals("97")
-        ) {
-            if (members.getD104().equals("1")) {
-                motherRelation = " S/o ";
-            } else {
-                motherRelation = " D/o ";
-
-            }
+        if (!members.getD107().equals("") && !members.getD107().equals("...") && !members.getD107().equals("97")) {
+            if (members.getD104().equals("1")) motherRelation = " S/o ";
+            else motherRelation = " D/o ";
             motherName.setText(motherRelation + MainApp.familyList.get(Integer.parseInt(members.getD107()) - 1).getD102());
             motherPresent = MainApp.familyList.get(Integer.parseInt(members.getD107()) - 1).getD105().equals("1");
-
-
         }
 
         /*      <string name="hl701"> Married </string>
@@ -91,6 +84,7 @@ public class FamilyMembersAdapter extends RecyclerView.Adapter<FamilyMembersAdap
                 <string name="hl704"> Separated </string>
                 <string name="hl705"> Un-Married </string>
                 <string name="hl7099"> Not Applicable (for Age less 13 years old) </string>*/
+
         String marStatus = "";
         switch (members.getD105()) {
             case "1":
@@ -128,15 +122,14 @@ public class FamilyMembersAdapter extends RecyclerView.Adapter<FamilyMembersAdap
                 idxStatus = "  Child  ";
                 idxColor = mContext.getResources().getColor(R.color.childBg);
                 break;
-             /*   case "3":
-                    idxStatus = " Adol. M ";
-                    idxColor = mContext.getResources().getColor(R.color.adolMaleBg);
-                    break;
-                case "4":
-                    idxStatus = " Adol. F ";
-                    idxColor = mContext.getResources().getColor(R.color.adolFemaleBg);
-                    break;
-    */
+            case "3":
+                idxStatus = " Adol MWRA ";
+                idxColor = mContext.getResources().getColor(R.color.adolMaleBg);
+                break;
+            case "4":
+                idxStatus = " Adol ";
+                idxColor = mContext.getResources().getColor(R.color.adolFemaleBg);
+                break;
             default:
                 idxStatus = "         ";
                 idxColor = mContext.getResources().getColor(R.color.white);

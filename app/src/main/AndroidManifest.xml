@@ -32,6 +32,12 @@
 
 
         <activity
+            android:name=".ui.sections.AdolSelectionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
             android:name=".ui.sections.SectionAH1Activity"
             android:exported="false"
             android:screenOrientation="portrait"

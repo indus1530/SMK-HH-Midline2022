@@ -371,12 +371,9 @@ public class FamilyMembers extends BaseObservable implements Observable {
     }
 
     public void setD109y(String d109y) {
-        // setD105(!this.d109y.equals(d109y)? "": );
         this.d109y = d109y;
-        setD105(d109y.length() > 0 && Integer.parseInt(d109y) < 14 ? "2" : this.d105);
-        //   setD105(d109y.length() > 0 ? Integer.parseInt(d109y) > 14 ? "" : this.d105 : this.d105);
-        //  CaluculateAge();
-
+        boolean b = d109y.length() > 0 && Integer.parseInt(d109y) < 14;
+        setD105(b ? "" : this.d105);
         notifyPropertyChanged(BR.d109y);
     }
 
@@ -529,6 +526,7 @@ public class FamilyMembers extends BaseObservable implements Observable {
         this.d11602 = d11602;
         notifyPropertyChanged(BR.d11602);
     }
+
 
     @Bindable
     public boolean isMwra() {
@@ -792,27 +790,19 @@ public class FamilyMembers extends BaseObservable implements Observable {
         }
 
         // Child
-        if (memAge < 5
-                && !d107.equals("") && !d107.equals("97")
-        ) {
-            setMemCate("2");
-        }
+        if (memAge < 5 && !d107.equals("") && !d107.equals("97")) setMemCate("2");
 
-        // Adolescent Male
+        // Adolescent MWRA
         if (memGender.equals("1")
                 && memAge >= 15 && memAge <= 19   // 15 to 19 year old
-                && (memMaritalStatus.equals("2") || memMaritalStatus.isEmpty() || memMaritalStatus.equals("97"))
-        ) {
-            setMemCate("3");
-        }
+                && (memMaritalStatus.equals("1") || memMaritalStatus.equals("3") || memMaritalStatus.equals("4"))
+        ) setMemCate("3");
 
 
-        // Adolescent Female
-        if (memGender.equals("2")
-                && memAge >= 15 && memAge <= 19   // 15 to 19 year old
-                && (memMaritalStatus.equals("2") || memMaritalStatus.isEmpty() || memMaritalStatus.equals("97"))
-        ) {
-            setMemCate("4");
-        }
+        // Adolescent
+        if (memGender.equals("2") && memAge >= 10 && memAge <= 19)
+            setMemCate("4");  // 10 to 19 year old
+
+
     }
 }

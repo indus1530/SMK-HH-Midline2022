@@ -1113,7 +1113,7 @@
     <string name="d11108">Unemployed</string>
     <string name="d11109">Retired</string>
     <string name="d11199">Not Applicable</string>
-    <string name="d115">Is this Person are available at home ?</string>
+    <string name="d115">Is this Person Available at home ?</string>
     <string name="d11501">Yes</string>
     <string name="d11502">No</string>
     <string name="d112">Total members of household (Auto calculated)</string>
@@ -1122,6 +1122,14 @@
     <string name="d116">Total Number of Adolescent(s)</string>
     <string name="d11601">Male Adolescent(s)</string>
     <string name="d11602">Female Adolescent(s)</string>
+    <string name="Q_d117">d117</string>
+    <string name="d117"> Current Pregnancy Status of Woman </string>
+    <string name="d117a">Yes</string>
+    <string name="d117b">No</string>
+    <string name="Q_d118">d118</string>
+    <string name="d118"> Is This The First Pregnancy </string>
+    <string name="d118a">Yes</string>
+    <string name="d118b">No</string>
     <string name="m101">Is the cooking usually done in the house, in a separate building, or outdoors?</string>
     <string name="m10101">In the house</string>
     <string name="m10102">In a separate building</string>
@@ -3737,7 +3745,7 @@
     <string name='Q_c103'>c103</string>
     <string name='Q_concent'>concent</string>
     <string name='Q_d101'>d101</string>
-    <string name='Q_d102t'>d102t</string>
+    <string name='Q_d102'>d102</string>
     <string name='Q_d103'>d103</string>
     <string name='Q_d104'>d104</string>
     <string name='Q_d105'>d105</string>

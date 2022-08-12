@@ -343,6 +343,8 @@ public class LoginActivity extends AppCompatActivity {
                 return;
             }*/
 
+            //if(user != null && !user.getUserName().isEmpty()){
+
             try {
                 if ((username.equals("dmu@aku") && password.equals("aku?dmu"))
                         || (username.equals("test1234") && password.equals("test1234"))
@@ -389,6 +391,7 @@ public class LoginActivity extends AppCompatActivity {
                 Toast.makeText(this, "IllegalArgumentException(UserAuth):" + e.getMessage(), Toast.LENGTH_SHORT).show();
 
             }
+            //} else Toast.makeText(this, "Please Sync Users", Toast.LENGTH_SHORT).show();
 
 
         }

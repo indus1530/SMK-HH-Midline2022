@@ -1878,7 +1878,50 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return membersByUID;
     }
 
+
     public FamilyMembers getSelectedMemberBYUID(String uid) throws JSONException {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        Cursor c = null;
+        String[] columns = null;
+
+        String whereClause;
+        whereClause = FamilyMembersTable.COLUMN_UUID + "=? AND "
+                + FamilyMembersTable.COLUMN_INDEXED + "=?";
+
+        String[] whereArgs = {uid, "1"};
+
+        String groupBy = null;
+        String having = null;
+
+        String orderBy = FamilyMembersTable.COLUMN_ID + " ASC";
+
+        FamilyMembers membersByUID = new FamilyMembers();
+        try {
+            c = db.query(
+                    FamilyMembersTable.TABLE_NAME,  // The table to query
+                    columns,                   // The columns to return
+                    whereClause,               // The columns for the WHERE clause
+                    whereArgs,                 // The values for the WHERE clause
+                    groupBy,                   // don't group the rows
+                    having,                    // don't filter by row groups
+                    orderBy                    // The sort order
+            );
+            while (c.moveToNext()) {
+                membersByUID = new FamilyMembers().Hydrate(c);
+            }
+        } finally {
+            if (c != null) {
+                c.close();
+            }
+            if (db != null) {
+                db.close();
+            }
+        }
+        return membersByUID;
+    }
+
+
+    public FamilyMembers getSelectedMemberBYUID(String uid, String index) throws JSONException {
         SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
         Cursor c = null;
         String[] columns = null;
@@ -1957,6 +2000,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return mortality;
     }
 
+
     public Child getChildByUUid() throws JSONException {
         SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
         Cursor c;
@@ -1992,6 +2036,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return child;
     }
 
+
     public int getSNoYoungestChild() throws JSONException {
         SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
         Cursor c;
@@ -2000,6 +2045,43 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String whereClause = FamilyMembersTable.COLUMN_UUID + "=? AND " +
                 FamilyMembersTable.COLUMN_MOTHER_PRESENT + "='1' AND " +
                 "CAST(" + FamilyMembersTable.COLUMN_AGE_MONTHS + " AS INTEGER) < 1825 ";
+
+        String[] whereArgs = {MainApp.form.getUid()};
+
+        String groupBy = null;
+        String having = null;
+
+        // Not working
+        String orderBy = "CAST(" + FamilyMembersTable.COLUMN_AGE_MONTHS + " AS INTEGER) ASC";
+        //String orderBy = null;
+
+        c = db.query(
+                FamilyMembersTable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy,                    // The sort order
+                "1"
+        );
+        int chSNo = 999;
+
+        c.moveToFirst();
+        chSNo = Integer.parseInt(new FamilyMembers().Hydrate(c).getD101());
+        db.close();
+        return chSNo;
+    }
+
+
+    public int getSNoYoungestMWRA() throws JSONException {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        Cursor c;
+        String[] columns = null;
+
+        String whereClause = FamilyMembersTable.COLUMN_UUID + "=? AND " +
+                "CAST(" + FamilyMembersTable.COLUMN_AGE_MONTHS + " AS INTEGER) > 5110 " + "=? AND " +
+                "CAST(" + FamilyMembersTable.COLUMN_AGE_MONTHS + " AS INTEGER) < 18250 ";
 
         String[] whereArgs = {MainApp.form.getUid()};
 
@@ -2177,11 +2259,41 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         while (c.moveToNext()) {
             form = (new Forms().Hydrate(c));
         }
-
         c.close();
         db.close();
         return form;
 
     }
 
+
+    public Adolescent getAdolByUUID(String fmuid) throws JSONException {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        Cursor c;
+        String[] columns = null;
+        String whereClause;
+        whereClause = AdolescentTable.COLUMN_UUID + "=? AND " + AdolescentTable.COLUMN_FMUID + "=?";
+        String[] whereArgs = {MainApp.form.getUid(), fmuid};
+        String groupBy = null;
+        String having = null;
+        String orderBy = AdolescentTable.COLUMN_ID + " ASC";
+        Adolescent adol = new Adolescent();  // Pregnancies can never be null.
+        c = db.query(
+                AdolescentTable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                   // The sort order
+        );
+        while (c.moveToNext()) {
+            adol = new Adolescent().Hydrate(c);
+        }
+        db.close();
+        return adol;
+    }
+
+
 }
+
+
