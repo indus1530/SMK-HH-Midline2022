@@ -21,7 +21,7 @@ import edu.aku.hassannaqvi.smkHhMl2022.database.DatabaseHelper;
 import edu.aku.hassannaqvi.smkHhMl2022.databinding.ActivitySectionF1Binding;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.EndingActivity;
 
-public class SectionF1Activity extends AppCompatActivity {
+public class SectionF2Activity extends AppCompatActivity {
 
     private static final String TAG = "SectionF1Activity";
     ActivitySectionF1Binding bi;
@@ -34,7 +34,7 @@ public class SectionF1Activity extends AppCompatActivity {
         setTheme(sharedPref.getString("lang", "0").equals("2") ? R.style.AppThemeSindhi : sharedPref.getString("lang", "0").equals("1") ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
 
 
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_f1);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_f2);
         setSupportActionBar(bi.toolbar);
         db = MainApp.appInfo.dbHelper;
 
@@ -47,7 +47,7 @@ public class SectionF1Activity extends AppCompatActivity {
         bi.setMwra(MainApp.mwra);
     }
 
-    private boolean insertNewRecord() {
+    /*private boolean insertNewRecord() {
         if (!MainApp.mwra.getUid().equals("") || MainApp.superuser) return true;
         MainApp.mwra.populateMeta();
         long rowId = 0;
@@ -69,7 +69,7 @@ public class SectionF1Activity extends AppCompatActivity {
         }
 
     }
-
+*/
     private boolean updateDB() {
         if (MainApp.superuser) return true;
         int updcount = 0;
@@ -89,10 +89,10 @@ public class SectionF1Activity extends AppCompatActivity {
 
     public void btnContinue(View view) {
         if (!formValidation()) return;
-        if (MainApp.mwra.getUid().equals("") ? insertNewRecord() : updateDB()) {
+        if (updateDB()) {
 
             finish();
-            startActivity(new Intent(this, SectionF2Activity.class).putExtra("complete", true));
+            startActivity(new Intent(this, SectionG1Activity.class).putExtra("complete", true));
 
 
         } else {
