@@ -4,7 +4,6 @@ import static android.view.View.VISIBLE;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.allAdolList;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.allChildrenList;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.allMWRAList;
-import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.familyMember;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedAdol;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedChild;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedChildName;
@@ -349,9 +348,7 @@ public class FamilyMembersListActivity extends AppCompatActivity {
                      Toast.makeText(this, "JSONException(FamilyMembers): " + e.getMessage(), Toast.LENGTH_SHORT).show();
                  }*/
 
-
-                //selectedChild = allMWRAList.get(new Random().nextInt(allMWRAList.size()) - 1).getD101();
-                selectedChild = String.valueOf(allChildrenList.contains(selectedMWRA.equals(familyMember.getD107())));
+                selectedChild = allChildrenList.get(Integer.parseInt(selectedMWRA)).getD107();
                 if (!selectedChild.equals("")) {
                     selectedChildName = MainApp.familyList.get(Integer.parseInt(selectedChild)).getD102();
                     MainApp.ageOfIndexChild = Integer.parseInt(MainApp.familyList.get(Integer.parseInt(selectedChild)).getD109y());
@@ -380,7 +377,7 @@ public class FamilyMembersListActivity extends AppCompatActivity {
             // Select ADOL
             String ind;
             if (!allAdolList.isEmpty()) {
-                selectedAdol = String.valueOf(allAdolList.contains(selectedMWRA.equals(familyMember.getD101())));
+                selectedAdol = allAdolList.get(Integer.parseInt(selectedMWRA)).getD101();
                 if (!selectedAdol.equals("")) {
                     MainApp.familyMember = MainApp.familyList.get(Integer.parseInt(MainApp.selectedAdol));
                     db.updatesfamilyListColumn(TableContracts.FamilyMembersTable.COLUMN_INDEXED, "3");

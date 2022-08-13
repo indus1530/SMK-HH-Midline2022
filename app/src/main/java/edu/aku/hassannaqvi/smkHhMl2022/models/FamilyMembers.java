@@ -373,7 +373,7 @@ public class FamilyMembers extends BaseObservable implements Observable {
     public void setD109y(String d109y) {
         this.d109y = d109y;
         boolean b = d109y.length() > 0 && Integer.parseInt(d109y) < 14;
-        setD105(b ? "" : this.d105);
+        setD105(b ? "2" : "");
         notifyPropertyChanged(BR.d109y);
     }
 
