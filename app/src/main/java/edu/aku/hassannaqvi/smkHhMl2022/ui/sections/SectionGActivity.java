@@ -19,20 +19,20 @@ import edu.aku.hassannaqvi.smkHhMl2022.R;
 import edu.aku.hassannaqvi.smkHhMl2022.contracts.TableContracts;
 import edu.aku.hassannaqvi.smkHhMl2022.core.MainApp;
 import edu.aku.hassannaqvi.smkHhMl2022.database.DatabaseHelper;
-import edu.aku.hassannaqvi.smkHhMl2022.databinding.ActivitySectionG1Binding;
+import edu.aku.hassannaqvi.smkHhMl2022.databinding.ActivitySectionGBinding;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.EndingActivity;
 
-public class SectionG1Activity extends AppCompatActivity {
+public class SectionGActivity extends AppCompatActivity {
 
-    private static final String TAG = "SectionG1Activity";
-    ActivitySectionG1Binding bi;
+    private static final String TAG = "SectionGActivity";
+    ActivitySectionGBinding bi;
     private DatabaseHelper db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTheme(sharedPref.getString("lang", "0").equals("2") ? R.style.AppThemeSindhi : sharedPref.getString("lang", "0").equals("1") ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_g1);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_g);
         bi.setMwra(mwra);
         setupSkips();
         setSupportActionBar(bi.toolbar);

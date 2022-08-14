@@ -1,5 +1,6 @@
 package edu.aku.hassannaqvi.smkHhMl2022.ui.sections;
 
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedChild;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.sharedPref;
 
 import android.content.Intent;
@@ -89,7 +90,11 @@ public class SectionF1Activity extends AppCompatActivity {
         if (!formValidation()) return;
         if (MainApp.mwra.getUid().equals("") ? insertNewRecord() : updateDB()) {
             finish();
-            startActivity(new Intent(this, SectionF2Activity.class));
+            if (!selectedChild.isEmpty()) {
+                startActivity(new Intent(this, SectionGActivity.class));
+            } else {
+                startActivity(new Intent(this, SectionKActivity.class));
+            }
         } else {
             Toast.makeText(this, R.string.fail_db_upd, Toast.LENGTH_SHORT).show();
         }

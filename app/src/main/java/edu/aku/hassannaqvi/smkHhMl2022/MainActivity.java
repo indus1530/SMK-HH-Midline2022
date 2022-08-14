@@ -40,7 +40,7 @@ import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionAH1Activity;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionDActivity;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionE1AActivity;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionF1Activity;
-import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionG1Activity;
+import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionGActivity;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionH1AActivity;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.sections.SectionIMAActivity;
 
@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.seceCH:
                 MainApp.form = new Forms();
-                startActivity(new Intent(this, SectionG1Activity.class));
+                startActivity(new Intent(this, SectionGActivity.class));
                 break;
             case R.id.secCB:
                 MainApp.child = new Child();
