@@ -36,7 +36,6 @@ public class Adolescent extends BaseObservable implements Observable {
     private String indexed = _EMPTY_;
     private String psuCode = _EMPTY_;
     private String hhid = _EMPTY_;
-    private String sno = _EMPTY_;
     private String deviceId = _EMPTY_;
     private String deviceTag = _EMPTY_;
     private String appver = _EMPTY_;
@@ -278,11 +277,11 @@ public class Adolescent extends BaseObservable implements Observable {
         setDeviceId(MainApp.deviceid);
         setUuid(MainApp.form.getUid());  // not applicable in Form table
         setFmuid(MainApp.familyList.get(Integer.parseInt(selectedAdol)).getUid()); //// not applicable in Form table
-        setSno(selectedAdol + 1);
         setAppver(MainApp.appInfo.getAppVersion());
         setProjectName(PROJECT_NAME);
         setpsuCode(MainApp.currentHousehold.getClusterCode());
         setHhid(MainApp.currentHousehold.getHhno());
+        setIndexed(MainApp.familyList.get(Integer.parseInt(selectedAdol)).getIndexed());
 
     }
 
@@ -362,13 +361,7 @@ public class Adolescent extends BaseObservable implements Observable {
         this.hhid = hhid;
     }
 
-    public String getSno() {
-        return sno;
-    }
 
-    public void setSno(String sno) {
-        this.sno = sno;
-    }
 
     public String getIndexed() {
         return indexed;
@@ -2553,7 +2546,6 @@ public class Adolescent extends BaseObservable implements Observable {
         this.psuCode = cursor.getString(cursor.getColumnIndexOrThrow(AdolescentTable.COLUMN_PSU_CODE));
         this.hhid = cursor.getString(cursor.getColumnIndexOrThrow(AdolescentTable.COLUMN_HHID));
         this.projectName = cursor.getString(cursor.getColumnIndexOrThrow(AdolescentTable.COLUMN_PROJECT_NAME));
-        this.sno = cursor.getString(cursor.getColumnIndexOrThrow(AdolescentTable.COLUMN_SNO));
         this.userName = cursor.getString(cursor.getColumnIndexOrThrow(AdolescentTable.COLUMN_USERNAME));
         this.sysDate = cursor.getString(cursor.getColumnIndexOrThrow(AdolescentTable.COLUMN_SYSDATE));
         this.deviceId = cursor.getString(cursor.getColumnIndexOrThrow(AdolescentTable.COLUMN_DEVICEID));
@@ -2848,7 +2840,6 @@ public class Adolescent extends BaseObservable implements Observable {
         json.put(AdolescentTable.COLUMN_FMUID, this.fmuid);
         json.put(AdolescentTable.COLUMN_MUID, this.muid);
         json.put(AdolescentTable.COLUMN_INDEXED, this.indexed);
-        json.put(AdolescentTable.COLUMN_SNO, this.sno);
         json.put(AdolescentTable.COLUMN_USERNAME, this.userName);
         json.put(AdolescentTable.COLUMN_SYSDATE, this.sysDate);
         json.put(AdolescentTable.COLUMN_DEVICEID, this.deviceId);

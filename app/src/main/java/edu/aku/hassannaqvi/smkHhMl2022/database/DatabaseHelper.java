@@ -253,7 +253,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(AdolescentTable.COLUMN_UUID, adol.getUuid());
         values.put(AdolescentTable.COLUMN_FMUID, adol.getFmuid());
         values.put(AdolescentTable.COLUMN_MUID, adol.getMuid());
-        values.put(AdolescentTable.COLUMN_SNO, adol.getSno());
         values.put(AdolescentTable.COLUMN_PSU_CODE, adol.getpsuCode());
         values.put(AdolescentTable.COLUMN_HHID, adol.getHhid());
         values.put(AdolescentTable.COLUMN_USERNAME, adol.getUserName());
