@@ -212,6 +212,7 @@ object CreateTable {
             + AdolescentTable.COLUMN_MUID + " TEXT, "
             + AdolescentTable.COLUMN_PSU_CODE + " TEXT, "
             + AdolescentTable.COLUMN_HHID + " TEXT, "
+            + AdolescentTable.COLUMN_SNO + " TEXT, "
             + AdolescentTable.COLUMN_USERNAME + " TEXT, "
             + AdolescentTable.COLUMN_SYSDATE + " TEXT, "
             + AdolescentTable.COLUMN_INDEXED + " TEXT, "
