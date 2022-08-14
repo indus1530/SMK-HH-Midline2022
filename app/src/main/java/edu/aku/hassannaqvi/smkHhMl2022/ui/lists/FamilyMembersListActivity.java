@@ -336,11 +336,6 @@ public class FamilyMembersListActivity extends AppCompatActivity {
             db.updatesfamilyListColumn(TableContracts.FamilyMembersTable.COLUMN_INDEXED, "1");
             selectedMWRA = familyMember.getD101();
 
-            /*
-             *
-             *
-             * */
-
             // Updating adapter for MWRA selection
             MainApp.familyList.get(Integer.parseInt(selectedMWRA) - 1).setIndexed("1");
             familyMembersAdapter.notifyItemChanged(Integer.parseInt(selectedMWRA) - 1);
@@ -348,17 +343,8 @@ public class FamilyMembersListActivity extends AppCompatActivity {
 
 
         if (!allChildrenList.isEmpty()) {
-                 /*try {
-                     // Youngest Child SNO can never be zero; -1 to get index number in familyList
-                     MainApp.selectedChild = String.valueOf(db.getSNoYoungestChild() - 1);
-                 } catch (JSONException e) {
-                     Toast.makeText(this, "JSONException(FamilyMembers): " + e.getMessage(), Toast.LENGTH_SHORT).show();
-                 }*/
 
-            //selectedChild = MainApp.allChildrenList.get(Integer.parseInt(selectedMWRA) - 1).getD107();
-            //Collections.sort(allChildrenList)
-
-            /*
+            /**
              * Select youngest child on basis of age in days
              * */
             int youngestChildDays = 0;
@@ -386,15 +372,6 @@ public class FamilyMembersListActivity extends AppCompatActivity {
             } else
                 Toast.makeText(this, "Selected MWRA HAVE NO under 5 CHILD", Toast.LENGTH_SHORT).show();
 
-                 /*// Select mother of indexed child
-                 MainApp.selectedMWRA = String.valueOf(Integer.parseInt(MainApp.familyMember.getD107()) - 1);
-                 MainApp.familyMember = MainApp.familyList.get(Integer.parseInt(selectedMWRA));
-                 db.updatesfamilyListColumn(TableContracts.FamilyMembersTable.COLUMN_INDEXED, "1");
-
-                 // Updating adapter for Mother selection
-                 MainApp.familyList.get(Integer.parseInt(selectedMWRA)).setIndexed("1");
-                 familyMembersAdapter.notifyItemChanged(Integer.parseInt(MainApp.selectedMWRA));*/
-
         } else Toast.makeText(this, "NO CHILD IN HH", Toast.LENGTH_SHORT).show();
 
 
@@ -416,13 +393,12 @@ public class FamilyMembersListActivity extends AppCompatActivity {
             } else {
                 MainApp.familyMember = allAdolList.get(new Random().nextInt(allAdolList.size()));
                 db.updatesfamilyListColumn(TableContracts.FamilyMembersTable.COLUMN_INDEXED, "4");
-
                 selectedAdol = familyMember.getD101();
 
                 // Updating adapter
                 MainApp.familyList.get(Integer.parseInt(MainApp.selectedAdol) - 1).setIndexed("4");
             }
-            familyMembersAdapter.notifyItemChanged(Integer.parseInt(MainApp.selectedAdol));
+            familyMembersAdapter.notifyItemChanged(Integer.parseInt(MainApp.selectedAdol) - 1);
         } else Toast.makeText(this, "NO ADOLESCENT IN HH", Toast.LENGTH_SHORT).show();
 
         bi.btnRand.setVisibility(View.INVISIBLE);

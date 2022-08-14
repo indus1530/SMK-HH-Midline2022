@@ -1,5 +1,9 @@
 package edu.aku.hassannaqvi.smkHhMl2022.ui.sections;
 
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.indexedPreg;
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.pregM;
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedAdol;
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedMWRA;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.sharedPref;
 
 import android.content.Intent;
@@ -102,7 +106,11 @@ public class SectionE1AActivity extends AppCompatActivity {
         if (MainApp.pregM.getUid().equals("") ? insertNewRecord() : updateDB()) {
 
 
+
             if (MainApp.pregM.getE101().equals("1")) {
+                if (MainApp.pregM.getE101a().equals(selectedMWRA) || MainApp.pregM.getE101a().equals(selectedAdol)) {
+                    indexedPreg = pregM.getE102a();
+                }
                 MainApp.totalPreg = Integer.parseInt(MainApp.pregM.getE102());
                 MainApp.totalPreg = MainApp.pregM.getE102a().equals("1") ? MainApp.totalPreg - 1 : MainApp.totalPreg;
             } else {

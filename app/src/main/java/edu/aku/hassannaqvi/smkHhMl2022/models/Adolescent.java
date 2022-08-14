@@ -278,7 +278,6 @@ public class Adolescent extends BaseObservable implements Observable {
         setDeviceId(MainApp.deviceid);
         setUuid(MainApp.form.getUid());  // not applicable in Form table
         setFmuid(MainApp.familyList.get(Integer.parseInt(selectedAdol)).getUid()); //// not applicable in Form table
-        //setMuid(MainApp.familyList.get(Integer.parseInt(selectedMWRA)).getUid());  // not applicable in Form table
         setSno(selectedAdol + 1);
         setAppver(MainApp.appInfo.getAppVersion());
         setProjectName(PROJECT_NAME);

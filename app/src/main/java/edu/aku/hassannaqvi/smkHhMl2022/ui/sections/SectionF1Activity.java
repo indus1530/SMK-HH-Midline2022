@@ -89,7 +89,7 @@ public class SectionF1Activity extends AppCompatActivity {
         if (!formValidation()) return;
         if (MainApp.mwra.getUid().equals("") ? insertNewRecord() : updateDB()) {
             finish();
-            startActivity(new Intent(this, SectionF2Activity.class).putExtra("complete", true));
+            startActivity(new Intent(this, SectionF2Activity.class));
         } else {
             Toast.makeText(this, R.string.fail_db_upd, Toast.LENGTH_SHORT).show();
         }
@@ -109,7 +109,6 @@ public class SectionF1Activity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        // Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
         setResult(RESULT_CANCELED);
     }
 }

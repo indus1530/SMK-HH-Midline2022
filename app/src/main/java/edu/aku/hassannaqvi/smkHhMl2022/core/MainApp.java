@@ -104,10 +104,11 @@ public class MainApp extends Application {
     public static boolean permissionCheck = false;
     public static int entryType = 0;
     public static int childCount = 0;
-    public static String selectedMWRA;
+    public static String selectedMWRA = _EMPTY_;
     public static String selectedChild = _EMPTY_;
     public static String selectedAdol = _EMPTY_;
-    public static String selectedChildName = "";
+    public static String indexedPreg = _EMPTY_;
+    public static String selectedChildName = _EMPTY_;
     public static int memberCountComplete;
     public static boolean memberComplete;
     public static boolean hhheadSelected = false;

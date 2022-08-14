@@ -741,14 +741,10 @@ public class MWRA extends BaseObservable implements Observable {
         setDeviceId(MainApp.deviceid);
         setUuid(MainApp.form.getUid());  // not applicable in Form table
         setFmuid(MainApp.familyList.get(Integer.parseInt(selectedMWRA)).getUid()); //// not applicable in Form table
-        // setMuid(MainApp.familyList.get(Integer.parseInt(selectedMWRA) - 1).getUid());  // not applicable in Form table
-        setSno(selectedMWRA);
         setAppver(MainApp.appInfo.getAppVersion());
         setProjectName(PROJECT_NAME);
         setpsuCode(MainApp.currentHousehold.getClusterCode());
         setHhid(MainApp.currentHousehold.getHhno());
-        // setEntryType(String.valueOf(MainApp.entryType));
-
     }
 
 

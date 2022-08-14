@@ -1,5 +1,6 @@
 package edu.aku.hassannaqvi.smkHhMl2022.ui.sections;
 
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.indexedPreg;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.mortality;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.sharedPref;
 
@@ -91,20 +92,13 @@ public class SectionE2BActivity extends AppCompatActivity {
         if (!formValidation()) return;
         if (MainApp.mortality.getUid().equals("") ? insertNewRecord() : updateDB()) {
             if (MainApp.totalMortalities > MainApp.mortalityCounter) {
-               /* try {
-                    mortality = db.getMortalityBySno(String.valueOf(++MainApp.mortalityCounter));
-
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                    Toast.makeText(this, "JSONException(MaternalMortality): " + e.getMessage(), Toast.LENGTH_SHORT).show();
-                }*/
                 startActivity(new Intent(this, SectionE2BActivity.class).putExtra("complete", true));
-                finish();
+            } else if (indexedPreg.equals("1") || !MainApp.selectedChild.isEmpty()) {
+                startActivity(new Intent(this, SectionF1Activity.class));
             } else {
-                // if no more pregnancy and no more mwra than go to E2
-                startActivity(new Intent(this, SectionF1Activity.class).putExtra("complete", true));
-                finish();
+                startActivity(new Intent(this, SectionKActivity.class));
             }
+            finish();
         } else {
             Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
