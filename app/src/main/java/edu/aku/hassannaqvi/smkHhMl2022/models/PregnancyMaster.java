@@ -2,6 +2,7 @@ package edu.aku.hassannaqvi.smkHhMl2022.models;
 
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.PROJECT_NAME;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp._EMPTY_;
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedMWRA;
 
 import android.database.Cursor;
 import android.util.Log;
@@ -59,7 +60,7 @@ public class PregnancyMaster extends BaseObservable implements Observable {
         setUserName(MainApp.user.getUserName());
         setDeviceId(MainApp.deviceid);
         setUuid(MainApp.form.getUid());  // not applicable in Form table
-        // setFmuid(MainApp.familyList.get(Integer.parseInt(selectedMWRA)).getUid());
+        setFmuid(MainApp.familyList.get(Integer.parseInt(selectedMWRA)).getUid());
 //        setMsno(MainApp.mwra.getBs1q1());
         setAppver(MainApp.appInfo.getAppVersion());
         setProjectName(PROJECT_NAME);

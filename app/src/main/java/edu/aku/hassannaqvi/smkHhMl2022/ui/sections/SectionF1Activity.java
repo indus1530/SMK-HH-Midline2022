@@ -32,8 +32,6 @@ public class SectionF1Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTheme(sharedPref.getString("lang", "0").equals("2") ? R.style.AppThemeSindhi : sharedPref.getString("lang", "0").equals("1") ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
-
-
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_f1);
         setSupportActionBar(bi.toolbar);
         db = MainApp.appInfo.dbHelper;
@@ -90,11 +88,8 @@ public class SectionF1Activity extends AppCompatActivity {
     public void btnContinue(View view) {
         if (!formValidation()) return;
         if (MainApp.mwra.getUid().equals("") ? insertNewRecord() : updateDB()) {
-
             finish();
             startActivity(new Intent(this, SectionF2Activity.class).putExtra("complete", true));
-
-
         } else {
             Toast.makeText(this, R.string.fail_db_upd, Toast.LENGTH_SHORT).show();
         }
@@ -102,11 +97,10 @@ public class SectionF1Activity extends AppCompatActivity {
 
 
     public void btnEnd(View view) {
-
         finish();
         startActivity(new Intent(this, EndingActivity.class).putExtra("complete", false));
-
     }
+
 
     private boolean formValidation() {
         return Validator.emptyCheckingContainer(this, bi.GrpName);

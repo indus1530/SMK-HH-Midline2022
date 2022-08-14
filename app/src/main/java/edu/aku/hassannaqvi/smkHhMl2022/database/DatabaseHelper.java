@@ -2117,19 +2117,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
         Cursor c;
         String[] columns = null;
-
         String whereClause;
         whereClause = MwraTable.COLUMN_UUID + "=? ";
-
         String[] whereArgs = {MainApp.form.getUid()};
-
         String groupBy = null;
         String having = null;
-
         String orderBy = MwraTable.COLUMN_ID + " ASC";
-
         MWRA mwra = new MWRA();
-
         c = db.query(
                 MwraTable.TABLE_NAME,  // The table to query
                 columns,                   // The columns to return
@@ -2142,9 +2136,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         while (c.moveToNext()) {
             mwra = new MWRA().Hydrate(c);
         }
-
         db.close();
-
         return mwra;
     }
 

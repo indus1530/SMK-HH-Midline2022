@@ -752,7 +752,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{member.d105.equals(`1`)}"
-                                android:enabled="@{!member.d109y.equals(``) ? (Integer.parseInt(member.d109y)>=14):true}"
+                                android:enabled="@{member.d109y.length() > 0 &amp;&amp; Integer.parseInt(member.d109y) >=14}"
                                 android:onClick="@{()->member.setD105(`1`)}"
                                 android:text="@string/d10501" />
 
@@ -762,7 +762,6 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{member.d105.equals(`2`)}"
-                                android:enabled="@{!member.d109y.equals(``) ? (Integer.parseInt(member.d109y)>=14):true}"
                                 android:onClick="@{()->member.setD105(`2`)}"
                                 android:text="@string/d10502" />
 
@@ -772,7 +771,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{member.d105.equals(`3`)}"
-                                android:enabled="@{!member.d109y.equals(``) ? (Integer.parseInt(member.d109y)>=14):true}"
+                                android:enabled="@{member.d109y.length() > 0 &amp;&amp; Integer.parseInt(member.d109y) >=14}"
                                 android:onClick="@{()->member.setD105(`3`)}"
                                 android:text="@string/d10503" />
 
@@ -782,7 +781,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{member.d105.equals(`4`)}"
-                                android:enabled="@{!member.d109y.equals(``) ? (Integer.parseInt(member.d109y)>=14):true}"
+                                android:enabled="@{member.d109y.length() > 0 &amp;&amp; Integer.parseInt(member.d109y) >=14}"
                                 android:onClick="@{()->member.setD105(`4`)}"
                                 android:text="@string/d10504" />
 

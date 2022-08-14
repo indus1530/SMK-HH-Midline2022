@@ -115,7 +115,7 @@ public class FamilyMembersAdapter extends RecyclerView.Adapter<FamilyMembersAdap
         int idxColor;
         switch (members.getIndexed()) {
             case "1":
-                idxStatus = " Mother  ";
+                idxStatus = " MWRA  ";
                 idxColor = mContext.getResources().getColor(R.color.motherBg);
                 break;
             case "2":
@@ -157,10 +157,16 @@ public class FamilyMembersAdapter extends RecyclerView.Adapter<FamilyMembersAdap
 
         switch (members.getMemCate()) {
             case "1":
-                memCate.setText("Mother");
+                memCate.setText("mwra");
                 break;
             case "2":
-                memCate.setText("Child");
+                memCate.setText("child");
+                break;
+            case "3":
+                memCate.setText("adol mwra");
+                break;
+            case "4":
+                memCate.setText("adol");
                 break;
             default:
                 memCate.setVisibility(View.GONE);

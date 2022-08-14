@@ -88,7 +88,6 @@ public class SectionE2BActivity extends AppCompatActivity {
 
 
     public void btnContinue(View view) {
-
         if (!formValidation()) return;
         if (MainApp.mortality.getUid().equals("") ? insertNewRecord() : updateDB()) {
             if (MainApp.totalMortalities > MainApp.mortalityCounter) {
@@ -101,13 +100,10 @@ public class SectionE2BActivity extends AppCompatActivity {
                 }*/
                 startActivity(new Intent(this, SectionE2BActivity.class).putExtra("complete", true));
                 finish();
-
             } else {
-
                 // if no more pregnancy and no more mwra than go to E2
                 startActivity(new Intent(this, SectionF1Activity.class).putExtra("complete", true));
                 finish();
-
             }
         } else {
             Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();

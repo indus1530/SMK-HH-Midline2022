@@ -1,5 +1,6 @@
 package edu.aku.hassannaqvi.smkHhMl2022.ui.sections;
 
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.pregM;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.sharedPref;
 
 import android.content.Intent;
@@ -64,11 +65,9 @@ public class SectionE2AActivity extends AppCompatActivity {
 
             if (bi.e11601.isChecked()) {
                 MainApp.totalMortalities = Integer.parseInt(MainApp.form.getE117());
-                startActivity(new Intent(this, SectionE2BActivity.class).putExtra("complete", true));
-
-            } else {
-                startActivity(new Intent(this, SectionF1Activity.class).putExtra("complete", true));
-
+                startActivity(new Intent(this, SectionE2BActivity.class));
+            } else if (!pregM.getE102a().isEmpty() && !MainApp.selectedChild.isEmpty()) {
+                startActivity(new Intent(this, SectionF1Activity.class));
             }
             finish();
 

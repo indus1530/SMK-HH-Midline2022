@@ -372,8 +372,9 @@ public class FamilyMembers extends BaseObservable implements Observable {
 
     public void setD109y(String d109y) {
         this.d109y = d109y;
-        boolean b = d109y.length() > 0 && Integer.parseInt(d109y) < 14;
-        setD105(b ? "2" : "");
+        setD105(d109y.length() > 0 && Integer.parseInt(d109y) < 14 ? "2"
+                : d109y.length() > 0 && Integer.parseInt(d109y) >= 14 ? this.d105
+                : "");
         notifyPropertyChanged(BR.d109y);
     }
 
@@ -771,8 +772,8 @@ public class FamilyMembers extends BaseObservable implements Observable {
      * Memeber Categories:
      * 1 = MWRA
      * 2 = Child
-     * 3 = Adol Male // not used in this project
-     * 4 = Adol Female
+     * 3 = Adol MWRA
+     * 4 = Adol
      */
     private void updateMemCategory() {
         if (d104.equals("") || d109y.equals("") || d105.equals("") || !d115.equals("1")) return;
@@ -792,16 +793,16 @@ public class FamilyMembers extends BaseObservable implements Observable {
         // Child
         if (memAge < 5 && !d107.equals("") && !d107.equals("97")) setMemCate("2");
 
+
+        // Adolescent
+        if (memAge >= 10 && memAge <= 19)
+            setMemCate("4");  // 10 to 19 year old
+
         // Adolescent MWRA
-        if (memGender.equals("1")
+        if (memGender.equals("2")
                 && memAge >= 15 && memAge <= 19   // 15 to 19 year old
                 && (memMaritalStatus.equals("1") || memMaritalStatus.equals("3") || memMaritalStatus.equals("4"))
         ) setMemCate("3");
-
-
-        // Adolescent
-        if (memGender.equals("2") && memAge >= 10 && memAge <= 19)
-            setMemCate("4");  // 10 to 19 year old
 
 
     }
