@@ -229,7 +229,7 @@ public class FamilyMembersListActivity extends AppCompatActivity {
         // Set Selected Members
         for (int i = 0; i < MainApp.familyList.size(); i++) {
 
-            // Set Mother
+            // Set MWRA
             if (MainApp.familyList.get(i).getIndexed().equals("1")) {
                 selectedMWRA = String.valueOf(i);
                 bi.btnRand.setVisibility(View.INVISIBLE);
@@ -246,9 +246,9 @@ public class FamilyMembersListActivity extends AppCompatActivity {
                 MainApp.ageOfIndexChild = Integer.parseInt(MainApp.familyList.get(i).getD109y());
             }
 
-            // Set MWRA
+            // Set Adol MWRA
             if (MainApp.familyList.get(i).getIndexed().equals("3"))
-                selectedMWRA = String.valueOf(i);
+                selectedAdol = String.valueOf(i);
 
             // Set Adolescent
             if (MainApp.familyList.get(i).getIndexed().equals("4"))
