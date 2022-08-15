@@ -104,14 +104,14 @@ public class SectionE1AActivity extends AppCompatActivity {
 
     public void btnContinue(View view) {
         if (!formValidation()) return;
+
+        if (MainApp.pregM.getE101b().equals(selectedMWRA)) {
+            indexedPreg = pregM.getE102a();
+        }
         if (MainApp.pregM.getUid().equals("") ? insertNewRecord() : updateDB()) {
 
 
-
             if (MainApp.pregM.getE101().equals("1")) {
-                if (MainApp.pregM.getE101a().equals(selectedMWRA)) {
-                    indexedPreg = pregM.getE102a();
-                }
                 MainApp.totalPreg = Integer.parseInt(MainApp.pregM.getE102());
                 MainApp.totalPreg = MainApp.pregM.getE102a().equals("1") ? MainApp.totalPreg - 1 : MainApp.totalPreg;
             } else {

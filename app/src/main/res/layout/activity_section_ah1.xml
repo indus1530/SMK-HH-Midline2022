@@ -528,87 +528,97 @@
 
                         </LinearLayout>
 
-                        <CheckBox
-                            android:id="@+id/ah7a"
+                        <LinearLayout
+                            android:id="@+id/ah7check"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:checked="@{form.ah7a.equals(`1`)}"
-                            android:onClick="@{()->form.setAh7a(form.ah7a.equals(`1`)?``:`1`)}"
-                            android:text="@string/ah7a" />
+                            android:orientation="vertical"
+                            android:tag="0">
 
-                        <CheckBox
-                            android:id="@+id/ah7b"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{form.ah7b.equals(`2`)}"
-                            android:onClick="@{()->form.setAh7b(form.ah7b.equals(`2`)?``:`2`)}"
-                            android:text="@string/ah7b" />
+                            <CheckBox
+                                android:id="@+id/ah7a"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{form.ah7a.equals(`1`)}"
+                                android:onClick="@{()->form.setAh7a(form.ah7a.equals(`1`)?``:`1`)}"
+                                android:text="@string/ah7a" />
 
-                        <CheckBox
-                            android:id="@+id/ah7c"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{form.ah7c.equals(`3`)}"
-                            android:onClick="@{()->form.setAh7c(form.ah7c.equals(`3`)?``:`3`)}"
-                            android:text="@string/ah7c" />
+                            <CheckBox
+                                android:id="@+id/ah7b"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{form.ah7b.equals(`2`)}"
+                                android:onClick="@{()->form.setAh7b(form.ah7b.equals(`2`)?``:`2`)}"
+                                android:text="@string/ah7b" />
 
-                        <CheckBox
-                            android:id="@+id/ah7d"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{form.ah7d.equals(`4`)}"
-                            android:onClick="@{()->form.setAh7d(form.ah7d.equals(`4`)?``:`4`)}"
-                            android:text="@string/ah7d" />
+                            <CheckBox
+                                android:id="@+id/ah7c"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{form.ah7c.equals(`3`)}"
+                                android:onClick="@{()->form.setAh7c(form.ah7c.equals(`3`)?``:`3`)}"
+                                android:text="@string/ah7c" />
 
-                        <CheckBox
-                            android:id="@+id/ah7e"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{form.ah7e.equals(`5`)}"
-                            android:onClick="@{()->form.setAh7e(form.ah7e.equals(`5`)?``:`5`)}"
-                            android:text="@string/ah7e" />
+                            <CheckBox
+                                android:id="@+id/ah7d"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{form.ah7d.equals(`4`)}"
+                                android:onClick="@{()->form.setAh7d(form.ah7d.equals(`4`)?``:`4`)}"
+                                android:text="@string/ah7d" />
 
-                        <CheckBox
-                            android:id="@+id/ah7f"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{form.ah7f.equals(`6`)}"
-                            android:onClick="@{()->form.setAh7f(form.ah7f.equals(`6`)?``:`6`)}"
-                            android:text="@string/ah7f" />
+                            <CheckBox
+                                android:id="@+id/ah7e"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{form.ah7e.equals(`5`)}"
+                                android:onClick="@{()->form.setAh7e(form.ah7e.equals(`5`)?``:`5`)}"
+                                android:text="@string/ah7e" />
 
-                        <CheckBox
-                            android:id="@+id/ah7g"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{form.ah7g.equals(`7`)}"
-                            android:onClick="@{()->form.setAh7g(form.ah7g.equals(`7`)?``:`7`)}"
-                            android:text="@string/ah7g" />
+                            <CheckBox
+                                android:id="@+id/ah7f"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{form.ah7f.equals(`6`)}"
+                                android:onClick="@{()->form.setAh7f(form.ah7f.equals(`6`)?``:`6`)}"
+                                android:text="@string/ah7f" />
 
-                        <CheckBox
-                            android:id="@+id/ah7h"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{form.ah7h.equals(`8`)}"
-                            android:onClick="@{()->form.setAh7h(form.ah7h.equals(`8`)?``:`8`)}"
-                            android:text="@string/ah7h" />
+                            <CheckBox
+                                android:id="@+id/ah7g"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{form.ah7g.equals(`7`)}"
+                                android:onClick="@{()->form.setAh7g(form.ah7g.equals(`7`)?``:`7`)}"
+                                android:text="@string/ah7g" />
 
-                        <CheckBox
-                            android:id="@+id/ah796"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{form.ah796.equals(`96`)}"
-                            android:onClick="@{()->form.setAh796(form.ah796.equals(`96`)?``:`96`)}"
-                            android:text="@string/ah796" />
+                            <CheckBox
+                                android:id="@+id/ah7h"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{form.ah7h.equals(`8`)}"
+                                android:onClick="@{()->form.setAh7h(form.ah7h.equals(`8`)?``:`8`)}"
+                                android:text="@string/ah7h" />
 
-                        <EditText
-                            android:id="@+id/ah796x"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789,. "
-                            android:hint="@string/ah796"
-                            android:maxLength="20"
-                            android:text="@={form.ah796x}"
-                            android:visibility="@{form.ah796.equals(`96`) ? View.VISIBLE : View.GONE}" />
+                            <CheckBox
+                                android:id="@+id/ah796"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{form.ah796.equals(`96`)}"
+                                android:onClick="@{()->form.setAh796(form.ah796.equals(`96`)?``:`96`)}"
+                                android:text="@string/ah796" />
+
+                            <EditText
+                                android:id="@+id/ah796x"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789,. "
+                                android:hint="@string/ah796"
+                                android:maxLength="20"
+                                android:tag="ah796"
+                                android:text="@={form.ah796x}"
+                                android:visibility="@{form.ah796.equals(`96`) ? View.VISIBLE : View.GONE}" />
+
+                        </LinearLayout>
 
                     </LinearLayout>
 

@@ -4,6 +4,7 @@ import static android.view.View.VISIBLE;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.allAdolList;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.allChildrenList;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.allMWRAList;
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.familyList;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.familyMember;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedAdol;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedChild;
@@ -231,7 +232,7 @@ public class FamilyMembersListActivity extends AppCompatActivity {
 
             // Set MWRA
             if (MainApp.familyList.get(i).getIndexed().equals("1")) {
-                selectedMWRA = String.valueOf(i);
+                selectedMWRA = familyList.get(i).getD101();
                 bi.btnRand.setVisibility(View.INVISIBLE);
                 //bi.btnContinue.setVisibility(View.VISIBLE);
                 bi.btnContinue.setEnabled(true);
@@ -241,18 +242,18 @@ public class FamilyMembersListActivity extends AppCompatActivity {
 
             // Set Child
             if (MainApp.familyList.get(i).getIndexed().equals("2")) {
-                MainApp.selectedChild = String.valueOf(i);
+                MainApp.selectedChild = familyList.get(i).getD101();
                 selectedChildName = MainApp.familyList.get(i).getD102();
                 MainApp.ageOfIndexChild = Integer.parseInt(MainApp.familyList.get(i).getD109y());
             }
 
             // Set Adol MWRA
             if (MainApp.familyList.get(i).getIndexed().equals("3"))
-                selectedMWRA = String.valueOf(i);
+                selectedMWRA = familyList.get(i).getD101();
 
             // Set Adolescent
             if (MainApp.familyList.get(i).getIndexed().equals("4"))
-                MainApp.selectedAdol = String.valueOf(i);
+                MainApp.selectedAdol = familyList.get(i).getD101();
 
             MainApp.hhheadSelected = MainApp.familyList.get(i).getD103().equals("1");
         }
