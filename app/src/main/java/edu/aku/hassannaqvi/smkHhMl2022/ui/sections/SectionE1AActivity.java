@@ -2,7 +2,6 @@ package edu.aku.hassannaqvi.smkHhMl2022.ui.sections;
 
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.indexedPreg;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.pregM;
-import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedAdol;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedMWRA;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.sharedPref;
 
@@ -108,7 +107,7 @@ public class SectionE1AActivity extends AppCompatActivity {
 
 
             if (MainApp.pregM.getE101().equals("1")) {
-                if (MainApp.pregM.getE101a().equals(selectedMWRA) || MainApp.pregM.getE101a().equals(selectedAdol)) {
+                if (MainApp.pregM.getE101a().equals(selectedMWRA)) {
                     indexedPreg = pregM.getE102a();
                 }
                 MainApp.totalPreg = Integer.parseInt(MainApp.pregM.getE102());

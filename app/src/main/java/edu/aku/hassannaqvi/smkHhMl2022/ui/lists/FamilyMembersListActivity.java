@@ -184,7 +184,7 @@ public class FamilyMembersListActivity extends AppCompatActivity {
                         case "2":
                             MainApp.motherList.add(fm);
 
-                            if (fm.getD115().equals("1") && Integer.parseInt(fm.getD109y()) < 50 && fm.getD115().equals("1")) {
+                            if (fm.getD115().equals("1") && Integer.parseInt(fm.getD109y()) < 50) {
                                 MainApp.allMWRAList.add(fm);
                             }
                             //MainApp.adolCount++;
@@ -248,7 +248,7 @@ public class FamilyMembersListActivity extends AppCompatActivity {
 
             // Set Adol MWRA
             if (MainApp.familyList.get(i).getIndexed().equals("3"))
-                selectedAdol = String.valueOf(i);
+                selectedMWRA = String.valueOf(i);
 
             // Set Adolescent
             if (MainApp.familyList.get(i).getIndexed().equals("4"))

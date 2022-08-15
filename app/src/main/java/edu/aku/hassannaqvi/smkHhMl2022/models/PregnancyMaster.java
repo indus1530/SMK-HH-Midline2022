@@ -342,7 +342,7 @@ public class PregnancyMaster extends BaseObservable implements Observable {
             JSONObject json = null;
             json = new JSONObject(string);
             this.e101a = json.getString("e101a");
-            this.e101b = json.getString("e101b");
+            this.e101b = json.has("e101b") ? json.getString("e101b") : "";
             this.e101 = json.getString("e101");
             this.e102 = json.getString("e102");
             this.e102a = json.getString("e102a");
