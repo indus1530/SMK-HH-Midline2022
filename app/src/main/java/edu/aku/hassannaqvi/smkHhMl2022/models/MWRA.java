@@ -1587,6 +1587,7 @@ public class MWRA extends BaseObservable implements Observable {
 
     public void setF11008(String f11008) {
         this.f11008 = f11008;
+        setF11009(f11008.equals("1") ? this.f11009 : "");
         notifyPropertyChanged(BR.f11008);
     }
 
@@ -9673,7 +9674,7 @@ public class MWRA extends BaseObservable implements Observable {
             this.h1360209 = json.getString("h1360209");
             this.h1360210 = json.getString("h1360210");
             this.h1360298 = json.getString("h1360298");
-            this.h13603 = json.getString("h13603");
+            this.h13603 = json.has("h13603") ? json.getString("h13603") : "";
             this.h137 = json.getString("h137");
             this.h137a = json.getString("h137a");
             this.h137a96x = json.getString("h137a96x");
