@@ -3,6 +3,7 @@ package edu.aku.hassannaqvi.smkHhMl2022.models;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.PROJECT_NAME;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp._EMPTY_;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedAdol;
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedMWRA;
 
 import android.database.Cursor;
 import android.util.Log;
@@ -277,13 +278,19 @@ public class Adolescent extends BaseObservable implements Observable {
         setUserName(MainApp.user.getUserName());
         setDeviceId(MainApp.deviceid);
         setUuid(MainApp.form.getUid());  // not applicable in Form table
-        setFmuid(MainApp.familyList.get(Integer.parseInt(selectedAdol)).getUid()); //// not applicable in Form table
-        setSno(selectedAdol);
         setAppver(MainApp.appInfo.getAppVersion());
         setProjectName(PROJECT_NAME);
         setpsuCode(MainApp.currentHousehold.getClusterCode());
         setHhid(MainApp.currentHousehold.getHhno());
-        setIndexed(MainApp.familyList.get(Integer.parseInt(selectedAdol)).getIndexed());
+        if (!selectedAdol.equals("")) {
+            setSno(selectedAdol);
+            setFmuid(MainApp.familyList.get(Integer.parseInt(selectedAdol) - 1).getUid()); //// not applicable in Form table
+            setIndexed(MainApp.familyList.get(Integer.parseInt(selectedAdol) - 1).getIndexed());
+        } else {
+            setSno(selectedMWRA);
+            setFmuid(MainApp.familyList.get(Integer.parseInt(selectedMWRA) - 1).getUid()); //// not applicable in Form table
+            setIndexed(MainApp.familyList.get(Integer.parseInt(selectedMWRA) - 1).getIndexed());
+        }
 
     }
 

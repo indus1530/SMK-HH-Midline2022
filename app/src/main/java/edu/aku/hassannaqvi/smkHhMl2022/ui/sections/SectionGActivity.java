@@ -65,7 +65,7 @@ public class SectionGActivity extends AppCompatActivity {
         saveDraft();
         if (updateDB()) {
             finish();
-            startActivity(new Intent(this, SectionH1AActivity.class).putExtra("complete", true));
+            startActivity(new Intent(this, SectionH1AActivity.class));
         } else {
             Toast.makeText(this, R.string.fail_db_upd, Toast.LENGTH_SHORT).show();
         }

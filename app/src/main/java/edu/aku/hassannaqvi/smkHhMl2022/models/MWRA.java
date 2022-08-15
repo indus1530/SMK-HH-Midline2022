@@ -8946,6 +8946,7 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("h1360209", h1360209)
                 .put("h1360210", h1360210)
                 .put("h1360298", h1360298)
+                .put("h13603", h13603)
                 .put("h137", h137)
                 .put("h137a", h137a)
                 .put("h137a96x", h137a96x)
@@ -9582,6 +9583,8 @@ public class MWRA extends BaseObservable implements Observable {
             this.h10997 = json.getString("h10997");
             this.h10996 = json.getString("h10996");
             this.h10996x = json.getString("h10996x");
+            this.h11000 = json.has("h11000") ? json.getString("h11000") : "";
+            this.h11001 = json.has("h11001") ? json.getString("h11001") : "";
             this.h110 = json.getString("h110");
             this.h111 = json.getString("h111");
             this.h11200 = json.getString("h11200");

@@ -56,7 +56,7 @@ public class MaternalMortality extends BaseObservable implements Observable {
     private String e12296x = _EMPTY_;
 
 
-    public void Pregnancy() {
+    public void MaternalMortality() {
     }
 
     public void populateMeta() {
@@ -65,7 +65,6 @@ public class MaternalMortality extends BaseObservable implements Observable {
         setDeviceId(MainApp.deviceid);
         setUuid(MainApp.form.getUid());  // not applicable in Form table
         setSno(String.valueOf(MainApp.mortalityCounter));
-//        setMsno(MainApp.mwra.getBs1q1());
         setAppver(MainApp.appInfo.getAppVersion());
         setProjectName(PROJECT_NAME);
         setpsuCode(MainApp.currentHousehold.getClusterCode());

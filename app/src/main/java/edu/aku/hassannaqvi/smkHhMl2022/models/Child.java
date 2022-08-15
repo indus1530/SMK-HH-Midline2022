@@ -186,8 +186,8 @@ public class Child extends BaseObservable implements Observable {
         setUserName(MainApp.user.getUserName());
         setDeviceId(MainApp.deviceid);
         setUuid(MainApp.form.getUid());  // not applicable in Form table
-        setFmuid(MainApp.familyList.get(Integer.parseInt(selectedChild)).getUid()); //// not applicable in Form table
-        setMuid(MainApp.familyList.get(Integer.parseInt(selectedMWRA)).getUid());  // not applicable in Form table
+        setFmuid(MainApp.familyList.get(Integer.parseInt(selectedChild) - 1).getUid()); //// not applicable in Form table
+        setMuid(MainApp.familyList.get(Integer.parseInt(selectedMWRA) - 1).getUid());  // not applicable in Form table
         setSno(selectedChild + 1);
         setAppver(MainApp.appInfo.getAppVersion());
         setProjectName(PROJECT_NAME);

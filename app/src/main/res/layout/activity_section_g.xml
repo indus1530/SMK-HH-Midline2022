@@ -29,8 +29,9 @@
             android:minHeight="?attr/actionBarSize"
             android:theme="@style/CustomToolbarTheme"
             app:popupTheme="@style/CustomPopupTheme"
+            app:subtitle="@string/g1t01"
             app:subtitleTextAppearance="@style/Toolbar.SubtitleText"
-            app:title="@string/g1t01"
+            app:title="MWRA Having under 5 Child"
             app:titleTextAppearance="@style/Toolbar.TitleText" />
 
 
@@ -45,7 +46,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    style="@style/labelsHead"
+                    style="@style/sub_labels"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="start"

@@ -236,7 +236,7 @@ public class SyncActivity extends AppCompatActivity {
                 //Adolescent
                 uploadTables.add(new SyncModel(AdolescentTable.TABLE_NAME));
                 try {
-                    MainApp.uploadData.add(db.getUnsyncedChild());
+                    MainApp.uploadData.add(db.getUnsyncedAdolescent());
                 } catch (JSONException e) {
                     e.printStackTrace();
                     Log.d(TAG, "ProcessStart: JSONException(Adolescent): " + e.getMessage());

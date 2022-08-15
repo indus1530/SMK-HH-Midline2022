@@ -88,7 +88,7 @@ public class SectionAH1Activity extends AppCompatActivity {
 
     public void btnContinue(View view) {
         if (!formValidation()) return;
-        if (MainApp.mwra.getUid().equals("") ? insertNewRecord() : updateDB()) {
+        if (MainApp.adol.getUid().equals("") ? insertNewRecord() : updateDB()) {
             finish();
             startActivity(new Intent(this, SectionAH2Activity.class));
         } else {

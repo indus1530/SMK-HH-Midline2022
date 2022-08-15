@@ -39,6 +39,8 @@ public class SectionE1AActivity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_e1a);
         setSupportActionBar(bi.toolbar);
         db = MainApp.appInfo.dbHelper;
+
+
         try {
             MainApp.pregM = db.getPregMByFmuid(MainApp.allMWRAList.get(0).getUid());
         } catch (JSONException e) {

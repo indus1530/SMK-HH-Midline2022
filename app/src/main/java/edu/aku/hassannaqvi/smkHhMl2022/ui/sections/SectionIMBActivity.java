@@ -1,6 +1,7 @@
 package edu.aku.hassannaqvi.smkHhMl2022.ui.sections;
 
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedAdol;
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedMWRA;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.sharedPref;
 
 import android.content.Intent;
@@ -61,8 +62,9 @@ public class SectionIMBActivity extends AppCompatActivity {
         if (!formValidation()) return;
         if (updateDB()) {
             finish();
-            startActivity(new Intent(this, !selectedAdol.equals("") ? SectionAH1Activity.class
-                    : SectionMActivity.class));
+            startActivity(new Intent(this,
+                    !selectedAdol.equals("") || MainApp.familyList.get(Integer.parseInt(selectedMWRA)).getIndexed().equals("3") ? SectionAH1Activity.class
+                            : SectionMActivity.class));
         } else {
             Toast.makeText(this, R.string.fail_db_upd, Toast.LENGTH_SHORT).show();
         }

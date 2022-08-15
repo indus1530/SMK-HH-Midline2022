@@ -141,7 +141,7 @@ public class SectionIMAActivity extends AppCompatActivity {
     public void btnContinue(View view) {
         if (!formValidation()) return;
         if (!insertNewRecord()) return;
-        if (updateDB()) {
+        if (MainApp.child.getUid().equals("") ? insertNewRecord() : updateDB()) {
             finish();
             startActivity(new Intent(this, SectionIMBActivity.class).putExtra("complete", true));
         } else {

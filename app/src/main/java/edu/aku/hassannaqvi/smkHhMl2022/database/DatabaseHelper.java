@@ -273,8 +273,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(AdolescentTable.COLUMN_SYNC_DATE, adol.getSyncDate());
         long newRowId;
         newRowId = db.insert(
-                ChildTable.TABLE_NAME,
-                ChildTable.COLUMN_NAME_NULLABLE,
+                AdolescentTable.TABLE_NAME,
+                AdolescentTable.COLUMN_NAME_NULLABLE,
                 values);
         return newRowId;
     }
@@ -694,7 +694,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         } catch (Exception ignored) {
         } finally {
-            db.close();
+            //db.close();
         }*/
 
         return (int) count;
@@ -723,12 +723,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             long rowID = db.insertOrThrow(UsersTable.TABLE_NAME, null, values);
             if (rowID != -1) insertCount++;
         }
-
-
-        db.close();
-
-        db.close();
-
+        //db.close();
         return insertCount;
     }
 
@@ -816,7 +811,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
 
         c.close();
-        db.close();
+        //db.close();
 
         Log.d(TAG, "getUnsyncedFormHH: " + allForms.toString().length());
         Log.d(TAG, "getUnsyncedFormHH: " + allForms);
@@ -853,7 +848,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         c.close();
 
-        db.close();
+        //db.close();
 
         Log.d(TAG, "getUnsyncedFamilyMembers: " + all.toString().length());
         Log.d(TAG, "getUnsyncedFamilyMembers: " + all);
@@ -1397,9 +1392,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         if (c != null) {
             c.close();
         }
-        if (db != null) {
+        /*if (db != null) {
             db.close();
-        }
+        }*/
         return allFC;
     }
 
@@ -1756,7 +1751,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             pregnancyD.add(new PregnancyDetails().Hydrate(c));
         }
 
-        db.close();
+        //db.close();
 
         return pregnancyD;
     }
@@ -1794,7 +1789,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             pregnancyD = new PregnancyDetails().Hydrate(c);
         }
 
-        db.close();
+        //db.close();
 
         return pregnancyD;
     }
@@ -1830,7 +1825,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             allChildren.add(new FamilyMembers().Hydrate(c));
         }
 
-        db.close();
+        //db.close();
 
         return allChildren;
     }
@@ -1871,9 +1866,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             if (c != null) {
                 c.close();
             }
-            if (db != null) {
+            /*if (db != null) {
                 db.close();
-            }
+            }*/
         }
         return membersByUID;
     }
@@ -1913,9 +1908,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             if (c != null) {
                 c.close();
             }
-            if (db != null) {
+           /* if (db != null) {
                 db.close();
-            }
+            }*/
         }
         return membersByUID;
     }
@@ -1955,9 +1950,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             if (c != null) {
                 c.close();
             }
-            if (db != null) {
+            /*if (db != null) {
                 db.close();
-            }
+            }*/
         }
         return membersByUID;
     }
@@ -1995,7 +1990,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             mortality = new MaternalMortality().Hydrate(c);
         }
 
-        db.close();
+        //db.close();
 
         return mortality;
     }
@@ -2031,7 +2026,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             child = new Child().Hydrate(c);
         }
 
-        db.close();
+        //db.close();
 
         return child;
     }
@@ -2069,7 +2064,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         c.moveToFirst();
         chSNo = Integer.parseInt(new FamilyMembers().Hydrate(c).getD101());
-        db.close();
+        //db.close();
         return chSNo;
     }
 
@@ -2107,7 +2102,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         c.moveToFirst();
         chSNo = Integer.parseInt(new FamilyMembers().Hydrate(c).getD101());
 
-        db.close();
+        //db.close();
 
         return chSNo;
     }
@@ -2136,7 +2131,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         while (c.moveToNext()) {
             mwra = new MWRA().Hydrate(c);
         }
-        db.close();
+        //db.close();
         return mwra;
     }
 
@@ -2164,7 +2159,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         while (c.moveToNext()) {
             adol = new Adolescent().Hydrate(c);
         }
-        db.close();
+        //db.close();
         return adol;
     }
 
@@ -2192,7 +2187,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         while (c.moveToNext()) {
             pregnancyM = new PregnancyMaster().Hydrate(c);
         }
-        db.close();
+        //db.close();
         return pregnancyM;
     }
 
@@ -2231,9 +2226,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             if (c != null) {
                 c.close();
             }
-            if (db != null) {
+            /*if (db != null) {
                 db.close();
-            }
+            }*/
         }
         return form;
     }
@@ -2271,7 +2266,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             form = (new Forms().Hydrate(c));
         }
         c.close();
-        db.close();
         return form;
 
     }
@@ -2300,7 +2294,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         while (c.moveToNext()) {
             adol = new Adolescent().Hydrate(c);
         }
-        db.close();
         return adol;
     }
 

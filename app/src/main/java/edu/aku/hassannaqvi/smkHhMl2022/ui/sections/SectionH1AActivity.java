@@ -32,11 +32,9 @@ public class SectionH1AActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTheme(sharedPref.getString("lang", "0").equals("2") ? R.style.AppThemeSindhi : sharedPref.getString("lang", "0").equals("1") ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
-
-
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_h1a);
         bi.setMwra(MainApp.mwra);
-        childAge = Integer.parseInt(MainApp.familyList.get(Integer.parseInt(MainApp.selectedChild)).getD109y());
+        childAge = Integer.parseInt(MainApp.familyList.get(Integer.parseInt(MainApp.selectedChild) - 1).getD109y());
         if (childAge < 6) bi.fldGrpCVh114.setVisibility(View.GONE);
         setupSkips();
         setSupportActionBar(bi.toolbar);
