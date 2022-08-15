@@ -2172,22 +2172,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
         Cursor c;
         String[] columns = null;
-
         String whereClause;
-        whereClause =
-                PregnancyMasterTable.COLUMN_UUID + "=? AND " +
-                        PregnancyMasterTable.COLUMN_FMUID + "=? "
-        ;
-
+        whereClause = PregnancyMasterTable.COLUMN_UUID + "=? AND " +
+                PregnancyMasterTable.COLUMN_FMUID + "=? ";
         String[] whereArgs = {MainApp.form.getUid(), fmuid};
-
         String groupBy = null;
         String having = null;
-
         String orderBy = PregnancyMasterTable.COLUMN_ID + " ASC";
-
         PregnancyMaster pregnancyM = new PregnancyMaster();  // Pregnancies can never be null.
-
         c = db.query(
                 PregnancyMasterTable.TABLE_NAME,  // The table to query
                 columns,                   // The columns to return
@@ -2200,11 +2192,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         while (c.moveToNext()) {
             pregnancyM = new PregnancyMaster().Hydrate(c);
         }
-
         db.close();
-
         return pregnancyM;
     }
+
 
     public Forms getFormByPsuHHNo(String psuCode, String hhid) throws JSONException {
         SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);

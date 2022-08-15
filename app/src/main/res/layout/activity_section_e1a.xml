@@ -67,68 +67,45 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/bottom"
                             android:orientation="horizontal">
 
-                            <LinearLayout
+                            <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:orientation="vertical">
+                                android:gravity="center"
+                                android:text="@string/e101b" />
 
-                                <TextView
-                                    style="@style/quesNum"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/Q_e101b"
-                                    android:visibility="gone" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:gravity="center"
-                                    android:text="@string/e101b" />
-
-
-                                <TextView
-                                    android:id="@+id/e101b"
-                                    style="@style/sub_labels"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:enabled="false"
-                                    android:gravity="center"
-                                    android:text="@={pregM.e101b}" />
-                            </LinearLayout>
-
-                            <LinearLayout
+                            <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1.5"
-                                android:orientation="vertical">
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:text="@string/e101a" />
 
-                                <TextView
-                                    style="@style/quesNum"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:text="@string/Q_e101a"
-                                    android:visibility="gone" />
+                        </LinearLayout>
 
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:gravity="center"
-                                    android:text="@string/e101a" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
 
-                                <TextView
-                                    android:id="@+id/e101a"
-                                    style="@style/sub_labels"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz "
-                                    android:enabled="false"
-                                    android:text="@={pregM.e101a}" />
+                            <TextView
+                                android:id="@+id/e101a"
+                                style="@style/sub_labels"
+                                android:layout_width="0dp"
+                                android:layout_height="35dp"
+                                android:layout_weight="1"
+                                android:text="@={pregM.e101a}" />
 
-                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/e101b"
+                                style="@style/sub_labels"
+                                android:layout_width="0dp"
+                                android:layout_height="35dp"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:text="@={pregM.e101b}" />
 
                         </LinearLayout>
 
@@ -306,7 +283,6 @@
                 </androidx.cardview.widget.CardView>
 
 
-
                 <!--EndButton LinearLayout-->
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -321,9 +297,9 @@
                         android:layout_height="50dp"
                         android:layout_marginStart="12dp"
                         android:background="@drawable/capsule"
+                        android:elevation="20dp"
                         android:onClick="btnEnd"
                         android:text="Cancel"
-                        android:elevation="20dp"
                         android:textColor="@color/white" />
 
                     <Button
@@ -332,9 +308,9 @@
                         android:layout_height="50dp"
                         android:layout_marginStart="12dp"
                         android:background="@drawable/capsule"
+                        android:elevation="20dp"
                         android:onClick="btnContinue"
                         android:text="Save"
-                        android:elevation="20dp"
                         android:textColor="@color/white" />
 
                 </LinearLayout>
