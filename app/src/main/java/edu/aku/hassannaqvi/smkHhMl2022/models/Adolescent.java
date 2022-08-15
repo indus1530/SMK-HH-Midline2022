@@ -455,6 +455,11 @@ public class Adolescent extends BaseObservable implements Observable {
 
     public void setAh1(String ah1) {
         this.ah1 = ah1;
+        setAh2(ah1.equals("0") ? "" : this.ah2);
+        setAh3a(ah1.equals("0") ? "" : this.ah3a);
+        setAh4a(ah1.equals("0") ? "" : this.ah4a);
+        setAh5(ah1.equals("0") ? "" : this.ah5);
+        setAh6(ah1.equals("0") ? "" : this.ah6);
         notifyPropertyChanged(BR.ah1);
     }
 
@@ -465,6 +470,7 @@ public class Adolescent extends BaseObservable implements Observable {
 
     public void setAh2(String ah2) {
         this.ah2 = ah2;
+        setAh3a(ah2.equals("1") ? this.ah3a : "");
         notifyPropertyChanged(BR.ah2);
     }
 
