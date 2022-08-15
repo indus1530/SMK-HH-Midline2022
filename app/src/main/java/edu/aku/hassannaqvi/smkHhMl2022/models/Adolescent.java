@@ -455,6 +455,11 @@ public class Adolescent extends BaseObservable implements Observable {
 
     public void setAh1(String ah1) {
         this.ah1 = ah1;
+        setAh2(ah1.equals("0") ? "" : this.ah2);
+        setAh3a(ah1.equals("0") ? "" : this.ah3a);
+        setAh4a(ah1.equals("0") ? "" : this.ah4a);
+        setAh5(ah1.equals("0") ? "" : this.ah5);
+        setAh6(ah1.equals("0") ? "" : this.ah6);
         notifyPropertyChanged(BR.ah1);
     }
 
@@ -465,6 +470,7 @@ public class Adolescent extends BaseObservable implements Observable {
 
     public void setAh2(String ah2) {
         this.ah2 = ah2;
+        setAh3a(ah2.equals("1") ? this.ah3a : "");
         notifyPropertyChanged(BR.ah2);
     }
 
@@ -625,6 +631,10 @@ public class Adolescent extends BaseObservable implements Observable {
 
     public void setAh8(String ah8) {
         this.ah8 = ah8;
+        setAh9(ah8.equals("3") ? "" : this.ah9);
+        setAh10(ah8.equals("3") ? "" : this.ah10);
+        setAh11a(ah8.equals("3") ? "" : this.ah11a);
+        setAh12(ah8.equals("3") ? "" : this.ah12);
         notifyPropertyChanged(BR.ah8);
     }
 
@@ -665,6 +675,9 @@ public class Adolescent extends BaseObservable implements Observable {
 
     public void setAh12(String ah12) {
         this.ah12 = ah12;
+        setAh13(ah12.equals("2") ? this.ah13 : "");
+        setAh13aa(ah12.equals("2") ? this.ah13aa : "");
+        setAh13ab(ah12.equals("2") ? this.ah13ab : "");
         notifyPropertyChanged(BR.ah12);
     }
 
@@ -725,6 +738,8 @@ public class Adolescent extends BaseObservable implements Observable {
 
     public void setAh16(String ah16) {
         this.ah16 = ah16;
+        setAh17(ah16.equals("2") ? "" : this.ah17);
+        setAh18(ah16.equals("2") ? "" : this.ah18);
         notifyPropertyChanged(BR.ah16);
     }
 
@@ -755,6 +770,8 @@ public class Adolescent extends BaseObservable implements Observable {
 
     public void setAh19(String ah19) {
         this.ah19 = ah19;
+        setAh20(ah19.equals("1") ? this.ah20 : "");
+        setAh21(ah19.equals("1") ? this.ah21 : "");
         notifyPropertyChanged(BR.ah19);
     }
 
@@ -795,6 +812,18 @@ public class Adolescent extends BaseObservable implements Observable {
 
     public void setAh2202(String ah2202) {
         this.ah2202 = ah2202;
+        setAh23(ah2202.equals("2") ? "" : this.ah23);
+        setAh2401(ah2202.equals("2") ? "" : this.ah2401);
+        setAh2402(ah2202.equals("2") ? "" : this.ah2402);
+        setAh2403(ah2202.equals("2") ? "" : this.ah2403);
+        setAh2404(ah2202.equals("2") ? "" : this.ah2404);
+        setAh2405(ah2202.equals("2") ? "" : this.ah2405);
+        setAh2406(ah2202.equals("2") ? "" : this.ah2406);
+        setAh2407(ah2202.equals("2") ? "" : this.ah2407);
+        setAh2408(ah2202.equals("2") ? "" : this.ah2408);
+        setAh2409(ah2202.equals("2") ? "" : this.ah2409);
+        setAh2410(ah2202.equals("2") ? "" : this.ah2410);
+        setAh2411(ah2202.equals("2") ? "" : this.ah2411);
         notifyPropertyChanged(BR.ah2202);
     }
 
@@ -991,6 +1020,18 @@ public class Adolescent extends BaseObservable implements Observable {
     public void setAh2411(String ah2411) {
         if (this.ah2411.equals(ah2411)) return;
         this.ah2411 = ah2411;
+        setAh2401(ah2411.equals("11") ? "" : this.ah2401);
+        setAh2402(ah2411.equals("11") ? "" : this.ah2402);
+        setAh2403(ah2411.equals("11") ? "" : this.ah2403);
+        setAh2404(ah2411.equals("11") ? "" : this.ah2404);
+        setAh2405(ah2411.equals("11") ? "" : this.ah2405);
+        setAh2406(ah2411.equals("11") ? "" : this.ah2406);
+        setAh2407(ah2411.equals("11") ? "" : this.ah2407);
+        setAh2408(ah2411.equals("11") ? "" : this.ah2408);
+        setAh2409(ah2411.equals("11") ? "" : this.ah2409);
+        setAh2410(ah2411.equals("11") ? "" : this.ah2410);
+        setAh25(ah2411.equals("11") ? "" : this.ah25);
+        setAh26(ah2411.equals("11") ? "" : this.ah26);
         notifyPropertyChanged(BR.ah2411);
     }
 
@@ -1002,6 +1043,7 @@ public class Adolescent extends BaseObservable implements Observable {
 
     public void setAh25(String ah25) {
         this.ah25 = ah25;
+        setAh26(ah25.equals("2") ? "" : this.ah26);
         notifyPropertyChanged(BR.ah25);
     }
 
@@ -1022,6 +1064,7 @@ public class Adolescent extends BaseObservable implements Observable {
 
     public void setAh27(String ah27) {
         this.ah27 = ah27;
+        setAh28(ah27.equals("2") ? "" : this.ah28);
         notifyPropertyChanged(BR.ah27);
     }
 
@@ -1072,6 +1115,7 @@ public class Adolescent extends BaseObservable implements Observable {
 
     public void setAh3003(String ah3003) {
         this.ah3003 = ah3003;
+        setAh31(ah3003.equals("1") ? this.ah31 : "");
         notifyPropertyChanged(BR.ah3003);
     }
 
