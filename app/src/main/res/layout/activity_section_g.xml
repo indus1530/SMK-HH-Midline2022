@@ -1083,7 +1083,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:checked="@{mwra.g126.equals(`2`)}"
-                                android:onClick="@{()->mwra.setG126(`2`)}"
+                                android:onClick="@{()->mwra.setG126(`2`) + g127.clearCheck()}"
                                 android:text="@string/g12602" />
 
                             <RadioButton
@@ -1092,7 +1092,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:checked="@{mwra.g126.equals(`97`)}"
-                                android:onClick="@{()->mwra.setG126(`97`)}"
+                                android:onClick="@{()->mwra.setG126(`97`) + g127.clearCheck()}"
                                 android:text="@string/g12603" />
 
                         </RadioGroup>
@@ -1106,7 +1106,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVg127"
                     style="@style/cardView"
-                    android:visibility="@{mwra.g126.equals(`2`) ? View.VISIBLE : View.GONE}">
+                    android:visibility="@{mwra.g126.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"

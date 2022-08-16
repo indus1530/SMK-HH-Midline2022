@@ -3098,7 +3098,7 @@ public class MWRA extends BaseObservable implements Observable {
 
     public void setG126(String g126) {
         this.g126 = g126;
-        setG127(g126.equals("2") ? this.g127 : "");
+        setG127(g126.equals("1") ? this.g127 : "");
         notifyPropertyChanged(BR.g126);
     }
 
