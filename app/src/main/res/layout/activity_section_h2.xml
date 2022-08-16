@@ -28,8 +28,9 @@
             android:minHeight="?attr/actionBarSize"
             android:theme="@style/CustomToolbarTheme"
             app:popupTheme="@style/CustomPopupTheme"
+            app:subtitle="@string/h2t01"
             app:subtitleTextAppearance="@style/Toolbar.SubtitleText"
-            app:title="@string/h2t01"
+            app:title="@string/mwra5"
             app:titleTextAppearance="@style/Toolbar.TitleText" />
 
 

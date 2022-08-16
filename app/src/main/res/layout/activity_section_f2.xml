@@ -547,8 +547,11 @@
                                 android:checked="@{mwra.f124.equals(`2`)}"
                                 android:onClick="@{()->mwra.setF124(`2`)}"
                                 android:text="@string/f12402" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
 
@@ -596,7 +599,7 @@
                                 android:tag="0">
 
                                 <TextView
-                                    style="@style/sub_labels"
+                                    style="@style/info"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="@string/f1t10"
@@ -662,7 +665,9 @@
                             </LinearLayout>
 
                         </LinearLayout>
+
                     </androidx.cardview.widget.CardView>
+
 
                     <!-- f126  CheckBox   -->
                     <androidx.cardview.widget.CardView
@@ -763,9 +768,13 @@
                                     android:checked="@{mwra.f12608.equals(`8`)}"
                                     android:onClick="@{()->mwra.setF12608(mwra.f12608.equals(`8`)?``:`8`)}"
                                     android:text="@string/f12608" />
+
                             </LinearLayout>
+
                         </LinearLayout>
+
                     </androidx.cardview.widget.CardView>
+
 
                     <!-- f127  Radio   -->
                     <androidx.cardview.widget.CardView
@@ -802,7 +811,7 @@
                                 android:layout_height="wrap_content">
 
                                 <TextView
-                                    style="@style/sub_labels"
+                                    style="@style/textView"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="@string/f1t11" />
@@ -872,7 +881,7 @@
                                     android:text="@string/f12708" />
 
                                 <TextView
-                                    style="@style/sub_labels"
+                                    style="@style/textView"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="@string/f1t12" />
@@ -926,9 +935,13 @@
                                     android:tag="f12796"
                                     android:text="@={mwra.f12796x}"
                                     android:visibility="@{mwra.f127.equals(`96`) ? View.VISIBLE : View.GONE}" />
+
                             </RadioGroup>
+
                         </LinearLayout>
+
                     </androidx.cardview.widget.CardView>
+
                 </LinearLayout>
 
 
@@ -1036,7 +1049,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{mwra.f12808.equals(`8`)}"
-                                android:onClick="@{()->mwra.setF12808(mwra.f12807.equals(`8`)?``:`8`) + f129.clearCheck() + f131.clearCheck()}"
+                                android:onClick="@{()->mwra.setF12808(mwra.f12808.equals(`8`)?``:`8`) + f129.clearCheck() + f131.clearCheck()}"
                                 android:text="@string/f12808" />
 
                         </LinearLayout>
@@ -1324,10 +1337,9 @@
                                 android:layout_height="wrap_content">
 
                                 <TextView
-                                    style="@style/sub_labels"
+                                    style="@style/textView"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="12dp"
                                     android:text="@string/f1t13" />
 
                                 <RadioButton
@@ -1379,10 +1391,9 @@
                                     android:text="@string/f13106" />
 
                                 <TextView
-                                    style="@style/sub_labels"
+                                    style="@style/textView"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="12dp"
                                     android:text="@string/f1t14" />
 
                                 <RadioButton

@@ -29,9 +29,31 @@
             android:minHeight="?attr/actionBarSize"
             android:theme="@style/CustomToolbarTheme"
             app:popupTheme="@style/CustomPopupTheme"
+            app:subtitle="@string/h1t01"
             app:subtitleTextAppearance="@style/Toolbar.SubtitleText"
-            app:title="@string/sectionh1newbornhealth_mainheading"
+            app:title="@string/mwra5"
             app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+
+        <!-- modhtitle  Title   -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fldGrpCVmodhtitle"
+            style="@style/cardView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/sub_labels"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/h1t02" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
 
 
         <ScrollView
@@ -44,27 +66,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
-
-                <!-- modhtitle  Title   -->
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVmodhtitle"
-                    style="@style/cardView">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            style="@style/sub_labels"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/h1t02" />
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
 
 
                 <!-- h101  Radio   -->

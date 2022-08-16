@@ -2298,7 +2298,7 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     public void setF12801(String f12801) {
-        if (this.f12801.equals(f12801)) return;     // For all checkboxes
+        if (this.f12801.equals(f12801)) return;
         this.f12801 = f12801;
         notifyPropertyChanged(BR.f12801);
     }
@@ -2309,7 +2309,7 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     public void setF12802(String f12802) {
-        if (this.f12802.equals(f12802)) return;     // For all checkboxes
+        if (this.f12802.equals(f12802)) return;
         this.f12802 = f12802;
         notifyPropertyChanged(BR.f12802);
     }
@@ -2320,7 +2320,7 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     public void setF12803(String f12803) {
-        if (this.f12803.equals(f12803)) return;     // For all checkboxes
+        if (this.f12803.equals(f12803)) return;
         this.f12803 = f12803;
         notifyPropertyChanged(BR.f12803);
     }
@@ -2331,7 +2331,7 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     public void setF12804(String f12804) {
-        if (this.f12804.equals(f12804)) return;     // For all checkboxes
+        if (this.f12804.equals(f12804)) return;
         this.f12804 = f12804;
         notifyPropertyChanged(BR.f12804);
     }
@@ -2342,7 +2342,7 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     public void setF12805(String f12805) {
-        if (this.f12805.equals(f12805)) return;     // For all checkboxes
+        if (this.f12805.equals(f12805)) return;
         this.f12805 = f12805;
         notifyPropertyChanged(BR.f12805);
     }
@@ -2353,7 +2353,7 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     public void setF12806(String f12806) {
-        if (this.f12806.equals(f12806)) return;     // For all checkboxes
+        if (this.f12806.equals(f12806)) return;
         this.f12806 = f12806;
         notifyPropertyChanged(BR.f12806);
     }
@@ -2364,31 +2364,8 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     public void setF12807(String f12807) {
-        if (this.f12807.equals(f12807)) return;     // For all checkboxes
+        if (this.f12807.equals(f12807)) return;
         this.f12807 = f12807;
-        /*setF129(f12807.equals("7") ? "" : this.f129);
-        setF12801(f12807.equals("7") ? "" : this.f12801);
-        setF12802(f12807.equals("7") ? "" : this.f12802);
-        setF12803(f12807.equals("7") ? "" : this.f12803);
-        setF12804(f12807.equals("7") ? "" : this.f12804);
-        setF12805(f12807.equals("7") ? "" : this.f12805);
-        setF12806(f12807.equals("7") ? "" : this.f12806);
-        setF13001(f12807.equals("7") ? "" : this.f13001);
-        setF13002(f12807.equals("7") ? "" : this.f13002);
-        setF13003(f12807.equals("7") ? "" : this.f13003);
-        setF13004(f12807.equals("7") ? "" : this.f13004);
-        setF13005(f12807.equals("7") ? "" : this.f13005);
-        setF13006(f12807.equals("7") ? "" : this.f13006);
-        setF13007(f12807.equals("7") ? "" : this.f13007);
-        setF13008(f12807.equals("7") ? "" : this.f13008);
-        setF13009(f12807.equals("7") ? "" : this.f13009);
-        setF13010(f12807.equals("7") ? "" : this.f13010);
-        setF13011(f12807.equals("7") ? "" : this.f13011);
-        setF13012(f12807.equals("7") ? "" : this.f13012);
-        setF13013(f12807.equals("7") ? "" : this.f13013);
-        setF13014(f12807.equals("7") ? "" : this.f13014);
-        setF13096(f12807.equals("7") ? "" : this.f13096);
-        setF131(f12807.equals("7") ? "" : this.f131);*/
         notifyPropertyChanged(BR.f12807);
     }
 
@@ -2400,13 +2377,14 @@ public class MWRA extends BaseObservable implements Observable {
     public void setF12808(String f12808) {
         if (this.f12808.equals(f12808)) return;     // For all checkboxes
         this.f12808 = f12808;
-        setF129(f12808.equals("8") ? "" : this.f129);
         setF12801(f12808.equals("8") ? "" : this.f12801);
         setF12802(f12808.equals("8") ? "" : this.f12802);
         setF12803(f12808.equals("8") ? "" : this.f12803);
         setF12804(f12808.equals("8") ? "" : this.f12804);
         setF12805(f12808.equals("8") ? "" : this.f12805);
         setF12806(f12808.equals("8") ? "" : this.f12806);
+        setF12807(f12808.equals("8") ? "" : this.f12807);
+        setF129(f12808.equals("8") ? "" : this.f129);
         setF13001(f12808.equals("8") ? "" : this.f13001);
         setF13002(f12808.equals("8") ? "" : this.f13002);
         setF13003(f12808.equals("8") ? "" : this.f13003);
