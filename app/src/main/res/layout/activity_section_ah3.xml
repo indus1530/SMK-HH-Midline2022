@@ -877,7 +877,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cvah23"
                     style="@style/cardView"
-                    android:visibility="@{form.ah2202.equals(`2`) ? View.GONE : View.VISIBLE}">
+                    android:visibility="@{form.ah2201.equals(`1`) || form.ah2202.equals(`1`) || form.ah2203.equals(`1`) || form.ah2204.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -918,6 +918,22 @@
                                 android:onClick="@{()->form.setAh23(`1`)}"
                                 android:text="@string/ah2301" />
 
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/ah2301x"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:tag="ah2301"
+                                android:text="@={form.ah2301x}"
+                                android:visibility="@{form.ah23.equals(`1`) ? View.VISIBLE : View.GONE}"
+                                app:maxValue="31"
+                                app:minValue="1"
+                                app:type="range" />
+
                             <RadioButton
                                 android:id="@+id/ah2302"
                                 android:layout_width="wrap_content"
@@ -926,6 +942,22 @@
                                 android:checked="@{form.ah23.equals(`2`)}"
                                 android:onClick="@{()->form.setAh23(`2`)}"
                                 android:text="@string/ah2302" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/ah2302x"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:tag="ah2302"
+                                android:text="@={form.ah2302x}"
+                                android:visibility="@{form.ah23.equals(`2`) ? View.VISIBLE : View.GONE}"
+                                app:maxValue="11"
+                                app:minValue="1"
+                                app:type="range" />
 
                             <RadioButton
                                 android:id="@+id/ah2303"
@@ -936,52 +968,23 @@
                                 android:onClick="@{()->form.setAh23(`3`)}"
                                 android:text="@string/ah2303" />
 
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/ah2303x"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="#"
+                                android:inputType="number"
+                                android:maxLength="1"
+                                android:tag="ah2303"
+                                android:text="@={form.ah2303x}"
+                                android:visibility="@{form.ah23.equals(`3`) ? View.VISIBLE : View.GONE}"
+                                app:maxValue="5"
+                                app:minValue="1"
+                                app:type="range" />
+
                         </RadioGroup>
-
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/ah2301x"
-                            android:layout_width="match_parent"
-                            android:layout_height="52dp"
-                            android:gravity="center"
-                            android:hint="##"
-                            android:inputType="number"
-                            android:maxLength="2"
-                            android:tag="ah2301"
-                            android:text="@={form.ah2301x}"
-                            android:visibility="@{form.ah23.equals(`1`) ? View.VISIBLE : View.GONE}"
-                            app:maxValue="31"
-                            app:minValue="1"
-                            app:type="range" />
-
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/ah2302x"
-                            android:layout_width="match_parent"
-                            android:layout_height="52dp"
-                            android:gravity="center"
-                            android:hint="##"
-                            android:inputType="number"
-                            android:maxLength="2"
-                            android:tag="ah2302"
-                            android:text="@={form.ah2302x}"
-                            android:visibility="@{form.ah23.equals(`2`) ? View.VISIBLE : View.GONE}"
-                            app:maxValue="11"
-                            app:minValue="1"
-                            app:type="range" />
-
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/ah2303x"
-                            android:layout_width="match_parent"
-                            android:layout_height="52dp"
-                            android:gravity="center"
-                            android:hint="#"
-                            android:inputType="number"
-                            android:maxLength="1"
-                            android:tag="ah2303"
-                            android:text="@={form.ah2303x}"
-                            android:visibility="@{form.ah23.equals(`3`) ? View.VISIBLE : View.GONE}"
-                            app:maxValue="5"
-                            app:minValue="1"
-                            app:type="range" />
 
                     </LinearLayout>
 
