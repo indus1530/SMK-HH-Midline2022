@@ -31,7 +31,7 @@
             app:popupTheme="@style/CustomPopupTheme"
             app:subtitle="@string/g1t01"
             app:subtitleTextAppearance="@style/Toolbar.SubtitleText"
-            app:title="MWRA Having under 5 Child"
+            app:title="@string/mwra5"
             app:titleTextAppearance="@style/Toolbar.TitleText" />
 
 

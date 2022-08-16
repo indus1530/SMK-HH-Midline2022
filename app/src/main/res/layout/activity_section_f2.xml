@@ -34,6 +34,20 @@
             app:titleTextAppearance="@style/Toolbar.TitleText" />
 
 
+        <!-- modfinst  Title   -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fldGrpCVmodfinst"
+            style="@style/cardView">
+
+            <TextView
+                style="@style/sub_labels"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/f1t02" />
+
+        </androidx.cardview.widget.CardView>
+
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -44,21 +58,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
-
-                <!-- modfinst  Title   -->
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVmodfinst"
-                    style="@style/cardView">
-
-
-                    <TextView
-                        style="@style/labelsHead"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/f1t02" />
-
-                </androidx.cardview.widget.CardView>
 
 
                 <!-- f121a  Radio   -->

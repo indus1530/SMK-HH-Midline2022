@@ -30,8 +30,30 @@
             android:theme="@style/CustomToolbarTheme"
             app:popupTheme="@style/CustomPopupTheme"
             app:subtitleTextAppearance="@style/Toolbar.SubtitleText"
-            app:title="@string/f1t01"
+            app:subtitle="@string/f1t01"
+            app:title="@string/mwra5"
             app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+
+        <!-- modfinst  Title   -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fldGrpCVmodfinst"
+            style="@style/cardView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/sub_labels"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/f1t02" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
 
 
         <ScrollView
@@ -44,27 +66,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
-
-                <!-- modfinst  Title   -->
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVmodfinst"
-                    style="@style/cardView">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            style="@style/sub_labels"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/f1t02" />
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
 
 
                 <!-- f101  Radio   -->
@@ -378,7 +379,6 @@
                                     android:id="@+id/f101b98"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="1"
                                     android:checked="@{mwra.f101b.equals(`98`)}"
                                     android:onClick="@{()->mwra.setF101b(`98`) + f107.clearCheck() + f108.clearCheck() + f11001.clearCheck() + f11002.clearCheck() + f11003.clearCheck() + f11004.clearCheck() + f11005.clearCheck() + f11006.clearCheck() + f11007.clearCheck() + f11008.clearCheck() + f11009.clearCheck() + f11096.clearCheck()}"
                                     android:text="@string/f101b98" />
@@ -637,6 +637,7 @@
                             </LinearLayout>
 
                         </androidx.cardview.widget.CardView>
+
 
                         <!-- f104  Input-Numeric   -->
                         <androidx.cardview.widget.CardView
@@ -1006,7 +1007,6 @@
                                         android:id="@+id/f10898"
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:checked="@{mwra.f108.equals(`98`)}"
                                         android:onClick="@{()->mwra.setF108(`98`)}"
                                         android:text="@string/f10898" />
@@ -1344,8 +1344,8 @@
                                         android:layout_width="0dp"
                                         android:layout_height="match_parent"
                                         android:layout_weight="1"
-                                        android:enabled="@{mwra.f11008.equals(`1`)}"
                                         android:checked="@{mwra.f11009.equals(`1`)}"
+                                        android:enabled="@{mwra.f11008.equals(`1`)}"
                                         android:onClick="@{()->mwra.setF11009(`1`)}"
                                         android:text="@string/yes" />
 
@@ -1356,8 +1356,8 @@
                                         android:layout_width="0dp"
                                         android:layout_height="match_parent"
                                         android:layout_weight="1"
-                                        android:enabled="@{mwra.f11008.equals(`1`)}"
                                         android:checked="@{mwra.f11009.equals(`2`)}"
+                                        android:enabled="@{mwra.f11008.equals(`1`)}"
                                         android:onClick="@{()->mwra.setF11009(`2`) }"
                                         android:text="@string/no" />
 
@@ -1618,7 +1618,6 @@
                                     android:id="@+id/f11398"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="1"
                                     android:checked="@{mwra.f113.equals(`98`)}"
                                     android:onClick="@{()->mwra.setF113(`98`)}"
                                     android:text="@string/f11398" />
@@ -2034,8 +2033,8 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
-                                    android:gravity="center"
                                     android:enabled="@{mwra.f118.equals(`1`)}"
+                                    android:gravity="center"
                                     android:hint="#"
                                     android:inputType="number"
                                     android:maxLength="1"
@@ -2059,8 +2058,8 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
-                                    android:gravity="center"
                                     android:enabled="@{mwra.f118.equals(`2`)}"
+                                    android:gravity="center"
                                     android:hint="##"
                                     android:inputType="number"
                                     android:maxLength="2"
@@ -2202,7 +2201,6 @@
                                     android:id="@+id/f12098"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="1"
                                     android:checked="@{mwra.f120.equals(`98`)}"
                                     android:onClick="@{()->mwra.setF120(`98`)}"
                                     android:text="@string/f12098" />

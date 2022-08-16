@@ -1,5 +1,6 @@
 package edu.aku.hassannaqvi.smkHhMl2022.ui.sections;
 
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedChild;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.sharedPref;
 
 import android.content.Intent;
@@ -18,13 +19,13 @@ import edu.aku.hassannaqvi.smkHhMl2022.R;
 import edu.aku.hassannaqvi.smkHhMl2022.contracts.TableContracts;
 import edu.aku.hassannaqvi.smkHhMl2022.core.MainApp;
 import edu.aku.hassannaqvi.smkHhMl2022.database.DatabaseHelper;
-import edu.aku.hassannaqvi.smkHhMl2022.databinding.ActivitySectionF1Binding;
+import edu.aku.hassannaqvi.smkHhMl2022.databinding.ActivitySectionF2Binding;
 import edu.aku.hassannaqvi.smkHhMl2022.ui.EndingActivity;
 
 public class SectionF2Activity extends AppCompatActivity {
 
     private static final String TAG = "SectionF1Activity";
-    ActivitySectionF1Binding bi;
+    ActivitySectionF2Binding bi;
     private DatabaseHelper db;
 
 
@@ -32,44 +33,14 @@ public class SectionF2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTheme(sharedPref.getString("lang", "0").equals("2") ? R.style.AppThemeSindhi : sharedPref.getString("lang", "0").equals("1") ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
-
-
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_f2);
         setSupportActionBar(bi.toolbar);
         db = MainApp.appInfo.dbHelper;
-
-        try {
-            MainApp.mwra = db.getMwraByUUid();
-        } catch (JSONException e) {
-            e.printStackTrace();
-            Toast.makeText(this, "JSONException(MWRA): " + e.getMessage(), Toast.LENGTH_SHORT).show();
-        }
         bi.setMwra(MainApp.mwra);
     }
 
-    /*private boolean insertNewRecord() {
-        if (!MainApp.mwra.getUid().equals("") || MainApp.superuser) return true;
-        MainApp.mwra.populateMeta();
-        long rowId = 0;
-        try {
-            rowId = db.addMWRA(MainApp.mwra);
-        } catch (JSONException e) {
-            e.printStackTrace();
-            Toast.makeText(this, R.string.db_excp_error, Toast.LENGTH_SHORT).show();
-            return false;
-        }
-        MainApp.mwra.setId(String.valueOf(rowId));
-        if (rowId > 0) {
-            MainApp.mwra.setUid(MainApp.mwra.getDeviceId() + MainApp.mwra.getId());
-            db.updatesMWRAColumn(TableContracts.MwraTable.COLUMN_UID, MainApp.mwra.getUid());
-            return true;
-        } else {
-            Toast.makeText(this, R.string.upd_db_error, Toast.LENGTH_SHORT).show();
-            return false;
-        }
 
-    }
-*/
+
     private boolean updateDB() {
         if (MainApp.superuser) return true;
         int updcount = 0;
@@ -90,11 +61,12 @@ public class SectionF2Activity extends AppCompatActivity {
     public void btnContinue(View view) {
         if (!formValidation()) return;
         if (updateDB()) {
-
             finish();
-            startActivity(new Intent(this, SectionGActivity.class).putExtra("complete", true));
-
-
+            if (!selectedChild.isEmpty()) {
+                startActivity(new Intent(this, SectionGActivity.class));
+            } else {
+                startActivity(new Intent(this, SectionKActivity.class));
+            }
         } else {
             Toast.makeText(this, R.string.fail_db_upd, Toast.LENGTH_SHORT).show();
         }
@@ -102,11 +74,10 @@ public class SectionF2Activity extends AppCompatActivity {
 
 
     public void btnEnd(View view) {
-
         finish();
         startActivity(new Intent(this, EndingActivity.class).putExtra("complete", false));
-
     }
+
 
     private boolean formValidation() {
         return Validator.emptyCheckingContainer(this, bi.GrpName);
@@ -115,7 +86,6 @@ public class SectionF2Activity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        // Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
         setResult(RESULT_CANCELED);
     }
 }

@@ -1,6 +1,6 @@
 package edu.aku.hassannaqvi.smkHhMl2022.ui.sections;
 
-import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedChild;
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.indexedPreg;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.sharedPref;
 
 import android.content.Intent;
@@ -35,6 +35,10 @@ public class SectionF1Activity extends AppCompatActivity {
         setTheme(sharedPref.getString("lang", "0").equals("2") ? R.style.AppThemeSindhi : sharedPref.getString("lang", "0").equals("1") ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_f1);
         setSupportActionBar(bi.toolbar);
+        if (indexedPreg.equals("1")) bi.toolbar.setTitle("MWRA Pregnant");
+        if (!MainApp.selectedChild.isEmpty()) bi.toolbar.setTitle("MWRA with Child");
+        if (indexedPreg.equals("1") && !MainApp.selectedChild.isEmpty())
+            bi.toolbar.setTitle("MWRA Pregnant & Child");
         db = MainApp.appInfo.dbHelper;
 
         try {
@@ -90,11 +94,7 @@ public class SectionF1Activity extends AppCompatActivity {
         if (!formValidation()) return;
         if (MainApp.mwra.getUid().equals("") ? insertNewRecord() : updateDB()) {
             finish();
-            if (!selectedChild.isEmpty()) {
-                startActivity(new Intent(this, SectionGActivity.class));
-            } else {
-                startActivity(new Intent(this, SectionKActivity.class));
-            }
+            startActivity(new Intent(this, SectionF2Activity.class));
         } else {
             Toast.makeText(this, R.string.fail_db_upd, Toast.LENGTH_SHORT).show();
         }

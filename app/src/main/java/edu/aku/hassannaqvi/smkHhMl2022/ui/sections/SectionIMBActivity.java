@@ -63,7 +63,7 @@ public class SectionIMBActivity extends AppCompatActivity {
         if (updateDB()) {
             finish();
             startActivity(new Intent(this,
-                    !selectedAdol.equals("") || MainApp.familyList.get(Integer.parseInt(selectedMWRA)).getIndexed().equals("3") ? SectionAH1Activity.class
+                    !selectedAdol.equals("") || MainApp.familyList.get(Integer.parseInt(selectedMWRA) - 1).getIndexed().equals("3") ? SectionAH1Activity.class
                             : SectionMActivity.class));
         } else {
             Toast.makeText(this, R.string.fail_db_upd, Toast.LENGTH_SHORT).show();
