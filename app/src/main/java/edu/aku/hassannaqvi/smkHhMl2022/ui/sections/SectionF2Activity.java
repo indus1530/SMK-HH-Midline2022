@@ -1,5 +1,6 @@
 package edu.aku.hassannaqvi.smkHhMl2022.ui.sections;
 
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.indexedPreg;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedChild;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.sharedPref;
 
@@ -24,7 +25,7 @@ import edu.aku.hassannaqvi.smkHhMl2022.ui.EndingActivity;
 
 public class SectionF2Activity extends AppCompatActivity {
 
-    private static final String TAG = "SectionF1Activity";
+    private static final String TAG = "SectionF2Activity";
     ActivitySectionF2Binding bi;
     private DatabaseHelper db;
 
@@ -35,6 +36,10 @@ public class SectionF2Activity extends AppCompatActivity {
         setTheme(sharedPref.getString("lang", "0").equals("2") ? R.style.AppThemeSindhi : sharedPref.getString("lang", "0").equals("1") ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_f2);
         setSupportActionBar(bi.toolbar);
+        if (indexedPreg.equals("1")) bi.toolbar.setTitle("MWRA Pregnant");
+        if (!MainApp.selectedChild.isEmpty()) bi.toolbar.setTitle("MWRA with Child");
+        if (indexedPreg.equals("1") && !MainApp.selectedChild.isEmpty())
+            bi.toolbar.setTitle("MWRA Pregnant & Child");
         db = MainApp.appInfo.dbHelper;
         bi.setMwra(MainApp.mwra);
     }

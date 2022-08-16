@@ -139,37 +139,37 @@
                 </androidx.cardview.widget.CardView>
 
 
+
                 <!--EndButton LinearLayout-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
-                    android:layout_marginTop="100dp"
-                    android:orientation="horizontal"
-                    android:padding="24dp">
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal">
 
+                    <Button
+                        android:id="@+id/btn_End"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="12dp"
+                        android:background="@drawable/capsuler"
+                        android:elevation="20dp"
+                        android:onClick="btnEnd"
+                        android:text="Cancel"
+                        android:textColor="@color/white"
+                        android:visibility="invisible" />
 
-                    <!--
-                             <enum name="src_over" value="3" />
-                                <enum name="src_in" value="5" />
-                                <enum name="src_atop" value="9" />
-                                <enum name="multiply" value="14" />
-                                <enum name="screen" value="15" />
-                                <enum name="add" value="16" />
-                    -->
                     <Button
                         android:id="@+id/btn_Continue"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/capsule"
-                        android:backgroundTint="@color/colorAccentOverlay"
-                        android:backgroundTintMode="src_atop"
-                        android:onClick="btnEnd"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="12dp"
+                        android:background="@drawable/capsuley"
+                        android:elevation="20dp"
+                        android:onClick="btnContinue"
                         android:text="Save"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        tools:ignore="OnClick" />
+                        android:textColor="@color/white" />
 
                 </LinearLayout>
                 <!--EndButton LinearLayout-->

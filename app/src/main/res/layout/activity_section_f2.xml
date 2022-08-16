@@ -29,8 +29,9 @@
             android:minHeight="?attr/actionBarSize"
             android:theme="@style/CustomToolbarTheme"
             app:popupTheme="@style/CustomPopupTheme"
+            app:subtitle="@string/f1t01"
             app:subtitleTextAppearance="@style/Toolbar.SubtitleText"
-            app:title="@string/f1t01"
+            app:title="@string/mwra5"
             app:titleTextAppearance="@style/Toolbar.TitleText" />
 
 
@@ -1631,7 +1632,7 @@
                         android:layout_width="150dp"
                         android:layout_height="50dp"
                         android:layout_marginStart="12dp"
-                        android:background="@drawable/capsule"
+                        android:background="@drawable/capsuler"
                         android:elevation="20dp"
                         android:onClick="btnEnd"
                         android:text="Cancel"
@@ -1642,7 +1643,7 @@
                         android:layout_width="150dp"
                         android:layout_height="50dp"
                         android:layout_marginStart="12dp"
-                        android:background="@drawable/capsule"
+                        android:background="@drawable/capsuley"
                         android:elevation="20dp"
                         android:onClick="btnContinue"
                         android:text="Save"

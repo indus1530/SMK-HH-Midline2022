@@ -103,48 +103,53 @@
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/SMK-HH-Midline2022/app/src/main/res/menu/main_menu.xml" value="0.3890625" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/TPVICS_R2/app/src/main/res/layout/activity_section_im1.xml" value="0.55859375" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/TPVICS_R2/app/src/main/res/layout/activity_section_im2.xml" value="0.23825391536154616" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/drawable-v24/capsuler.xml" value="0.56625" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/drawable/capsule.xml" value="0.56625" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_adol_select.xml" value="0.55859375" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_camera.xml" value="0.55859375" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_child_ending.xml" value="0.3140625" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_consent.xml" value="0.4813664596273292" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_ending.xml" value="0.3140625" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_family_list.xml" value="0.55859375" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_household_screen.xml" value="0.5025" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_identification.xml" value="0.5025" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_main.xml" value="0.50875" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_pregnancy_list.xml" value="0.55859375" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_a.xml" value="0.5025" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_ah1.xml" value="0.5025" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_ah2.xml" value="0.5025" />
-        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_ah3.xml" value="0.5025" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_ah3.xml" value="0.25220458553791886" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_ah4.xml" value="0.5025" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_ah5.xml" value="0.5025" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_ah6.xml" value="0.2958579881656805" />
-        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_ah7.xml" value="0.5025" />
-        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_d.xml" value="0.55859375" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_ah7.xml" value="0.50875" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_d.xml" value="0.3374233128834356" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_e1.xml" value="0.45625" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_e1a.xml" value="0.55859375" />
-        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_e1b.xml" value="0.55859375" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_e1b.xml" value="0.22850751038670503" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_e2.xml" value="0.41875" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_e2a.xml" value="0.5458015267175572" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_e2b.xml" value="0.466710182767624" />
-        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_f1.xml" value="0.55859375" />
-        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_f2.xml" value="0.41875" />
-        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_g.xml" value="0.41875" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_f1.xml" value="0.15557006092254133" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_f2.xml" value="0.16847313854853913" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_g.xml" value="0.12120698423461604" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_g1.xml" value="0.10268041237113402" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_h1a.xml" value="0.5578125" />
-        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_h1b.xml" value="0.365" />
-        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_h2.xml" value="0.55859375" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_h1b.xml" value="0.2100470035252644" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_h2.xml" value="0.12130980658296572" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_h21.xml" value="0.365" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_h22.xml" value="0.395" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_im1.xml" value="0.4" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_ima.xml" value="0.13315508021390374" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_imb.xml" value="0.365" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_k.xml" value="0.21539792387543252" />
-        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_l.xml" value="0.536" />
-        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_m.xml" value="0.4234375" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_l.xml" value="0.1645948434622468" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_m.xml" value="0.1909722222222222" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_n.xml" value="0.21245733788395904" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_o.xml" value="0.3890625" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_ri.xml" value="0.3140625" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_section_un.xml" value="0.3890625" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_sync.xml" value="0.55859375" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/custom_spinner.xml" value="0.55859375" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/famlily_member_row.xml" value="0.55859375" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/preg_row.xml" value="0.55859375" />
