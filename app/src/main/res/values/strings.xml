@@ -1946,7 +1946,7 @@
     <string name="ah37a">What Is Your Age?</string>
     <string name="ah37aa">Days</string>
     <string name="ah37ab">Month</string>
-    <string name="ah37ac">Year</string>
+    <string name="ah37ac">Year(s)</string>
     <string name="ah38">Do You Know About Reproductive Health?</string>
     <string name="ah38a">Yes</string>
     <string name="ah38b">No</string>
@@ -2048,14 +2048,14 @@
     <string name="ah56">At What Age Would You Ideally Like To Start Having Children?</string>
     <string name="ah56a">Years</string>
     <string name="ah57">How Many Children You Have?</string>
-    <string name="ah57a">No. Of Children</string>
+    <string name="ah57a">Number Of Children</string>
     <string name="ah57b">No Children</string>
     <string name="ah58">How Many Times You Got Pregnant?</string>
     <string name="ah58a">Times</string>
     <string name="ah59">How Many Still Birth/Miscarriage/Abortions You Got?</string>
-    <string name="ah59a">No. Of Children</string>
+    <string name="ah59a">Number Of Children</string>
     <string name="ah60">How Many Children Would You Ideally Like To Have?</string>
-    <string name="ah60a">No. Of Children</string>
+    <string name="ah60a">Number Of Children</string>
     <string name="imtitle">This section relates to the history of immunization for the child. The immunization history of the selected child will be recorded. Preference will be given to the information from an immunization card; however, in case an immunization card is not available, then verbal history will be taken from the respondent. In case you have problems in understanding the card, please take a picture of the card and discuss with your supervisor. Please refer to the training manual for further instructions. The child between the ages of 0-59 months  will be randomly picked from the household member list. If there is more than one child, then among the eligible ones, one is randomly picked.</string>
     <string name="im01">Did you ever have a vaccination card from Government or private health provider where (name)’s vaccinations are written down?</string>
     <string name="im0101">Yes</string>

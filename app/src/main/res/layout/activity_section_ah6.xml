@@ -736,38 +736,16 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                style="@style/sub_labels"
-                                android:layout_width="0dp"
+                            <!--<TextView
+                                style="@style/textView"
+                                android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:text="@string/ah37aa" />
 
-                            <TextView
-                                style="@style/sub_labels"
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:text="@string/ah37ab" />
-
-                            <TextView
-                                style="@style/sub_labels"
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:text="@string/ah37ac" />
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-
                             <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/ah37aa"
-                                android:layout_width="0dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:gravity="center"
@@ -779,9 +757,16 @@
                                 app:minValue="0"
                                 app:type="range" />
 
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/ah37ab" />
+
                             <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/ah37ab"
-                                android:layout_width="0dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:gravity="center"
@@ -791,11 +776,17 @@
                                 android:text="@={form.ah37ab}"
                                 app:maxValue="11"
                                 app:minValue="0"
-                                app:type="range" />
+                                app:type="range" />-->
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/ah37ac" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/ah37ac"
-                                android:layout_width="0dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:gravity="center"
