@@ -2194,7 +2194,7 @@
                                     android:tag="f12001"
                                     android:text="@={mwra.f12001x}"
                                     app:maxValue="1000"
-                                    app:minValue="0"
+                                    app:minValue="1"
                                     app:type="range" />
 
                                 <RadioButton
