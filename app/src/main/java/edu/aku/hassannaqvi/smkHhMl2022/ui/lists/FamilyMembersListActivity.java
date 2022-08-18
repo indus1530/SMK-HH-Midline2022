@@ -96,7 +96,7 @@ public class FamilyMembersListActivity extends AppCompatActivity {
                         /**
                          *  Populate All Children Under-5
                          */
-                        if (Integer.parseInt(MainApp.familyMember.getD109y()) < 5) {
+                        if (MainApp.familyMember.getD115().equals("1") && Integer.parseInt(MainApp.familyMember.getD109y()) < 5) {
                             MainApp.allChildrenList.add(MainApp.familyMember);
 
                         }
@@ -104,7 +104,7 @@ public class FamilyMembersListActivity extends AppCompatActivity {
                         /**
                          *  Populate All Adolescent between 10-19
                          */
-                        if (Integer.parseInt(MainApp.familyMember.getD109y()) > 9 && Integer.parseInt(MainApp.familyMember.getD109y()) < 20) {
+                        if (MainApp.familyMember.getD115().equals("1") && Integer.parseInt(MainApp.familyMember.getD109y()) > 9 && Integer.parseInt(MainApp.familyMember.getD109y()) < 20) {
                             MainApp.allAdolList.add(MainApp.familyMember);
 
                         }
@@ -194,12 +194,12 @@ public class FamilyMembersListActivity extends AppCompatActivity {
                 }
 
                 // Populate All U-5 Children
-                if (Integer.parseInt(fm.getD109y()) < 5) {
+                if (fm.getD115().equals("1") && Integer.parseInt(fm.getD109y()) < 5) {
                     MainApp.allChildrenList.add(fm);
                 }
 
                 // Populate All Adolescent
-                if (Integer.parseInt(fm.getD109y()) > 9 && Integer.parseInt(fm.getD109y()) < 20 && fm.getD115().equals("1"))
+                if (fm.getD115().equals("1") && Integer.parseInt(fm.getD109y()) > 9 && Integer.parseInt(fm.getD109y()) < 20)
                     MainApp.allAdolList.add(fm);
 
 
