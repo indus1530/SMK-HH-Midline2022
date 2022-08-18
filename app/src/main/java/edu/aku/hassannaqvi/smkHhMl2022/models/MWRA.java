@@ -4126,6 +4126,15 @@ public class MWRA extends BaseObservable implements Observable {
 
     public void setH10900(String h10900) {
         this.h10900 = h10900;
+        setH1091(h10900.equals("1") ? this.h1091 : "");
+        setH1092(h10900.equals("1") ? this.h1092 : "");
+        setH1093(h10900.equals("1") ? this.h1093 : "");
+        setH1094(h10900.equals("1") ? this.h1094 : "");
+        setH1095(h10900.equals("1") ? this.h1095 : "");
+        setH1096(h10900.equals("1") ? this.h1096 : "");
+        setH1097(h10900.equals("1") ? this.h1097 : "");
+        setH10996(h10900.equals("1") ? this.h10996 : "");
+        setH10997(h10900.equals("1") ? this.h10997 : "");
         notifyPropertyChanged(BR.h10900);
     }
 
@@ -4335,6 +4344,13 @@ public class MWRA extends BaseObservable implements Observable {
 
     public void setH11202(String h11202) {
         this.h11202 = h11202;
+        setH112(h11202.equals("1") ? this.h112 : "");
+        setH113(h11202.equals("1") ? this.h113 : "");
+        setH114(h11202.equals("1") ? this.h114 : "");
+        setH116(h11202.equals("1") ? this.h116 : "");
+        setH11701(h11202.equals("1") ? this.h11701 : "");
+        setH118(h11202.equals("1") ? this.h118 : "");
+        setH119(h11202.equals("1") ? this.h119 : "");
         notifyPropertyChanged(BR.h11202);
     }
 
@@ -4355,7 +4371,7 @@ public class MWRA extends BaseObservable implements Observable {
 
     public void setH113(String h113) {
         this.h113 = h113;
-        setH114(h113.equals("2") ? "" : this.h114);
+        setH114(h113.equals("1") ? this.h114 : "");
         notifyPropertyChanged(BR.h113);
     }
 
@@ -4376,6 +4392,16 @@ public class MWRA extends BaseObservable implements Observable {
 
     public void setH115(String h115) {
         this.h115 = h115;
+        setH11501(h115.equals("1") ? this.h11501 : "");
+        setH11502(h115.equals("1") ? this.h11502 : "");
+        setH11503(h115.equals("1") ? this.h11503 : "");
+        setH11504(h115.equals("1") ? this.h11504 : "");
+        setH11505(h115.equals("1") ? this.h11505 : "");
+        setH11506(h115.equals("1") ? this.h11506 : "");
+        setH11507(h115.equals("1") ? this.h11507 : "");
+        setH11508(h115.equals("1") ? this.h11508 : "");
+        setH11509(h115.equals("1") ? this.h11509 : "");
+        setH11596(h115.equals("1") ? this.h11596 : "");
         notifyPropertyChanged(BR.h115);
     }
 
