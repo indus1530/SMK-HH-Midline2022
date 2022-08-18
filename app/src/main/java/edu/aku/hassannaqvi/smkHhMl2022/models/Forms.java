@@ -724,7 +724,7 @@ public class Forms extends BaseObservable implements Observable {
     private String h13308 = _EMPTY_;
     private String h13309 = _EMPTY_;
     private String h13310 = _EMPTY_;
-    private String h134 = _EMPTY_;
+    private final String h134 = _EMPTY_;
     private String h135 = _EMPTY_;
     private String h13501 = _EMPTY_;
     private String h13502 = _EMPTY_;
@@ -7810,16 +7810,6 @@ public class Forms extends BaseObservable implements Observable {
     public void setH13310(String h13310) {
         this.h13310 = h13310;
         notifyPropertyChanged(BR.h13310);
-    }
-
-    @Bindable
-    public String getH134() {
-        return h134;
-    }
-
-    public void setH134(String h134) {
-        this.h134 = h134;
-        notifyPropertyChanged(BR.h134);
     }
 
     @Bindable
