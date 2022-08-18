@@ -3750,6 +3750,19 @@ public class MWRA extends BaseObservable implements Observable {
     public void setG1240114(String g1240114) {
         if (this.g1240114.equals(g1240114)) return;     // For all checkboxes
         this.g1240114 = g1240114;
+        setG1240101(g1240114.equals("14") ? "" : this.g1240101);
+        setG1240102(g1240114.equals("14") ? "" : this.g1240102);
+        setG1240103(g1240114.equals("14") ? "" : this.g1240103);
+        setG1240104(g1240114.equals("14") ? "" : this.g1240104);
+        setG1240105(g1240114.equals("14") ? "" : this.g1240105);
+        setG1240106(g1240114.equals("14") ? "" : this.g1240106);
+        setG1240107(g1240114.equals("14") ? "" : this.g1240107);
+        setG1240108(g1240114.equals("14") ? "" : this.g1240108);
+        setG1240109(g1240114.equals("14") ? "" : this.g1240109);
+        setG1240110(g1240114.equals("14") ? "" : this.g1240110);
+        setG1240111(g1240114.equals("14") ? "" : this.g1240111);
+        setG1240112(g1240114.equals("14") ? "" : this.g1240112);
+        setG1240113(g1240114.equals("14") ? "" : this.g1240113);
         setG12402(g1240114.equals("14") ? "" : this.g12402);
         notifyPropertyChanged(BR.g1240114);
     }
@@ -4772,6 +4785,7 @@ public class MWRA extends BaseObservable implements Observable {
 
     public void setH131(String h131) {
         this.h131 = h131;
+        setH1310101(h131.equals("2") ? this.h1310101 : "");
         notifyPropertyChanged(BR.h131);
     }
 

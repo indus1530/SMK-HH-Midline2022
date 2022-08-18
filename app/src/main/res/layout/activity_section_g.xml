@@ -36,7 +36,7 @@
 
 
         <!-- gtitle  Title   -->
-        <androidx.cardview.widget.CardView
+        <!--<androidx.cardview.widget.CardView
             android:id="@+id/fldGrpCVgtitle"
             style="@style/cardView">
 
@@ -54,7 +54,7 @@
 
             </LinearLayout>
 
-        </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>-->
 
 
         <ScrollView
@@ -2372,6 +2372,7 @@
                                 android:id="@+id/g1240101"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!mwra.g1240114.equals(`14`)}"
                                 android:checked="@{mwra.g1240101.equals(`1`)}"
                                 android:onClick="@{()->mwra.setG1240101(mwra.g1240101.equals(`1`)?``:`1`)}"
                                 android:text="@string/g1240101" />
@@ -2388,6 +2389,7 @@
                                 android:id="@+id/g1240103"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!mwra.g1240114.equals(`14`)}"
                                 android:checked="@{mwra.g1240103.equals(`3`)}"
                                 android:onClick="@{()->mwra.setG1240103(mwra.g1240103.equals(`3`)?``:`3`)}"
                                 android:text="@string/g1240103" />
@@ -2396,6 +2398,7 @@
                                 android:id="@+id/g1240104"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!mwra.g1240114.equals(`14`)}"
                                 android:checked="@{mwra.g1240104.equals(`4`)}"
                                 android:onClick="@{()->mwra.setG1240104(mwra.g1240104.equals(`4`)?``:`4`)}"
                                 android:text="@string/g1240104" />
@@ -2404,6 +2407,7 @@
                                 android:id="@+id/g1240105"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!mwra.g1240114.equals(`14`)}"
                                 android:checked="@{mwra.g1240105.equals(`5`)}"
                                 android:onClick="@{()->mwra.setG1240105(mwra.g1240105.equals(`5`)?``:`5`)}"
                                 android:text="@string/g1240105" />
@@ -2412,6 +2416,7 @@
                                 android:id="@+id/g1240106"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!mwra.g1240114.equals(`14`)}"
                                 android:checked="@{mwra.g1240106.equals(`6`)}"
                                 android:onClick="@{()->mwra.setG1240106(mwra.g1240106.equals(`6`)?``:`6`)}"
                                 android:text="@string/g1240106" />
@@ -2420,6 +2425,7 @@
                                 android:id="@+id/g1240107"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!mwra.g1240114.equals(`14`)}"
                                 android:checked="@{mwra.g1240107.equals(`7`)}"
                                 android:onClick="@{()->mwra.setG1240107(mwra.g1240107.equals(`7`)?``:`7`)}"
                                 android:text="@string/g1240107" />
@@ -2428,6 +2434,7 @@
                                 android:id="@+id/g1240108"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!mwra.g1240114.equals(`14`)}"
                                 android:checked="@{mwra.g1240108.equals(`8`)}"
                                 android:onClick="@{()->mwra.setG1240108(mwra.g1240108.equals(`8`)?``:`8`)}"
                                 android:text="@string/g1240108" />
@@ -2436,6 +2443,7 @@
                                 android:id="@+id/g1240109"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!mwra.g1240114.equals(`14`)}"
                                 android:checked="@{mwra.g1240109.equals(`9`)}"
                                 android:onClick="@{()->mwra.setG1240109(mwra.g1240109.equals(`9`)?``:`9`)}"
                                 android:text="@string/g1240109" />
@@ -2444,6 +2452,7 @@
                                 android:id="@+id/g1240110"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!mwra.g1240114.equals(`14`)}"
                                 android:checked="@{mwra.g1240110.equals(`10`)}"
                                 android:onClick="@{()->mwra.setG1240110(mwra.g1240110.equals(`10`)?``:`10`)}"
                                 android:text="@string/g1240110" />
@@ -2452,6 +2461,7 @@
                                 android:id="@+id/g1240111"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!mwra.g1240114.equals(`14`)}"
                                 android:checked="@{mwra.g1240111.equals(`11`)}"
                                 android:onClick="@{()->mwra.setG1240111(mwra.g1240111.equals(`11`)?``:`11`)}"
                                 android:text="@string/g1240111" />
@@ -2460,6 +2470,7 @@
                                 android:id="@+id/g1240112"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!mwra.g1240114.equals(`14`)}"
                                 android:checked="@{mwra.g1240112.equals(`12`)}"
                                 android:onClick="@{()->mwra.setG1240112(mwra.g1240112.equals(`12`)?``:`12`)}"
                                 android:text="@string/g1240112" />
@@ -2468,6 +2479,7 @@
                                 android:id="@+id/g1240113"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!mwra.g1240114.equals(`14`)}"
                                 android:checked="@{mwra.g1240113.equals(`13`)}"
                                 android:onClick="@{()->mwra.setG1240113(mwra.g1240113.equals(`13`)?``:`13`)}"
                                 android:text="@string/g1240113" />
