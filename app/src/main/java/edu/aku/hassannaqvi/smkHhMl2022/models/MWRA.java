@@ -1164,7 +1164,7 @@ public class MWRA extends BaseObservable implements Observable {
         this.f101b = f101b;
         setF101b01x(f101b.equals("1") ? this.f101b01x : "");
 
-        setF10201(f101b.equals("1") ? this.f10201 : "");
+        /*setF10201(f101b.equals("1") ? this.f10201 : "");
         setF10202(f101b.equals("1") ? this.f10202 : "");
         setF10203(f101b.equals("1") ? this.f10203 : "");
         setF10204(f101b.equals("1") ? this.f10204 : "");
@@ -1196,7 +1196,7 @@ public class MWRA extends BaseObservable implements Observable {
         setF11008(f101b.equals("1") ? this.f11008 : "");
         setF11009(f101b.equals("1") ? this.f11009 : "");
         setF11096(f101b.equals("1") ? this.f11096 : "");
-        setF1109696x(f101b.equals("1") ? this.f1109696x : "");
+        setF1109696x(f101b.equals("1") ? this.f1109696x : "");*/
         notifyPropertyChanged(BR.f101b);
     }
 
