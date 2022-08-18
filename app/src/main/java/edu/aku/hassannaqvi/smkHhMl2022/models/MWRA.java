@@ -310,6 +310,7 @@ public class MWRA extends BaseObservable implements Observable {
     private String g1250108 = _EMPTY_;
     private String g128 = _EMPTY_;
     private String g129 = _EMPTY_;
+    private String g130 = _EMPTY_;
     private String h101 = _EMPTY_;
     private String h101mx = _EMPTY_;
     private String h101wx = _EMPTY_;
@@ -3749,7 +3750,7 @@ public class MWRA extends BaseObservable implements Observable {
     public void setG1240114(String g1240114) {
         if (this.g1240114.equals(g1240114)) return;     // For all checkboxes
         this.g1240114 = g1240114;
-        setG12402(g1240114.equals("14") ? this.g12402 : "");
+        setG12402(g1240114.equals("14") ? "" : this.g12402);
         notifyPropertyChanged(BR.g1240114);
     }
 
@@ -3906,6 +3907,16 @@ public class MWRA extends BaseObservable implements Observable {
     public void setG129(String g129) {
         this.g129 = g129;
         notifyPropertyChanged(BR.g129);
+    }
+
+    @Bindable
+    public String getG130() {
+        return g130;
+    }
+
+    public void setG130(String g130) {
+        this.g130 = g130;
+        notifyPropertyChanged(BR.g130);
     }
 
     @Bindable
@@ -8688,7 +8699,8 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("g1250107", g1250107)
                 .put("g1250108", g1250108)
                 .put("g128", g128)
-                .put("g129", g129);
+                .put("g129", g129)
+                .put("g130", g130);
         return json.toString();
     }
 
@@ -9409,6 +9421,7 @@ public class MWRA extends BaseObservable implements Observable {
             this.g1250108 = json.getString("g1250108");
             this.g128 = json.getString("g128");
             this.g129 = json.getString("g129");
+            this.g130 = json.getString("g130");
 
         }
     }

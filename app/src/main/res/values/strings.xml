@@ -2782,9 +2782,9 @@
     <string name="g12902">No</string>
     <string name="g12903">Not Applicable</string>
     <string name="g130">Did LHW counsel you to visit health facility for Postpartum Family Planning (PPFP) uptake?</string>
-    <string name="g13001">Yes</string>
-    <string name="g13002">No</string>
-    <string name="g13003">Not Applicable</string>
+    <string name="g130a">Yes</string>
+    <string name="g130b">No</string>
+    <string name="g13097">Not Applicable</string>
     <string name="h1t01">Section H: Newborn Health</string>
     <string name="h1t02">In the next section, I will be asking you questions that relate to the health of the newborns. </string>
     <string name="h101">What was the gestational age of {NAME} at birth?</string>
