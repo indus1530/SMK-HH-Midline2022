@@ -90,6 +90,7 @@
                                 android:text="@string/Q_h125" />
 
                             <TextView
+                                android:id="@+id/tvh125"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:text="@string/h125" />
@@ -97,6 +98,7 @@
                         </LinearLayout>
 
                         <TextView
+                            android:id="@+id/tvh1t05"
                             style="@style/info"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -110,7 +112,7 @@
 
                             <RadioButton
                                 android:id="@+id/h12501"
-                                android:layout_width="0dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{mwra.h125.equals(`1`)}"
@@ -119,7 +121,7 @@
 
                             <RadioButton
                                 android:id="@+id/h12502"
-                                android:layout_width="0dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{mwra.h125.equals(`2`)}"
@@ -163,6 +165,7 @@
                                     android:text="@string/Q_h126" />
 
                                 <TextView
+                                    android:id="@+id/tvh126"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="@string/h126" />

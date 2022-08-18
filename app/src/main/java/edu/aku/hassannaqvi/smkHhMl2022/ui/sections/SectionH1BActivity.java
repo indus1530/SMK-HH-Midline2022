@@ -35,13 +35,16 @@ public class SectionH1BActivity extends AppCompatActivity {
         setTheme(sharedPref.getString("lang", "0").equals("2") ? R.style.AppThemeSindhi : sharedPref.getString("lang", "0").equals("1") ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_h1b);
         bi.setMwra(MainApp.mwra);
-        setupSkips();
         setSupportActionBar(bi.toolbar);
         db = MainApp.appInfo.dbHelper;
+        /*String h125 = getString(R.string.h125, MainApp.selectedChildName);
+        bi.tvh125.setText(h125);
+        String h1t05 = getString(R.string.h1t05, MainApp.selectedChildName);
+        bi.tvh1t05.setText(h1t05);
+        String h126 = getString(R.string.h126, MainApp.selectedChildName);
+        bi.tvh126.setText(h126);*/
     }
 
-    private void setupSkips() {
-    }
 
     private boolean updateDB() {
         if (MainApp.superuser) return true;
