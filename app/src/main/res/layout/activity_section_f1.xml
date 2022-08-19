@@ -489,12 +489,6 @@
                                     android:onClick="@{()->mwra.setF10206(mwra.f10206.equals(`6`)?``:`6`)}"
                                     android:text="@string/f10206" />
 
-                                <TextView
-                                    style="@style/textView"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/f1t05" />
-
                                 <CheckBox
                                     android:id="@+id/f10207"
                                     android:layout_width="match_parent"
@@ -502,6 +496,12 @@
                                     android:checked="@{mwra.f10207.equals(`7`)}"
                                     android:onClick="@{()->mwra.setF10207(mwra.f10207.equals(`7`)?``:`7`)}"
                                     android:text="@string/f10207" />
+
+                                <TextView
+                                    style="@style/textView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/f1t05" />
 
                                 <CheckBox
                                     android:id="@+id/f10208"
@@ -526,6 +526,14 @@
                                     android:checked="@{mwra.f10210.equals(`10`)}"
                                     android:onClick="@{()->mwra.setF10210(mwra.f10210.equals(`10`)?``:`10`)}"
                                     android:text="@string/f10210" />
+
+                                <CheckBox
+                                    android:id="@+id/f10211"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="@{mwra.f10211.equals(`11`)}"
+                                    android:onClick="@{()->mwra.setF10211(mwra.f10211.equals(`11`)?``:`11`)}"
+                                    android:text="@string/f10211" />
 
                                 <CheckBox
                                     android:id="@+id/f10296"
@@ -1407,7 +1415,7 @@
                                 android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789,. "
                                 android:hint="@string/other"
                                 android:tag="f1109696"
-                                android:text="@={mwra.f1109696x}"
+                                android:text="@={mwra.setF11096x}"
                                 android:visibility="@{mwra.f11096.equals(`1`) ? View.VISIBLE : View.GONE}" />
 
                         </LinearLayout>
@@ -1775,8 +1783,11 @@
                                     android:checked="@{mwra.f115.equals(`6`)}"
                                     android:onClick="@{()->mwra.setF115(`6`)}"
                                     android:text="@string/f11506" />
+
                             </RadioGroup>
+
                         </LinearLayout>
+
                     </androidx.cardview.widget.CardView>
 
 

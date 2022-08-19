@@ -129,7 +129,8 @@ public class TableContracts {
         public static final String COLUMN_USERNAME = "username";
         public static final String COLUMN_SYSDATE = "sysdate";
         public static final String COLUMN_INDEXED = "indexed";
-        public static final String COLUMN_SF = "sf";
+        public static final String COLUMN_SF1 = "sf1";
+        public static final String COLUMN_SF2 = "sf2";
         public static final String COLUMN_SG = "sg";
         public static final String COLUMN_SH1 = "sh1";
         public static final String COLUMN_SH2 = "sh2";

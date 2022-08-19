@@ -2343,7 +2343,7 @@
     <string name="f101b01">Number of times for ANC</string>
     <string name="f101b98">Don’t Know</string>
     <string name="f102">Where did you seek ANC checkup for last pregnancy?</string>
-    <string name="f1t04">Public medical sector</string>
+    <string name="f1t04">Public Medical Sector</string>
     <string name="f10201">Tertiary/civil hospital</string>
     <string name="f10202">District HQ</string>
     <string name="f10203">Tehsil HQ</string>
@@ -2351,11 +2351,11 @@
     <string name="f10205">Basic health unit</string>
     <string name="f10206">Mother &amp; child health center</string>
     <string name="f10207">Birth station</string>
-    <string name="f1t05">Private medical sector</string>
+    <string name="f1t05">Private Medical Sector</string>
     <string name="f10208">Private hospital</string>
     <string name="f10209">Private clinic</string>
     <string name="f10210">Private maternity home</string>
-    <string name="f10211">Ngo health facility</string>
+    <string name="f10211">NGO Health Facility</string>
     <string name="f10296">Other (Please Specify)</string>
     <string name="f103">Who did ANC checkup during last pregnancy? </string>
     <string name="f1t06">Probe: Anyone else?</string>
@@ -2454,7 +2454,7 @@
     <string name="f121b04">LHW didn’t wear Mask, so we didn’t let her enter the house</string>
     <string name="f121b05">Safety Kits (Masks, Gloves) were not available at Home</string>
     <string name="f121b06">This area is not covered by LHW</string>
-    <string name="f121b07">Social distancing</string>
+    <string name="f121b07">Social Distancing</string>
     <string name="f121b96">Other (Please Specify)</string>
     <string name="f122">How many times LHW visit, as part of your antenatal care during your pregnancy?</string>
     <string name="f12201">Number of visit</string>
@@ -2536,7 +2536,7 @@
     <string name="f13013">No Transport due to Corona Lockdown</string>
     <string name="f13014">Safety Kits (Masks, Gloves) were not available at home</string>
     <string name="f13015">Doctor was not following SOP (not wearing Masks and Gloves)</string>
-    <string name="f13096">Other</string>
+    <string name="f13096">Other Please Specify</string>
     <string name="f131">Where did you receive care for the danger signs/problems you mentioned above during your pregnancy with {NAME}?</string>
     <string name="f1t13">Public medical sector</string>
     <string name="f13101">Tertiary/civil hospital</string>
@@ -2550,7 +2550,8 @@
     <string name="f13108">Private hospital</string>
     <string name="f13109">Private clinic</string>
     <string name="f13110">Private maternity home</string>
-    <string name="f13111">NGO health facility</string>
+    <string name="f13111">NGO Health Facility</string>
+    <string name="f13196">Other Please Specify</string>
     <string name="f131a">Were you satisfied with the care provided at above mentioned HCF? </string>
     <string name="f131a01">Satisfied</string>
     <string name="f131a02">Moderately satisfied</string>
@@ -2565,7 +2566,7 @@
     <string name="f13407">Blood donor</string>
     <string name="f13408">Didn’t do any preparation</string>
     <string name="f13409">Didn’t do any Preparation due to Corona</string>
-    <string name="f13410">Preparation to get postpartum FP after delivery</string>
+    <string name="f13410">Preparation To Get Postpartum FP After Delivery</string>
     <string name="g1t01">Section G: Delivery Preparedness And Experience</string>
     <string name="g1t02">Now I would like to ask you some question about your last pregnancy history and the preparedness for delivery. </string>
     <string name="g101">Did you know the expected date of delivery for {NAME}?</string>

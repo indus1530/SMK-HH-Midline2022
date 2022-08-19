@@ -77,7 +77,7 @@ public class SectionF1Activity extends AppCompatActivity {
         if (MainApp.superuser) return true;
         int updcount = 0;
         try {
-            updcount = db.updatesMWRAColumn(TableContracts.MwraTable.COLUMN_SF, MainApp.mwra.sFtoString());
+            updcount = db.updatesMWRAColumn(TableContracts.MwraTable.COLUMN_SF1, MainApp.mwra.sF1toString());
         } catch (JSONException e) {
             Toast.makeText(this, R.string.upd_db + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
