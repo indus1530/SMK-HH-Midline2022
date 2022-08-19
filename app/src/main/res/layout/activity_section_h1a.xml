@@ -1326,16 +1326,14 @@
 
                             <TextView
                                 style="@style/textView"
-                                android:layout_width="0dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/minutes" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/h111"
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:gravity="center"
                                 android:hint="#"
                                 android:inputType="number"
@@ -2087,16 +2085,14 @@
 
                                 <TextView
                                     style="@style/textView"
-                                    android:layout_width="0dp"
+                                    android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="1"
                                     android:text="@string/h11701" />
 
                                 <com.edittextpicker.aliazaz.EditTextPicker
                                     android:id="@+id/h11701"
-                                    android:layout_width="0dp"
+                                    android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="1"
                                     android:gravity="center"
                                     android:hint="#"
                                     android:inputType="number"

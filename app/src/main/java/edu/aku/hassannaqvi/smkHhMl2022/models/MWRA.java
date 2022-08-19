@@ -387,6 +387,7 @@ public class MWRA extends BaseObservable implements Observable {
     private String h125 = _EMPTY_;
     private String h126 = _EMPTY_;
     private String h127 = _EMPTY_;
+    private String h12796x = _EMPTY_;
     private String h128 = _EMPTY_;
     private String h12896x = _EMPTY_;
     private String h12901 = _EMPTY_;
@@ -419,6 +420,7 @@ public class MWRA extends BaseObservable implements Observable {
     private String h13307 = _EMPTY_;
     private String h13308 = _EMPTY_;
     private String h13309 = _EMPTY_;
+    private String h13310 = _EMPTY_;
     private String h134 = _EMPTY_;
     private String h135 = _EMPTY_;
     private String h13501 = _EMPTY_;
@@ -4813,8 +4815,20 @@ public class MWRA extends BaseObservable implements Observable {
 
     public void setH127(String h127) {
         this.h127 = h127;
+        setH12796x(h127.equals("96") ? this.h12796x : "");
         notifyPropertyChanged(BR.h127);
     }
+
+    @Bindable
+    public String getH12796x() {
+        return h12796x;
+    }
+
+    public void setH12796x(String h12796x) {
+        this.h12796x = h12796x;
+        notifyPropertyChanged(BR.h12796x);
+    }
+
 
     @Bindable
     public String getH128() {
@@ -4823,8 +4837,10 @@ public class MWRA extends BaseObservable implements Observable {
 
     public void setH128(String h128) {
         this.h128 = h128;
+        setH12896x(h128.equals("96") ? this.h12896x : "");
         notifyPropertyChanged(BR.h128);
     }
+
 
     @Bindable
     public String getH12896x() {
@@ -5027,6 +5043,7 @@ public class MWRA extends BaseObservable implements Observable {
         setH13307(h132.equals("1") ? this.h13307 : "");
         setH13308(h132.equals("1") ? this.h13308 : "");
         setH13309(h132.equals("1") ? this.h13309 : "");
+        setH13310(h132.equals("1") ? this.h13310 : "");
         notifyPropertyChanged(BR.h132);
     }
 
@@ -5155,9 +5172,20 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     public void setH13309(String h13309) {
-        if (this.h13309.equals(h13309)) return;     // For all checkboxes
+        if (this.h13309.equals(h13309)) return;
         this.h13309 = h13309;
         notifyPropertyChanged(BR.h13309);
+    }
+
+    @Bindable
+    public String getH13310() {
+        return h13310;
+    }
+
+    public void setH13310(String h13310) {
+        if (this.h13310.equals(h13310)) return;
+        this.h13310 = h13310;
+        notifyPropertyChanged(BR.h13310);
     }
 
 
@@ -8653,7 +8681,8 @@ public class MWRA extends BaseObservable implements Observable {
         json.put(TableContracts.MwraTable.COLUMN_SF1, new JSONObject(sF1toString()));
         json.put(TableContracts.MwraTable.COLUMN_SF2, new JSONObject(sF2toString()));
         json.put(TableContracts.MwraTable.COLUMN_SG, new JSONObject(sGtoString()));
-        json.put(TableContracts.MwraTable.COLUMN_SH1, new JSONObject(sH1toString()));
+        json.put(TableContracts.MwraTable.COLUMN_SH1A, new JSONObject(sH1AtoString()));
+        json.put(TableContracts.MwraTable.COLUMN_SH1B, new JSONObject(sH1BtoString()));
         json.put(TableContracts.MwraTable.COLUMN_SH2, new JSONObject(sH2toString()));
         json.put(TableContracts.MwraTable.COLUMN_SK, new JSONObject(sKtoString()));
         json.put(TableContracts.MwraTable.COLUMN_SL, new JSONObject(sLtoString()));
@@ -8939,8 +8968,8 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
 
-    public String sH1toString() throws JSONException {
-        Log.d(TAG, "sH1toString: ");
+    public String sH1AtoString() throws JSONException {
+        Log.d(TAG, "sH1AtoString: ");
         JSONObject json = new JSONObject();
         json.put("h101", h101)
                 .put("h101mx", h101mx)
@@ -9003,10 +9032,18 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("h122", h122)
                 .put("h1221x", h1221x)
                 .put("h123", h123)
-                .put("h124", h124)
-                .put("h125", h125)
+                .put("h124", h124);
+        return json.toString();
+    }
+
+
+    public String sH1BtoString() throws JSONException {
+        Log.d(TAG, "sH1BtoString: ");
+        JSONObject json = new JSONObject();
+        json.put("h125", h125)
                 .put("h126", h126)
                 .put("h127", h127)
+                .put("h12796x", h12796x)
                 .put("h128", h128)
                 .put("h12896x", h12896x)
                 .put("h12901", h12901)
@@ -9036,6 +9073,7 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("h13307", h13307)
                 .put("h13308", h13308)
                 .put("h13309", h13309)
+                .put("h13310", h13310)
                 .put("h134", h134)
                 .put("h13501", h13501)
                 .put("h13502", h13502)
@@ -9380,7 +9418,8 @@ public class MWRA extends BaseObservable implements Observable {
         sF1Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(TableContracts.MwraTable.COLUMN_SF1)));
         sF2Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(TableContracts.MwraTable.COLUMN_SF2)));
         sGHydrate(cursor.getString(cursor.getColumnIndexOrThrow(TableContracts.MwraTable.COLUMN_SG)));
-        sH1Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(TableContracts.MwraTable.COLUMN_SH1)));
+        sH1AHydrate(cursor.getString(cursor.getColumnIndexOrThrow(TableContracts.MwraTable.COLUMN_SH1A)));
+        sH1BHydrate(cursor.getString(cursor.getColumnIndexOrThrow(TableContracts.MwraTable.COLUMN_SH1B)));
         sH2Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(TableContracts.MwraTable.COLUMN_SH2)));
         sKHydrate(cursor.getString(cursor.getColumnIndexOrThrow(TableContracts.MwraTable.COLUMN_SK)));
         sLHydrate(cursor.getString(cursor.getColumnIndexOrThrow(TableContracts.MwraTable.COLUMN_SL)));
@@ -9680,8 +9719,8 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
 
-    public void sH1Hydrate(String string) throws JSONException {
-        Log.d(TAG, "sH1Hydrate: " + string);
+    public void sH1AHydrate(String string) throws JSONException {
+        Log.d(TAG, "sH1AHydrate: " + string);
         if (string != null) {
             JSONObject json = null;
             json = new JSONObject(string);
@@ -9747,9 +9786,19 @@ public class MWRA extends BaseObservable implements Observable {
             this.h1221x = json.getString("h1221x");
             this.h123 = json.getString("h123");
             this.h124 = json.getString("h124");
+        }
+    }
+
+
+    public void sH1BHydrate(String string) throws JSONException {
+        Log.d(TAG, "sH1BHydrate: " + string);
+        if (string != null) {
+            JSONObject json = null;
+            json = new JSONObject(string);
             this.h125 = json.getString("h125");
             this.h126 = json.getString("h126");
             this.h127 = json.getString("h127");
+            this.h12796x = json.getString("h12796x");
             this.h128 = json.getString("h128");
             this.h12896x = json.getString("h12896x");
             this.h12901 = json.getString("h12901");
@@ -9779,6 +9828,7 @@ public class MWRA extends BaseObservable implements Observable {
             this.h13307 = json.getString("h13307");
             this.h13308 = json.getString("h13308");
             this.h13309 = json.getString("h13309");
+            this.h13310 = json.getString("h13310");
             this.h134 = json.getString("h134");
             this.h13501 = json.getString("h13501");
             this.h13502 = json.getString("h13502");
@@ -9817,7 +9867,6 @@ public class MWRA extends BaseObservable implements Observable {
             this.h1372 = json.getString("h1372");
             this.h1373 = json.getString("h1373");
             this.h137396x = json.getString("h137396x");
-
         }
     }
 

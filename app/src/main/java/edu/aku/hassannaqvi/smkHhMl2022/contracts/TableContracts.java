@@ -132,7 +132,8 @@ public class TableContracts {
         public static final String COLUMN_SF1 = "sf1";
         public static final String COLUMN_SF2 = "sf2";
         public static final String COLUMN_SG = "sg";
-        public static final String COLUMN_SH1 = "sh1";
+        public static final String COLUMN_SH1A = "sh1a";
+        public static final String COLUMN_SH1B = "sh1b";
         public static final String COLUMN_SH2 = "sh2";
         public static final String COLUMN_SK = "sk";
         public static final String COLUMN_SL = "sl";

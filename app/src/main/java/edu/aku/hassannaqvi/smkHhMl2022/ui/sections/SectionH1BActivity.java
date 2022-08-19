@@ -49,10 +49,9 @@ public class SectionH1BActivity extends AppCompatActivity {
 
     private boolean updateDB() {
         if (MainApp.superuser) return true;
-
         int updcount = 0;
         try {
-            updcount = db.updatesMWRAColumn(TableContracts.MwraTable.COLUMN_SH1, MainApp.mwra.sH1toString());
+            updcount = db.updatesMWRAColumn(TableContracts.MwraTable.COLUMN_SH1B, MainApp.mwra.sH1BtoString());
         } catch (JSONException e) {
             Toast.makeText(this, R.string.upd_db + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
@@ -89,7 +88,6 @@ public class SectionH1BActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        // Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
         setResult(RESULT_CANCELED);
     }
 }

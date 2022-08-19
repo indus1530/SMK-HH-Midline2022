@@ -54,7 +54,7 @@ public class SectionH1AActivity extends AppCompatActivity {
 
         int updcount = 0;
         try {
-            updcount = db.updatesMWRAColumn(TableContracts.MwraTable.COLUMN_SH1, MainApp.mwra.sH1toString());
+            updcount = db.updatesMWRAColumn(TableContracts.MwraTable.COLUMN_SH1A, MainApp.mwra.sH1AtoString());
         } catch (JSONException e) {
             Toast.makeText(this, R.string.upd_db + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
