@@ -1,6 +1,8 @@
 package edu.aku.hassannaqvi.smkHhMl2022.ui.sections;
 
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.adol;
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedAdol;
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedMWRA;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.sharedPref;
 
 import android.content.Intent;
@@ -38,6 +40,8 @@ public class SectionAH7Activity extends AppCompatActivity {
         setupSkips();
         setSupportActionBar(bi.toolbar);
         db = MainApp.appInfo.dbHelper;
+        adol.setAh51(!selectedAdol.isEmpty() ? MainApp.familyList.get(Integer.parseInt(selectedAdol) - 1).getD105()
+                : MainApp.familyList.get(Integer.parseInt(selectedMWRA) - 1).getD105());
     }
 
     private void setupSkips() {

@@ -2026,12 +2026,11 @@
     <string name="ah50aa">At What Age A Boy Or Girl Should Marry?</string>
     <string name="ah50aaa">For Boys</string>
     <string name="ah50aab">For Girls</string>
-    <string name="ah51">What Is Your Current Marital Status?</string>
+    <string name="ah51"> What Is Your Current Marital Status ? </string>
     <string name="ah51a">Married</string>
-    <string name="ah51b">Widowed</string>
-    <string name="ah51c">Divorced</string>
-    <string name="ah51d">Separated</string>
-    <string name="ah51e">Never Married</string>
+    <string name="ah51b">Unmarried</string>
+    <string name="ah51c">Widowed</string>
+    <string name="ah51d">Divorced/Separated</string>
     <string name="ah52">How Old Was Your Husband /Wife On His Last Birthday? (Completed Years)</string>
     <string name="ah52a">Age in Years</string>
     <string name="ah53">Did You Have A Say In Choosing Your Husband/Wife?</string>
