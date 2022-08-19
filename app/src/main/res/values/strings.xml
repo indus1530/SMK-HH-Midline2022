@@ -2589,6 +2589,7 @@
     <string name="g10212">Private maternity home</string>
     <string name="g10213">NGO health facility</string>
     <string name="g10214">On the way to health facility</string>
+    <string name="g10296">Other Please Specify</string>
     <string name="g103">Why didn’t you deliver {NAME} in a health facility? </string>
     <string name="g1t05">If delivery take place at home, Probe to identify any other reason Record all mentioned.</string>
     <string name="g10301">No transportation</string>
@@ -2605,7 +2606,7 @@
     <string name="g10312">No Transport due to Corona Lockdown</string>
     <string name="g10313">Safety Kits (Masks, Gloves) were not available at home</string>
     <string name="g10314">Doctor was not following SOP (not wearing Masks and Gloves)</string>
-    <string name="g10315">Social distancing</string>
+    <string name="g10315">Social Distancing</string>
     <string name="g10396">Other (Please Specify)</string>
     <string name="g104">Who delivered {NAME}?</string>
     <string name="g10401">Doctor</string>
@@ -2760,7 +2761,8 @@
     <string name="g1240208">Private hospital</string>
     <string name="g1240209">Private clinic</string>
     <string name="g1240210">Private maternity home</string>
-    <string name="g1240211">NGO health facility</string>
+    <string name="g1240211">NGO Health Facility</string>
+    <string name="g1240296">Other Please Specify</string>
     <string name="g125">Was LHW present at the time of your delivery?</string>
     <string name="g1251">Yes</string>
     <string name="g1252">No</string>

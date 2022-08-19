@@ -209,6 +209,7 @@ public class MWRA extends BaseObservable implements Observable {
     private String f13410 = _EMPTY_;
     private String g101 = _EMPTY_;
     private String g102 = _EMPTY_;
+    private String g10296x = _EMPTY_;
     private String g103 = _EMPTY_;
     private String g10301 = _EMPTY_;
     private String g10302 = _EMPTY_;
@@ -224,6 +225,7 @@ public class MWRA extends BaseObservable implements Observable {
     private String g10312 = _EMPTY_;
     private String g10313 = _EMPTY_;
     private String g10314 = _EMPTY_;
+    private String g10315 = _EMPTY_;
     private String g10396 = _EMPTY_;
     private String g10396x = _EMPTY_;
     private String g104 = _EMPTY_;
@@ -305,6 +307,7 @@ public class MWRA extends BaseObservable implements Observable {
     private String g1240113 = _EMPTY_;
     private String g1240114 = _EMPTY_;
     private String g12402 = _EMPTY_;
+    private String g1240296x = _EMPTY_;
     private String g125 = _EMPTY_;
     private String g12501 = _EMPTY_;
     private String g1250101 = _EMPTY_;
@@ -2774,6 +2777,7 @@ public class MWRA extends BaseObservable implements Observable {
 
     public void setG102(String g102) {
         this.g102 = g102;
+        setG10296x(g102.equals("96") ? this.g10296x : "");
         setG10301(g102.equals("1") ? "" : this.g10301);
         setG10302(g102.equals("1") ? "" : this.g10302);
         setG10303(g102.equals("1") ? "" : this.g10303);
@@ -2793,8 +2797,17 @@ public class MWRA extends BaseObservable implements Observable {
         setG106(g102.equals("1") ? this.g106 : "");
         setG107(g102.equals("1") ? this.g107 : "");
         setH201(g102.equals("1") ? "" : this.h201);
-
         notifyPropertyChanged(BR.g102);
+    }
+
+    @Bindable
+    public String getG10296x() {
+        return g10296x;
+    }
+
+    public void setG10296x(String g10296x) {
+        this.g10296x = g10296x;
+        notifyPropertyChanged(BR.g10296x);
     }
 
     @Bindable
@@ -2956,9 +2969,20 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     public void setG10314(String g10314) {
-        if (this.g10314.equals(g10314)) return;     // For all checkboxes
+        if (this.g10314.equals(g10314)) return;
         this.g10314 = g10314;
         notifyPropertyChanged(BR.g10314);
+    }
+
+    @Bindable
+    public String getG10315() {
+        return g10315;
+    }
+
+    public void setG10315(String g10315) {
+        if (this.g10315.equals(g10315)) return;
+        this.g10315 = g10315;
+        notifyPropertyChanged(BR.g10315);
     }
 
     @Bindable
@@ -3350,8 +3374,8 @@ public class MWRA extends BaseObservable implements Observable {
 
     public void setG119(String g119) {
         this.g119 = g119;
-        setG120(g119.equals("3") ? "" : this.g120);
-        setG121(g119.equals("3") ? this.g121 : "");
+        setG120(g119.equals("1") ? this.g120 : "");
+        setG121(g119.equals("2") || g119.equals("3") ? this.g121 : "");
         notifyPropertyChanged(BR.g119);
     }
 
@@ -3839,7 +3863,7 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     public void setG1240114(String g1240114) {
-        if (this.g1240114.equals(g1240114)) return;     // For all checkboxes
+        if (this.g1240114.equals(g1240114)) return;
         this.g1240114 = g1240114;
         setG1240101(g1240114.equals("14") ? "" : this.g1240101);
         setG1240102(g1240114.equals("14") ? "" : this.g1240102);
@@ -3866,7 +3890,19 @@ public class MWRA extends BaseObservable implements Observable {
 
     public void setG12402(String g12402) {
         this.g12402 = g12402;
+        setG1240296x(g12402.equals("96") ? this.g1240296x : "");
         notifyPropertyChanged(BR.g12402);
+    }
+
+
+    @Bindable
+    public String getG1240296x() {
+        return g1240296x;
+    }
+
+    public void setG1240296x(String g1240296x) {
+        this.g1240296x = g1240296x;
+        notifyPropertyChanged(BR.g1240296x);
     }
 
 
@@ -8791,6 +8827,7 @@ public class MWRA extends BaseObservable implements Observable {
         JSONObject json = new JSONObject();
         json.put("g101", g101)
                 .put("g102", g102)
+                .put("g10296x", g10296x)
                 .put("g10301", g10301)
                 .put("g10302", g10302)
                 .put("g10303", g10303)
@@ -8805,6 +8842,7 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("g10312", g10312)
                 .put("g10313", g10313)
                 .put("g10314", g10314)
+                .put("g10315", g10315)
                 .put("g10396", g10396)
                 .put("g10396x", g10396x)
                 .put("g104", g104)
@@ -8883,6 +8921,7 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("g1240113", g1240113)
                 .put("g1240114", g1240114)
                 .put("g12402", g12402)
+                .put("g1240296x", g1240296x)
                 .put("g125", g125)
                 .put("g12501", g12501)
                 .put("g1250101", g1250101)
@@ -9528,6 +9567,7 @@ public class MWRA extends BaseObservable implements Observable {
             json = new JSONObject(string);
             this.g101 = json.getString("g101");
             this.g102 = json.getString("g102");
+            this.g10296x = json.getString("g10296x");
             this.g10301 = json.getString("g10301");
             this.g10302 = json.getString("g10302");
             this.g10303 = json.getString("g10303");
@@ -9542,6 +9582,7 @@ public class MWRA extends BaseObservable implements Observable {
             this.g10312 = json.getString("g10312");
             this.g10313 = json.getString("g10313");
             this.g10314 = json.getString("g10314");
+            this.g10315 = json.getString("g10315");
             this.g10396 = json.getString("g10396");
             this.g10396x = json.getString("g10396x");
             this.g104 = json.getString("g104");
@@ -9620,6 +9661,7 @@ public class MWRA extends BaseObservable implements Observable {
             this.g1240113 = json.getString("g1240113");
             this.g1240114 = json.getString("g1240114");
             this.g12402 = json.getString("g12402");
+            this.g1240296x = json.getString("g1240296x");
             this.g125 = json.getString("g125");
             this.g12501 = json.getString("g12501");
             this.g1250101 = json.getString("g1250101");
