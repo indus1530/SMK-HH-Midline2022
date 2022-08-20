@@ -2086,7 +2086,9 @@
     <string name="ah58">How Many Times You Got Pregnant?</string>
     <string name="ah58a">Times</string>
     <string name="ah59">How Many Still Birth/Miscarriage/Abortions You Got?</string>
-    <string name="ah59a">Number Of Children</string>
+    <string name="ah59a">Still birth</string>
+    <string name="ah59b">Miscarriage</string>
+    <string name="ah59c">Abortions</string>
     <string name="ah60">How Many Children Would You Ideally Like To Have?</string>
     <string name="ah60a">Number Of Children</string>
     <string name="imtitle">This section relates to the history of immunization for the child. The immunization history of the selected child will be recorded. Preference will be given to the information from an immunization card; however, in case an immunization card is not available, then verbal history will be taken from the respondent. In case you have problems in understanding the card, please take a picture of the card and discuss with your supervisor. Please refer to the training manual for further instructions. The child between the ages of 0-59 months  will be randomly picked from the household member list. If there is more than one child, then among the eligible ones, one is randomly picked.</string>

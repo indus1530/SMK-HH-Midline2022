@@ -257,6 +257,9 @@ public class Adolescent extends BaseObservable implements Observable {
     private String ah49a = _EMPTY_;
     private String ah49b = _EMPTY_;
     private String ah49c = _EMPTY_;
+    private String ah49ax = _EMPTY_;
+    private String ah49bx = _EMPTY_;
+
     private String ah50 = _EMPTY_;
     private String ah50aaa = _EMPTY_;
     private String ah50aab = _EMPTY_;
@@ -271,6 +274,8 @@ public class Adolescent extends BaseObservable implements Observable {
     private String ah57ax = _EMPTY_;
     private String ah58a = _EMPTY_;
     private String ah59a = _EMPTY_;
+    private String ah59b = _EMPTY_;
+    private String ah59c = _EMPTY_;
     private String ah60a = _EMPTY_;
 
     public void Adolescent() {
@@ -2651,8 +2656,20 @@ public class Adolescent extends BaseObservable implements Observable {
     }
 
     public void setAh49a(String ah49a) {
+        if (this.ah49a.equals(ah49a)) return;      //For all checkboxes
         this.ah49a = ah49a;
+        setAh49ax(ah49a.equals("1") ? this.ah49ax : "");
         notifyPropertyChanged(BR.ah49a);
+    }
+
+    @Bindable
+    public String getAh49ax() {
+        return ah49ax;
+    }
+
+    public void setAh49ax(String ah49ax) {
+        this.ah49ax = ah49ax;
+        notifyPropertyChanged(BR.ah49ax);
     }
 
     @Bindable
@@ -2661,8 +2678,20 @@ public class Adolescent extends BaseObservable implements Observable {
     }
 
     public void setAh49b(String ah49b) {
+        if (this.ah49b.equals(ah49b)) return;      //For all checkboxes
         this.ah49b = ah49b;
+        setAh49bx(ah49b.equals("1") ? this.ah49bx : "");
         notifyPropertyChanged(BR.ah49b);
+    }
+
+    @Bindable
+    public String getAh49bx() {
+        return ah49bx;
+    }
+
+    public void setAh49bx(String ah49bx) {
+        this.ah49bx = ah49bx;
+        notifyPropertyChanged(BR.ah49bx);
     }
 
     @Bindable
@@ -2671,6 +2700,7 @@ public class Adolescent extends BaseObservable implements Observable {
     }
 
     public void setAh49c(String ah49c) {
+        if (this.ah49c.equals(ah49c)) return;      //For all checkboxes
         this.ah49c = ah49c;
         notifyPropertyChanged(BR.ah49c);
     }
@@ -2813,6 +2843,26 @@ public class Adolescent extends BaseObservable implements Observable {
     public void setAh59a(String ah59a) {
         this.ah59a = ah59a;
         notifyPropertyChanged(BR.ah59a);
+    }
+
+    @Bindable
+    public String getAh59b() {
+        return ah59b;
+    }
+
+    public void setAh59b(String ah59b) {
+        this.ah59b = ah59b;
+        notifyPropertyChanged(BR.ah59b);
+    }
+
+    @Bindable
+    public String getAh59c() {
+        return ah59c;
+    }
+
+    public void setAh59c(String ah59c) {
+        this.ah59c = ah59c;
+        notifyPropertyChanged(BR.ah59c);
     }
 
     @Bindable
@@ -3105,6 +3155,9 @@ public class Adolescent extends BaseObservable implements Observable {
             this.ah49a = json.getString("ah49a");
             this.ah49b = json.getString("ah49b");
             this.ah49c = json.getString("ah49c");
+            this.ah49ax= json.getString("ah49ax");
+            this.ah49bx = json.getString("ah49bx");
+
             this.ah50 = json.getString("ah50");
             this.ah50aaa = json.getString("ah50aaa");
             this.ah50aab = json.getString("ah50aab");
@@ -3119,6 +3172,8 @@ public class Adolescent extends BaseObservable implements Observable {
             this.ah57ax = json.getString("ah57ax");
             this.ah58a = json.getString("ah58a");
             this.ah59a = json.getString("ah59a");
+            this.ah59b = json.getString("ah59b");
+            this.ah59c = json.getString("ah59c");
             this.ah60a = json.getString("ah60a");
         }
     }
@@ -3390,6 +3445,8 @@ public class Adolescent extends BaseObservable implements Observable {
         json.put("ah49a", ah49a)
                 .put("ah49b", ah49b)
                 .put("ah49c", ah49c)
+                .put("ah49ax", ah49ax)
+                .put("ah49bx", ah49bx)
                 .put("ah50", ah50)
                 .put("ah50aaa", ah50aaa)
                 .put("ah50aab", ah50aab)
@@ -3404,6 +3461,8 @@ public class Adolescent extends BaseObservable implements Observable {
                 .put("ah57ax", ah57ax)
                 .put("ah58a", ah58a)
                 .put("ah59a", ah59a)
+                .put("ah59b", ah59b)
+                .put("ah59c", ah59c)
                 .put("ah60a", ah60a);
         return json.toString();
     }
