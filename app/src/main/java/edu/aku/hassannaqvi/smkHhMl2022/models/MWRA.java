@@ -8338,6 +8338,51 @@ public class MWRA extends BaseObservable implements Observable {
 
     public void setLg101(String lg101) {
         this.lg101 = lg101;
+        setLg10201(lg101.equals("1") ? this.lg10201 : "");
+        setLg10202(lg101.equals("1") ? this.lg10202 : "");
+        setLg10203(lg101.equals("1") ? this.lg10203 : "");
+        setLg10204(lg101.equals("1") ? this.lg10204 : "");
+        setLg10205(lg101.equals("1") ? this.lg10205 : "");
+        setLg10206(lg101.equals("1") ? this.lg10206 : "");
+        setLg10207(lg101.equals("1") ? this.lg10207 : "");
+        setLg10208(lg101.equals("1") ? this.lg10208 : "");
+        setLg10209(lg101.equals("1") ? this.lg10209 : "");
+        setLg10296(lg101.equals("1") ? this.lg10296 : "");
+
+        setLg103(lg101.equals("1") ? this.lg103 : "");
+
+        setLg10401(lg101.equals("1") ? this.lg10401 : "");
+        setLg10402(lg101.equals("1") ? this.lg10402 : "");
+        setLg10403(lg101.equals("1") ? this.lg10403 : "");
+        setLg10404(lg101.equals("1") ? this.lg10404 : "");
+        setLg10405(lg101.equals("1") ? this.lg10405 : "");
+        setLg10406(lg101.equals("1") ? this.lg10406 : "");
+        setLg10407(lg101.equals("1") ? this.lg10407 : "");
+        setLg10408(lg101.equals("1") ? this.lg10408 : "");
+        setLg10409(lg101.equals("1") ? this.lg10409 : "");
+        setLg10410(lg101.equals("1") ? this.lg10410 : "");
+        setLg10411(lg101.equals("1") ? this.lg10411 : "");
+        setLg10412(lg101.equals("1") ? this.lg10412 : "");
+        setLg10413(lg101.equals("1") ? this.lg10413 : "");
+        setLg10414(lg101.equals("1") ? this.lg10414 : "");
+        setLg10415(lg101.equals("1") ? this.lg10415 : "");
+        setLg10416(lg101.equals("1") ? this.lg10416 : "");
+
+        setLg105(lg101.equals("1") ? this.lg105 : "");
+
+        setLg10601(lg101.equals("1") ? this.lg10601 : "");
+        setLg10602(lg101.equals("1") ? this.lg10602 : "");
+        setLg10603(lg101.equals("1") ? this.lg10603 : "");
+        setLg10604(lg101.equals("1") ? this.lg10604 : "");
+        setLg10605(lg101.equals("1") ? this.lg10605 : "");
+        setLg10606(lg101.equals("1") ? this.lg10606 : "");
+        setLg10607(lg101.equals("1") ? this.lg10607 : "");
+        setLg10696(lg101.equals("1") ? this.lg10696 : "");
+
+        setL1131(lg101.equals("1") ? this.l1131 : "");
+        setL1132(lg101.equals("1") ? this.l1132 : "");
+        setL1133(lg101.equals("1") ? this.l1133 : "");
+        setL1134(lg101.equals("1") ? this.l1134 : "");
         notifyPropertyChanged(BR.lg101);
     }
 
