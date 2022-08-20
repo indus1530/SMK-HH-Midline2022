@@ -2824,8 +2824,8 @@
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:checked="@{child.im08.equals(`98`) + im09.clearCheck() + im10.clearCheck() + im11.clearCheck() + im12.clearCheck() + im14.clearCheck() + im15.clearCheck() + im16.clearCheck() + im17.clearCheck() + im18.clearCheck() + im19.clearCheck() + im20.clearCheck() + im21.clearCheck() + im22.clearCheck() + im23.clearCheck() + im24.clearCheck() + im25.clearCheck()}"
-                                    android:onClick="@{()->child.setIm08(`98`)}"
+                                    android:checked="@{child.im08.equals(`98`)}"
+                                    android:onClick="@{()->child.setIm08(`98`) + im09.clearCheck() + im10.clearCheck() + im11.clearCheck() + im12.clearCheck() + im14.clearCheck() + im15.clearCheck() + im16.clearCheck() + im17.clearCheck() + im18.clearCheck() + im19.clearCheck() + im20.clearCheck() + im21.clearCheck() + im22.clearCheck() + im23.clearCheck() + im24.clearCheck() + im25.clearCheck()}"
                                     android:text="@string/im0898" />
 
                             </RadioGroup>
