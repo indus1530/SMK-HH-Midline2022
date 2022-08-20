@@ -1212,6 +1212,8 @@ public class Child extends BaseObservable implements Observable {
         setIm21(im08.equals("1") ? this.im21 : "");
         setIm22(im08.equals("1") ? this.im22 : "");
         setIm23(im08.equals("1") ? this.im23 : "");
+        setIm24(im08.equals("1") ? this.im24 : "");
+        setIm25(im08.equals("1") ? this.im25 : "");
 
         setIm2601(im08.equals("1") ? "" : this.im2601);
         setIm2602(im08.equals("1") ? "" : this.im2602);
