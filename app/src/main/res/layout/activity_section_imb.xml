@@ -249,8 +249,8 @@
                                     android:maxLength="3"
                                     android:tag="im2901"
                                     android:text="@={child.im2901x}"
-                                    app:maxValue="100"
-                                    app:minValue="0"
+                                    app:maxValue="10"
+                                    app:minValue="1"
                                     app:type="range" />
 
                                 <RadioButton
