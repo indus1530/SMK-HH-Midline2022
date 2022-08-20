@@ -471,8 +471,22 @@ public class MWRA extends BaseObservable implements Observable {
     private String h203d = _EMPTY_;
     private String h203w = _EMPTY_;
     private String h204 = _EMPTY_;
+    private String h20496x = _EMPTY_;
     private String h205 = _EMPTY_;
     private String h20596x = _EMPTY_;
+    private String h2051a = _EMPTY_;
+    private String h2051b = _EMPTY_;
+    private String h2051c = _EMPTY_;
+    private String h2051d = _EMPTY_;
+    private String h2051e = _EMPTY_;
+    private String h2051f = _EMPTY_;
+    private String h2051g = _EMPTY_;
+    private String h2051h = _EMPTY_;
+    private String h2051i = _EMPTY_;
+    private String h2051j = _EMPTY_;
+    private String h205196 = _EMPTY_;
+    private String h205196x = _EMPTY_;
+    private String h206 = _EMPTY_;
     private String h207 = _EMPTY_;
     private String h20701 = _EMPTY_;
     private String h20702 = _EMPTY_;
@@ -5734,11 +5748,22 @@ public class MWRA extends BaseObservable implements Observable {
 
     public void setH202(String h202) {
         this.h202 = h202;
-        setH203h(h202.equals("2") ? "" : this.h203h);
-        setH203d(h202.equals("2") ? "" : this.h203d);
-        setH203w(h202.equals("2") ? "" : this.h203w);
-        setH204(h202.equals("2") ? "" : this.h204);
-        setH205(h202.equals("2") ? "" : this.h205);
+        setH203h(h202.equals("1") ? this.h203h : "");
+        setH203d(h202.equals("1") ? this.h203d : "");
+        setH203w(h202.equals("1") ? this.h203w : "");
+        setH204(h202.equals("1") ? this.h204 : "");
+        setH205(h202.equals("1") ? this.h205 : "");
+        setH2051a(h202.equals("1") ? this.h2051a : "");
+        setH2051b(h202.equals("1") ? this.h2051b : "");
+        setH2051c(h202.equals("1") ? this.h2051c : "");
+        setH2051d(h202.equals("1") ? this.h2051d : "");
+        setH2051e(h202.equals("1") ? this.h2051e : "");
+        setH2051f(h202.equals("1") ? this.h2051f : "");
+        setH2051g(h202.equals("1") ? this.h2051g : "");
+        setH2051h(h202.equals("1") ? this.h2051h : "");
+        setH2051i(h202.equals("1") ? this.h2051i : "");
+        setH2051j(h202.equals("1") ? this.h2051j : "");
+        setH205196(h202.equals("1") ? this.h205196 : "");
         notifyPropertyChanged(BR.h202);
     }
 
@@ -5779,7 +5804,19 @@ public class MWRA extends BaseObservable implements Observable {
 
     public void setH204(String h204) {
         this.h204 = h204;
+        setH20496x(h204.equals("96") ? this.h20496x : "");
         notifyPropertyChanged(BR.h204);
+    }
+
+
+    @Bindable
+    public String getH20496x() {
+        return h20496x;
+    }
+
+    public void setH20496x(String h20496x) {
+        this.h20496x = h20496x;
+        notifyPropertyChanged(BR.h20496x);
     }
 
     @Bindable
@@ -5802,6 +5839,140 @@ public class MWRA extends BaseObservable implements Observable {
         this.h20596x = h20596x;
         notifyPropertyChanged(BR.h20596x);
     }
+
+
+    @Bindable
+    public String getH2051a() {
+        return h2051a;
+    }
+
+    public void setH2051a(String h2051a) {
+        this.h2051a = h2051a;
+        notifyPropertyChanged(BR.h2051a);
+    }
+
+    @Bindable
+    public String getH2051b() {
+        return h2051b;
+    }
+
+    public void setH2051b(String h2051b) {
+        this.h2051b = h2051b;
+        notifyPropertyChanged(BR.h2051b);
+    }
+
+    @Bindable
+    public String getH2051c() {
+        return h2051c;
+    }
+
+    public void setH2051c(String h2051c) {
+        this.h2051c = h2051c;
+        notifyPropertyChanged(BR.h2051c);
+    }
+
+    @Bindable
+    public String getH2051d() {
+        return h2051d;
+    }
+
+    public void setH2051d(String h2051d) {
+        this.h2051d = h2051d;
+        notifyPropertyChanged(BR.h2051d);
+    }
+
+    @Bindable
+    public String getH2051e() {
+        return h2051e;
+    }
+
+    public void setH2051e(String h2051e) {
+        this.h2051e = h2051e;
+        notifyPropertyChanged(BR.h2051e);
+    }
+
+    @Bindable
+    public String getH2051f() {
+        return h2051f;
+    }
+
+    public void setH2051f(String h2051f) {
+        this.h2051f = h2051f;
+        notifyPropertyChanged(BR.h2051f);
+    }
+
+    @Bindable
+    public String getH2051g() {
+        return h2051g;
+    }
+
+    public void setH2051g(String h2051g) {
+        this.h2051g = h2051g;
+        notifyPropertyChanged(BR.h2051g);
+    }
+
+    @Bindable
+    public String getH2051h() {
+        return h2051h;
+    }
+
+    public void setH2051h(String h2051h) {
+        this.h2051h = h2051h;
+        notifyPropertyChanged(BR.h2051h);
+    }
+
+    @Bindable
+    public String getH2051i() {
+        return h2051i;
+    }
+
+    public void setH2051i(String h2051i) {
+        this.h2051i = h2051i;
+        notifyPropertyChanged(BR.h2051i);
+    }
+
+    @Bindable
+    public String getH2051j() {
+        return h2051j;
+    }
+
+    public void setH2051j(String h2051j) {
+        this.h2051j = h2051j;
+        notifyPropertyChanged(BR.h2051j);
+    }
+
+    @Bindable
+    public String getH205196() {
+        return h205196;
+    }
+
+    public void setH205196(String h205196) {
+        this.h205196 = h205196;
+        setH205196x(h205196.equals("96") ? this.h205196x : "");
+        notifyPropertyChanged(BR.h205196);
+    }
+
+    @Bindable
+    public String getH205196x() {
+        return h205196x;
+    }
+
+    public void setH205196x(String h205196x) {
+        this.h205196x = h205196x;
+        notifyPropertyChanged(BR.h205196x);
+    }
+
+
+    @Bindable
+    public String getH206() {
+        return h206;
+    }
+
+    public void setH206(String h206) {
+        this.h206 = h206;
+        notifyPropertyChanged(BR.h206);
+    }
+
 
     @Bindable
     public String getH207() {
@@ -7369,6 +7540,7 @@ public class MWRA extends BaseObservable implements Observable {
         setK10696(k105a.equals("444") ? this.k10696 : "");
         notifyPropertyChanged(BR.k105a);
     }
+
     @Bindable
     public String getK105b() {
         return k105b;
@@ -8657,741 +8829,6 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
 
-    public JSONObject toJSONObject() throws JSONException {
-        JSONObject json = new JSONObject();
-
-        json.put(TableContracts.MwraTable.COLUMN_ID, this.id);
-        json.put(TableContracts.MwraTable.COLUMN_UID, this.uid);
-        json.put(TableContracts.MwraTable.COLUMN_PROJECT_NAME, this.projectName);
-
-        json.put(TableContracts.MwraTable.COLUMN_UUID, this.uuid);
-        json.put(TableContracts.MwraTable.COLUMN_HHID, this.hhid);
-        // json.put(TableContracts.MwraTable.COLUMN_MUID, this.muid);
-        json.put(TableContracts.MwraTable.COLUMN_SNO, this.sno);
-        json.put(TableContracts.MwraTable.COLUMN_FMUID, this.fmuid);
-        json.put(TableContracts.MwraTable.COLUMN_INDEXED, this.indexed);
-        json.put(TableContracts.MwraTable.COLUMN_PSU_CODE, this.psuCode);
-        json.put(TableContracts.MwraTable.COLUMN_USERNAME, this.userName);
-        json.put(TableContracts.MwraTable.COLUMN_SYSDATE, this.sysDate);
-        json.put(TableContracts.MwraTable.COLUMN_DEVICEID, this.deviceId);
-        json.put(TableContracts.MwraTable.COLUMN_DEVICETAGID, this.deviceTag);
-        json.put(TableContracts.MwraTable.COLUMN_ISTATUS, this.iStatus);
-        json.put(TableContracts.MwraTable.COLUMN_SYNCED, this.synced);
-        json.put(TableContracts.MwraTable.COLUMN_SYNC_DATE, this.syncDate);
-        json.put(TableContracts.MwraTable.COLUMN_SF1, new JSONObject(sF1toString()));
-        json.put(TableContracts.MwraTable.COLUMN_SF2, new JSONObject(sF2toString()));
-        json.put(TableContracts.MwraTable.COLUMN_SG, new JSONObject(sGtoString()));
-        json.put(TableContracts.MwraTable.COLUMN_SH1A, new JSONObject(sH1AtoString()));
-        json.put(TableContracts.MwraTable.COLUMN_SH1B, new JSONObject(sH1BtoString()));
-        json.put(TableContracts.MwraTable.COLUMN_SH2, new JSONObject(sH2toString()));
-        json.put(TableContracts.MwraTable.COLUMN_SK, new JSONObject(sKtoString()));
-        json.put(TableContracts.MwraTable.COLUMN_SL, new JSONObject(sLtoString()));
-        json.put(TableContracts.MwraTable.COLUMN_UN, new JSONObject(uNtoString()));
-
-        return json;
-    }
-
-
-    public String sF1toString() throws JSONException {
-        Log.d(TAG, "sF1toString: ");
-        JSONObject json = new JSONObject();
-        json.put("f101", f101)
-                .put("f101a01", f101a01)
-                .put("f101a02", f101a02)
-                .put("f101a03", f101a03)
-                .put("f101a04", f101a04)
-                .put("f101a05", f101a05)
-                .put("f101a06", f101a06)
-                .put("f101a07", f101a07)
-                .put("f101a08", f101a08)
-                .put("f101a09", f101a09)
-                .put("f101a10", f101a10)
-                .put("f101a11", f101a11)
-                .put("f101a12", f101a12)
-                .put("f101a13", f101a13)
-                .put("f101a14", f101a14)
-                .put("f101a96", f101a96)
-                .put("f101a96x", f101a96x)
-                .put("f101b", f101b)
-                .put("f101b01x", f101b01x)
-                .put("f10201", f10201)
-                .put("f10202", f10202)
-                .put("f10203", f10203)
-                .put("f10204", f10204)
-                .put("f10205", f10205)
-                .put("f10206", f10206)
-                .put("f10207", f10207)
-                .put("f10208", f10208)
-                .put("f10209", f10209)
-                .put("f10210", f10210)
-                .put("f10211", f10211)
-                .put("f10296", f10296)
-                .put("f10296x", f10296x)
-                .put("f10301", f10301)
-                .put("f10302", f10302)
-                .put("f10303", f10303)
-                .put("f10304", f10304)
-                .put("f10305", f10305)
-                .put("f104", f104)
-                .put("f105", f105)
-                .put("f106", f106)
-                .put("f107", f107)
-                .put("f10796x", f10796x)
-                .put("f108", f108)
-                .put("f108wx", f108wx)
-                .put("f108mx", f108mx)
-                .put("f11001", f11001)
-                .put("f11002", f11002)
-                .put("f11003", f11003)
-                .put("f11004", f11004)
-                .put("f11005", f11005)
-                .put("f11006", f11006)
-                .put("f11007", f11007)
-                .put("f11008", f11008)
-                .put("f11009", f11009)
-                .put("f11096", f11096)
-                .put("f11096x", f11096x)
-                .put("f111", f111)
-                .put("f112", f112)
-                .put("f113", f113)
-                .put("f11301x", f11301x)
-                .put("f114", f114)
-                .put("f115", f115)
-                .put("f116", f116)
-                .put("f117", f117)
-                .put("f118", f118)
-                .put("f118mx", f118mx)
-                .put("f118dx", f118dx)
-                .put("f119", f119)
-                .put("f120", f120)
-                .put("f12001x", f12001x);
-        return json.toString();
-    }
-
-
-    public String sF2toString() throws JSONException {
-        Log.d(TAG, "sF2toString: ");
-        JSONObject json = new JSONObject();
-        json.put("f121a", f121a)
-                .put("f121b", f121b)
-                .put("f121b96x", f121b96x)
-                .put("f12101", f12101)
-                .put("f122", f122)
-                .put("f12201x", f12201x)
-                .put("f12301", f12301)
-                .put("f12302", f12302)
-                .put("f12303", f12303)
-                .put("f12304", f12304)
-                .put("f12305", f12305)
-                .put("f12306", f12306)
-                .put("f12307", f12307)
-                .put("f12308", f12308)
-                .put("f12309", f12309)
-                .put("f12310", f12310)
-                .put("f12396", f12396)
-                .put("f12396x", f12396x)
-                .put("f124", f124)
-                .put("f12501", f12501)
-                .put("f12502", f12502)
-                .put("f12503", f12503)
-                .put("f12504", f12504)
-                .put("f12505", f12505)
-                .put("f12506", f12506)
-                .put("f12507", f12507)
-                .put("f12601", f12601)
-                .put("f12602", f12602)
-                .put("f12603", f12603)
-                .put("f12604", f12604)
-                .put("f12605", f12605)
-                .put("f12606", f12606)
-                .put("f12607", f12607)
-                .put("f12608", f12608)
-                .put("f127", f127)
-                .put("f12796x", f12796x)
-                .put("f12801", f12801)
-                .put("f12802", f12802)
-                .put("f12803", f12803)
-                .put("f12804", f12804)
-                .put("f12805", f12805)
-                .put("f12806", f12806)
-                .put("f12807", f12807)
-                .put("f12808", f12808)
-                .put("f129", f129)
-                .put("f13001", f13001)
-                .put("f13002", f13002)
-                .put("f13003", f13003)
-                .put("f13004", f13004)
-                .put("f13005", f13005)
-                .put("f13006", f13006)
-                .put("f13007", f13007)
-                .put("f13008", f13008)
-                .put("f13009", f13009)
-                .put("f13010", f13010)
-                .put("f13011", f13011)
-                .put("f13012", f13012)
-                .put("f13013", f13013)
-                .put("f13014", f13014)
-                .put("f13015", f13015)
-                .put("f13096", f13096)
-                .put("f13096x", f13096x)
-                .put("f131", f131)
-                .put("f13196x", f13196x)
-                .put("f131a", f131a)
-                .put("f13401", f13401)
-                .put("f13402", f13402)
-                .put("f13403", f13403)
-                .put("f13404", f13404)
-                .put("f13405", f13405)
-                .put("f13406", f13406)
-                .put("f13407", f13407)
-                .put("f13408", f13408)
-                .put("f13409", f13409)
-                .put("f13410", f13410);
-        return json.toString();
-    }
-
-
-    public String sGtoString() throws JSONException {
-        Log.d(TAG, "sGtoString: ");
-        JSONObject json = new JSONObject();
-        json.put("g101", g101)
-                .put("g102", g102)
-                .put("g10296x", g10296x)
-                .put("g10301", g10301)
-                .put("g10302", g10302)
-                .put("g10303", g10303)
-                .put("g10304", g10304)
-                .put("g10305", g10305)
-                .put("g10306", g10306)
-                .put("g10307", g10307)
-                .put("g10308", g10308)
-                .put("g10309", g10309)
-                .put("g10310", g10310)
-                .put("g10311", g10311)
-                .put("g10312", g10312)
-                .put("g10313", g10313)
-                .put("g10314", g10314)
-                .put("g10315", g10315)
-                .put("g10396", g10396)
-                .put("g10396x", g10396x)
-                .put("g104", g104)
-                .put("g10496x", g10496x)
-                .put("g105", g105)
-                .put("g10501x", g10501x)
-                .put("g106", g106)
-                .put("g107", g107)
-                .put("g10701x", g10701x)
-                .put("g108", g108)
-                .put("g109", g109)
-                .put("g110", g110)
-                .put("g126", g126)
-                .put("g127", g127)
-                .put("g113", g113)
-                .put("g114", g114)
-                .put("g11496x", g11496x)
-                .put("g115", g115)
-                .put("g116", g116)
-                .put("g117", g117)
-                .put("g117hx", g117hx)
-                .put("g117mx", g117mx)
-                .put("g117dx", g117dx)
-                .put("g11801", g11801)
-                .put("g11801x", g11801x)
-                .put("g11802", g11802)
-                .put("g11802x", g11802x)
-                .put("g11803", g11803)
-                .put("g11803x", g11803x)
-                .put("g11804", g11804)
-                .put("g11804x", g11804x)
-                .put("g11896", g11896)
-                .put("g11896x", g11896x)
-                .put("g11898", g11898)
-                .put("g119", g119)
-                .put("g120", g120)
-                .put("g12096x", g12096x)
-                .put("g121", g121)
-                .put("g12196x", g12196x)
-                .put("g122", g122)
-                .put("g12301", g12301)
-                .put("g12302", g12302)
-                .put("g12303", g12303)
-                .put("g12304", g12304)
-                .put("g12305", g12305)
-                .put("g12306", g12306)
-                .put("g12307", g12307)
-                .put("g12308", g12308)
-                .put("g124", g124)
-                .put("g1241", g1241)
-                .put("g1242", g1242)
-                .put("g1243", g1243)
-                .put("g1244", g1244)
-                .put("g1245", g1245)
-                .put("g1246", g1246)
-                .put("g1247", g1247)
-                .put("g1248", g1248)
-                .put("g1249", g1249)
-                .put("g12410", g12410)
-                .put("g12411", g12411)
-                .put("g12412", g12412)
-                .put("g12413", g12413)
-                .put("g12401", g12401)
-                .put("g1240101", g1240101)
-                .put("g1240102", g1240102)
-                .put("g1240103", g1240103)
-                .put("g1240104", g1240104)
-                .put("g1240105", g1240105)
-                .put("g1240106", g1240106)
-                .put("g1240107", g1240107)
-                .put("g1240108", g1240108)
-                .put("g1240109", g1240109)
-                .put("g1240110", g1240110)
-                .put("g1240111", g1240111)
-                .put("g1240112", g1240112)
-                .put("g1240113", g1240113)
-                .put("g1240114", g1240114)
-                .put("g12402", g12402)
-                .put("g1240296x", g1240296x)
-                .put("g125", g125)
-                .put("g12501", g12501)
-                .put("g1250101", g1250101)
-                .put("g1250102", g1250102)
-                .put("g1250103", g1250103)
-                .put("g1250104", g1250104)
-                .put("g1250105", g1250105)
-                .put("g1250106", g1250106)
-                .put("g1250107", g1250107)
-                .put("g1250108", g1250108)
-                .put("g128", g128)
-                .put("g129", g129)
-                .put("g130", g130);
-        return json.toString();
-    }
-
-
-    public String sH1AtoString() throws JSONException {
-        Log.d(TAG, "sH1AtoString: ");
-        JSONObject json = new JSONObject();
-        json.put("h101", h101)
-                .put("h101mx", h101mx)
-                .put("h101wx", h101wx)
-                .put("h102", h102)
-                .put("h103", h103)
-                .put("h10401", h10401)
-                .put("h10402", h10402)
-                .put("h10403", h10403)
-                .put("h10496", h10496)
-                .put("h10496x", h10496x)
-                .put("h105", h105)
-                .put("h106", h106)
-                .put("h1061x", h1061x)
-                .put("h107", h107)
-                .put("h10800", h10800)
-                .put("h108a", h108a)
-                .put("h108", h108)
-                .put("h10896x", h10896x)
-                .put("h10900", h10900)
-                .put("h10901", h10901)
-                .put("h1091", h1091)
-                .put("h1092", h1092)
-                .put("h1093", h1093)
-                .put("h1094", h1094)
-                .put("h1095", h1095)
-                .put("h1096", h1096)
-                .put("h1097", h1097)
-                .put("h10997", h10997)
-                .put("h10996", h10996)
-                .put("h10996x", h10996x)
-                .put("h11000", h11000)
-                .put("h11001", h11001)
-                .put("h110", h110)
-                .put("h111", h111)
-                .put("h11200", h11200)
-                .put("h11201", h11201)
-                .put("h11202", h11202)
-                .put("h112", h112)
-                .put("h113", h113)
-                .put("h114", h114)
-                .put("h115", h115)
-                .put("h11501", h11501)
-                .put("h11502", h11502)
-                .put("h11503", h11503)
-                .put("h11504", h11504)
-                .put("h11505", h11505)
-                .put("h11506", h11506)
-                .put("h11507", h11507)
-                .put("h11508", h11508)
-                .put("h11509", h11509)
-                .put("h11596", h11596)
-                .put("h11596x", h11596x)
-                .put("h116", h116)
-                .put("h11701", h11701)
-                .put("h118", h118)
-                .put("h119", h119)
-                .put("h120", h120)
-                .put("h121", h121)
-                .put("h122", h122)
-                .put("h1221x", h1221x)
-                .put("h123", h123)
-                .put("h124", h124);
-        return json.toString();
-    }
-
-
-    public String sH1BtoString() throws JSONException {
-        Log.d(TAG, "sH1BtoString: ");
-        JSONObject json = new JSONObject();
-        json.put("h125", h125)
-                .put("h126", h126)
-                .put("h127", h127)
-                .put("h12796x", h12796x)
-                .put("h128", h128)
-                .put("h12896x", h12896x)
-                .put("h12901", h12901)
-                .put("h12902", h12902)
-                .put("h12903", h12903)
-                .put("h12904", h12904)
-                .put("h12905", h12905)
-                .put("h12906", h12906)
-                .put("h130", h130)
-                .put("h131", h131)
-                .put("h1310101", h1310101)
-                .put("h1310102", h1310102)
-                .put("h1310103", h1310103)
-                .put("h1310104", h1310104)
-                .put("h1310105", h1310105)
-                .put("h1310106", h1310106)
-                .put("h1310107", h1310107)
-                .put("h132", h132)
-                .put("h132a", h132a)
-                .put("h132a96x", h132a96x)
-                .put("h13301", h13301)
-                .put("h13302", h13302)
-                .put("h13303", h13303)
-                .put("h13304", h13304)
-                .put("h13305", h13305)
-                .put("h13306", h13306)
-                .put("h13307", h13307)
-                .put("h13308", h13308)
-                .put("h13309", h13309)
-                .put("h13310", h13310)
-                .put("h134", h134)
-                .put("h13501", h13501)
-                .put("h13502", h13502)
-                .put("h13503", h13503)
-                .put("h13504", h13504)
-                .put("h13505", h13505)
-                .put("h13506", h13506)
-                .put("h13507", h13507)
-                .put("h13508", h13508)
-                .put("h13509", h13509)
-                .put("h13598", h13598)
-                .put("h1361", h136a)
-                .put("h1362", h136b)
-                .put("h1363", h136c)
-                .put("h136d", h136d)
-                .put("h136e", h136e)
-                .put("h136f", h136f)
-                .put("h13696", h13696)
-                .put("h13696x", h13696x)
-                .put("h1361", h1361)
-                .put("h1362a", h1362a)
-                .put("h1362b", h1362b)
-                .put("h1362c", h1362c)
-                .put("h1362d", h1362d)
-                .put("h1362e", h1362e)
-                .put("h1362f", h1362f)
-                .put("h1362g", h1362g)
-                .put("h1362h", h1362h)
-                .put("h1362i", h1362i)
-                .put("h1362j", h1362j)
-                .put("h136298", h136298)
-                .put("h1363", h1363)
-                .put("h137", h137)
-                .put("h1371", h1371)
-                .put("h137196x", h137196x)
-                .put("h1372", h1372)
-                .put("h1373", h1373)
-                .put("h137396x", h137396x);
-        return json.toString();
-    }
-
-
-    public String sH2toString() throws JSONException {
-        Log.d(TAG, "sH2toString: ");
-        JSONObject json = new JSONObject();
-        json.put("h201", h201)
-                .put("h201hx", h201hx)
-                .put("h201dx", h201dx)
-                .put("h201wx", h201wx)
-                .put("h202", h202)
-                .put("h203h", h203h)
-                .put("h203d", h203d)
-                .put("h203w", h203w)
-                .put("h204", h204)
-                .put("h205", h205)
-                .put("h20596x", h20596x)
-                .put("h20701", h20701)
-                .put("h20702", h20702)
-                .put("h20703", h20703)
-                .put("h20704", h20704)
-                .put("h20705", h20705)
-                .put("h20706", h20706)
-                .put("h20707", h20707)
-                .put("h20708", h20708)
-                .put("h20798", h20798)
-                .put("h20801", h20801)
-                .put("h20802", h20802)
-                .put("h20803", h20803)
-                .put("h20804", h20804)
-                .put("h20805", h20805)
-                .put("h20806", h20806)
-                .put("h20896", h20896)
-                .put("h20896x", h20896x)
-                .put("h209", h209)
-                .put("h209a", h209a)
-                .put("h209a96x", h209a96x)
-                .put("h210", h210)
-                .put("h21101", h21101)
-                .put("h21102", h21102)
-                .put("h21103", h21103)
-                .put("h21104", h21104)
-                .put("h21105", h21105)
-                .put("h21106", h21106)
-                .put("h21107", h21107)
-                .put("h21108", h21108)
-                .put("h21109", h21109)
-                .put("h21110", h21110)
-                .put("h212", h212)
-                .put("h213", h213)
-                .put("h214", h214)
-                .put("h214a", h214a)
-                .put("h214b01", h214b01)
-                .put("h214b02", h214b02)
-                .put("h214b03", h214b03)
-                .put("h214b04", h214b04)
-                .put("h214b05", h214b05)
-                .put("h214b06", h214b06)
-                .put("h214b96", h214b96)
-                .put("h214b96x", h214b96x)
-                .put("h214b98", h214b98)
-                .put("h215", h215)
-                .put("h216", h216)
-                .put("h216a", h216a)
-                .put("h216a96x", h216a96x)
-                .put("h21701", h21701)
-                .put("h21702", h21702)
-                .put("h21703", h21703)
-                .put("h21704", h21704)
-                .put("h21705", h21705)
-                .put("h21706", h21706)
-                .put("h21796", h21796)
-                .put("h21796x", h21796x)
-                .put("h218", h218)
-                .put("h219", h219)
-                .put("h21996x", h21996x)
-                .put("h2201", h2201)
-                .put("h2201x", h2201x)
-                .put("h2202", h2202)
-                .put("h2202x", h2202x)
-                .put("h2203", h2203)
-                .put("h2203x", h2203x)
-                .put("h2204", h2204)
-                .put("h2204x", h2204x)
-                .put("h2205", h2205)
-                .put("h2205x", h2205x)
-                .put("h2206", h2206)
-                .put("h2206x", h2206x)
-                .put("h22096", h22096)
-                .put("h22096x", h22096x)
-                .put("h221", h221)
-                .put("h222", h222)
-                .put("h22296x", h22296x)
-                .put("h223", h223);
-        return json.toString();
-    }
-
-
-    public String sKtoString() throws JSONException {
-        Log.d(TAG, "sKtoString: ");
-        JSONObject json = new JSONObject();
-        json.put("k101", k101)
-                .put("k101a01", k101a01)
-                .put("k101a02", k101a02)
-                .put("k101a03", k101a03)
-                .put("k101a04", k101a04)
-                .put("k101a05", k101a05)
-                .put("k101a06", k101a06)
-                .put("k101a07", k101a07)
-                .put("k101a08", k101a08)
-                .put("k101a09", k101a09)
-                .put("k101a10", k101a10)
-                .put("k101a11", k101a11)
-                .put("k101a12", k101a12)
-                .put("k101a13", k101a13)
-                .put("k101a96", k101a96)
-                .put("k101a96x", k101a96x)
-                .put("k101b", k101b)
-                .put("k102", k102)
-                .put("k10401", k10401)
-                .put("k10402", k10402)
-                .put("k10403", k10403)
-                .put("k10404", k10404)
-                .put("k10405", k10405)
-                .put("k10406", k10406)
-                .put("k10477", k10477)
-                .put("k10408", k10408)
-                .put("k10409", k10409)
-                .put("k10410", k10410)
-                .put("k10411", k10411)
-                .put("k10412", k10412)
-                .put("k10413", k10413)
-                .put("k103", k103)
-                .put("k104b01", k104b01)
-                .put("k104b02", k104b02)
-                .put("k104b03", k104b03)
-                .put("k104b04", k104b04)
-                .put("k104b05", k104b05)
-                .put("k104b06", k104b06)
-                .put("k104b07", k104b07)
-                .put("k104b08", k104b08)
-                .put("k104b09", k104b09)
-                .put("k104b10", k104b10)
-                .put("k104b11", k104b11)
-                .put("k104b12", k104b12)
-                .put("k104b13", k104b13)
-                .put("k105", k105)
-                .put("k105a", k105a)
-                .put("k105a01x", k105a01x)
-                .put("k105a02x", k105a02x)
-                .put("k105b", k105b)
-                .put("k10601", k10601)
-                .put("k10602", k10602)
-                .put("k10603", k10603)
-                .put("k10604", k10604)
-                .put("k10605", k10605)
-                .put("k10606", k10606)
-                .put("k10607", k10607)
-                .put("k10608", k10608)
-                .put("k10696", k10696)
-                .put("k10696x", k10696x)
-                .put("k107", k107)
-                .put("k107a", k107a)
-                .put("k107a01", k107a01)
-                .put("k107a02", k107a02)
-                .put("k107a03", k107a03)
-                .put("k107a04", k107a04)
-                .put("k107a05", k107a05)
-                .put("k107a06", k107a06)
-                .put("k107a07", k107a07)
-                .put("k107a08", k107a08)
-                .put("k107a99", k107a99)
-                .put("k108", k108)
-                .put("k108a", k108a)
-                .put("k109", k109);
-        return json.toString();
-    }
-
-
-    public String sLtoString() throws JSONException {
-        Log.d(TAG, "sLtoString: ");
-        JSONObject json = new JSONObject();
-        json.put("l101", l101)
-                .put("l102", l102)
-                .put("l102a", l102a)
-                .put("l102a96x", l102a96x)
-                .put("l103", l103)
-                .put("l104", l104)
-                .put("l10496x", l10496x)
-                .put("l105", l105)
-                .put("l106", l106)
-                .put("l10696x", l10696x)
-                .put("l107", l107)
-                .put("l10796x", l10796x)
-                .put("l108", l108)
-                .put("l10896x", l10896x)
-                .put("l109", l109)
-                .put("l10996x", l10996x)
-                .put("l110", l110)
-                .put("l111", l111)
-                .put("l1121", l1121)
-                .put("l1122", l1122)
-                .put("l1123", l1123)
-                .put("l1124", l1124)
-                .put("l1125", l1125)
-                .put("lg101", lg101)
-                .put("lg10201", lg10201)
-                .put("lg10202", lg10202)
-                .put("lg10203", lg10203)
-                .put("lg10204", lg10204)
-                .put("lg10205", lg10205)
-                .put("lg10206", lg10206)
-                .put("lg10207", lg10207)
-                .put("lg10208", lg10208)
-                .put("lg10209", lg10209)
-                .put("lg10296", lg10296)
-                .put("lg10296x", lg10296x)
-                .put("lg103", lg103)
-                .put("lg10401", lg10401)
-                .put("lg10402", lg10402)
-                .put("lg10403", lg10403)
-                .put("lg10404", lg10404)
-                .put("lg10405", lg10405)
-                .put("lg10406", lg10406)
-                .put("lg10407", lg10407)
-                .put("lg10408", lg10408)
-                .put("lg10409", lg10409)
-                .put("lg10410", lg10410)
-                .put("lg10411", lg10411)
-                .put("lg10412", lg10412)
-                .put("lg10413", lg10413)
-                .put("lg10414", lg10414)
-                .put("lg10415", lg10415)
-                .put("lg10416", lg10416)
-                .put("lg105", lg105)
-                .put("lg10601", lg10601)
-                .put("lg10602", lg10602)
-                .put("lg10603", lg10603)
-                .put("lg10604", lg10604)
-                .put("lg10605", lg10605)
-                .put("lg10606", lg10606)
-                .put("lg10607", lg10607)
-                .put("lg10696", lg10696)
-                .put("lg10696x", lg10696x)
-                .put("l1131", l1131)
-                .put("l1132", l1132)
-                .put("l1133", l1133)
-                .put("l1134", l1134)
-                .put("l114", l114)
-                .put("l11496x", l11496x)
-                .put("l115", l115)
-                .put("l11596x", l11596x)
-                .put("l116", l116)
-                .put("l11696x", l11696x)
-                .put("l117", l117)
-                .put("l11796x", l11796x);
-        return json.toString();
-    }
-
-
-    public String uNtoString() throws JSONException {
-        Log.d(TAG, "uNtoString: ");
-        JSONObject json = new JSONObject();
-        json.put("un01", un01)
-                .put("un02", un02)
-                .put("un03", un03)
-                .put("un04", un04)
-                .put("un0401x", un0401x)
-                .put("un0402x", un0402x)
-                .put("un05", un05)
-                .put("un06", un06)
-                .put("un0696x", un0696x)
-                .put("un07", un07)
-                .put("un0701x", un0701x)
-                .put("un0702x", un0702x)
-                .put("un0703x", un0703x)
-                .put("un0704x", un0704x);
-        return json.toString();
-    }
 
 
     public MWRA Hydrate(Cursor cursor) throws JSONException {
@@ -9885,8 +9322,22 @@ public class MWRA extends BaseObservable implements Observable {
             this.h203d = json.getString("h203d");
             this.h203w = json.getString("h203w");
             this.h204 = json.getString("h204");
+            this.h20496x = json.getString("h20496x");
             this.h205 = json.getString("h205");
             this.h20596x = json.getString("h20596x");
+            this.h2051a = json.getString("h2051a");
+            this.h2051b = json.getString("h2051b");
+            this.h2051c = json.getString("h2051c");
+            this.h2051d = json.getString("h2051d");
+            this.h2051e = json.getString("h2051e");
+            this.h2051f = json.getString("h2051f");
+            this.h2051g = json.getString("h2051g");
+            this.h2051h = json.getString("h2051h");
+            this.h2051i = json.getString("h2051i");
+            this.h2051j = json.getString("h2051j");
+            this.h205196 = json.getString("h205196");
+            this.h205196x = json.getString("h205196x");
+            this.h206 = json.getString("h206");
             this.h20701 = json.getString("h20701");
             this.h20702 = json.getString("h20702");
             this.h20703 = json.getString("h20703");
@@ -10157,6 +9608,757 @@ public class MWRA extends BaseObservable implements Observable {
             this.un0703x = json.getString("un0703x");
             this.un0704x = json.getString("un0704x");
         }
+    }
+
+
+    public JSONObject toJSONObject() throws JSONException {
+        JSONObject json = new JSONObject();
+
+        json.put(TableContracts.MwraTable.COLUMN_ID, this.id);
+        json.put(TableContracts.MwraTable.COLUMN_UID, this.uid);
+        json.put(TableContracts.MwraTable.COLUMN_PROJECT_NAME, this.projectName);
+
+        json.put(TableContracts.MwraTable.COLUMN_UUID, this.uuid);
+        json.put(TableContracts.MwraTable.COLUMN_HHID, this.hhid);
+        // json.put(TableContracts.MwraTable.COLUMN_MUID, this.muid);
+        json.put(TableContracts.MwraTable.COLUMN_SNO, this.sno);
+        json.put(TableContracts.MwraTable.COLUMN_FMUID, this.fmuid);
+        json.put(TableContracts.MwraTable.COLUMN_INDEXED, this.indexed);
+        json.put(TableContracts.MwraTable.COLUMN_PSU_CODE, this.psuCode);
+        json.put(TableContracts.MwraTable.COLUMN_USERNAME, this.userName);
+        json.put(TableContracts.MwraTable.COLUMN_SYSDATE, this.sysDate);
+        json.put(TableContracts.MwraTable.COLUMN_DEVICEID, this.deviceId);
+        json.put(TableContracts.MwraTable.COLUMN_DEVICETAGID, this.deviceTag);
+        json.put(TableContracts.MwraTable.COLUMN_ISTATUS, this.iStatus);
+        json.put(TableContracts.MwraTable.COLUMN_SYNCED, this.synced);
+        json.put(TableContracts.MwraTable.COLUMN_SYNC_DATE, this.syncDate);
+        json.put(TableContracts.MwraTable.COLUMN_SF1, new JSONObject(sF1toString()));
+        json.put(TableContracts.MwraTable.COLUMN_SF2, new JSONObject(sF2toString()));
+        json.put(TableContracts.MwraTable.COLUMN_SG, new JSONObject(sGtoString()));
+        json.put(TableContracts.MwraTable.COLUMN_SH1A, new JSONObject(sH1AtoString()));
+        json.put(TableContracts.MwraTable.COLUMN_SH1B, new JSONObject(sH1BtoString()));
+        json.put(TableContracts.MwraTable.COLUMN_SH2, new JSONObject(sH2toString()));
+        json.put(TableContracts.MwraTable.COLUMN_SK, new JSONObject(sKtoString()));
+        json.put(TableContracts.MwraTable.COLUMN_SL, new JSONObject(sLtoString()));
+        json.put(TableContracts.MwraTable.COLUMN_UN, new JSONObject(uNtoString()));
+
+        return json;
+    }
+
+
+    public String sF1toString() throws JSONException {
+        Log.d(TAG, "sF1toString: ");
+        JSONObject json = new JSONObject();
+        json.put("f101", f101)
+                .put("f101a01", f101a01)
+                .put("f101a02", f101a02)
+                .put("f101a03", f101a03)
+                .put("f101a04", f101a04)
+                .put("f101a05", f101a05)
+                .put("f101a06", f101a06)
+                .put("f101a07", f101a07)
+                .put("f101a08", f101a08)
+                .put("f101a09", f101a09)
+                .put("f101a10", f101a10)
+                .put("f101a11", f101a11)
+                .put("f101a12", f101a12)
+                .put("f101a13", f101a13)
+                .put("f101a14", f101a14)
+                .put("f101a96", f101a96)
+                .put("f101a96x", f101a96x)
+                .put("f101b", f101b)
+                .put("f101b01x", f101b01x)
+                .put("f10201", f10201)
+                .put("f10202", f10202)
+                .put("f10203", f10203)
+                .put("f10204", f10204)
+                .put("f10205", f10205)
+                .put("f10206", f10206)
+                .put("f10207", f10207)
+                .put("f10208", f10208)
+                .put("f10209", f10209)
+                .put("f10210", f10210)
+                .put("f10211", f10211)
+                .put("f10296", f10296)
+                .put("f10296x", f10296x)
+                .put("f10301", f10301)
+                .put("f10302", f10302)
+                .put("f10303", f10303)
+                .put("f10304", f10304)
+                .put("f10305", f10305)
+                .put("f104", f104)
+                .put("f105", f105)
+                .put("f106", f106)
+                .put("f107", f107)
+                .put("f10796x", f10796x)
+                .put("f108", f108)
+                .put("f108wx", f108wx)
+                .put("f108mx", f108mx)
+                .put("f11001", f11001)
+                .put("f11002", f11002)
+                .put("f11003", f11003)
+                .put("f11004", f11004)
+                .put("f11005", f11005)
+                .put("f11006", f11006)
+                .put("f11007", f11007)
+                .put("f11008", f11008)
+                .put("f11009", f11009)
+                .put("f11096", f11096)
+                .put("f11096x", f11096x)
+                .put("f111", f111)
+                .put("f112", f112)
+                .put("f113", f113)
+                .put("f11301x", f11301x)
+                .put("f114", f114)
+                .put("f115", f115)
+                .put("f116", f116)
+                .put("f117", f117)
+                .put("f118", f118)
+                .put("f118mx", f118mx)
+                .put("f118dx", f118dx)
+                .put("f119", f119)
+                .put("f120", f120)
+                .put("f12001x", f12001x);
+        return json.toString();
+    }
+
+
+    public String sF2toString() throws JSONException {
+        Log.d(TAG, "sF2toString: ");
+        JSONObject json = new JSONObject();
+        json.put("f121a", f121a)
+                .put("f121b", f121b)
+                .put("f121b96x", f121b96x)
+                .put("f12101", f12101)
+                .put("f122", f122)
+                .put("f12201x", f12201x)
+                .put("f12301", f12301)
+                .put("f12302", f12302)
+                .put("f12303", f12303)
+                .put("f12304", f12304)
+                .put("f12305", f12305)
+                .put("f12306", f12306)
+                .put("f12307", f12307)
+                .put("f12308", f12308)
+                .put("f12309", f12309)
+                .put("f12310", f12310)
+                .put("f12396", f12396)
+                .put("f12396x", f12396x)
+                .put("f124", f124)
+                .put("f12501", f12501)
+                .put("f12502", f12502)
+                .put("f12503", f12503)
+                .put("f12504", f12504)
+                .put("f12505", f12505)
+                .put("f12506", f12506)
+                .put("f12507", f12507)
+                .put("f12601", f12601)
+                .put("f12602", f12602)
+                .put("f12603", f12603)
+                .put("f12604", f12604)
+                .put("f12605", f12605)
+                .put("f12606", f12606)
+                .put("f12607", f12607)
+                .put("f12608", f12608)
+                .put("f127", f127)
+                .put("f12796x", f12796x)
+                .put("f12801", f12801)
+                .put("f12802", f12802)
+                .put("f12803", f12803)
+                .put("f12804", f12804)
+                .put("f12805", f12805)
+                .put("f12806", f12806)
+                .put("f12807", f12807)
+                .put("f12808", f12808)
+                .put("f129", f129)
+                .put("f13001", f13001)
+                .put("f13002", f13002)
+                .put("f13003", f13003)
+                .put("f13004", f13004)
+                .put("f13005", f13005)
+                .put("f13006", f13006)
+                .put("f13007", f13007)
+                .put("f13008", f13008)
+                .put("f13009", f13009)
+                .put("f13010", f13010)
+                .put("f13011", f13011)
+                .put("f13012", f13012)
+                .put("f13013", f13013)
+                .put("f13014", f13014)
+                .put("f13015", f13015)
+                .put("f13096", f13096)
+                .put("f13096x", f13096x)
+                .put("f131", f131)
+                .put("f13196x", f13196x)
+                .put("f131a", f131a)
+                .put("f13401", f13401)
+                .put("f13402", f13402)
+                .put("f13403", f13403)
+                .put("f13404", f13404)
+                .put("f13405", f13405)
+                .put("f13406", f13406)
+                .put("f13407", f13407)
+                .put("f13408", f13408)
+                .put("f13409", f13409)
+                .put("f13410", f13410);
+        return json.toString();
+    }
+
+
+    public String sGtoString() throws JSONException {
+        Log.d(TAG, "sGtoString: ");
+        JSONObject json = new JSONObject();
+        json.put("g101", g101)
+                .put("g102", g102)
+                .put("g10296x", g10296x)
+                .put("g10301", g10301)
+                .put("g10302", g10302)
+                .put("g10303", g10303)
+                .put("g10304", g10304)
+                .put("g10305", g10305)
+                .put("g10306", g10306)
+                .put("g10307", g10307)
+                .put("g10308", g10308)
+                .put("g10309", g10309)
+                .put("g10310", g10310)
+                .put("g10311", g10311)
+                .put("g10312", g10312)
+                .put("g10313", g10313)
+                .put("g10314", g10314)
+                .put("g10315", g10315)
+                .put("g10396", g10396)
+                .put("g10396x", g10396x)
+                .put("g104", g104)
+                .put("g10496x", g10496x)
+                .put("g105", g105)
+                .put("g10501x", g10501x)
+                .put("g106", g106)
+                .put("g107", g107)
+                .put("g10701x", g10701x)
+                .put("g108", g108)
+                .put("g109", g109)
+                .put("g110", g110)
+                .put("g126", g126)
+                .put("g127", g127)
+                .put("g113", g113)
+                .put("g114", g114)
+                .put("g11496x", g11496x)
+                .put("g115", g115)
+                .put("g116", g116)
+                .put("g117", g117)
+                .put("g117hx", g117hx)
+                .put("g117mx", g117mx)
+                .put("g117dx", g117dx)
+                .put("g11801", g11801)
+                .put("g11801x", g11801x)
+                .put("g11802", g11802)
+                .put("g11802x", g11802x)
+                .put("g11803", g11803)
+                .put("g11803x", g11803x)
+                .put("g11804", g11804)
+                .put("g11804x", g11804x)
+                .put("g11896", g11896)
+                .put("g11896x", g11896x)
+                .put("g11898", g11898)
+                .put("g119", g119)
+                .put("g120", g120)
+                .put("g12096x", g12096x)
+                .put("g121", g121)
+                .put("g12196x", g12196x)
+                .put("g122", g122)
+                .put("g12301", g12301)
+                .put("g12302", g12302)
+                .put("g12303", g12303)
+                .put("g12304", g12304)
+                .put("g12305", g12305)
+                .put("g12306", g12306)
+                .put("g12307", g12307)
+                .put("g12308", g12308)
+                .put("g124", g124)
+                .put("g1241", g1241)
+                .put("g1242", g1242)
+                .put("g1243", g1243)
+                .put("g1244", g1244)
+                .put("g1245", g1245)
+                .put("g1246", g1246)
+                .put("g1247", g1247)
+                .put("g1248", g1248)
+                .put("g1249", g1249)
+                .put("g12410", g12410)
+                .put("g12411", g12411)
+                .put("g12412", g12412)
+                .put("g12413", g12413)
+                .put("g12401", g12401)
+                .put("g1240101", g1240101)
+                .put("g1240102", g1240102)
+                .put("g1240103", g1240103)
+                .put("g1240104", g1240104)
+                .put("g1240105", g1240105)
+                .put("g1240106", g1240106)
+                .put("g1240107", g1240107)
+                .put("g1240108", g1240108)
+                .put("g1240109", g1240109)
+                .put("g1240110", g1240110)
+                .put("g1240111", g1240111)
+                .put("g1240112", g1240112)
+                .put("g1240113", g1240113)
+                .put("g1240114", g1240114)
+                .put("g12402", g12402)
+                .put("g1240296x", g1240296x)
+                .put("g125", g125)
+                .put("g12501", g12501)
+                .put("g1250101", g1250101)
+                .put("g1250102", g1250102)
+                .put("g1250103", g1250103)
+                .put("g1250104", g1250104)
+                .put("g1250105", g1250105)
+                .put("g1250106", g1250106)
+                .put("g1250107", g1250107)
+                .put("g1250108", g1250108)
+                .put("g128", g128)
+                .put("g129", g129)
+                .put("g130", g130);
+        return json.toString();
+    }
+
+
+    public String sH1AtoString() throws JSONException {
+        Log.d(TAG, "sH1AtoString: ");
+        JSONObject json = new JSONObject();
+        json.put("h101", h101)
+                .put("h101mx", h101mx)
+                .put("h101wx", h101wx)
+                .put("h102", h102)
+                .put("h103", h103)
+                .put("h10401", h10401)
+                .put("h10402", h10402)
+                .put("h10403", h10403)
+                .put("h10496", h10496)
+                .put("h10496x", h10496x)
+                .put("h105", h105)
+                .put("h106", h106)
+                .put("h1061x", h1061x)
+                .put("h107", h107)
+                .put("h10800", h10800)
+                .put("h108a", h108a)
+                .put("h108", h108)
+                .put("h10896x", h10896x)
+                .put("h10900", h10900)
+                .put("h10901", h10901)
+                .put("h1091", h1091)
+                .put("h1092", h1092)
+                .put("h1093", h1093)
+                .put("h1094", h1094)
+                .put("h1095", h1095)
+                .put("h1096", h1096)
+                .put("h1097", h1097)
+                .put("h10997", h10997)
+                .put("h10996", h10996)
+                .put("h10996x", h10996x)
+                .put("h11000", h11000)
+                .put("h11001", h11001)
+                .put("h110", h110)
+                .put("h111", h111)
+                .put("h11200", h11200)
+                .put("h11201", h11201)
+                .put("h11202", h11202)
+                .put("h112", h112)
+                .put("h113", h113)
+                .put("h114", h114)
+                .put("h115", h115)
+                .put("h11501", h11501)
+                .put("h11502", h11502)
+                .put("h11503", h11503)
+                .put("h11504", h11504)
+                .put("h11505", h11505)
+                .put("h11506", h11506)
+                .put("h11507", h11507)
+                .put("h11508", h11508)
+                .put("h11509", h11509)
+                .put("h11596", h11596)
+                .put("h11596x", h11596x)
+                .put("h116", h116)
+                .put("h11701", h11701)
+                .put("h118", h118)
+                .put("h119", h119)
+                .put("h120", h120)
+                .put("h121", h121)
+                .put("h122", h122)
+                .put("h1221x", h1221x)
+                .put("h123", h123)
+                .put("h124", h124);
+        return json.toString();
+    }
+
+
+    public String sH1BtoString() throws JSONException {
+        Log.d(TAG, "sH1BtoString: ");
+        JSONObject json = new JSONObject();
+        json.put("h125", h125)
+                .put("h126", h126)
+                .put("h127", h127)
+                .put("h12796x", h12796x)
+                .put("h128", h128)
+                .put("h12896x", h12896x)
+                .put("h12901", h12901)
+                .put("h12902", h12902)
+                .put("h12903", h12903)
+                .put("h12904", h12904)
+                .put("h12905", h12905)
+                .put("h12906", h12906)
+                .put("h130", h130)
+                .put("h131", h131)
+                .put("h1310101", h1310101)
+                .put("h1310102", h1310102)
+                .put("h1310103", h1310103)
+                .put("h1310104", h1310104)
+                .put("h1310105", h1310105)
+                .put("h1310106", h1310106)
+                .put("h1310107", h1310107)
+                .put("h132", h132)
+                .put("h132a", h132a)
+                .put("h132a96x", h132a96x)
+                .put("h13301", h13301)
+                .put("h13302", h13302)
+                .put("h13303", h13303)
+                .put("h13304", h13304)
+                .put("h13305", h13305)
+                .put("h13306", h13306)
+                .put("h13307", h13307)
+                .put("h13308", h13308)
+                .put("h13309", h13309)
+                .put("h13310", h13310)
+                .put("h134", h134)
+                .put("h13501", h13501)
+                .put("h13502", h13502)
+                .put("h13503", h13503)
+                .put("h13504", h13504)
+                .put("h13505", h13505)
+                .put("h13506", h13506)
+                .put("h13507", h13507)
+                .put("h13508", h13508)
+                .put("h13509", h13509)
+                .put("h13598", h13598)
+                .put("h1361", h136a)
+                .put("h1362", h136b)
+                .put("h1363", h136c)
+                .put("h136d", h136d)
+                .put("h136e", h136e)
+                .put("h136f", h136f)
+                .put("h13696", h13696)
+                .put("h13696x", h13696x)
+                .put("h1361", h1361)
+                .put("h1362a", h1362a)
+                .put("h1362b", h1362b)
+                .put("h1362c", h1362c)
+                .put("h1362d", h1362d)
+                .put("h1362e", h1362e)
+                .put("h1362f", h1362f)
+                .put("h1362g", h1362g)
+                .put("h1362h", h1362h)
+                .put("h1362i", h1362i)
+                .put("h1362j", h1362j)
+                .put("h136298", h136298)
+                .put("h1363", h1363)
+                .put("h137", h137)
+                .put("h1371", h1371)
+                .put("h137196x", h137196x)
+                .put("h1372", h1372)
+                .put("h1373", h1373)
+                .put("h137396x", h137396x);
+        return json.toString();
+    }
+
+
+    public String sH2toString() throws JSONException {
+        Log.d(TAG, "sH2toString: ");
+        JSONObject json = new JSONObject();
+        json.put("h201", h201)
+                .put("h201hx", h201hx)
+                .put("h201dx", h201dx)
+                .put("h201wx", h201wx)
+                .put("h202", h202)
+                .put("h203h", h203h)
+                .put("h203d", h203d)
+                .put("h203w", h203w)
+                .put("h204", h204)
+                .put("h20496x", h20496x)
+                .put("h205", h205)
+                .put("h20596x", h20596x)
+                .put("h2051a", h2051a)
+                .put("h2051b", h2051b)
+                .put("h2051c", h2051c)
+                .put("h2051d", h2051d)
+                .put("h2051e", h2051e)
+                .put("h2051f", h2051f)
+                .put("h2051g", h2051g)
+                .put("h2051h", h2051h)
+                .put("h2051i", h2051i)
+                .put("h2051j", h2051j)
+                .put("h205196", h205196)
+                .put("h205196x", h205196x)
+                .put("h206", h206)
+                .put("h20701", h20701)
+                .put("h20702", h20702)
+                .put("h20703", h20703)
+                .put("h20704", h20704)
+                .put("h20705", h20705)
+                .put("h20706", h20706)
+                .put("h20707", h20707)
+                .put("h20708", h20708)
+                .put("h20798", h20798)
+                .put("h20801", h20801)
+                .put("h20802", h20802)
+                .put("h20803", h20803)
+                .put("h20804", h20804)
+                .put("h20805", h20805)
+                .put("h20806", h20806)
+                .put("h20896", h20896)
+                .put("h20896x", h20896x)
+                .put("h209", h209)
+                .put("h209a", h209a)
+                .put("h209a96x", h209a96x)
+                .put("h210", h210)
+                .put("h21101", h21101)
+                .put("h21102", h21102)
+                .put("h21103", h21103)
+                .put("h21104", h21104)
+                .put("h21105", h21105)
+                .put("h21106", h21106)
+                .put("h21107", h21107)
+                .put("h21108", h21108)
+                .put("h21109", h21109)
+                .put("h21110", h21110)
+                .put("h212", h212)
+                .put("h213", h213)
+                .put("h214", h214)
+                .put("h214a", h214a)
+                .put("h214b01", h214b01)
+                .put("h214b02", h214b02)
+                .put("h214b03", h214b03)
+                .put("h214b04", h214b04)
+                .put("h214b05", h214b05)
+                .put("h214b06", h214b06)
+                .put("h214b96", h214b96)
+                .put("h214b96x", h214b96x)
+                .put("h214b98", h214b98)
+                .put("h215", h215)
+                .put("h216", h216)
+                .put("h216a", h216a)
+                .put("h216a96x", h216a96x)
+                .put("h21701", h21701)
+                .put("h21702", h21702)
+                .put("h21703", h21703)
+                .put("h21704", h21704)
+                .put("h21705", h21705)
+                .put("h21706", h21706)
+                .put("h21796", h21796)
+                .put("h21796x", h21796x)
+                .put("h218", h218)
+                .put("h219", h219)
+                .put("h21996x", h21996x)
+                .put("h2201", h2201)
+                .put("h2201x", h2201x)
+                .put("h2202", h2202)
+                .put("h2202x", h2202x)
+                .put("h2203", h2203)
+                .put("h2203x", h2203x)
+                .put("h2204", h2204)
+                .put("h2204x", h2204x)
+                .put("h2205", h2205)
+                .put("h2205x", h2205x)
+                .put("h2206", h2206)
+                .put("h2206x", h2206x)
+                .put("h22096", h22096)
+                .put("h22096x", h22096x)
+                .put("h221", h221)
+                .put("h222", h222)
+                .put("h22296x", h22296x)
+                .put("h223", h223);
+        return json.toString();
+    }
+
+
+    public String sKtoString() throws JSONException {
+        Log.d(TAG, "sKtoString: ");
+        JSONObject json = new JSONObject();
+        json.put("k101", k101)
+                .put("k101a01", k101a01)
+                .put("k101a02", k101a02)
+                .put("k101a03", k101a03)
+                .put("k101a04", k101a04)
+                .put("k101a05", k101a05)
+                .put("k101a06", k101a06)
+                .put("k101a07", k101a07)
+                .put("k101a08", k101a08)
+                .put("k101a09", k101a09)
+                .put("k101a10", k101a10)
+                .put("k101a11", k101a11)
+                .put("k101a12", k101a12)
+                .put("k101a13", k101a13)
+                .put("k101a96", k101a96)
+                .put("k101a96x", k101a96x)
+                .put("k101b", k101b)
+                .put("k102", k102)
+                .put("k10401", k10401)
+                .put("k10402", k10402)
+                .put("k10403", k10403)
+                .put("k10404", k10404)
+                .put("k10405", k10405)
+                .put("k10406", k10406)
+                .put("k10477", k10477)
+                .put("k10408", k10408)
+                .put("k10409", k10409)
+                .put("k10410", k10410)
+                .put("k10411", k10411)
+                .put("k10412", k10412)
+                .put("k10413", k10413)
+                .put("k103", k103)
+                .put("k104b01", k104b01)
+                .put("k104b02", k104b02)
+                .put("k104b03", k104b03)
+                .put("k104b04", k104b04)
+                .put("k104b05", k104b05)
+                .put("k104b06", k104b06)
+                .put("k104b07", k104b07)
+                .put("k104b08", k104b08)
+                .put("k104b09", k104b09)
+                .put("k104b10", k104b10)
+                .put("k104b11", k104b11)
+                .put("k104b12", k104b12)
+                .put("k104b13", k104b13)
+                .put("k105", k105)
+                .put("k105a", k105a)
+                .put("k105a01x", k105a01x)
+                .put("k105a02x", k105a02x)
+                .put("k105b", k105b)
+                .put("k10601", k10601)
+                .put("k10602", k10602)
+                .put("k10603", k10603)
+                .put("k10604", k10604)
+                .put("k10605", k10605)
+                .put("k10606", k10606)
+                .put("k10607", k10607)
+                .put("k10608", k10608)
+                .put("k10696", k10696)
+                .put("k10696x", k10696x)
+                .put("k107", k107)
+                .put("k107a", k107a)
+                .put("k107a01", k107a01)
+                .put("k107a02", k107a02)
+                .put("k107a03", k107a03)
+                .put("k107a04", k107a04)
+                .put("k107a05", k107a05)
+                .put("k107a06", k107a06)
+                .put("k107a07", k107a07)
+                .put("k107a08", k107a08)
+                .put("k107a99", k107a99)
+                .put("k108", k108)
+                .put("k108a", k108a)
+                .put("k109", k109);
+        return json.toString();
+    }
+
+
+    public String sLtoString() throws JSONException {
+        Log.d(TAG, "sLtoString: ");
+        JSONObject json = new JSONObject();
+        json.put("l101", l101)
+                .put("l102", l102)
+                .put("l102a", l102a)
+                .put("l102a96x", l102a96x)
+                .put("l103", l103)
+                .put("l104", l104)
+                .put("l10496x", l10496x)
+                .put("l105", l105)
+                .put("l106", l106)
+                .put("l10696x", l10696x)
+                .put("l107", l107)
+                .put("l10796x", l10796x)
+                .put("l108", l108)
+                .put("l10896x", l10896x)
+                .put("l109", l109)
+                .put("l10996x", l10996x)
+                .put("l110", l110)
+                .put("l111", l111)
+                .put("l1121", l1121)
+                .put("l1122", l1122)
+                .put("l1123", l1123)
+                .put("l1124", l1124)
+                .put("l1125", l1125)
+                .put("lg101", lg101)
+                .put("lg10201", lg10201)
+                .put("lg10202", lg10202)
+                .put("lg10203", lg10203)
+                .put("lg10204", lg10204)
+                .put("lg10205", lg10205)
+                .put("lg10206", lg10206)
+                .put("lg10207", lg10207)
+                .put("lg10208", lg10208)
+                .put("lg10209", lg10209)
+                .put("lg10296", lg10296)
+                .put("lg10296x", lg10296x)
+                .put("lg103", lg103)
+                .put("lg10401", lg10401)
+                .put("lg10402", lg10402)
+                .put("lg10403", lg10403)
+                .put("lg10404", lg10404)
+                .put("lg10405", lg10405)
+                .put("lg10406", lg10406)
+                .put("lg10407", lg10407)
+                .put("lg10408", lg10408)
+                .put("lg10409", lg10409)
+                .put("lg10410", lg10410)
+                .put("lg10411", lg10411)
+                .put("lg10412", lg10412)
+                .put("lg10413", lg10413)
+                .put("lg10414", lg10414)
+                .put("lg10415", lg10415)
+                .put("lg10416", lg10416)
+                .put("lg105", lg105)
+                .put("lg10601", lg10601)
+                .put("lg10602", lg10602)
+                .put("lg10603", lg10603)
+                .put("lg10604", lg10604)
+                .put("lg10605", lg10605)
+                .put("lg10606", lg10606)
+                .put("lg10607", lg10607)
+                .put("lg10696", lg10696)
+                .put("lg10696x", lg10696x)
+                .put("l1131", l1131)
+                .put("l1132", l1132)
+                .put("l1133", l1133)
+                .put("l1134", l1134)
+                .put("l114", l114)
+                .put("l11496x", l11496x)
+                .put("l115", l115)
+                .put("l11596x", l11596x)
+                .put("l116", l116)
+                .put("l11696x", l11696x)
+                .put("l117", l117)
+                .put("l11796x", l11796x);
+        return json.toString();
+    }
+
+
+    public String uNtoString() throws JSONException {
+        Log.d(TAG, "uNtoString: ");
+        JSONObject json = new JSONObject();
+        json.put("un01", un01)
+                .put("un02", un02)
+                .put("un03", un03)
+                .put("un04", un04)
+                .put("un0401x", un0401x)
+                .put("un0402x", un0402x)
+                .put("un05", un05)
+                .put("un06", un06)
+                .put("un0696x", un0696x)
+                .put("un07", un07)
+                .put("un0701x", un0701x)
+                .put("un0702x", un0702x)
+                .put("un0703x", un0703x)
+                .put("un0704x", un0704x);
+        return json.toString();
     }
 
 }
