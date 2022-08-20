@@ -6248,6 +6248,7 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     public void setH208b01(String h208b01) {
+        if (this.h208b01.equals(h208b01)) return;
         this.h208b01 = h208b01;
         notifyPropertyChanged(BR.h208b01);
     }
@@ -6258,6 +6259,7 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     public void setH208b02(String h208b02) {
+        if (this.h208b02.equals(h208b02)) return;
         this.h208b02 = h208b02;
         notifyPropertyChanged(BR.h208b02);
     }
@@ -6268,6 +6270,7 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     public void setH208b03(String h208b03) {
+        if (this.h208b03.equals(h208b03)) return;
         this.h208b03 = h208b03;
         notifyPropertyChanged(BR.h208b03);
     }
@@ -6278,6 +6281,7 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     public void setH208b04(String h208b04) {
+        if (this.h208b04.equals(h208b04)) return;
         this.h208b04 = h208b04;
         notifyPropertyChanged(BR.h208b04);
     }
@@ -6288,6 +6292,7 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     public void setH208b05(String h208b05) {
+        if (this.h208b05.equals(h208b05)) return;
         this.h208b05 = h208b05;
         notifyPropertyChanged(BR.h208b05);
     }
@@ -6298,6 +6303,7 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     public void setH208b06(String h208b06) {
+        if (this.h208b06.equals(h208b06)) return;
         this.h208b06 = h208b06;
         notifyPropertyChanged(BR.h208b06);
     }
@@ -6308,6 +6314,7 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     public void setH208b07(String h208b07) {
+        if (this.h208b07.equals(h208b07)) return;
         this.h208b07 = h208b07;
         notifyPropertyChanged(BR.h208b07);
     }
@@ -6318,6 +6325,7 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     public void setH208b08(String h208b08) {
+        if (this.h208b08.equals(h208b08)) return;
         this.h208b08 = h208b08;
         notifyPropertyChanged(BR.h208b08);
     }
@@ -6328,7 +6336,19 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     public void setH208b09(String h208b09) {
+        if (this.h208b09.equals(h208b09)) return;
         this.h208b09 = h208b09;
+        setH208b01(h208b09.equals("9") ? "" : this.h208b01);
+        setH208b02(h208b09.equals("9") ? "" : this.h208b02);
+        setH208b03(h208b09.equals("9") ? "" : this.h208b03);
+        setH208b04(h208b09.equals("9") ? "" : this.h208b04);
+        setH208b05(h208b09.equals("9") ? "" : this.h208b05);
+        setH208b06(h208b09.equals("9") ? "" : this.h208b06);
+        setH208b07(h208b09.equals("9") ? "" : this.h208b07);
+        setH208b08(h208b09.equals("9") ? "" : this.h208b08);
+        setH208b98(h208b09.equals("9") ? "" : this.h208b98);
+        setH208c(h208b09.equals("9") ? "" : this.h208c);
+        setH208d(h208b09.equals("9") ? "" : this.h208d);
         notifyPropertyChanged(BR.h208b09);
     }
 
@@ -6338,7 +6358,19 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     public void setH208b98(String h208b98) {
+        if (this.h208b98.equals(h208b98)) return;
         this.h208b98 = h208b98;
+        setH208b01(h208b98.equals("98") ? "" : this.h208b01);
+        setH208b02(h208b98.equals("98") ? "" : this.h208b02);
+        setH208b03(h208b98.equals("98") ? "" : this.h208b03);
+        setH208b04(h208b98.equals("98") ? "" : this.h208b04);
+        setH208b05(h208b98.equals("98") ? "" : this.h208b05);
+        setH208b06(h208b98.equals("98") ? "" : this.h208b06);
+        setH208b07(h208b98.equals("98") ? "" : this.h208b07);
+        setH208b08(h208b98.equals("98") ? "" : this.h208b08);
+        setH208b09(h208b98.equals("98") ? "" : this.h208b09);
+        setH208c(h208b98.equals("98") ? "" : this.h208c);
+        setH208d(h208b98.equals("98") ? "" : this.h208d);
         notifyPropertyChanged(BR.h208b98);
     }
 
@@ -6349,6 +6381,7 @@ public class MWRA extends BaseObservable implements Observable {
 
     public void setH208c(String h208c) {
         this.h208c = h208c;
+        setH208d(h208c.equals("1") ? this.h208d : "");
         notifyPropertyChanged(BR.h208c);
     }
 
@@ -6359,6 +6392,7 @@ public class MWRA extends BaseObservable implements Observable {
 
     public void setH208d(String h208d) {
         this.h208d = h208d;
+        setH208d96x(h208d.equals("96") ? this.h208d96x : "");
         notifyPropertyChanged(BR.h208d);
     }
 
