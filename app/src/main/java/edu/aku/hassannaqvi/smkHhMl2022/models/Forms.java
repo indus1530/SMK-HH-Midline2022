@@ -529,6 +529,25 @@ public class Forms extends BaseObservable implements Observable {
     }
 
 
+    @Bindable
+    public String getE116() {
+        return e116;
+    }
+
+    public void setE116(String e116) {
+        this.e116 = e116;
+        notifyPropertyChanged(BR.e116);
+    }
+
+    @Bindable
+    public String getE117() {
+        return e117;
+    }
+
+    public void setE117(String e117) {
+        this.e117 = e117;
+        notifyPropertyChanged(BR.e117);
+    }
 
 
     @Bindable
