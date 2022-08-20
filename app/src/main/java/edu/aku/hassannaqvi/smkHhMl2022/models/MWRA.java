@@ -506,6 +506,21 @@ public class MWRA extends BaseObservable implements Observable {
     private String h20806 = _EMPTY_;
     private String h20896 = _EMPTY_;
     private String h20896x = _EMPTY_;
+    private String h208a = _EMPTY_;
+    private String h208b = _EMPTY_;
+    private String h208b01 = _EMPTY_;
+    private String h208b02 = _EMPTY_;
+    private String h208b03 = _EMPTY_;
+    private String h208b04 = _EMPTY_;
+    private String h208b05 = _EMPTY_;
+    private String h208b06 = _EMPTY_;
+    private String h208b07 = _EMPTY_;
+    private String h208b08 = _EMPTY_;
+    private String h208b09 = _EMPTY_;
+    private String h208b98 = _EMPTY_;
+    private String h208c = _EMPTY_;
+    private String h208d = _EMPTY_;
+    private String h208d96x = _EMPTY_;
     private String h209 = _EMPTY_;
     private String h209a = _EMPTY_;
     private String h209a96x = _EMPTY_;
@@ -5973,6 +5988,23 @@ public class MWRA extends BaseObservable implements Observable {
 
     public void setH206(String h206) {
         this.h206 = h206;
+        setH20701(h206.equals("1") ? this.h20701 : "");
+        setH20702(h206.equals("1") ? this.h20702 : "");
+        setH20703(h206.equals("1") ? this.h20703 : "");
+        setH20704(h206.equals("1") ? this.h20704 : "");
+        setH20705(h206.equals("1") ? this.h20705 : "");
+        setH20706(h206.equals("1") ? this.h20706 : "");
+        setH20707(h206.equals("1") ? this.h20707 : "");
+        setH20708(h206.equals("1") ? this.h20708 : "");
+        setH20798(h206.equals("1") ? this.h20798 : "");
+        setH20801(h206.equals("1") ? this.h20801 : "");
+        setH20802(h206.equals("1") ? this.h20802 : "");
+        setH20803(h206.equals("1") ? this.h20803 : "");
+        setH20804(h206.equals("1") ? this.h20804 : "");
+        setH20805(h206.equals("1") ? this.h20805 : "");
+        setH20806(h206.equals("1") ? this.h20806 : "");
+        setH20896(h206.equals("1") ? this.h20896 : "");
+        setH208a(h206.equals("1") ? this.h208a : "");
         notifyPropertyChanged(BR.h206);
     }
 
@@ -6191,6 +6223,158 @@ public class MWRA extends BaseObservable implements Observable {
         this.h20896x = h20896x;
         notifyPropertyChanged(BR.h20896x);
     }
+
+
+    @Bindable
+    public String getH208a() {
+        return h208a;
+    }
+
+    public void setH208a(String h208a) {
+        this.h208a = h208a;
+        notifyPropertyChanged(BR.h208a);
+    }
+
+    @Bindable
+    public String getH208b() {
+        return h208b;
+    }
+
+    public void setH208b(String h208b) {
+        this.h208b = h208b;
+        notifyPropertyChanged(BR.h208b);
+    }
+
+    @Bindable
+    public String getH208b01() {
+        return h208b01;
+    }
+
+    public void setH208b01(String h208b01) {
+        this.h208b01 = h208b01;
+        notifyPropertyChanged(BR.h208b01);
+    }
+
+    @Bindable
+    public String getH208b02() {
+        return h208b02;
+    }
+
+    public void setH208b02(String h208b02) {
+        this.h208b02 = h208b02;
+        notifyPropertyChanged(BR.h208b02);
+    }
+
+    @Bindable
+    public String getH208b03() {
+        return h208b03;
+    }
+
+    public void setH208b03(String h208b03) {
+        this.h208b03 = h208b03;
+        notifyPropertyChanged(BR.h208b03);
+    }
+
+    @Bindable
+    public String getH208b04() {
+        return h208b04;
+    }
+
+    public void setH208b04(String h208b04) {
+        this.h208b04 = h208b04;
+        notifyPropertyChanged(BR.h208b04);
+    }
+
+    @Bindable
+    public String getH208b05() {
+        return h208b05;
+    }
+
+    public void setH208b05(String h208b05) {
+        this.h208b05 = h208b05;
+        notifyPropertyChanged(BR.h208b05);
+    }
+
+    @Bindable
+    public String getH208b06() {
+        return h208b06;
+    }
+
+    public void setH208b06(String h208b06) {
+        this.h208b06 = h208b06;
+        notifyPropertyChanged(BR.h208b06);
+    }
+
+    @Bindable
+    public String getH208b07() {
+        return h208b07;
+    }
+
+    public void setH208b07(String h208b07) {
+        this.h208b07 = h208b07;
+        notifyPropertyChanged(BR.h208b07);
+    }
+
+    @Bindable
+    public String getH208b08() {
+        return h208b08;
+    }
+
+    public void setH208b08(String h208b08) {
+        this.h208b08 = h208b08;
+        notifyPropertyChanged(BR.h208b08);
+    }
+
+    @Bindable
+    public String getH208b09() {
+        return h208b09;
+    }
+
+    public void setH208b09(String h208b09) {
+        this.h208b09 = h208b09;
+        notifyPropertyChanged(BR.h208b09);
+    }
+
+    @Bindable
+    public String getH208b98() {
+        return h208b98;
+    }
+
+    public void setH208b98(String h208b98) {
+        this.h208b98 = h208b98;
+        notifyPropertyChanged(BR.h208b98);
+    }
+
+    @Bindable
+    public String getH208c() {
+        return h208c;
+    }
+
+    public void setH208c(String h208c) {
+        this.h208c = h208c;
+        notifyPropertyChanged(BR.h208c);
+    }
+
+    @Bindable
+    public String getH208d() {
+        return h208d;
+    }
+
+    public void setH208d(String h208d) {
+        this.h208d = h208d;
+        notifyPropertyChanged(BR.h208d);
+    }
+
+    @Bindable
+    public String getH208d96x() {
+        return h208d96x;
+    }
+
+    public void setH208d96x(String h208d96x) {
+        this.h208d96x = h208d96x;
+        notifyPropertyChanged(BR.h208d96x);
+    }
+
 
     @Bindable
     public String getH209() {
@@ -8890,8 +9074,6 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
 
-
-
     public MWRA Hydrate(Cursor cursor) throws JSONException {
         this.id = cursor.getString(cursor.getColumnIndexOrThrow(TableContracts.MwraTable.COLUMN_ID));
         this.uid = cursor.getString(cursor.getColumnIndexOrThrow(TableContracts.MwraTable.COLUMN_UID));
@@ -9416,6 +9598,21 @@ public class MWRA extends BaseObservable implements Observable {
             this.h20806 = json.getString("h20806");
             this.h20896 = json.getString("h20896");
             this.h20896x = json.getString("h20896x");
+            this.h208a = json.getString("h208a");
+            this.h208b = json.getString("h208b");
+            this.h208b01 = json.getString("h208b01");
+            this.h208b02 = json.getString("h208b02");
+            this.h208b03 = json.getString("h208b03");
+            this.h208b04 = json.getString("h208b04");
+            this.h208b05 = json.getString("h208b05");
+            this.h208b06 = json.getString("h208b06");
+            this.h208b07 = json.getString("h208b07");
+            this.h208b08 = json.getString("h208b08");
+            this.h208b09 = json.getString("h208b09");
+            this.h208b98 = json.getString("h208b98");
+            this.h208c = json.getString("h208c");
+            this.h208d = json.getString("h208d");
+            this.h208d96x = json.getString("h208d96x");
             this.h209 = json.getString("h209");
             this.h209a = json.getString("h209a");
             this.h209a96x = json.getString("h209a96x");
@@ -10179,6 +10376,21 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("h20806", h20806)
                 .put("h20896", h20896)
                 .put("h20896x", h20896x)
+                .put("h208a", h208a)
+                .put("h208b", h208b)
+                .put("h208b01", h208b01)
+                .put("h208b02", h208b02)
+                .put("h208b03", h208b03)
+                .put("h208b04", h208b04)
+                .put("h208b05", h208b05)
+                .put("h208b06", h208b06)
+                .put("h208b07", h208b07)
+                .put("h208b08", h208b08)
+                .put("h208b09", h208b09)
+                .put("h208b98", h208b98)
+                .put("h208c", h208c)
+                .put("h208d", h208d)
+                .put("h208d96x", h208d96x)
                 .put("h209", h209)
                 .put("h209a", h209a)
                 .put("h209a96x", h209a96x)
