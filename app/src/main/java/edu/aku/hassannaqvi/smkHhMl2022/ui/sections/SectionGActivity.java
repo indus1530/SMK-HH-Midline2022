@@ -1,6 +1,8 @@
 package edu.aku.hassannaqvi.smkHhMl2022.ui.sections;
 
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.familyList;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.mwra;
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedMWRA;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.sharedPref;
 
 import android.content.Intent;
@@ -33,15 +35,16 @@ public class SectionGActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setTheme(sharedPref.getString("lang", "0").equals("2") ? R.style.AppThemeSindhi : sharedPref.getString("lang", "0").equals("1") ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_g);
-        bi.setMwra(mwra);
-        setupSkips();
         setSupportActionBar(bi.toolbar);
         db = MainApp.appInfo.dbHelper;
+
+        bi.sno.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getD101());
+        bi.name.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getD102());
+        bi.index.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getIndexed());
+
+        bi.setMwra(mwra);
     }
 
-    private void setupSkips() {
-
-    }
 
     private boolean updateDB() {
         if (MainApp.superuser) return true;

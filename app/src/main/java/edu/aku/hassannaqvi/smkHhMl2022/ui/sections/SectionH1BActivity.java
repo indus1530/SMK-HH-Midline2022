@@ -1,5 +1,7 @@
 package edu.aku.hassannaqvi.smkHhMl2022.ui.sections;
 
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.familyList;
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedMWRA;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.sharedPref;
 
 import android.content.Intent;
@@ -44,6 +46,10 @@ public class SectionH1BActivity extends AppCompatActivity {
         bi.tvh1t05.setText(h1t05);
         String h126 = getString(R.string.h126, MainApp.selectedChildName);
         bi.tvh126.setText(h126);*/
+
+        bi.sno.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getD101());
+        bi.name.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getD102());
+        bi.index.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getIndexed());
     }
 
 

@@ -1,5 +1,7 @@
 package edu.aku.hassannaqvi.smkHhMl2022.ui.sections;
 
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.familyList;
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedMWRA;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.sharedPref;
 
 import android.content.Intent;
@@ -34,6 +36,10 @@ public class SectionH1AActivity extends AppCompatActivity {
         setTheme(sharedPref.getString("lang", "0").equals("2") ? R.style.AppThemeSindhi : sharedPref.getString("lang", "0").equals("1") ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_h1a);
         bi.setMwra(MainApp.mwra);
+
+        bi.sno.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getD101());
+        bi.name.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getD102());
+        bi.index.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getIndexed());
         childAge = Integer.parseInt(MainApp.familyList.get(Integer.parseInt(MainApp.selectedChild) - 1).getD109y());
         if (childAge < 6) bi.fldGrpCVh114.setVisibility(View.GONE);
         setupSkips();

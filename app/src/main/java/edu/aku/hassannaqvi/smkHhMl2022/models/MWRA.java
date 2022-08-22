@@ -42,6 +42,7 @@ public class MWRA extends BaseObservable implements Observable {
     private String userName = _EMPTY_;
     private String sysDate = _EMPTY_;
     private String indexed = _EMPTY_;
+    private String name = _EMPTY_;
     private String deviceId = _EMPTY_;
     private String deviceTag = _EMPTY_;
     private String appver = _EMPTY_;
@@ -775,6 +776,9 @@ public class MWRA extends BaseObservable implements Observable {
         setDeviceId(MainApp.deviceid);
         setUuid(MainApp.form.getUid());  // not applicable in Form table
         setFmuid(MainApp.familyList.get(Integer.parseInt(selectedMWRA) - 1).getUid()); //// not applicable in Form table
+        setSno(selectedMWRA);
+        setIndexed(MainApp.familyList.get(Integer.parseInt(selectedMWRA) - 1).getIndexed());
+        setName(MainApp.familyList.get(Integer.parseInt(selectedMWRA) - 1).getD102());
         setAppver(MainApp.appInfo.getAppVersion());
         setProjectName(PROJECT_NAME);
         setpsuCode(MainApp.currentHousehold.getClusterCode());
@@ -868,6 +872,14 @@ public class MWRA extends BaseObservable implements Observable {
 
     public void setIndexed(String indexed) {
         this.indexed = indexed;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getDeviceId() {
@@ -9163,6 +9175,7 @@ public class MWRA extends BaseObservable implements Observable {
         this.psuCode = cursor.getString(cursor.getColumnIndexOrThrow(TableContracts.MwraTable.COLUMN_PSU_CODE));
         this.hhid = cursor.getString(cursor.getColumnIndexOrThrow(TableContracts.MwraTable.COLUMN_HHID));
         this.indexed = cursor.getString(cursor.getColumnIndexOrThrow(TableContracts.MwraTable.COLUMN_INDEXED));
+        this.name = cursor.getString(cursor.getColumnIndexOrThrow(TableContracts.MwraTable.COLUMN_NAME));
         this.sno = cursor.getString(cursor.getColumnIndexOrThrow(TableContracts.MwraTable.COLUMN_SNO));
         this.userName = cursor.getString(cursor.getColumnIndexOrThrow(TableContracts.MwraTable.COLUMN_USERNAME));
         this.sysDate = cursor.getString(cursor.getColumnIndexOrThrow(TableContracts.MwraTable.COLUMN_SYSDATE));
@@ -9964,6 +9977,7 @@ public class MWRA extends BaseObservable implements Observable {
         json.put(TableContracts.MwraTable.COLUMN_SNO, this.sno);
         json.put(TableContracts.MwraTable.COLUMN_FMUID, this.fmuid);
         json.put(TableContracts.MwraTable.COLUMN_INDEXED, this.indexed);
+        json.put(TableContracts.MwraTable.COLUMN_NAME, this.name);
         json.put(TableContracts.MwraTable.COLUMN_PSU_CODE, this.psuCode);
         json.put(TableContracts.MwraTable.COLUMN_USERNAME, this.userName);
         json.put(TableContracts.MwraTable.COLUMN_SYSDATE, this.sysDate);

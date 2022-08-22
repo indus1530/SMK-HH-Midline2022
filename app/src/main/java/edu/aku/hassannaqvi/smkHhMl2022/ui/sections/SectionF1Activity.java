@@ -1,6 +1,8 @@
 package edu.aku.hassannaqvi.smkHhMl2022.ui.sections;
 
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.familyList;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.indexedPreg;
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedMWRA;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.sharedPref;
 
 import android.content.Intent;
@@ -40,6 +42,10 @@ public class SectionF1Activity extends AppCompatActivity {
         if (indexedPreg.equals("1") && !MainApp.selectedChild.isEmpty())
             bi.toolbar.setTitle("MWRA Pregnant & Child");
         db = MainApp.appInfo.dbHelper;
+
+        bi.sno.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getD101());
+        bi.name.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getD102());
+        bi.index.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getIndexed());
 
         try {
             MainApp.mwra = db.getMwraByUUid();

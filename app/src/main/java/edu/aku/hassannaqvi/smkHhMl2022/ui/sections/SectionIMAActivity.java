@@ -1,5 +1,7 @@
 package edu.aku.hassannaqvi.smkHhMl2022.ui.sections;
 
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.familyList;
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedChild;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.sharedPref;
 
 import android.content.Intent;
@@ -39,6 +41,10 @@ public class SectionIMAActivity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_ima);
         setSupportActionBar(bi.toolbar);
         db = MainApp.appInfo.dbHelper;
+
+        bi.sno.setText(familyList.get(Integer.parseInt(selectedChild) - 1).getD101());
+        bi.name.setText(familyList.get(Integer.parseInt(selectedChild) - 1).getD102());
+        bi.index.setText(familyList.get(Integer.parseInt(selectedChild) - 1).getIndexed());
         try {
             MainApp.child = db.getChildByUUid();
         } catch (JSONException e) {

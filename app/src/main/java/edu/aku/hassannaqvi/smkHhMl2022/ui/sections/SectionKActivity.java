@@ -1,5 +1,7 @@
 package edu.aku.hassannaqvi.smkHhMl2022.ui.sections;
 
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.familyList;
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedMWRA;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.sharedPref;
 
 import android.content.Intent;
@@ -35,6 +37,9 @@ public class SectionKActivity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_k);
         setSupportActionBar(bi.toolbar);
         db = MainApp.appInfo.dbHelper;
+        bi.sno.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getD101());
+        bi.name.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getD102());
+        bi.index.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getIndexed());
 
         try {
             MainApp.mwra = db.getMwraByUUid();

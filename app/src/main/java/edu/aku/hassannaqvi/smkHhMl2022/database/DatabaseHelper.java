@@ -195,6 +195,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(MwraTable.COLUMN_HHID, mwra.getHhid());
         values.put(MwraTable.COLUMN_USERNAME, mwra.getUserName());
         values.put(MwraTable.COLUMN_SYSDATE, mwra.getSysDate());
+        values.put(MwraTable.COLUMN_INDEXED, mwra.getIndexed());
+        values.put(MwraTable.COLUMN_NAME, mwra.getName());
         values.put(MwraTable.COLUMN_SF1, mwra.sF1toString());
         values.put(MwraTable.COLUMN_SF2, mwra.sF2toString());
         values.put(MwraTable.COLUMN_SG, mwra.sGtoString());
@@ -232,6 +234,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(ChildTable.COLUMN_HHID, child.getHhid());
         values.put(ChildTable.COLUMN_USERNAME, child.getUserName());
         values.put(ChildTable.COLUMN_SYSDATE, child.getSysDate());
+        values.put(ChildTable.COLUMN_INDEXED, child.getIndexed());
+        values.put(ChildTable.COLUMN_NAME, child.getName());
         values.put(ChildTable.COLUMN_SIM, child.sIMtoString());
         values.put(ChildTable.COLUMN_ISTATUS, child.getiStatus());
         values.put(ChildTable.COLUMN_DEVICETAGID, child.getDeviceTag());
@@ -260,6 +264,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(AdolescentTable.COLUMN_HHID, adol.getHhid());
         values.put(AdolescentTable.COLUMN_USERNAME, adol.getUserName());
         values.put(AdolescentTable.COLUMN_SYSDATE, adol.getSysDate());
+        values.put(AdolescentTable.COLUMN_INDEXED, adol.getIndexed());
+        values.put(AdolescentTable.COLUMN_NAME, adol.getName());
         values.put(AdolescentTable.COLUMN_SAH1, adol.sAH1toString());
         values.put(AdolescentTable.COLUMN_SAH2, adol.sAH2toString());
         values.put(AdolescentTable.COLUMN_SAH3, adol.sAH3toString());

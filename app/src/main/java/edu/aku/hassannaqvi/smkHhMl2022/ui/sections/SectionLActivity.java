@@ -1,5 +1,6 @@
 package edu.aku.hassannaqvi.smkHhMl2022.ui.sections;
 
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.familyList;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedAdol;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedChild;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedMWRA;
@@ -35,6 +36,9 @@ public class SectionLActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setTheme(sharedPref.getString("lang", "0").equals("2") ? R.style.AppThemeSindhi : sharedPref.getString("lang", "0").equals("1") ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_l);
+        bi.sno.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getD101());
+        bi.name.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getD102());
+        bi.index.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getIndexed());
         bi.setMwra(MainApp.mwra);
         setSupportActionBar(bi.toolbar);
         db = MainApp.appInfo.dbHelper;
