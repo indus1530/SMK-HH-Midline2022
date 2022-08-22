@@ -405,7 +405,7 @@
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
                                     android:checked="@{form.ah12.equals(`1`)}"
-                                    android:onClick="@{()->form.setAh12(`1`) + ah13.clearCheck() + ah13aa.clearCheck() + ah13ab.clearCheck()}"
+                                    android:onClick="@{()->form.setAh12(`1`) + ah13.clearCheck() + ah13aa.clearCheck()}"
                                     android:text="@string/ah12a" />
 
                                 <RadioButton
