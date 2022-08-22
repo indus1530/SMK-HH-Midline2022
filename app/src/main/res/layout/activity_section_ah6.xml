@@ -848,7 +848,7 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:hint="##"
-                                android:onTextChanged="@{()->ah38.clearCheck() + ah38aa.clearCheck() + ah41.clearCheck() + ah42.clearCheck() + ah43.clearCheck() + ah45.clearCheck + ah46.clearCheck() + ah47d.clearCheck() + ah48.clearCheck()}"
+                                android:onTextChanged="@{()->ah38.clearCheck() + ah38aa.clearCheck() + ah41.clearCheck() + ah42.clearCheck() + ah43.clearCheck() + ah45.clearCheck() + ah46.clearCheck() + ah47d.clearCheck() + ah48.clearCheck()}"
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text="@={form.ah37ac}"
