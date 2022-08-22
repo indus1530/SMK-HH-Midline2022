@@ -37,15 +37,9 @@ public class SectionAH1Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setTheme(sharedPref.getString("lang", "0").equals("2") ? R.style.AppThemeSindhi : sharedPref.getString("lang", "0").equals("1") ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_ah1);
-        if (!selectedAdol.isEmpty()) {
-            bi.sno.setText(familyList.get(Integer.parseInt(selectedAdol) - 1).getD101());
-            bi.name.setText(familyList.get(Integer.parseInt(selectedAdol) - 1).getD102());
-            bi.index.setText(familyList.get(Integer.parseInt(selectedAdol) - 1).getIndexed());
-        } else {
-            bi.sno.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getD101());
-            bi.name.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getD102());
-            bi.index.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getIndexed());
-        }
+        bi.sno.setText(familyList.get(Integer.parseInt(selectedAdol.isEmpty() ? selectedMWRA : selectedAdol) - 1).getD101());
+        bi.name.setText(familyList.get(Integer.parseInt(selectedAdol.isEmpty() ? selectedMWRA : selectedAdol) - 1).getD102());
+        bi.index.setText(familyList.get(Integer.parseInt(selectedAdol.isEmpty() ? selectedMWRA : selectedAdol) - 1).getIndexed());
         setSupportActionBar(bi.toolbar);
         db = MainApp.appInfo.dbHelper;
 

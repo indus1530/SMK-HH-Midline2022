@@ -293,17 +293,11 @@ public class Adolescent extends BaseObservable implements Observable {
         setProjectName(PROJECT_NAME);
         setpsuCode(MainApp.currentHousehold.getClusterCode());
         setHhid(MainApp.currentHousehold.getHhno());
-        if (!selectedAdol.equals("")) {
-            setSno(selectedAdol);
-            setFmuid(MainApp.familyList.get(Integer.parseInt(selectedAdol) - 1).getUid()); //// not applicable in Form table
-            setIndexed(MainApp.familyList.get(Integer.parseInt(selectedAdol) - 1).getIndexed());
-            setName(MainApp.familyList.get(Integer.parseInt(selectedAdol) - 1).getD102());
-        } else {
-            setSno(selectedMWRA);
-            setFmuid(MainApp.familyList.get(Integer.parseInt(selectedMWRA) - 1).getUid()); //// not applicable in Form table
-            setIndexed(MainApp.familyList.get(Integer.parseInt(selectedMWRA) - 1).getIndexed());
-            setName(MainApp.familyList.get(Integer.parseInt(selectedMWRA) - 1).getD102());
-        }
+        setSno(selectedAdol);
+        setFmuid(MainApp.familyList.get(Integer.parseInt(selectedAdol.isEmpty() ? selectedMWRA : selectedAdol) - 1).getUid()); //// not applicable in Form table
+        setIndexed(MainApp.familyList.get(Integer.parseInt(selectedAdol.isEmpty() ? selectedMWRA : selectedAdol) - 1).getIndexed());
+        setName(MainApp.familyList.get(Integer.parseInt(selectedAdol.isEmpty() ? selectedMWRA : selectedAdol) - 1).getD102());
+
 
     }
 
@@ -3167,7 +3161,7 @@ public class Adolescent extends BaseObservable implements Observable {
             this.ah49a = json.getString("ah49a");
             this.ah49b = json.getString("ah49b");
             this.ah49c = json.getString("ah49c");
-            this.ah49ax= json.getString("ah49ax");
+            this.ah49ax = json.getString("ah49ax");
             this.ah49bx = json.getString("ah49bx");
 
             this.ah50 = json.getString("ah50");
