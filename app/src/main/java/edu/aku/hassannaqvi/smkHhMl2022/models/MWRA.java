@@ -5671,7 +5671,7 @@ public class MWRA extends BaseObservable implements Observable {
         this.h137 = h137;
         setH1371(h137.equals("1") ? this.h1371 : "");
         setH1372(h137.equals("1") ? this.h1372 : "");
-        setH1373(h137.equals("1") ? this.h1373 : "");
+        setH1373(h137.equals("2") ? this.h1373 : "");
         notifyPropertyChanged(BR.h137);
     }
 
@@ -6820,9 +6820,6 @@ public class MWRA extends BaseObservable implements Observable {
     public void setH21701(String h21701) {
         if (this.h21701.equals(h21701)) return;     // For all checkboxes
         this.h21701 = h21701;
-        setH221(h21701.equals("1") ? "" : this.h221);
-        setH222(h21701.equals("1") ? "" : this.h222);
-        setH223(h21701.equals("1") ? "" : this.h223);
         notifyPropertyChanged(BR.h21701);
     }
 
@@ -6832,8 +6829,11 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     public void setH21702(String h21702) {
-        if (this.h21702.equals(h21702)) return;     // For all checkboxes
+        if (this.h21702.equals(h21702)) return;
         this.h21702 = h21702;
+        setH221(h21702.equals("2") || this.h21703.equals("3") || this.h21704.equals("4") ? this.h221 : "");
+        setH222(h21702.equals("2") || this.h21703.equals("3") || this.h21704.equals("4") ? this.h222 : "");
+        setH223(h21702.equals("2") || this.h21703.equals("3") || this.h21704.equals("4") ? this.h223 : "");
         notifyPropertyChanged(BR.h21702);
     }
 
@@ -6843,8 +6843,11 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     public void setH21703(String h21703) {
-        if (this.h21703.equals(h21703)) return;     // For all checkboxes
+        if (this.h21703.equals(h21703)) return;
         this.h21703 = h21703;
+        setH221(h21703.equals("3") || this.h21702.equals("2") || this.h21704.equals("4") ? this.h221 : "");
+        setH222(h21703.equals("3") || this.h21702.equals("2") || this.h21704.equals("4") ? this.h222 : "");
+        setH223(h21703.equals("3") || this.h21702.equals("2") || this.h21704.equals("4") ? this.h223 : "");
         notifyPropertyChanged(BR.h21703);
     }
 
@@ -6854,8 +6857,11 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     public void setH21704(String h21704) {
-        if (this.h21704.equals(h21704)) return;     // For all checkboxes
+        if (this.h21704.equals(h21704)) return;
         this.h21704 = h21704;
+        setH221(h21704.equals("4") || this.h21702.equals("2") || this.h21703.equals("3") ? this.h221 : "");
+        setH222(h21704.equals("4") || this.h21702.equals("2") || this.h21703.equals("3") ? this.h222 : "");
+        setH223(h21704.equals("4") || this.h21702.equals("2") || this.h21703.equals("3") ? this.h223 : "");
         notifyPropertyChanged(BR.h21704);
     }
 
@@ -6867,9 +6873,6 @@ public class MWRA extends BaseObservable implements Observable {
     public void setH21705(String h21705) {
         if (this.h21705.equals(h21705)) return;     // For all checkboxes
         this.h21705 = h21705;
-        setH221(h21705.equals("5") ? "" : this.h221);
-        setH222(h21705.equals("5") ? "" : this.h222);
-        setH223(h21705.equals("5") ? "" : this.h223);
         notifyPropertyChanged(BR.h21705);
     }
 
@@ -6881,9 +6884,6 @@ public class MWRA extends BaseObservable implements Observable {
     public void setH21706(String h21706) {
         if (this.h21706.equals(h21706)) return;     // For all checkboxes
         this.h21706 = h21706;
-        setH221(h21706.equals("6") ? "" : this.h221);
-        setH222(h21706.equals("6") ? "" : this.h222);
-        setH223(h21706.equals("6") ? "" : this.h223);
         notifyPropertyChanged(BR.h21706);
     }
 

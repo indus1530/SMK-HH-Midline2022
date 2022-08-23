@@ -2651,7 +2651,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{mwra.h21701.equals(`1`)}"
-                                android:onClick="@{()->mwra.setH21701(mwra.h21701.equals(`1`)?``:`1`) + h221.clearCheck() + h222.clearCheck() + h223.clearCheck()}"
+                                android:onClick="@{()->mwra.setH21701(mwra.h21701.equals(`1`)?``:`1`)}"
                                 android:text="@string/h21701" />
 
                             <CheckBox
@@ -2659,7 +2659,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{mwra.h21702.equals(`2`)}"
-                                android:onClick="@{()->mwra.setH21702(mwra.h21702.equals(`2`)?``:`2`)}"
+                                android:onClick="@{()->mwra.setH21702(mwra.h21702.equals(`2`)?``:`2`) + h221.clearCheck() + h222.clearCheck() + h223.clearCheck()}"
                                 android:text="@string/h21702" />
 
                             <CheckBox
@@ -2667,7 +2667,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{mwra.h21703.equals(`3`)}"
-                                android:onClick="@{()->mwra.setH21703(mwra.h21703.equals(`3`)?``:`3`)}"
+                                android:onClick="@{()->mwra.setH21703(mwra.h21703.equals(`3`)?``:`3`) + h221.clearCheck() + h222.clearCheck() + h223.clearCheck()}"
                                 android:text="@string/h21703" />
 
                             <CheckBox
@@ -2675,7 +2675,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{mwra.h21704.equals(`4`)}"
-                                android:onClick="@{()->mwra.setH21704(mwra.h21704.equals(`4`)?``:`4`)}"
+                                android:onClick="@{()->mwra.setH21704(mwra.h21704.equals(`4`)?``:`4`) + h221.clearCheck() + h222.clearCheck() + h223.clearCheck()}"
                                 android:text="@string/h21704" />
 
                             <CheckBox
@@ -2683,7 +2683,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{mwra.h21705.equals(`5`)}"
-                                android:onClick="@{()->mwra.setH21705(mwra.h21705.equals(`5`)?``:`5`) + h221.clearCheck() + h222.clearCheck() + h223.clearCheck()}"
+                                android:onClick="@{()->mwra.setH21705(mwra.h21705.equals(`5`)?``:`5`)}"
                                 android:text="@string/h21705" />
 
                             <CheckBox
@@ -2691,7 +2691,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{mwra.h21706.equals(`6`)}"
-                                android:onClick="@{()->mwra.setH21706(mwra.h21706.equals(`6`)?``:`6`) + h221.clearCheck() + h222.clearCheck() + h223.clearCheck()}"
+                                android:onClick="@{()->mwra.setH21706(mwra.h21706.equals(`6`)?``:`6`)}"
                                 android:text="@string/h21706" />
 
                             <CheckBox
@@ -3121,7 +3121,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:visibility="@{mwra.h21701.equals(`1`) || mwra.h21705.equals(`5`) || mwra.h21706.equals(`6`) ? View.GONE : View.VISIBLE}">
+                        android:visibility="@{mwra.h21702.equals(`2`) || mwra.h21703.equals(`3`) || mwra.h21704.equals(`4`) ? View.VISIBLE : View.GONE}">
 
 
                         <!-- h221  Radio   -->
