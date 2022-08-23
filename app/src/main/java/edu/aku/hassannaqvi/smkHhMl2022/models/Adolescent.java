@@ -863,6 +863,7 @@ public class Adolescent extends BaseObservable implements Observable {
 
     public void setAh2201(String ah2201) {
         this.ah2201 = ah2201;
+        setAh23(ah2201.equals("1") || this.ah2202.equals("1") || this.ah2203.equals("1") || this.ah2296.equals("1") ? this.ah23 : "");
         notifyPropertyChanged(BR.ah2201);
     }
 
@@ -873,6 +874,7 @@ public class Adolescent extends BaseObservable implements Observable {
 
     public void setAh2202(String ah2202) {
         this.ah2202 = ah2202;
+        setAh23(ah2202.equals("1") || this.ah2201.equals("1") || this.ah2203.equals("1") || this.ah2296.equals("1") ? this.ah23 : "");
 /*        setAh23(ah2202.equals("2") ? "" : this.ah23);
         setAh2401(ah2202.equals("2") ? "" : this.ah2401);
         setAh2402(ah2202.equals("2") ? "" : this.ah2402);
@@ -895,6 +897,7 @@ public class Adolescent extends BaseObservable implements Observable {
 
     public void setAh2203(String ah2203) {
         this.ah2203 = ah2203;
+        setAh23(ah2203.equals("1") || this.ah2202.equals("1") || this.ah2201.equals("1") || this.ah2296.equals("1") ? this.ah23 : "");
         notifyPropertyChanged(BR.ah2203);
     }
 
@@ -905,6 +908,7 @@ public class Adolescent extends BaseObservable implements Observable {
 
     public void setAh2296(String ah2296) {
         this.ah2296 = ah2296;
+        setAh23(ah2296.equals("1") || this.ah2202.equals("1") || this.ah2203.equals("1") || this.ah2201.equals("1") ? this.ah23 : "");
         setAh2296x(ah2296.equals("96") ? this.ah2296x : "");
         notifyPropertyChanged(BR.ah2296);
     }
