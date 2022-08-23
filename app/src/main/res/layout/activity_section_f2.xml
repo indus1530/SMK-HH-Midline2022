@@ -549,7 +549,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{mwra.f12310.equals(`10`)}"
-                                android:onClick="@{()->mwra.setF12309(mwra.f12310.equals(`10`)?``:`10`)}"
+                                android:onClick="@{()->mwra.setF12310(mwra.f12310.equals(`10`)?``:`10`)}"
                                 android:text="@string/f12310" />
 
                             <CheckBox
