@@ -633,7 +633,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{child.im3298.equals(`98`)}"
-                                android:enabled="@{!child.im3298.equals(`98`)}"
                                 android:onClick="@{()->child.setIm3298(child.im3298.equals(`98`)?``:`98`)}"
                                 android:text="@string/im3298" />
 
@@ -642,6 +641,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{child.im3296.equals(`96`)}"
+                                android:enabled="@{!child.im3298.equals(`98`)}"
                                 android:onClick="@{()->child.setIm3296(child.im3296.equals(`96`)?``:`96`)}"
                                 android:text="@string/im3296" />
 
