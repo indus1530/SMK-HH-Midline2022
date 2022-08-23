@@ -37,6 +37,7 @@ public class SectionE2AActivity extends AppCompatActivity {
         bi.setForm(MainApp.form);
         setSupportActionBar(bi.toolbar);
         db = MainApp.appInfo.dbHelper;
+        MainApp.mortalityCounter = 0;
     }
 
     private boolean updateDB() {

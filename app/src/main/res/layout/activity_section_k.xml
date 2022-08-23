@@ -1281,7 +1281,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{mwra.k107a99.equals(`99`)}"
-                                android:enabled="@{!mwra.k107a99.equals(`99`)}"
                                 android:onClick="@{()->mwra.setK107a99(mwra.k107a99.equals(`99`)?``:`99`)}"
                                 android:text="@string/k107a99" />
 

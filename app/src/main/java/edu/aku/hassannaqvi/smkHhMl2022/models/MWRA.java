@@ -8097,6 +8097,14 @@ public class MWRA extends BaseObservable implements Observable {
     public void setK107a99(String k107a99) {
         if (this.k107a99.equals(k107a99)) return;
         this.k107a99 = k107a99;
+        setK107a01(k107a99.equals("99") ? "" : this.k107a01);
+        setK107a02(k107a99.equals("99") ? "" : this.k107a02);
+        setK107a03(k107a99.equals("99") ? "" : this.k107a03);
+        setK107a04(k107a99.equals("99") ? "" : this.k107a04);
+        setK107a05(k107a99.equals("99") ? "" : this.k107a05);
+        setK107a06(k107a99.equals("99") ? "" : this.k107a06);
+        setK107a07(k107a99.equals("99") ? "" : this.k107a07);
+        setK107a08(k107a99.equals("99") ? "" : this.k107a08);
         notifyPropertyChanged(BR.k107a99);
     }
 
@@ -8423,11 +8431,6 @@ public class MWRA extends BaseObservable implements Observable {
         setLg10606(lg101.equals("1") ? this.lg10606 : "");
         setLg10607(lg101.equals("1") ? this.lg10607 : "");
         setLg10696(lg101.equals("1") ? this.lg10696 : "");
-
-        setL1131(lg101.equals("1") ? this.l1131 : "");
-        setL1132(lg101.equals("1") ? this.l1132 : "");
-        setL1133(lg101.equals("1") ? this.l1133 : "");
-        setL1134(lg101.equals("1") ? this.l1134 : "");
         notifyPropertyChanged(BR.lg101);
     }
 
@@ -8765,6 +8768,14 @@ public class MWRA extends BaseObservable implements Observable {
 
     public void setLg105(String lg105) {
         this.lg105 = lg105;
+        setLg10601(lg105.equals("1") ? this.lg10601 : "");
+        setLg10602(lg105.equals("1") ? this.lg10602 : "");
+        setLg10603(lg105.equals("1") ? this.lg10603 : "");
+        setLg10604(lg105.equals("1") ? this.lg10604 : "");
+        setLg10605(lg105.equals("1") ? this.lg10605 : "");
+        setLg10606(lg105.equals("1") ? this.lg10606 : "");
+        setLg10607(lg105.equals("1") ? this.lg10607 : "");
+        setLg10696(lg105.equals("1") ? this.lg10696 : "");
         notifyPropertyChanged(BR.lg105);
     }
 

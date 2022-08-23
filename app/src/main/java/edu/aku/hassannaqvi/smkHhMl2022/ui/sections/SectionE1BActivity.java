@@ -57,7 +57,6 @@ public class SectionE1BActivity extends AppCompatActivity {
         bi.setPregD(pregD);
         //  setupSkips();
         populateSpinner();
-        MainApp.mortalityCounter = 0;
     }
 
 

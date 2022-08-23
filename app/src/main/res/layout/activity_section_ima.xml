@@ -2631,6 +2631,244 @@
                     </androidx.cardview.widget.CardView>
 
 
+                    <!-- im0515a -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/fldGrpCVim0515a"
+                        style="@style/cardView">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bottom"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/quesNum"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/Q_im0515a" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/im0515a" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layoutDirection="ltr"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:text="@string/im0515ad" />
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/im0515ad"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:hint="##"
+                                    android:inputType="number"
+                                    android:maxLength="2"
+                                    android:text="@={child.im0515ad}"
+                                    android:textDirection="ltr"
+                                    app:defaultValue="97"
+                                    app:maxValue="99"
+                                    app:minValue="1"
+                                    app:type="range" />
+
+                                <View
+                                    android:layout_width="20dp"
+                                    android:layout_height="match_parent" />
+
+                                <TextView
+                                    style="@style/textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:text="@string/im0515am" />
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/im0515am"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:enabled="@{child.im0515ad.length() > 0 &amp;&amp; Integer.parseInt(child.im0515ad) &lt;=31}"
+                                    android:gravity="center"
+                                    android:hint="##"
+                                    android:inputType="number"
+                                    android:maxLength="2"
+                                    android:text="@={child.im0515am}"
+                                    android:textDirection="ltr"
+                                    app:maxValue="12"
+                                    app:minValue="1"
+                                    app:type="range" />
+
+                                <View
+                                    android:layout_width="20dp"
+                                    android:layout_height="match_parent" />
+
+                                <TextView
+                                    style="@style/textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:text="@string/im0515ay" />
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/im0515ay"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:enabled="@{child.im0515ad.length() > 0 &amp;&amp; Integer.parseInt(child.im0515ad) &lt;=31}"
+                                    android:gravity="center"
+                                    android:hint="####"
+                                    android:inputType="number"
+                                    android:maxLength="4"
+                                    android:text="@={child.im0515ay}"
+                                    android:textDirection="ltr"
+                                    app:maxValue="2022"
+                                    app:minValue="2017"
+                                    app:type="range" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <!-- im0515b -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/fldGrpCVim0515b"
+                        style="@style/cardView">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bottom"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/quesNum"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/Q_im0515b" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/im0515b" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layoutDirection="ltr"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:text="@string/im0515bd" />
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/im0515bd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:hint="##"
+                                    android:inputType="number"
+                                    android:maxLength="2"
+                                    android:text="@={child.im0515bd}"
+                                    android:textDirection="ltr"
+                                    app:defaultValue="97"
+                                    app:maxValue="99"
+                                    app:minValue="1"
+                                    app:type="range" />
+
+                                <View
+                                    android:layout_width="20dp"
+                                    android:layout_height="match_parent" />
+
+                                <TextView
+                                    style="@style/textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:text="@string/im0515bm" />
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/im0515bm"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:enabled="@{child.im0515bd.length() > 0 &amp;&amp; Integer.parseInt(child.im0515bd) &lt;=31}"
+                                    android:gravity="center"
+                                    android:hint="##"
+                                    android:inputType="number"
+                                    android:maxLength="2"
+                                    android:text="@={child.im0515bm}"
+                                    android:textDirection="ltr"
+                                    app:maxValue="12"
+                                    app:minValue="1"
+                                    app:type="range" />
+
+                                <View
+                                    android:layout_width="20dp"
+                                    android:layout_height="match_parent" />
+
+                                <TextView
+                                    style="@style/textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:text="@string/im0515by" />
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/im0515by"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:enabled="@{child.im0515bd.length() > 0 &amp;&amp; Integer.parseInt(child.im0515bd) &lt;=31}"
+                                    android:gravity="center"
+                                    android:hint="####"
+                                    android:inputType="number"
+                                    android:maxLength="4"
+                                    android:text="@={child.im0515by}"
+                                    android:textDirection="ltr"
+                                    app:maxValue="2022"
+                                    app:minValue="2017"
+                                    app:type="range" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
                     <!-- im0516 -->
                     <androidx.cardview.widget.CardView
                         android:id="@+id/fldGrpCVim0516"
@@ -3853,6 +4091,75 @@
                         </androidx.cardview.widget.CardView>
 
 
+                        <!-- im22a  Radio   -->
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/fldGrpCVim22a"
+                            style="@style/cardView">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/bottom"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/quesNum"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="@string/Q_im22a" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="@string/im22a" />
+
+                                </LinearLayout>
+
+                                <RadioGroup
+                                    android:id="@+id/im22a"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/im22a01"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:checked="@{child.im22a.equals(`1`)}"
+                                        android:onClick="@{()->child.setIm22a(`1`)}"
+                                        android:text="@string/im22a01" />
+
+                                    <RadioButton
+                                        android:id="@+id/im22a02"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:checked="@{child.im22a.equals(`2`)}"
+                                        android:onClick="@{()->child.setIm22a(`2`)}"
+                                        android:text="@string/im22a02" />
+
+                                    <RadioButton
+                                        android:id="@+id/im22a98"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:checked="@{child.im22a.equals(`98`)}"
+                                        android:onClick="@{()->child.setIm22a(`98`)}"
+                                        android:text="@string/im22a98" />
+
+                                </RadioGroup>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
                         <!-- im23  Radio   -->
                         <androidx.cardview.widget.CardView
                             android:id="@+id/fldGrpCVim23"
@@ -3950,6 +4257,8 @@
                             </LinearLayout>
 
                         </androidx.cardview.widget.CardView>
+
+
                         <!-- im24  Radio   -->
                         <androidx.cardview.widget.CardView
                             android:id="@+id/fldGrpCVim24"
