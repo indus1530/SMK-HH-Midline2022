@@ -1250,7 +1250,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{mwra.h208b07.equals(`7`)}"
-                                android:enabled="@{!mwra.h208b98.equals(`98`)}"
+                                android:enabled="@{!mwra.h208b09.equals(`9`) &amp;&amp; !mwra.h208b98.equals(`98`)}"
                                 android:onClick="@{()->mwra.setH208b07(mwra.h208b07.equals(`7`)?``:`7`)}"
                                 android:text="@string/h208b07" />
 
