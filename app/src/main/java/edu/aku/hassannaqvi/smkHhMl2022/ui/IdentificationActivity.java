@@ -2,6 +2,8 @@ package edu.aku.hassannaqvi.smkHhMl2022.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
@@ -13,8 +15,6 @@ import androidx.databinding.DataBindingUtil;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
-
-import java.util.ArrayList;
 
 import edu.aku.hassannaqvi.smkHhMl2022.R;
 import edu.aku.hassannaqvi.smkHhMl2022.core.MainApp;
@@ -31,29 +31,65 @@ public class IdentificationActivity extends AppCompatActivity {
     private static final String TAG = "IdentificationActivity";
     ActivityIdentificationBinding bi;
     private DatabaseHelper db;
-    private ArrayList<String> districtNames;
-    private ArrayList<String> districtCodes;
-    private ArrayList<String> tehsilNames;
-    private ArrayList<String> tehsilCodes;
-    private ArrayList<String> ucNames;
-    private ArrayList<String> ucCodes;
-    private ArrayList<String> psuCode;
-    private ArrayList<String> headHH;
-    private Intent openIntent;
+    private int c, c1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTheme(MainApp.langRTL ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
-        //setTheme(MainApp.langRTL ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_identification);
         db = MainApp.appInfo.dbHelper;
-        //   populateSpinner();
 
         bi.btnContinue.setText(R.string.open_hh_form);
         if (MainApp.superuser)
             bi.btnContinue.setText("Review Form");
         MainApp.form = new Forms();
+
+
+        bi.a113.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                //  Log.d(TAG, "beforeTextChanged: charSequence-"+charSequence+" i-"+i+ " i1-"+i1 +" i2-"+i2);
+                c = charSequence.length();
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                c1 = charSequence.length();
+                String txt = charSequence.toString();
+                Log.d(TAG, "onTextChanged: c-" + c + " c1-" + c1 + "\t\t\tCHAR: " + charSequence);
+                Log.d(TAG, "onTextChanged: i-" + i + " i1-" + i1 + " i2-" + i2 + "\t\t\tCHAR: " + charSequence);
+         /*       if (c == 0 && c1 == 1)
+                    bi.a113.setText(bi.a113.getText().toString() + "-"); // A-
+                if (c == 5 && c1 == 6)
+                    bi.a113.setText(bi.a113.getText().toString() + "-"); // A-0001-
+
+                if (c == 8 && c1 == 7)
+                    bi.a113.setText(bi.a113.getText().toString().substring(0, 6)); // A-0001
+                if (c == 3 && c1 == 2)
+                    bi.a113.setText(bi.a113.getText().toString().substring(0, 1)); // A*/
+
+                if (c1 > 1 && charSequence.charAt(1) != '-') {
+                    txt = txt.charAt(0) + "-" + txt.substring(1);
+                    bi.a113.setText(txt);
+                }
+
+                if (c1 > 6 && charSequence.charAt(6) != '-') {
+                    txt = txt.substring(0, 6) + "-" + txt.substring(6);
+                    bi.a113.setText(txt);
+                }
+
+
+                bi.a113.setSelection(bi.a113.getText().length());
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+
+            }
+        });
 
 
     }
