@@ -43,13 +43,11 @@ public class SectionAH7Activity extends AppCompatActivity {
         bi.name.setText(familyList.get(Integer.parseInt(selectedAdol.isEmpty() ? selectedMWRA : selectedAdol) - 1).getD102());
         bi.index.setText(familyList.get(Integer.parseInt(selectedAdol.isEmpty() ? selectedMWRA : selectedAdol) - 1).getIndexed());
         bi.setForm(adol);
-        adol.setAh51(!selectedAdol.isEmpty() ? MainApp.familyList.get(Integer.parseInt(selectedAdol) - 1).getD105()
-                : MainApp.familyList.get(Integer.parseInt(selectedMWRA) - 1).getD105());
+        adol.setAh51(familyList.get(Integer.parseInt(selectedAdol.isEmpty() ? selectedMWRA : selectedAdol) - 1).getD105());
+        bi.llah58.setVisibility(familyList.get(Integer.parseInt(selectedAdol.isEmpty() ? selectedMWRA : selectedAdol) - 1).getD104().equals("2") ?
+                View.VISIBLE : View.GONE);
     }
 
-    private void setupSkips() {
-
-    }
 
     private boolean updateDB() {
         if (MainApp.superuser) return true;

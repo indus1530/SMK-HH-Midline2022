@@ -843,182 +843,191 @@
                     </androidx.cardview.widget.CardView>
 
 
-                    <!-- ah58  Title   -->
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/fldGrpCVah58"
-                        style="@style/cardView">
+                    <LinearLayout
+                        android:id="@+id/llah58"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
+
+                        <!-- ah58  Title   -->
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/fldGrpCVah58"
+                            style="@style/cardView">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:background="@drawable/bottom"
-                                android:orientation="horizontal">
+                                android:orientation="vertical">
 
-                                <TextView
-                                    style="@style/quesNum"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:text="@string/Q_ah58" />
-
-                                <TextView
+                                <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:text="@string/ah58" />
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/bottom"
+                                    android:orientation="horizontal">
 
-                            </LinearLayout>
+                                    <TextView
+                                        style="@style/quesNum"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="@string/Q_ah58" />
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="@string/ah58" />
 
-                                <TextView
-                                    style="@style/textView"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:text="@string/ah58a" />
+                                </LinearLayout>
 
-                                <com.edittextpicker.aliazaz.EditTextPicker
-                                    android:id="@+id/ah58a"
+                                <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:gravity="center"
-                                    android:hint="###"
-                                    android:inputType="number"
-                                    android:maxLength="3"
-                                    android:text="@={form.ah58a}"
-                                    app:maxValue="100"
-                                    app:minValue="0"
-                                    app:type="range" />
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/textView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="@string/ah58a" />
+
+                                    <com.edittextpicker.aliazaz.EditTextPicker
+                                        android:id="@+id/ah58a"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:hint="###"
+                                        android:inputType="number"
+                                        android:maxLength="3"
+                                        android:text="@={form.ah58a}"
+                                        app:maxValue="100"
+                                        app:minValue="0"
+                                        app:type="range" />
+
+                                </LinearLayout>
 
                             </LinearLayout>
 
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
+                        </androidx.cardview.widget.CardView>
 
 
-                    <!-- ah59  Title   -->
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/fldGrpCVah59"
-                        style="@style/cardView">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                        <!-- ah59  Title   -->
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/fldGrpCVah59"
+                            style="@style/cardView">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:background="@drawable/bottom"
-                                android:orientation="horizontal">
+                                android:orientation="vertical">
 
-                                <TextView
-                                    style="@style/quesNum"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:text="@string/Q_ah59" />
-
-                                <TextView
+                                <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:text="@string/ah59" />
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/bottom"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/quesNum"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="@string/Q_ah59" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="@string/ah59" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/textView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/ah59a" />
+
+                                    <com.edittextpicker.aliazaz.EditTextPicker
+                                        android:id="@+id/ah59a"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:enabled="@{!form.ah59d.equals(`98`)}"
+                                        android:gravity="center"
+                                        android:hint="##"
+                                        android:inputType="number"
+                                        android:maxLength="2"
+                                        android:text="@={form.ah59a}"
+                                        app:maxValue="20"
+                                        app:minValue="1"
+                                        app:type="range" />
+
+                                    <TextView
+                                        style="@style/textView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/ah59b" />
+
+                                    <com.edittextpicker.aliazaz.EditTextPicker
+                                        android:id="@+id/ah59b"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:enabled="@{!form.ah59d.equals(`98`)}"
+                                        android:gravity="center"
+                                        android:hint="##"
+                                        android:inputType="number"
+                                        android:maxLength="2"
+                                        android:text="@={form.ah59b}"
+                                        app:maxValue="20"
+                                        app:minValue="1"
+                                        app:type="range" />
+
+                                    <TextView
+                                        style="@style/textView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/ah59c" />
+
+                                    <com.edittextpicker.aliazaz.EditTextPicker
+                                        android:id="@+id/ah59c"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:enabled="@{!form.ah59d.equals(`98`)}"
+                                        android:gravity="center"
+                                        android:hint="##"
+                                        android:inputType="number"
+                                        android:maxLength="2"
+                                        android:text="@={form.ah59c}"
+                                        app:maxValue="20"
+                                        app:minValue="1"
+                                        app:type="range" />
+
+                                    <CheckBox
+                                        android:id="@+id/ah59d"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:backgroundTint="@color/redOverlay"
+                                        android:checked="@{form.ah59d.equals(`98`)}"
+                                        android:onClick="@{()->form.setAh59d(form.ah59d.equals(`98`)?``:`98`)}"
+                                        android:tag="-1"
+                                        android:text="@string/ah59d"
+                                        android:textSize="10sp" />
+
+                                </LinearLayout>
 
                             </LinearLayout>
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                        </androidx.cardview.widget.CardView>
 
-                                <TextView
-                                    style="@style/textView"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:text="@string/ah59a" />
-
-                                <com.edittextpicker.aliazaz.EditTextPicker
-                                    android:id="@+id/ah59a"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:enabled="@{!form.ah59d.equals(`98`)}"
-                                    android:gravity="center"
-                                    android:hint="##"
-                                    android:inputType="number"
-                                    android:maxLength="2"
-                                    android:text="@={form.ah59a}"
-                                    app:maxValue="20"
-                                    app:minValue="1"
-                                    app:type="range" />
-
-                                <TextView
-                                    style="@style/textView"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:text="@string/ah59b" />
-
-                                <com.edittextpicker.aliazaz.EditTextPicker
-                                    android:id="@+id/ah59b"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:enabled="@{!form.ah59d.equals(`98`)}"
-                                    android:gravity="center"
-                                    android:hint="##"
-                                    android:inputType="number"
-                                    android:maxLength="2"
-                                    android:text="@={form.ah59b}"
-                                    app:maxValue="20"
-                                    app:minValue="1"
-                                    app:type="range" />
-
-                                <TextView
-                                    style="@style/textView"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:text="@string/ah59c" />
-
-                                <com.edittextpicker.aliazaz.EditTextPicker
-                                    android:id="@+id/ah59c"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:enabled="@{!form.ah59d.equals(`98`)}"
-                                    android:gravity="center"
-                                    android:hint="##"
-                                    android:inputType="number"
-                                    android:maxLength="2"
-                                    android:text="@={form.ah59c}"
-                                    app:maxValue="20"
-                                    app:minValue="1"
-                                    app:type="range" />
-
-                                <CheckBox
-                                    android:id="@+id/ah59d"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:backgroundTint="@color/redOverlay"
-                                    android:checked="@{form.ah59d.equals(`98`)}"
-                                    android:onClick="@{()->form.setAh59d(form.ah59d.equals(`98`)?``:`98`)}"
-                                    android:tag="-1"
-                                    android:text="@string/ah59d"
-                                    android:textSize="10sp" />
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
+                    </LinearLayout>
 
 
                     <!-- ah60  Title   -->
