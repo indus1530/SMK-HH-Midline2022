@@ -78,7 +78,7 @@
                             android:letterSpacing="0.08"
                             android:paddingStart="12dp"
                             android:paddingEnd="12dp"
-                            android:text="@string/concent"
+                            android:text="@string/hh18t"
                             android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
                             android:textColor="@color/grayDark"
                             android:textSize="18sp"

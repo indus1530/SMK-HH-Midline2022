@@ -147,14 +147,16 @@
 
                             <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/ah49ax"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/ah49a"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:enabled="@{form.ah49a.equals(`1`)}"
+                                android:gravity="center"
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:tag="ah49a"
                                 android:text="@={form.ah49ax}"
-                                android:visibility="@{form.ah49a.equals(`1`) ? View.VISIBLE : View.GONE}"
+                                android:hint="##"
                                 app:maxValue="50"
                                 app:minValue="10"
                                 app:type="range" />
@@ -171,14 +173,16 @@
 
                             <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/ah49bx"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/ah49b"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:enabled="@{form.ah49b.equals(`2`)}"
+                                android:gravity="center"
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:tag="ah49b"
                                 android:text="@={form.ah49bx}"
-                                android:visibility="@{form.ah49b.equals(`2`) ? View.VISIBLE : View.GONE}"
+                                android:hint="##"
                                 app:maxValue="50"
                                 app:minValue="10"
                                 app:type="range" />
@@ -187,8 +191,9 @@
                                 android:id="@+id/ah49c"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
+                                android:backgroundTint="@color/redOverlay"
+                                android:textSize="10sp"
                                 android:checked="@{form.ah49c.equals(`98`)}"
-                                android:enabled="@{!form.ah49c.equals(`98`)}"
                                 android:onClick="@{()->form.setAh49c(form.ah49c.equals(`98`)?``:`98`)}"
                                 android:text="@string/ah49c" />
 

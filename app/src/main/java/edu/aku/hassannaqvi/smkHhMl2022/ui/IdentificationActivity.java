@@ -36,13 +36,11 @@ public class IdentificationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTheme(MainApp.langRTL ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
+        setTheme(MainApp.langRTL ? R.style.AppThemeSindhi : R.style.AppThemeEnglish1);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_identification);
         db = MainApp.appInfo.dbHelper;
-
         bi.btnContinue.setText(R.string.open_hh_form);
-        if (MainApp.superuser)
-            bi.btnContinue.setText("Review Form");
+        if (MainApp.superuser) bi.btnContinue.setText("Review Form");
         MainApp.form = new Forms();
 
 

@@ -33,15 +33,11 @@ public class EndingActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTheme(MainApp.langRTL ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
+        setTheme(MainApp.langRTL ? R.style.AppThemeSindhi : R.style.AppThemeEnglish1);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_ending);
         bi.setForm(form);
-
         setSupportActionBar(bi.toolbar);
-        //setTitle(R.string.section1_mainheading);
-        if (MainApp.superuser)
-            bi.btnContinue.setText("End Review");
-
+        if (MainApp.superuser) bi.btnContinue.setText("End Review");
         db = MainApp.appInfo.dbHelper;
         boolean check = getIntent().getBooleanExtra("complete", false);
         //sectionMainCheck = getIntent().getIntExtra("status", 0);

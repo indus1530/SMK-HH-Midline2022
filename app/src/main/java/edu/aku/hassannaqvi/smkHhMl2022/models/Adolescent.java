@@ -2676,7 +2676,7 @@ public class Adolescent extends BaseObservable implements Observable {
     }
 
     public void setAh49a(String ah49a) {
-        if (this.ah49a.equals(ah49a)) return;      //For all checkboxes
+        if (this.ah49a.equals(ah49a)) return;
         this.ah49a = ah49a;
         setAh49ax(ah49a.equals("1") ? this.ah49ax : "");
         notifyPropertyChanged(BR.ah49a);
@@ -2698,9 +2698,9 @@ public class Adolescent extends BaseObservable implements Observable {
     }
 
     public void setAh49b(String ah49b) {
-        if (this.ah49b.equals(ah49b)) return;      //For all checkboxes
+        if (this.ah49b.equals(ah49b)) return;
         this.ah49b = ah49b;
-        setAh49bx(ah49b.equals("1") ? this.ah49bx : "");
+        setAh49bx(ah49b.equals("2") ? this.ah49bx : "");
         notifyPropertyChanged(BR.ah49b);
     }
 
@@ -2720,8 +2720,10 @@ public class Adolescent extends BaseObservable implements Observable {
     }
 
     public void setAh49c(String ah49c) {
-        if (this.ah49c.equals(ah49c)) return;      //For all checkboxes
+        if (this.ah49c.equals(ah49c)) return;
         this.ah49c = ah49c;
+        setAh49a(ah49c.equals("98") ? "" : this.ah49a);
+        setAh49b(ah49c.equals("98") ? "" : this.ah49b);
         notifyPropertyChanged(BR.ah49c);
     }
 
