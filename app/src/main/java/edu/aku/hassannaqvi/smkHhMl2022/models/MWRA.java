@@ -8371,7 +8371,7 @@ public class MWRA extends BaseObservable implements Observable {
     public void setLg10296(String lg10296) {
         if (this.lg10296.equals(lg10296)) return; // for all checkboxes
         this.lg10296 = lg10296;
-        setLg10296(lg10296.equals("96") ? this.lg10296x : "");
+        setLg10296x(lg10296.equals("96") ? this.lg10296x : "");
         notifyPropertyChanged(BR.lg10296);
     }
 

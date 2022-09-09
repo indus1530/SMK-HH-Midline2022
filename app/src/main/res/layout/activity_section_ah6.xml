@@ -245,6 +245,7 @@
                                 android:id="@+id/ah3702a"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!form.ah3702d.equals(`5`)}"
                                 android:checked="@{form.ah3702a.equals(`1`)}"
                                 android:onClick="@{()->form.setAh3702a(form.ah3702a.equals(`1`)?``:`1`)}"
                                 android:text="@string/ah3702a" />
@@ -253,6 +254,7 @@
                                 android:id="@+id/ah3702b"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!form.ah3702d.equals(`5`)}"
                                 android:checked="@{form.ah3702b.equals(`2`)}"
                                 android:onClick="@{()->form.setAh3702b(form.ah3702b.equals(`2`)?``:`2`)}"
                                 android:text="@string/ah3702b" />
@@ -261,6 +263,7 @@
                                 android:id="@+id/ah3702c"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!form.ah3702d.equals(`5`)}"
                                 android:checked="@{form.ah3702c.equals(`3`)}"
                                 android:onClick="@{()->form.setAh3702c(form.ah3702c.equals(`3`)?``:`3`)}"
                                 android:text="@string/ah3702c" />
@@ -269,6 +272,7 @@
                                 android:id="@+id/ah3702e"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!form.ah3702d.equals(`5`)}"
                                 android:checked="@{form.ah3702e.equals(`4`)}"
                                 android:onClick="@{()->form.setAh3702e(form.ah3702e.equals(`4`)?``:`4`)}"
                                 android:text="@string/ah3702e" />
@@ -285,6 +289,7 @@
                                 android:id="@+id/ah3702x"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!form.ah3702d.equals(`5`)}"
                                 android:checked="@{form.ah3702x.equals(`96`)}"
                                 android:onClick="@{()->form.setAh3702x(form.ah3702x.equals(`96`)?``:`96`)}"
                                 android:text="@string/ah3702x" />
@@ -346,6 +351,7 @@
                                 android:id="@+id/ah3703a"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!form.ah3703d.equals(`5`)}"
                                 android:checked="@{form.ah3703a.equals(`1`)}"
                                 android:onClick="@{()->form.setAh3703a(form.ah3703a.equals(`1`)?``:`1`)}"
                                 android:text="@string/ah3703a" />
@@ -354,6 +360,7 @@
                                 android:id="@+id/ah3703b"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!form.ah3703d.equals(`5`)}"
                                 android:checked="@{form.ah3703b.equals(`2`)}"
                                 android:onClick="@{()->form.setAh3703b(form.ah3703b.equals(`2`)?``:`2`)}"
                                 android:text="@string/ah3703b" />
@@ -362,6 +369,7 @@
                                 android:id="@+id/ah3703c"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!form.ah3703d.equals(`5`)}"
                                 android:checked="@{form.ah3703c.equals(`3`)}"
                                 android:onClick="@{()->form.setAh3703c(form.ah3703c.equals(`3`)?``:`3`)}"
                                 android:text="@string/ah3703c" />
@@ -370,6 +378,7 @@
                                 android:id="@+id/ah3703e"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!form.ah3703d.equals(`5`)}"
                                 android:checked="@{form.ah3703e.equals(`4`)}"
                                 android:onClick="@{()->form.setAh3703e(form.ah3703e.equals(`4`)?``:`4`)}"
                                 android:text="@string/ah3703e" />
@@ -386,6 +395,7 @@
                                 android:id="@+id/ah3703x"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!form.ah3703d.equals(`5`)}"
                                 android:checked="@{form.ah3703x.equals(`96`)}"
                                 android:onClick="@{()->form.setAh3703x(form.ah3703x.equals(`96`)?``:`96`)}"
                                 android:text="@string/ah3703x" />
@@ -447,6 +457,7 @@
                                 android:id="@+id/ah3704a"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!form.ah3704d.equals(`5`)}"
                                 android:checked="@{form.ah3704a.equals(`1`)}"
                                 android:onClick="@{()->form.setAh3704a(form.ah3704a.equals(`1`)?``:`1`)}"
                                 android:text="@string/ah3704a" />
@@ -455,6 +466,7 @@
                                 android:id="@+id/ah3704b"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!form.ah3704d.equals(`5`)}"
                                 android:checked="@{form.ah3704b.equals(`2`)}"
                                 android:onClick="@{()->form.setAh3704b(form.ah3704b.equals(`2`)?``:`2`)}"
                                 android:text="@string/ah3704b" />
@@ -463,6 +475,7 @@
                                 android:id="@+id/ah3704c"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!form.ah3704d.equals(`5`)}"
                                 android:checked="@{form.ah3704c.equals(`3`)}"
                                 android:onClick="@{()->form.setAh3704c(form.ah3704c.equals(`3`)?``:`3`)}"
                                 android:text="@string/ah3704c" />
@@ -471,6 +484,7 @@
                                 android:id="@+id/ah3704e"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!form.ah3704d.equals(`5`)}"
                                 android:checked="@{form.ah3704e.equals(`4`)}"
                                 android:onClick="@{()->form.setAh3704e(form.ah3704e.equals(`4`)?``:`4`)}"
                                 android:text="@string/ah3704e" />
@@ -487,6 +501,7 @@
                                 android:id="@+id/ah3704x"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!form.ah3704d.equals(`5`)}"
                                 android:checked="@{form.ah3704x.equals(`96`)}"
                                 android:onClick="@{()->form.setAh3704x(form.ah3704x.equals(`96`)?``:`96`)}"
                                 android:text="@string/ah3704x" />
@@ -548,6 +563,7 @@
                                 android:id="@+id/ah3705a"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!form.ah3705d.equals(`5`)}"
                                 android:checked="@{form.ah3705a.equals(`1`)}"
                                 android:onClick="@{()->form.setAh3705a(form.ah3705a.equals(`1`)?``:`1`)}"
                                 android:text="@string/ah3705a" />
@@ -556,6 +572,7 @@
                                 android:id="@+id/ah3705b"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!form.ah3705d.equals(`5`)}"
                                 android:checked="@{form.ah3705b.equals(`2`)}"
                                 android:onClick="@{()->form.setAh3705b(form.ah3705b.equals(`2`)?``:`2`)}"
                                 android:text="@string/ah3705b" />
@@ -564,6 +581,7 @@
                                 android:id="@+id/ah3705c"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!form.ah3705d.equals(`5`)}"
                                 android:checked="@{form.ah3705c.equals(`3`)}"
                                 android:onClick="@{()->form.setAh3705c(form.ah3705c.equals(`3`)?``:`3`)}"
                                 android:text="@string/ah3705c" />
@@ -572,6 +590,7 @@
                                 android:id="@+id/ah3705e"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!form.ah3705d.equals(`5`)}"
                                 android:checked="@{form.ah3705e.equals(`4`)}"
                                 android:onClick="@{()->form.setAh3705e(form.ah3705e.equals(`4`)?``:`4`)}"
                                 android:text="@string/ah3705e" />
@@ -588,6 +607,7 @@
                                 android:id="@+id/ah3705x"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!form.ah3705d.equals(`5`)}"
                                 android:checked="@{form.ah3705x.equals(`96`)}"
                                 android:onClick="@{()->form.setAh3705x(form.ah3705x.equals(`96`)?``:`96`)}"
                                 android:text="@string/ah3705x" />
@@ -649,6 +669,7 @@
                                 android:id="@+id/ah3706a"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!form.ah3706d.equals(`5`)}"
                                 android:checked="@{form.ah3706a.equals(`1`)}"
                                 android:onClick="@{()->form.setAh3706a(form.ah3706a.equals(`1`)?``:`1`)}"
                                 android:text="@string/ah3706a" />
@@ -657,6 +678,7 @@
                                 android:id="@+id/ah3706b"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!form.ah3706d.equals(`5`)}"
                                 android:checked="@{form.ah3706b.equals(`2`)}"
                                 android:onClick="@{()->form.setAh3706b(form.ah3706b.equals(`2`)?``:`2`)}"
                                 android:text="@string/ah3706b" />
@@ -665,6 +687,7 @@
                                 android:id="@+id/ah3706c"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!form.ah3706d.equals(`5`)}"
                                 android:checked="@{form.ah3706c.equals(`3`)}"
                                 android:onClick="@{()->form.setAh3706c(form.ah3706c.equals(`3`)?``:`3`)}"
                                 android:text="@string/ah3706c" />
@@ -673,6 +696,7 @@
                                 android:id="@+id/ah3706e"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!form.ah3706d.equals(`5`)}"
                                 android:checked="@{form.ah3706e.equals(`4`)}"
                                 android:onClick="@{()->form.setAh3706e(form.ah3706e.equals(`4`)?``:`4`)}"
                                 android:text="@string/ah3706e" />
@@ -689,6 +713,7 @@
                                 android:id="@+id/ah3706x"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!form.ah3706d.equals(`5`)}"
                                 android:checked="@{form.ah3706x.equals(`96`)}"
                                 android:onClick="@{()->form.setAh3706x(form.ah3706x.equals(`96`)?``:`96`)}"
                                 android:text="@string/ah3706x" />
