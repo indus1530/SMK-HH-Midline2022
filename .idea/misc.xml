@@ -104,7 +104,11 @@
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/TPVICS_R2/app/src/main/res/layout/activity_section_im1.xml" value="0.55859375" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/TPVICS_R2/app/src/main/res/layout/activity_section_im2.xml" value="0.23825391536154616" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/drawable-v24/capsuler.xml" value="0.56625" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/drawable/app_bg_effect.xml" value="0.5828125" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/drawable/capsule.xml" value="0.56625" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/drawable/ic_vaccine.xml" value="0.5828125" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/drawable/top_round_shape_transparent.xml" value="0.5828125" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/drawable/vignette_effect.xml" value="0.5828125" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_adol_select.xml" value="0.55859375" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_camera.xml" value="0.55859375" />
         <entry key="..\:/Users/abdul.sajid/Desktop/Android App/smkHhMl2022/app/src/main/res/layout/activity_child_ending.xml" value="0.3140625" />
@@ -190,7 +194,7 @@
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" default="true" project-jdk-name="16" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="16" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

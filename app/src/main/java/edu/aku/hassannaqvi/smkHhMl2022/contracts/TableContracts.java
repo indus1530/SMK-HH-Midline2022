@@ -57,7 +57,7 @@ public class TableContracts {
         public static final String TABLE_NAME = "bl_randomised";
         public static final String COLUMN_ID = "_id";
         public static final String COLUMN_SNO = "sno";
-        public static final String COLUMN_CLUSTER_CODE = "hh02";
+        public static final String COLUMN_CLUSTER_CODE = "hh01";
         public static final String COLUMN_HEAD_HH = "hh08";
         public static final String COLUMN_HH_NO = "hhno";
 
