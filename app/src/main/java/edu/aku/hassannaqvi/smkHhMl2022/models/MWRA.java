@@ -7435,7 +7435,7 @@ public class MWRA extends BaseObservable implements Observable {
         setK10412(k102.equals("1") ? this.k10412 : "");
         setK10413(k102.equals("1") ? this.k10413 : "");
 
-        setK103(k102.equals("1") ? this.k103 : "");
+//        setK103(k102.equals("1") ? this.k103 : "");
 
         setK105(k102.equals("1") ? this.k105 : "");
         setK105a(k102.equals("1") ? this.k105a : "");
