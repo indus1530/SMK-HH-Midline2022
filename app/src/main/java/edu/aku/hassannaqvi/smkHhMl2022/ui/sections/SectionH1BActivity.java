@@ -95,4 +95,10 @@ public class SectionH1BActivity extends AppCompatActivity {
     public void onBackPressed() {
         setResult(RESULT_CANCELED);
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MainApp.lockScreen(this);
+    }
 }

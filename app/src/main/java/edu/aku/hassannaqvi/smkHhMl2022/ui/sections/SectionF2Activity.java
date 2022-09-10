@@ -50,7 +50,6 @@ public class SectionF2Activity extends AppCompatActivity {
     }
 
 
-
     private boolean updateDB() {
         if (MainApp.superuser) return true;
         int updcount = 0;
@@ -67,6 +66,7 @@ public class SectionF2Activity extends AppCompatActivity {
         }
 
     }
+
 
     public void btnContinue(View view) {
         if (!formValidation()) return;
@@ -97,5 +97,12 @@ public class SectionF2Activity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         setResult(RESULT_CANCELED);
+    }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MainApp.lockScreen(this);
     }
 }

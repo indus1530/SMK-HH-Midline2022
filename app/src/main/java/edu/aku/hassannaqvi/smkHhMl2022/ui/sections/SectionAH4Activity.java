@@ -95,5 +95,11 @@ public class SectionAH4Activity extends AppCompatActivity {
         setResult(RESULT_CANCELED);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MainApp.lockScreen(this);
+    }
+
 
 }

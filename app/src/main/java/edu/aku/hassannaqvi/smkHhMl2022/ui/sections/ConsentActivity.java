@@ -91,5 +91,11 @@ public class ConsentActivity extends AppCompatActivity {
         //startActivity(new Intent(this, MainActivity.class));
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MainApp.lockScreen(this);
+    }
+
 
 }

@@ -35,6 +35,7 @@
     <string name="btnReset" translatable="false">Reset</string>
     <string name="btnDownloadData" translatable="false">Download Data</string>
     <string name="csMAexist" translatable="false">might be already exist</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="netwrok" translatable="false">Network connection not available!</string>
     <string name="invalidpass" translatable="false">Invalid Password</string>
@@ -3386,6 +3387,20 @@
     <string name="k103">Are you or your husband currently doing something or using any method to delay or avoid getting pregnant?</string>
     <string name="k10301">Yes</string>
     <string name="k10302">No</string>
+    <string name="k103a">What methods did you currently using to delay or avoid pregnancy?</string>
+    <string name="k103a01">Female Sterilization</string>
+    <string name="k103a02">Male Sterilization</string>
+    <string name="k103a03">IUD (Intrauterine Device)</string>
+    <string name="k103a04">Injection</string>
+    <string name="k103a05">Implants</string>
+    <string name="k103a06">Pills</string>
+    <string name="k103a07">Condom</string>
+    <string name="k103a08">SDM (Standard Days Method)</string>
+    <string name="k103a09">Lactation amen method (LAM)</string>
+    <string name="k103a10">Rhythm method</string>
+    <string name="k103a11">Withdrawal</string>
+    <string name="k103a12">Other modern method</string>
+    <string name="k103a13">Other traditional method</string>
     <string name="k104">What methods did you previously use to delay or avoid pregnancy?</string>
     <string name="k10401">Female Sterilization</string>
     <string name="k10402">Male Sterilization</string>
@@ -3417,6 +3432,17 @@
     <string name="k105b">Are you satisfied with the current method?</string>
     <string name="k105b01">Yes</string>
     <string name="k105b02">No</string>
+    <string name="k105c">Reasons for Satisfaction</string>
+    <string name="k105c01">No side effects</string>
+    <string name="k105c02">Easily available</string>
+    <string name="k105c03">It’s a long effecting FP method</string>
+    <string name="k105c04">It’s a short effecting FP method</string>
+    <string name="k105c05">Health care provider counselled me</string>
+    <string name="k105c06">Health care provider counselled me and my husband</string>
+    <string name="k105c07">Facility that provides method is near</string>
+    <string name="k105c08">Method is affordable</string>
+    <string name="k105c09">My husband agreed for the method</string>
+    <string name="k105c96">Other (Specify)</string>
     <string name="k106">Reasons for not using any family planning method.</string>
     <string name="k10601">Side effects of contraceptives</string>
     <string name="k10602">Want Pregnancy</string>
@@ -4069,10 +4095,12 @@
     <string name='Q_k101b'>k101b </string>
     <string name='Q_k102'>k102</string>
     <string name='Q_k103'>k103</string>
+    <string name='Q_k103a'>k103a</string>
     <string name='Q_k104'>k104</string>
     <string name='Q_k105'>k105</string>
     <string name='Q_k105a'>k105a</string>
     <string name='Q_k105b'>k105b</string>
+    <string name='Q_k105c'>k105c</string>
     <string name='Q_k106'>k106</string>
     <string name='Q_k107'>k107</string>
     <string name='Q_k107a'>k107a</string>

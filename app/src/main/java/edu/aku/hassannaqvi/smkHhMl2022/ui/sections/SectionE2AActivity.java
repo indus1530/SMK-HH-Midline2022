@@ -98,4 +98,10 @@ public class SectionE2AActivity extends AppCompatActivity {
         setResult(RESULT_CANCELED);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MainApp.lockScreen(this);
+    }
+
 }
