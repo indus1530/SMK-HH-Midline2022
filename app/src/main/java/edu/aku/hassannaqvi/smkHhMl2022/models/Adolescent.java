@@ -1622,6 +1622,12 @@ public class Adolescent extends BaseObservable implements Observable {
     public void setAh3702d(String ah3702d) {
         if (this.ah3702d.equals(ah3702d)) return;     // For all checkboxes
         this.ah3702d = ah3702d;
+        setAh3702a(ah3702d.equals("5") ? "" : this.ah3702a);
+        setAh3702b(ah3702d.equals("5") ? "" : this.ah3702b);
+        setAh3702c(ah3702d.equals("5") ? "" : this.ah3702c);
+        setAh3702e(ah3702d.equals("5") ? "" : this.ah3702e);
+        setAh3702f(ah3702d.equals("5") ? "" : this.ah3702f);
+        setAh3702x(ah3702d.equals("5") ? "" : this.ah3702x);
         notifyPropertyChanged(BR.ah3702d);
     }
 
@@ -1720,6 +1726,12 @@ public class Adolescent extends BaseObservable implements Observable {
     public void setAh3703d(String ah3703d) {
         if (this.ah3703d.equals(ah3703d)) return;     // For all checkboxes
         this.ah3703d = ah3703d;
+        setAh3703a(ah3703d.equals("5") ? "" : this.ah3703a);
+        setAh3703b(ah3703d.equals("5") ? "" : this.ah3703b);
+        setAh3703c(ah3703d.equals("5") ? "" : this.ah3703c);
+        setAh3703e(ah3703d.equals("5") ? "" : this.ah3703e);
+        setAh3703f(ah3703d.equals("5") ? "" : this.ah3703f);
+        setAh3703x(ah3703d.equals("5") ? "" : this.ah3703x);
         notifyPropertyChanged(BR.ah3703d);
     }
 
@@ -1818,6 +1830,12 @@ public class Adolescent extends BaseObservable implements Observable {
     public void setAh3704d(String ah3704d) {
         if (this.ah3704d.equals(ah3704d)) return;     // For all checkboxes
         this.ah3704d = ah3704d;
+        setAh3704a(ah3704d.equals("5") ? "" : this.ah3704a);
+        setAh3704b(ah3704d.equals("5") ? "" : this.ah3704b);
+        setAh3704c(ah3704d.equals("5") ? "" : this.ah3704c);
+        setAh3704e(ah3704d.equals("5") ? "" : this.ah3704e);
+        setAh3704f(ah3704d.equals("5") ? "" : this.ah3704f);
+        setAh3704x(ah3704d.equals("5") ? "" : this.ah3704x);
         notifyPropertyChanged(BR.ah3704d);
     }
 
@@ -1916,6 +1934,12 @@ public class Adolescent extends BaseObservable implements Observable {
     public void setAh3705d(String ah3705d) {
         if (this.ah3705d.equals(ah3705d)) return;     // For all checkboxes
         this.ah3705d = ah3705d;
+        setAh3705a(ah3705d.equals("5") ? "" : this.ah3705a);
+        setAh3705b(ah3705d.equals("5") ? "" : this.ah3705b);
+        setAh3705c(ah3705d.equals("5") ? "" : this.ah3705c);
+        setAh3705e(ah3705d.equals("5") ? "" : this.ah3705e);
+        setAh3705f(ah3705d.equals("5") ? "" : this.ah3705f);
+        setAh3705x(ah3705d.equals("5") ? "" : this.ah3705x);
         notifyPropertyChanged(BR.ah3705d);
     }
 
@@ -2014,6 +2038,12 @@ public class Adolescent extends BaseObservable implements Observable {
     public void setAh3706d(String ah3706d) {
         if (this.ah3706d.equals(ah3706d)) return;     // For all checkboxes
         this.ah3706d = ah3706d;
+        setAh3706a(ah3706d.equals("5") ? "" : this.ah3706a);
+        setAh3706b(ah3706d.equals("5") ? "" : this.ah3706b);
+        setAh3706c(ah3706d.equals("5") ? "" : this.ah3706c);
+        setAh3706e(ah3706d.equals("5") ? "" : this.ah3706e);
+        setAh3706f(ah3706d.equals("5") ? "" : this.ah3706f);
+        setAh3706x(ah3706d.equals("5") ? "" : this.ah3706x);
         notifyPropertyChanged(BR.ah3706d);
     }
 

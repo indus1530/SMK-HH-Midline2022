@@ -623,11 +623,35 @@ public class MWRA extends BaseObservable implements Observable {
     private String k10412 = _EMPTY_;
     private String k10413 = _EMPTY_;
     private String k103 = _EMPTY_;
+    private String k103a01 = _EMPTY_;
+    private String k103a02 = _EMPTY_;
+    private String k103a03 = _EMPTY_;
+    private String k103a04 = _EMPTY_;
+    private String k103a05 = _EMPTY_;
+    private String k103a06 = _EMPTY_;
+    private String k103a07 = _EMPTY_;
+    private String k103a08 = _EMPTY_;
+    private String k103a09 = _EMPTY_;
+    private String k103a10 = _EMPTY_;
+    private String k103a11 = _EMPTY_;
+    private String k103a12 = _EMPTY_;
+    private String k103a13 = _EMPTY_;
     private String k105 = _EMPTY_;
     private String k105a = _EMPTY_;
     private String k105a01x = _EMPTY_;
     private String k105a02x = _EMPTY_;
     private String k105b = _EMPTY_;
+    private String k105c01 = _EMPTY_;
+    private String k105c02 = _EMPTY_;
+    private String k105c03 = _EMPTY_;
+    private String k105c04 = _EMPTY_;
+    private String k105c05 = _EMPTY_;
+    private String k105c06 = _EMPTY_;
+    private String k105c07 = _EMPTY_;
+    private String k105c08 = _EMPTY_;
+    private String k105c09 = _EMPTY_;
+    private String k105c96 = _EMPTY_;
+    private String k105c96x = _EMPTY_;
     private String k106 = _EMPTY_;
     private String k10601 = _EMPTY_;
     private String k10602 = _EMPTY_;
@@ -7426,6 +7450,20 @@ public class MWRA extends BaseObservable implements Observable {
 
     public void setK103(String k103) {
         this.k103 = k103;
+        setK103a01(k103.equals("2") ? "" : this.k103a01);
+        setK103a02(k103.equals("2") ? "" : this.k103a02);
+        setK103a03(k103.equals("2") ? "" : this.k103a03);
+        setK103a04(k103.equals("2") ? "" : this.k103a04);
+        setK103a05(k103.equals("2") ? "" : this.k103a05);
+        setK103a06(k103.equals("2") ? "" : this.k103a06);
+        setK103a07(k103.equals("2") ? "" : this.k103a07);
+        setK103a08(k103.equals("2") ? "" : this.k103a08);
+        setK103a09(k103.equals("2") ? "" : this.k103a09);
+        setK103a10(k103.equals("2") ? "" : this.k103a10);
+        setK103a11(k103.equals("2") ? "" : this.k103a11);
+        setK103a12(k103.equals("2") ? "" : this.k103a12);
+        setK103a13(k103.equals("2") ? "" : this.k103a13);
+
         setK10401(k103.equals("2") ? "" : this.k10401);
         setK10402(k103.equals("2") ? "" : this.k10402);
         setK10403(k103.equals("2") ? "" : this.k10403);
@@ -7446,6 +7484,271 @@ public class MWRA extends BaseObservable implements Observable {
 
         notifyPropertyChanged(BR.k103);
     }
+
+    @Bindable
+    public String getK103a01() {
+        return k103a01;
+    }
+
+    public void setK103a01(String k103a01) {
+        if (this.k103a01.equals(k103a01)) return; // for all checkboxes
+        this.k103a01 = k103a01;
+        notifyPropertyChanged(BR.k103a01);
+    }
+
+    @Bindable
+    public String getK103a02() {
+        return k103a02;
+    }
+
+    public void setK103a02(String k103a02) {
+        if (this.k103a02.equals(k103a02)) return; // for all checkboxes
+        this.k103a02 = k103a02;
+        notifyPropertyChanged(BR.k103a02);
+    }
+
+    @Bindable
+    public String getK103a03() {
+        return k103a03;
+    }
+
+    public void setK103a03(String k103a03) {
+        if (this.k103a03.equals(k103a03)) return; // for all checkboxes
+        this.k103a03 = k103a03;
+        notifyPropertyChanged(BR.k103a03);
+    }
+
+    @Bindable
+    public String getK103a04() {
+        return k103a04;
+    }
+
+    public void setK103a04(String k103a04) {
+        if (this.k103a04.equals(k103a04)) return; // for all checkboxes
+        this.k103a04 = k103a04;
+        notifyPropertyChanged(BR.k103a04);
+    }
+
+    @Bindable
+    public String getK103a05() {
+        return k103a05;
+    }
+
+    public void setK103a05(String k103a05) {
+        if (this.k103a05.equals(k103a05)) return; // for all checkboxes
+        this.k103a05 = k103a05;
+        notifyPropertyChanged(BR.k103a05);
+    }
+
+    @Bindable
+    public String getK103a06() {
+        return k103a06;
+    }
+
+    public void setK103a06(String k103a06) {
+        if (this.k103a06.equals(k103a06)) return; // for all checkboxes
+        this.k103a06 = k103a06;
+        notifyPropertyChanged(BR.k103a06);
+    }
+
+    @Bindable
+    public String getK103a07() {
+        return k103a07;
+    }
+
+    public void setK103a07(String k103a07) {
+        if (this.k103a07.equals(k103a07)) return; // for all checkboxes
+        this.k103a07 = k103a07;
+        notifyPropertyChanged(BR.k103a07);
+    }
+
+    @Bindable
+    public String getK103a08() {
+        return k103a08;
+    }
+
+    public void setK103a08(String k103a08) {
+        if (this.k103a08.equals(k103a08)) return; // for all checkboxes
+        this.k103a08 = k103a08;
+        notifyPropertyChanged(BR.k103a08);
+    }
+
+    @Bindable
+    public String getK103a09() {
+        return k103a09;
+    }
+
+    public void setK103a09(String k103a09) {
+        if (this.k103a09.equals(k103a09)) return; // for all checkboxes
+        this.k103a09 = k103a09;
+        notifyPropertyChanged(BR.k103a09);
+    }
+
+    @Bindable
+    public String getK103a10() {
+        return k103a10;
+    }
+
+    public void setK103a10(String k103a10) {
+        if (this.k103a10.equals(k103a10)) return; // for all checkboxes
+        this.k103a10 = k103a10;
+        notifyPropertyChanged(BR.k103a10);
+    }
+
+    @Bindable
+    public String getK103a11() {
+        return k103a11;
+    }
+
+    public void setK103a11(String k103a11) {
+        if (this.k103a11.equals(k103a11)) return; // for all checkboxes
+        this.k103a11 = k103a11;
+        notifyPropertyChanged(BR.k103a11);
+    }
+
+    @Bindable
+    public String getK103a12() {
+        return k103a12;
+    }
+
+    public void setK103a12(String k103a12) {
+        if (this.k103a12.equals(k103a12)) return; // for all checkboxes
+        this.k103a12 = k103a12;
+        notifyPropertyChanged(BR.k103a12);
+    }
+
+    @Bindable
+    public String getK103a13() {
+        return k103a13;
+    }
+
+    public void setK103a13(String k103a13) {
+        if (this.k103a13.equals(k103a13)) return; // for all checkboxes
+        this.k103a13 = k103a13;
+        notifyPropertyChanged(BR.k103a13);
+    }
+
+    @Bindable
+    public String getK105c01() {
+        return k105c01;
+    }
+
+    public void setK105c01(String k105c01) {
+        if (this.k105c01.equals(k105c01)) return; // for all checkboxes
+        this.k105c01 = k105c01;
+        notifyPropertyChanged(BR.k105c01);
+    }
+
+    @Bindable
+    public String getK105c02() {
+        return k105c02;
+    }
+
+    public void setK105c02(String k105c02) {
+        if (this.k105c02.equals(k105c02)) return; // for all checkboxes
+        this.k105c02 = k105c02;
+        notifyPropertyChanged(BR.k105c02);
+    }
+
+    @Bindable
+    public String getK105c03() {
+        return k105c03;
+    }
+
+    public void setK105c03(String k105c03) {
+        if (this.k105c03.equals(k105c03)) return; // for all checkboxes
+        this.k105c03 = k105c03;
+        notifyPropertyChanged(BR.k105c03);
+    }
+
+    @Bindable
+    public String getK105c04() {
+        return k105c04;
+    }
+
+    public void setK105c04(String k105c04) {
+        if (this.k105c04.equals(k105c04)) return; // for all checkboxes
+        this.k105c04 = k105c04;
+        notifyPropertyChanged(BR.k105c04);
+    }
+
+    @Bindable
+    public String getK105c05() {
+        return k105c05;
+    }
+
+    public void setK105c05(String k105c05) {
+        if (this.k105c05.equals(k105c05)) return; // for all checkboxes
+        this.k105c05 = k105c05;
+        notifyPropertyChanged(BR.k105c05);
+    }
+
+    @Bindable
+    public String getK105c06() {
+        return k105c06;
+    }
+
+    public void setK105c06(String k105c06) {
+        if (this.k105c06.equals(k105c06)) return; // for all checkboxes
+        this.k105c06 = k105c06;
+        notifyPropertyChanged(BR.k105c06);
+    }
+
+    @Bindable
+    public String getK105c07() {
+        return k105c07;
+    }
+
+    public void setK105c07(String k105c07) {
+        if (this.k105c07.equals(k105c07)) return; // for all checkboxes
+        this.k105c07 = k105c07;
+        notifyPropertyChanged(BR.k105c07);
+    }
+
+    @Bindable
+    public String getK105c08() {
+        return k105c08;
+    }
+
+    public void setK105c08(String k105c08) {
+        if (this.k105c08.equals(k105c08)) return; // for all checkboxes
+        this.k105c08 = k105c08;
+        notifyPropertyChanged(BR.k105c08);
+    }
+
+    @Bindable
+    public String getK105c09() {
+        return k105c09;
+    }
+
+    public void setK105c09(String k105c09) {
+        if (this.k10401.equals(k10401)) return; // for all checkboxes
+        this.k105c09 = k105c09;
+        notifyPropertyChanged(BR.k105c09);
+    }
+
+    @Bindable
+    public String getK105c96() {
+        return k105c96;
+    }
+
+    public void setK105c96(String k105c96) {
+        if (this.k105c96.equals(k105c96)) return; // for all checkboxes
+        this.k105c96 = k105c96;
+        setK105c96x(k105c96.equals("96") ? this.k105c96x : "");
+        notifyPropertyChanged(BR.k105c96);
+    }
+
+    @Bindable
+    public String getK105c96x() {
+        return k105c96x;
+    }
+
+    public void setK105c96x(String k105c96x) {
+        this.k105c96x = k105c96x;
+        notifyPropertyChanged(BR.k105c96x);
+    }
+
 
     @Bindable
     public String getK104() {
@@ -7648,6 +7951,17 @@ public class MWRA extends BaseObservable implements Observable {
         setK10607(k105b.equals("2") ? this.k10607 : "");
         setK10608(k105b.equals("2") ? this.k10608 : "");
         setK10696(k105b.equals("2") ? this.k10696 : "");
+
+        setK105c01(k105b.equals("1") ? this.k105c01 : "");
+        setK105c02(k105b.equals("1") ? this.k105c02 : "");
+        setK105c03(k105b.equals("1") ? this.k105c03 : "");
+        setK105c04(k105b.equals("1") ? this.k105c04 : "");
+        setK105c05(k105b.equals("1") ? this.k105c05 : "");
+        setK105c06(k105b.equals("1") ? this.k105c06 : "");
+        setK105c07(k105b.equals("1") ? this.k105c07 : "");
+        setK105c08(k105b.equals("1") ? this.k105c08 : "");
+        setK105c09(k105b.equals("1") ? this.k105c09 : "");
+        setK105c96(k105b.equals("1") ? this.k105c96 : "");
         notifyPropertyChanged(BR.k105b);
     }
 
@@ -8371,7 +8685,7 @@ public class MWRA extends BaseObservable implements Observable {
     public void setLg10296(String lg10296) {
         if (this.lg10296.equals(lg10296)) return; // for all checkboxes
         this.lg10296 = lg10296;
-        setLg10296(lg10296.equals("96") ? this.lg10296x : "");
+        setLg10296x(lg10296.equals("96") ? this.lg10296x : "");
         notifyPropertyChanged(BR.lg10296);
     }
 
@@ -9627,6 +9941,19 @@ public class MWRA extends BaseObservable implements Observable {
             this.k101b = json.getString("k101b");
             this.k102 = json.getString("k102");
             this.k103 = json.getString("k103");
+            this.k103a01 = json.getString("k103a01");
+            this.k103a02 = json.getString("k103a02");
+            this.k103a03 = json.getString("k103a03");
+            this.k103a04 = json.getString("k103a04");
+            this.k103a05 = json.getString("k103a05");
+            this.k103a06 = json.getString("k103a06");
+            this.k103a07 = json.getString("k103a07");
+            this.k103a08 = json.getString("k103a08");
+            this.k103a09 = json.getString("k103a09");
+            this.k103a10 = json.getString("k103a10");
+            this.k103a11 = json.getString("k103a11");
+            this.k103a12 = json.getString("k103a12");
+            this.k103a13 = json.getString("k103a13");
             this.k10401 = json.getString("k10401");
             this.k10402 = json.getString("k10402");
             this.k10403 = json.getString("k10403");
@@ -9645,6 +9972,17 @@ public class MWRA extends BaseObservable implements Observable {
             this.k105a01x = json.getString("k105a01x");
             this.k105a02x = json.getString("k105a02x");
             this.k105b = json.getString("k105b");
+            this.k105c01 = json.getString("k105c01");
+            this.k105c02 = json.getString("k105c02");
+            this.k105c03 = json.getString("k105c03");
+            this.k105c04 = json.getString("k105c04");
+            this.k105c05 = json.getString("k105c05");
+            this.k105c06 = json.getString("k105c06");
+            this.k105c07 = json.getString("k105c07");
+            this.k105c08 = json.getString("k105c08");
+            this.k105c09 = json.getString("k105c09");
+            this.k105c96 = json.getString("k105c96");
+            this.k105c96x = json.getString("k105c96x");
             this.k10601 = json.getString("k10601");
             this.k10602 = json.getString("k10602");
             this.k10603 = json.getString("k10603");
@@ -10390,6 +10728,19 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("k101b", k101b)
                 .put("k102", k102)
                 .put("k103", k103)
+                .put("k103a01", k103a01)
+                .put("k103a02", k103a02)
+                .put("k103a03", k103a03)
+                .put("k103a04", k103a04)
+                .put("k103a05", k103a05)
+                .put("k103a06", k103a06)
+                .put("k103a07", k103a07)
+                .put("k103a08", k103a08)
+                .put("k103a09", k103a09)
+                .put("k103a10", k103a10)
+                .put("k103a11", k103a11)
+                .put("k103a12", k103a12)
+                .put("k103a13", k103a13)
                 .put("k10401", k10401)
                 .put("k10402", k10402)
                 .put("k10403", k10403)
@@ -10408,6 +10759,17 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("k105a01x", k105a01x)
                 .put("k105a02x", k105a02x)
                 .put("k105b", k105b)
+                .put("k105c01", k105c01)
+                .put("k105c02", k105c02)
+                .put("k105c03", k105c03)
+                .put("k105c04", k105c04)
+                .put("k105c05", k105c05)
+                .put("k105c06", k105c06)
+                .put("k105c07", k105c07)
+                .put("k105c08", k105c08)
+                .put("k105c09", k105c09)
+                .put("k105c96", k105c96)
+                .put("k105c96x", k105c96x)
                 .put("k10601", k10601)
                 .put("k10602", k10602)
                 .put("k10603", k10603)

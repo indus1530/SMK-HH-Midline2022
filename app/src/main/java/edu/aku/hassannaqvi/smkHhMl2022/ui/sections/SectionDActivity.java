@@ -233,4 +233,10 @@ public class SectionDActivity extends AppCompatActivity {
         super.onBackPressed();
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MainApp.lockScreen(this);
+    }
+
 }

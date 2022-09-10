@@ -35,6 +35,7 @@
     <string name="btnReset" translatable="false">Reset</string>
     <string name="btnDownloadData" translatable="false">Download Data</string>
     <string name="csMAexist" translatable="false">might be already exist</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="netwrok" translatable="false">Network connection not available!</string>
     <string name="invalidpass" translatable="false">Invalid Password</string>
@@ -3129,6 +3130,20 @@
     <string name="k103">ڇا توھان يا توھان جو مڙس ھن وقت حمل کي روڪڻ لاءِ ڪو طريقو يا ٻيو ڪجھه استعمال ڪري رھيا آھيو؟</string>
     <string name="k10301">ها</string>
     <string name="k10302">نه</string>
+    <string name="k103a">حمل کي دير ڪرڻ يا روڪڻ لاءِ توهان في الحال ڪهڙا طريقا استعمال ڪيا آهن؟</string>
+    <string name="k103a01">عورتن جي بندي</string>
+    <string name="k103a02">مردانا نس بندي</string>
+    <string name="k103a03">آءِ يو ڊي</string>
+    <string name="k103a04">سئي (انجيڪشن)</string>
+    <string name="k103a05">امپلانٽس</string>
+    <string name="k103a06">گوريون</string>
+    <string name="k103a07">ڦوڪڻو (ڪونڊم)</string>
+    <string name="k103a08">مخصوص ڏينھن وارو طريقو</string>
+    <string name="k103a09">کير پيارڻ وارو طريقو</string>
+    <string name="k103a10">رڌم طريقو</string>
+    <string name="k103a11">خارج ڪرڻ وارو طريقو</string>
+    <string name="k103a12">ٻيو ڪو جديد طريقو</string>
+    <string name="k103a13">ٻيو ڪو روايتي طريقو</string>
     <string name="k104">توهان حمل کي روڪڻ لاءِ اڳھ ۾ ڪهڙو طريقو استعمال ڪيو هو؟</string>
     <string name="k10401">عورتاڻي نس بندي</string>
     <string name="k10402">مرداڻي نس بندي</string>
@@ -3160,6 +3175,17 @@
     <string name="k105b">توهان هنن طريقيڪار مان مطمئن آهيو؟</string>
     <string name="k105b01">ها</string>
     <string name="k105b02">نه</string>
+    <string name="k105c">اطمينان جا سبب</string>
+    <string name="k105c01">ڪو به پاسي اثرات</string>
+    <string name="k105c02">آساني سان دستياب</string>
+    <string name="k105c03">اهو هڪ ڊگهو اثرائتو خانداني منصوبه بندي جو طريقو آهي</string>
+    <string name="k105c04">اهو هڪ مختصر اثرائتو خانداني منصوبه بندي جو طريقو آهي</string>
+    <string name="k105c05">صحت جي سار سنڀار فراهم ڪندڙ مون کي صلاح ڏني</string>
+    <string name="k105c06">صحت جي سار سنڀال فراهم ڪندڙ منهنجي مڙس ۽ مون کي صلاح ڏني</string>
+    <string name="k105c07">هڪ سهولت جيڪا مهيا ڪري ٿي طريقو ويجهو آهي</string>
+    <string name="k105c08">طريقو سستي آهي</string>
+    <string name="k105c09">منهنجو مڙس هن طريقي سان اتفاق ڪيو</string>
+    <string name="k105c96">ٻيا (وضاحت)</string>
     <string name="k106">خانداني منصوبابندي جو طريقو استعمال نه ڪرڻ جو سبب ڇا آھي؟</string>
     <string name="k10601">مانع حمل جا غلط اثر</string>
     <string name="k10602">حمل چاھيون پيا</string>
@@ -4068,11 +4094,12 @@
     <string name='Q_k101a'>k101a</string>
     <string name='Q_k101b'>k101b </string>
     <string name='Q_k102'>k102</string>
-    <string name='Q_k103'>k103</string>
+    <string name='Q_k103a'>k103a</string>
     <string name='Q_k104'>k104</string>
     <string name='Q_k105'>k105</string>
     <string name='Q_k105a'>k105a</string>
     <string name='Q_k105b'>k105b</string>
+    <string name='Q_k105c'>k105c</string>
     <string name='Q_k106'>k106</string>
     <string name='Q_k107'>k107</string>
     <string name='Q_k107a'>k107a</string>

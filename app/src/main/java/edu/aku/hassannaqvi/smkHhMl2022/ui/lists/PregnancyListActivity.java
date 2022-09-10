@@ -136,6 +136,7 @@ public class PregnancyListActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        MainApp.lockScreen(this);
         Toast.makeText(this, "Activity Resumed!", Toast.LENGTH_SHORT).show();
 
         //MainApp.mwra = new MWRA();
