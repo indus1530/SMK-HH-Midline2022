@@ -981,7 +981,7 @@
  <string name="message_preg_dialog_proceed">You have entered only %1$s of %2$s Pregnancy. \nAre you sure you want to continue?</string>
  <string name="message_preg_dialog_addmore">You have already entered %1$s Pregnancy. \nAre you sure you want to add more pregnancies?</string>
 
- <string name="app_name">SMK-HH-ML22</string>
+ <string name="app_name">SMK-HH-ML22 \n English</string>
  <string name="btnSync">Download Data</string>
  <string name="btnUpload">Upload Data</string>
  <string name="prompt_email">Email</string>
