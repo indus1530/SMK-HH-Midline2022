@@ -7722,7 +7722,7 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     public void setK105c09(String k105c09) {
-        if (this.k10401.equals(k10401)) return; // for all checkboxes
+        if (this.k105c09.equals(k105c09)) return; // for all checkboxes
         this.k105c09 = k105c09;
         notifyPropertyChanged(BR.k105c09);
     }
@@ -10125,6 +10125,7 @@ public class MWRA extends BaseObservable implements Observable {
         json.put(TableContracts.MwraTable.COLUMN_ID, this.id);
         json.put(TableContracts.MwraTable.COLUMN_UID, this.uid);
         json.put(TableContracts.MwraTable.COLUMN_PROJECT_NAME, this.projectName);
+        json.put(TableContracts.MwraTable.COLUMN_APPVERSION, this.appver);
 
         json.put(TableContracts.MwraTable.COLUMN_UUID, this.uuid);
         json.put(TableContracts.MwraTable.COLUMN_HHID, this.hhid);
