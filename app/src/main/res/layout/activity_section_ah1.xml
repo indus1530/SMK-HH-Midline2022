@@ -397,8 +397,11 @@
                                 android:tag="ah396"
                                 android:text="@={form.ah396x}"
                                 android:visibility="@{form.ah3.equals(`96`) ? View.VISIBLE : View.GONE}" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
 

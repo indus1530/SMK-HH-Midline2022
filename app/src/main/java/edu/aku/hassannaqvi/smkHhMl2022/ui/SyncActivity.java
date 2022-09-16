@@ -548,7 +548,7 @@ public class SyncActivity extends AppCompatActivity {
                     downloadTables.get(position).setstatus("Process Failed7");
                     downloadTables.get(position).setstatusID(1);
                     downloadTables.get(position).setInfo("Time: " + time + "/" + getTime() + "\t Size: " + size);
-                    downloadTables.get(position).setmessage(MainApp.admin ? message : "Testing");
+                    downloadTables.get(position).setmessage(message.contains("No such file") ? "Access Denied for Testing" : message);
                     syncListAdapter.updatesyncList(downloadTables);
 
                     if (position == 0 && workInfo.getOutputData().getString("deviceTime") != null) {
