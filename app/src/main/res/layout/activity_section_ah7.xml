@@ -968,7 +968,7 @@
                                         android:maxLength="2"
                                         android:text="@={form.ah59a}"
                                         app:maxValue="20"
-                                        app:minValue="1"
+                                        app:minValue="0"
                                         app:type="range" />
 
                                     <TextView

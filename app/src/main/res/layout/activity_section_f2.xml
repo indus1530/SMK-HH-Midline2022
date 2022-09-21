@@ -162,7 +162,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{mwra.f121a.equals(`2`)}"
-                                android:onClick="@{()->mwra.setF121a(`2`)}"
+                                android:onClick="@{()->mwra.setF121a(`2`) + f122.clearCheck()}"
                                 android:text="@string/f121a02" />
 
                         </RadioGroup>

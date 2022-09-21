@@ -1519,7 +1519,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="2"
                                 android:checked="@{form.ah2411.equals(`11`)}"
-                                android:onClick="@{()->form.setAh2411(form.ah2411.equals(`11`)?``:`11`) + ah24a.clearCheck()}"
+                                android:onClick="@{()->form.setAh2411(form.ah2411.equals(`11`)?``:`11`) + ah24a.clearCheck() + ah2401.clearCheck() + ah2402.clearCheck() + ah2403.clearCheck() + ah2404.clearCheck() + ah2405.clearCheck() + ah2406.clearCheck() + ah2407.clearCheck() + ah2408.clearCheck() + ah2409.clearCheck() + ah2410.clearCheck()}"
                                 android:tag="-1" />
 
                         </LinearLayout>
