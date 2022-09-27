@@ -170,7 +170,7 @@
     <string name="sectionchlistofchildren0623monthsoldmainheading">SECTION CH:</string>
     <string name="sectionchlistofchildren0623monthsoldsubheading">List of Children 06-23 months old: List of Children 0623 months old</string>
     <!--<string name="no"> No </string>-->
-    <string name="yes"> Yes </string>
+    <string name="yes">ها</string>
 
     <string name="consentmainheading">Consent:</string>
     <string name="consentsubheading">Introduce yourself to the respondent and explain the reason for your visit and ask for permission</string>
@@ -996,14 +996,14 @@
     <string name="main_menu">Main Menu</string>
     <string name="only_for_testing">ONLY FOR TESTING</string>
     <string name="database">Database</string>
-    <string name="no"> نہیں </string>
-    <string name="dkn"> معلوم نہیں </string>
-    <string name="none"> کوئی نہیں </string>
-    <string name="never"> کبھی نہیں </string>
-    <string name="na"> قابل اطلاق / دستیاب نہیں  </string>
-    <string name="nap"> قابل اطلاق نہیں </string>
-    <string name="nav"> دستیاب نہیں </string>
-    <string name="ref"> انکار کر دیا </string>
+    <string name="no">نه</string>
+    <string name="dkn">خبر نه آهي</string>
+    <string name="none">ڪو به نه</string>
+    <string name="never">ڪڏهن به نه</string>
+    <string name="na"> لاڳو نٿو ٿئي / دستياب ناهي</string>
+    <string name="nap">لاڳو نٿو ٿئي</string>
+    <string name="nav">دستياب ناهي</string>
+    <string name="ref">جواب ڏيڻ کان انڪار ڪيو</string>
     <string name="other"> دیگر </string>
     <string name="specify"> وضاحت کریں </string>
     <string name="year"> سال </string>
