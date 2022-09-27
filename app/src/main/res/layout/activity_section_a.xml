@@ -139,13 +139,6 @@
                 </androidx.cardview.widget.CardView>
 
 
-                <TextView
-                    style="@style/labelsHead"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/a1title" />
-
-
                 <!-- a109  Input   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVa109"
@@ -154,29 +147,42 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/bottom"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <TextView
-                            style="@style/quesNum"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="@string/Q_a109" />
-
-                        <TextView
-                            android:layout_width="200dp"
-                            android:layout_height="match_parent"
-                            android:text="@string/a109" />
-
-                        <EditText
-                            android:id="@+id/a109"
+                            style="@style/labelsHead"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789,. "
-                            android:hint="@string/a109"
-                            android:inputType="text"
-                            android:maxLength="20"
-                            android:text="@={form.a109}" />
+                            android:layout_height="wrap_content"
+                            android:text="@string/a1title" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_a109" />
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/a109" />
+
+                            <EditText
+                                android:id="@+id/a109"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789,. "
+                                android:hint="@string/a109"
+                                android:inputType="text"
+                                android:maxLength="20"
+                                android:text="@={form.a109}" />
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
@@ -321,6 +327,7 @@
 
                 <!--EndButton LinearLayout-->
                 <LinearLayout
+                    android:id="@+id/llbtn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"

@@ -736,6 +736,7 @@
 
                 <!--EndButton LinearLayout-->
                 <LinearLayout
+                    android:id="@+id/llbtn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"

@@ -4,6 +4,7 @@ import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.form;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Toast;
 
@@ -85,17 +86,13 @@ public class SectionAActivity extends AppCompatActivity {
     }
 
     public void btnContinue(View view) {
+        bi.llbtn.setVisibility(View.GONE);
+        new Handler().postDelayed(() -> bi.llbtn.setVisibility(View.VISIBLE), 5000);
         if (!formValidation()) return;
         if (!insertNewRecord()) return;
-        // saveDraft();
         if (updateDB()) {
             Intent i;
-            //      if (bi.h111a.isChecked()) {
             i = new Intent(this, ConsentActivity.class).putExtra("complete", true);
-           /* } else {
-                i = new Intent(this, EndingActivity.class).putExtra("complete", false);
-            }*/
-
             startActivity(i);
             finish();
         } else {
@@ -106,8 +103,6 @@ public class SectionAActivity extends AppCompatActivity {
 
     public void btnEnd(View view) {
         finish();
-        //startActivity(new Intent(this, EndingActivity.class).putExtra("complete", false));
-        //startActivity(new Intent(this, MainActivity.class));
     }
 
     private boolean formValidation() {
@@ -117,7 +112,6 @@ public class SectionAActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        // Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
         setResult(RESULT_CANCELED);
     }
 

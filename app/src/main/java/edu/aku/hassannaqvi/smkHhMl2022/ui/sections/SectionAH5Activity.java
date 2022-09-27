@@ -7,6 +7,7 @@ import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedMWRA;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Toast;
 
@@ -44,13 +45,10 @@ public class SectionAH5Activity extends AppCompatActivity {
         bi.setForm(adol);
     }
 
-    private void setupSkips() {
 
-    }
 
     private boolean updateDB() {
         if (MainApp.superuser) return true;
-
         int updcount = 0;
         try {
             updcount = db.updatesAdolColumn(TableContracts.AdolescentTable.COLUMN_SAH5, adol.sAH5toString());
@@ -66,17 +64,15 @@ public class SectionAH5Activity extends AppCompatActivity {
     }
 
     public void btnContinue(View view) {
+        bi.llbtn.setVisibility(View.GONE);
+        new Handler().postDelayed(() -> bi.llbtn.setVisibility(View.VISIBLE), 5000);
         if (!formValidation()) return;
-        saveDraft();
         if (updateDB()) {
             finish();
             startActivity(new Intent(this, SectionAH6Activity.class));
         } else {
             Toast.makeText(this, R.string.fail_db_upd, Toast.LENGTH_SHORT).show();
         }
-    }
-
-    private void saveDraft() {
     }
 
 

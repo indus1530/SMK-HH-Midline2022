@@ -5,6 +5,7 @@ import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.memberCount;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.Handler;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
@@ -191,7 +192,8 @@ public class SectionDActivity extends AppCompatActivity {
 
 
     public void btnContinue(View view) {
-
+        bi.llbtn.setVisibility(View.GONE);
+        new Handler().postDelayed(() -> bi.llbtn.setVisibility(View.VISIBLE), 5000);
         if (!formValidation()) return;
         if (MainApp.familyMember.getUid().equals("") ? insertNewRecord() : updateDB()) {
             setResult(RESULT_OK);
