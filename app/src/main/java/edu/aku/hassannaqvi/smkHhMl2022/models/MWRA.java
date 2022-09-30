@@ -7630,127 +7630,6 @@ public class MWRA extends BaseObservable implements Observable {
         notifyPropertyChanged(BR.k103a13);
     }
 
-    @Bindable
-    public String getK105c01() {
-        return k105c01;
-    }
-
-    public void setK105c01(String k105c01) {
-        if (this.k105c01.equals(k105c01)) return; // for all checkboxes
-        this.k105c01 = k105c01;
-        notifyPropertyChanged(BR.k105c01);
-    }
-
-    @Bindable
-    public String getK105c02() {
-        return k105c02;
-    }
-
-    public void setK105c02(String k105c02) {
-        if (this.k105c02.equals(k105c02)) return; // for all checkboxes
-        this.k105c02 = k105c02;
-        notifyPropertyChanged(BR.k105c02);
-    }
-
-    @Bindable
-    public String getK105c03() {
-        return k105c03;
-    }
-
-    public void setK105c03(String k105c03) {
-        if (this.k105c03.equals(k105c03)) return; // for all checkboxes
-        this.k105c03 = k105c03;
-        notifyPropertyChanged(BR.k105c03);
-    }
-
-    @Bindable
-    public String getK105c04() {
-        return k105c04;
-    }
-
-    public void setK105c04(String k105c04) {
-        if (this.k105c04.equals(k105c04)) return; // for all checkboxes
-        this.k105c04 = k105c04;
-        notifyPropertyChanged(BR.k105c04);
-    }
-
-    @Bindable
-    public String getK105c05() {
-        return k105c05;
-    }
-
-    public void setK105c05(String k105c05) {
-        if (this.k105c05.equals(k105c05)) return; // for all checkboxes
-        this.k105c05 = k105c05;
-        notifyPropertyChanged(BR.k105c05);
-    }
-
-    @Bindable
-    public String getK105c06() {
-        return k105c06;
-    }
-
-    public void setK105c06(String k105c06) {
-        if (this.k105c06.equals(k105c06)) return; // for all checkboxes
-        this.k105c06 = k105c06;
-        notifyPropertyChanged(BR.k105c06);
-    }
-
-    @Bindable
-    public String getK105c07() {
-        return k105c07;
-    }
-
-    public void setK105c07(String k105c07) {
-        if (this.k105c07.equals(k105c07)) return; // for all checkboxes
-        this.k105c07 = k105c07;
-        notifyPropertyChanged(BR.k105c07);
-    }
-
-    @Bindable
-    public String getK105c08() {
-        return k105c08;
-    }
-
-    public void setK105c08(String k105c08) {
-        if (this.k105c08.equals(k105c08)) return; // for all checkboxes
-        this.k105c08 = k105c08;
-        notifyPropertyChanged(BR.k105c08);
-    }
-
-    @Bindable
-    public String getK105c09() {
-        return k105c09;
-    }
-
-    public void setK105c09(String k105c09) {
-        if (this.k105c09.equals(k105c09)) return; // for all checkboxes
-        this.k105c09 = k105c09;
-        notifyPropertyChanged(BR.k105c09);
-    }
-
-    @Bindable
-    public String getK105c96() {
-        return k105c96;
-    }
-
-    public void setK105c96(String k105c96) {
-        if (this.k105c96.equals(k105c96)) return; // for all checkboxes
-        this.k105c96 = k105c96;
-        setK105c96x(k105c96.equals("96") ? this.k105c96x : "");
-        notifyPropertyChanged(BR.k105c96);
-    }
-
-    @Bindable
-    public String getK105c96x() {
-        return k105c96x;
-    }
-
-    public void setK105c96x(String k105c96x) {
-        this.k105c96x = k105c96x;
-        notifyPropertyChanged(BR.k105c96x);
-    }
-
 
     @Bindable
     public String getK104() {
@@ -7940,36 +7819,6 @@ public class MWRA extends BaseObservable implements Observable {
     }
 
     @Bindable
-    public String getK105b() {
-        return k105b;
-    }
-
-    public void setK105b(String k105b) {
-        this.k105b = k105b;
-        setK10601(k105b.equals("2") ? this.k10601 : "");
-        setK10602(k105b.equals("2") ? this.k10602 : "");
-        setK10603(k105b.equals("2") ? this.k10603 : "");
-        setK10604(k105b.equals("2") ? this.k10604 : "");
-        setK10605(k105b.equals("2") ? this.k10605 : "");
-        setK10606(k105b.equals("2") ? this.k10606 : "");
-        setK10607(k105b.equals("2") ? this.k10607 : "");
-        setK10608(k105b.equals("2") ? this.k10608 : "");
-        setK10696(k105b.equals("2") ? this.k10696 : "");
-
-        setK105c01(k105b.equals("1") ? this.k105c01 : "");
-        setK105c02(k105b.equals("1") ? this.k105c02 : "");
-        setK105c03(k105b.equals("1") ? this.k105c03 : "");
-        setK105c04(k105b.equals("1") ? this.k105c04 : "");
-        setK105c05(k105b.equals("1") ? this.k105c05 : "");
-        setK105c06(k105b.equals("1") ? this.k105c06 : "");
-        setK105c07(k105b.equals("1") ? this.k105c07 : "");
-        setK105c08(k105b.equals("1") ? this.k105c08 : "");
-        setK105c09(k105b.equals("1") ? this.k105c09 : "");
-        setK105c96(k105b.equals("1") ? this.k105c96 : "");
-        notifyPropertyChanged(BR.k105b);
-    }
-
-    @Bindable
     public String getK105a01x() {
         return k105a01x;
     }
@@ -7987,6 +7836,161 @@ public class MWRA extends BaseObservable implements Observable {
     public void setK105a02x(String k105a02x) {
         this.k105a02x = k105a02x;
         notifyPropertyChanged(BR.k105a02x);
+    }
+
+
+    @Bindable
+    public String getK105b() {
+        return k105b;
+    }
+
+    public void setK105b(String k105b) {
+        this.k105b = k105b;
+        setK105c01(k105b.equals("1") ? this.k105c01 : "");
+        setK105c02(k105b.equals("1") ? this.k105c02 : "");
+        setK105c03(k105b.equals("1") ? this.k105c03 : "");
+        setK105c04(k105b.equals("1") ? this.k105c04 : "");
+        setK105c05(k105b.equals("1") ? this.k105c05 : "");
+        setK105c06(k105b.equals("1") ? this.k105c06 : "");
+        setK105c07(k105b.equals("1") ? this.k105c07 : "");
+        setK105c08(k105b.equals("1") ? this.k105c08 : "");
+        setK105c09(k105b.equals("1") ? this.k105c09 : "");
+        setK105c96(k105b.equals("1") ? this.k105c96 : "");
+
+        setK105dm(k105b.equals("2") ? this.k105dm : "");
+        setK105dy(k105b.equals("2") ? this.k105dy : "");
+
+        setK10601(k105b.equals("2") ? this.k10601 : "");
+        setK10602(k105b.equals("2") ? this.k10602 : "");
+        setK10603(k105b.equals("2") ? this.k10603 : "");
+        setK10604(k105b.equals("2") ? this.k10604 : "");
+        setK10605(k105b.equals("2") ? this.k10605 : "");
+        setK10606(k105b.equals("2") ? this.k10606 : "");
+        setK10607(k105b.equals("2") ? this.k10607 : "");
+        setK10608(k105b.equals("2") ? this.k10608 : "");
+        setK10696(k105b.equals("2") ? this.k10696 : "");
+        notifyPropertyChanged(BR.k105b);
+    }
+
+    @Bindable
+    public String getK105c01() {
+        return k105c01;
+    }
+
+    public void setK105c01(String k105c01) {
+        if (this.k105c01.equals(k105c01)) return; // for all checkboxes
+        this.k105c01 = k105c01;
+        notifyPropertyChanged(BR.k105c01);
+    }
+
+    @Bindable
+    public String getK105c02() {
+        return k105c02;
+    }
+
+    public void setK105c02(String k105c02) {
+        if (this.k105c02.equals(k105c02)) return; // for all checkboxes
+        this.k105c02 = k105c02;
+        notifyPropertyChanged(BR.k105c02);
+    }
+
+    @Bindable
+    public String getK105c03() {
+        return k105c03;
+    }
+
+    public void setK105c03(String k105c03) {
+        if (this.k105c03.equals(k105c03)) return; // for all checkboxes
+        this.k105c03 = k105c03;
+        notifyPropertyChanged(BR.k105c03);
+    }
+
+    @Bindable
+    public String getK105c04() {
+        return k105c04;
+    }
+
+    public void setK105c04(String k105c04) {
+        if (this.k105c04.equals(k105c04)) return; // for all checkboxes
+        this.k105c04 = k105c04;
+        notifyPropertyChanged(BR.k105c04);
+    }
+
+    @Bindable
+    public String getK105c05() {
+        return k105c05;
+    }
+
+    public void setK105c05(String k105c05) {
+        if (this.k105c05.equals(k105c05)) return; // for all checkboxes
+        this.k105c05 = k105c05;
+        notifyPropertyChanged(BR.k105c05);
+    }
+
+    @Bindable
+    public String getK105c06() {
+        return k105c06;
+    }
+
+    public void setK105c06(String k105c06) {
+        if (this.k105c06.equals(k105c06)) return; // for all checkboxes
+        this.k105c06 = k105c06;
+        notifyPropertyChanged(BR.k105c06);
+    }
+
+    @Bindable
+    public String getK105c07() {
+        return k105c07;
+    }
+
+    public void setK105c07(String k105c07) {
+        if (this.k105c07.equals(k105c07)) return; // for all checkboxes
+        this.k105c07 = k105c07;
+        notifyPropertyChanged(BR.k105c07);
+    }
+
+    @Bindable
+    public String getK105c08() {
+        return k105c08;
+    }
+
+    public void setK105c08(String k105c08) {
+        if (this.k105c08.equals(k105c08)) return; // for all checkboxes
+        this.k105c08 = k105c08;
+        notifyPropertyChanged(BR.k105c08);
+    }
+
+    @Bindable
+    public String getK105c09() {
+        return k105c09;
+    }
+
+    public void setK105c09(String k105c09) {
+        if (this.k105c09.equals(k105c09)) return; // for all checkboxes
+        this.k105c09 = k105c09;
+        notifyPropertyChanged(BR.k105c09);
+    }
+
+    @Bindable
+    public String getK105c96() {
+        return k105c96;
+    }
+
+    public void setK105c96(String k105c96) {
+        if (this.k105c96.equals(k105c96)) return; // for all checkboxes
+        this.k105c96 = k105c96;
+        setK105c96x(k105c96.equals("96") ? this.k105c96x : "");
+        notifyPropertyChanged(BR.k105c96);
+    }
+
+    @Bindable
+    public String getK105c96x() {
+        return k105c96x;
+    }
+
+    public void setK105c96x(String k105c96x) {
+        this.k105c96x = k105c96x;
+        notifyPropertyChanged(BR.k105c96x);
     }
 
     @Bindable
