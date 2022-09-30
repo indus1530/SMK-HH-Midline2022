@@ -34,10 +34,10 @@ public class SectionH2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setTheme(MainApp.langRTL ? R.style.AppThemeSindhi : R.style.AppThemeEnglish1);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_h2);
-
-        bi.sno.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getD101());
-        bi.name.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getD102());
-        bi.index.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getIndexed());
+        bi.toolbar.setSubtitle("MWRA Child:\t\t" + "Sno: " + familyList.get(Integer.parseInt(selectedMWRA) - 1).getD101()
+                + ",\tInd: " + familyList.get(Integer.parseInt(selectedMWRA) - 1).getIndexed()
+                + ",\t Name: " + familyList.get(Integer.parseInt(selectedMWRA) - 1).getD102()
+                + " \t");
         bi.setMwra(MainApp.mwra);
         setupSkips();
         setSupportActionBar(bi.toolbar);

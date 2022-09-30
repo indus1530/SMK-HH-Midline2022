@@ -130,6 +130,8 @@
     <string name="options" translatable="false">Options</string>
 
 
+    <string name="ending">Ending Activity</string>
+    <string name="Q_istatus">istatus</string>
     <string name="istatus"> Result of Household Questionnaire interview </string>
     <string name="istatusi"> Discuss any result not completed with team leader </string>
     <string name="istatus01"> Completed </string>
@@ -981,7 +983,7 @@
     <string name="message_preg_dialog_proceed">You have entered only %1$s of %2$s Pregnancy. \nAre you sure you want to continue?</string>
     <string name="message_preg_dialog_addmore">You have already entered %1$s Pregnancy. \nAre you sure you want to add more pregnancies?</string>
 
-    <string name="app_name">SMK-HH-ML22</string>
+    <string name="app_name"><big>S M K</big> <i><u><small>2022</small></u></i></string>
     <string name="btnSync">Download Data</string>
     <string name="btnUpload">Upload Data</string>
     <string name="prompt_email">Email</string>

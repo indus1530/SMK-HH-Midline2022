@@ -31,12 +31,12 @@
             app:popupTheme="@style/CustomPopupTheme"
             app:subtitle="@string/f1t01"
             app:subtitleTextAppearance="@style/Toolbar.SubtitleText"
-            app:title="@string/mwra5"
+            app:title="@string/f1t01"
             app:titleTextAppearance="@style/Toolbar.TitleText" />
 
 
         <!--SELECTED PERSON-->
-        <LinearLayout
+        <!--<LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -83,28 +83,13 @@
                 android:layout_height="wrap_content"
                 android:text="Name" />
 
-        </LinearLayout>
+        </LinearLayout>-->
 
-
-        <!-- modfinst  Title   -->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/fldGrpCVmodfinst"
-            style="@style/cardView">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    style="@style/sub_labels"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/f1t02" />
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
+        <TextView
+            style="@style/sub_labels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/f1t02" />
 
 
         <ScrollView

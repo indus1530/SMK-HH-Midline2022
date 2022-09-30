@@ -38,17 +38,10 @@ public class SectionH1BActivity extends AppCompatActivity {
         bi.setMwra(MainApp.mwra);
         setSupportActionBar(bi.toolbar);
         db = MainApp.appInfo.dbHelper;
-        /*String childName = MainApp.familyList.get(Integer.parseInt(selectedChild) - 1).getD102();
-        String h125 = getString(R.string.h125, "SAJID");
-        bi.tvh125.setText(getString(R.string.h125, "SAJID"));
-        String h1t05 = getString(R.string.h1t05, MainApp.selectedChildName);
-        bi.tvh1t05.setText(h1t05);
-        String h126 = getString(R.string.h126, MainApp.selectedChildName);
-        bi.tvh126.setText(h126);*/
-
-        bi.sno.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getD101());
-        bi.name.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getD102());
-        bi.index.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getIndexed());
+        bi.toolbar.setSubtitle("MWRA Child:\t\t" + "Sno: " + familyList.get(Integer.parseInt(selectedMWRA) - 1).getD101()
+                + ",\tInd: " + familyList.get(Integer.parseInt(selectedMWRA) - 1).getIndexed()
+                + ",\t Name: " + familyList.get(Integer.parseInt(selectedMWRA) - 1).getD102()
+                + " \t");
     }
 
 

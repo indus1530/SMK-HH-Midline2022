@@ -35,10 +35,10 @@ public class SectionH1AActivity extends AppCompatActivity {
         setTheme(MainApp.langRTL ? R.style.AppThemeSindhi : R.style.AppThemeEnglish1);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_h1a);
         bi.setMwra(MainApp.mwra);
-
-        bi.sno.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getD101());
-        bi.name.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getD102());
-        bi.index.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getIndexed());
+        bi.toolbar.setSubtitle("MWRA Child:\t\t" + "Sno: " + familyList.get(Integer.parseInt(selectedMWRA) - 1).getD101()
+                + ",\tInd: " + familyList.get(Integer.parseInt(selectedMWRA) - 1).getIndexed()
+                + ",\t Name: " + familyList.get(Integer.parseInt(selectedMWRA) - 1).getD102()
+                + " \t");
         childAge = Integer.parseInt(MainApp.familyList.get(Integer.parseInt(MainApp.selectedChild) - 1).getD109y());
         if (childAge < 6) bi.fldGrpCVh114.setVisibility(View.GONE);
         setupSkips();

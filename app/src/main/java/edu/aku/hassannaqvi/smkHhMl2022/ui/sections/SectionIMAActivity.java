@@ -2,6 +2,7 @@ package edu.aku.hassannaqvi.smkHhMl2022.ui.sections;
 
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.familyList;
 import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedChild;
+import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.selectedChildName;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -40,10 +41,10 @@ public class SectionIMAActivity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_ima);
         setSupportActionBar(bi.toolbar);
         db = MainApp.appInfo.dbHelper;
-
-        bi.sno.setText(familyList.get(Integer.parseInt(selectedChild) - 1).getD101());
-        bi.name.setText(familyList.get(Integer.parseInt(selectedChild) - 1).getD102());
-        bi.index.setText(familyList.get(Integer.parseInt(selectedChild) - 1).getIndexed());
+        bi.toolbar.setSubtitle("MWRA Child:\t\t" + "Sno: " + selectedChild
+                + ",\tInd: " + familyList.get(Integer.parseInt(selectedChild) - 1).getIndexed()
+                + ",\t Name: " + selectedChildName
+                + " \t");
         try {
             MainApp.child = db.getChildByUUid();
         } catch (JSONException e) {

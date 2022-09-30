@@ -35,7 +35,7 @@
 
 
         <!--SELECTED PERSON-->
-        <LinearLayout
+        <!--<LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -82,7 +82,13 @@
                 android:layout_height="wrap_content"
                 android:text="Name" />
 
-        </LinearLayout>
+        </LinearLayout>-->
+
+        <TextView
+            style="@style/sub_labels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/k1t02" />
 
 
         <ScrollView
@@ -95,27 +101,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
-
-                <!-- ktitle  Title   -->
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVktitle"
-                    style="@style/cardView">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            style="@style/sub_labels"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/k1t02" />
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
 
 
                 <!-- k101  Radio   -->

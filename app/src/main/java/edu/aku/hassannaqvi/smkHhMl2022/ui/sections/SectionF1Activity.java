@@ -36,15 +36,15 @@ public class SectionF1Activity extends AppCompatActivity {
         setTheme(MainApp.langRTL ? R.style.AppThemeSindhi : R.style.AppThemeEnglish1);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_f1);
         setSupportActionBar(bi.toolbar);
-        if (indexedPreg.equals("1")) bi.toolbar.setTitle("MWRA Pregnant");
-        if (!MainApp.selectedChild.isEmpty()) bi.toolbar.setTitle("MWRA with Child");
+        String subtitle = "Sno: " + familyList.get(Integer.parseInt(selectedMWRA) - 1).getD101()
+                + ",\tInd: " + familyList.get(Integer.parseInt(selectedMWRA) - 1).getIndexed()
+                + ",\tName: " + familyList.get(Integer.parseInt(selectedMWRA) - 1).getD102() + " \t";
+        if (indexedPreg.equals("1")) bi.toolbar.setSubtitle("MWRA Pregnant:\t\t" + subtitle);
+        if (!MainApp.selectedChild.isEmpty())
+            bi.toolbar.setSubtitle("MWRA with Child:\t\t" + subtitle);
         if (indexedPreg.equals("1") && !MainApp.selectedChild.isEmpty())
-            bi.toolbar.setTitle("MWRA Pregnant & Child");
+            bi.toolbar.setSubtitle("MWRA Pregnant & Child:\t\t" + subtitle);
         db = MainApp.appInfo.dbHelper;
-
-        bi.sno.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getD101());
-        bi.name.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getD102());
-        bi.index.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getIndexed());
 
         try {
             MainApp.mwra = db.getMwraByUUid();

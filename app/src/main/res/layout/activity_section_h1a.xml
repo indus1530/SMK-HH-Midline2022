@@ -31,80 +31,15 @@
             app:popupTheme="@style/CustomPopupTheme"
             app:subtitle="@string/h1t01"
             app:subtitleTextAppearance="@style/Toolbar.SubtitleText"
-            app:title="@string/mwra5"
+            app:title="@string/h1t01"
             app:titleTextAppearance="@style/Toolbar.TitleText" />
 
 
-        <!--SELECTED PERSON-->
-        <LinearLayout
+        <TextView
+            style="@style/sub_labels"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                style="@style/sub_labels"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="sno"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:id="@+id/sno"
-                style="@style/sub_labels"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="sno" />
-
-            <TextView
-                style="@style/sub_labels"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Index"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:id="@+id/index"
-                style="@style/sub_labels"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Index" />
-
-            <TextView
-                style="@style/sub_labels"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Name"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:id="@+id/name"
-                style="@style/sub_labels"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Name" />
-
-        </LinearLayout>
-
-
-        <!-- modhtitle  Title   -->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/fldGrpCVmodhtitle"
-            style="@style/cardView">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    style="@style/sub_labels"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/h1t02" />
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
+            android:text="@string/h1t02" />
 
 
         <ScrollView

@@ -35,12 +35,11 @@ public class SectionGActivity extends AppCompatActivity {
         setTheme(MainApp.langRTL ? R.style.AppThemeSindhi : R.style.AppThemeEnglish1);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_g);
         setSupportActionBar(bi.toolbar);
+        bi.toolbar.setSubtitle("MWRA Child:\t\t" + "Sno: " + familyList.get(Integer.parseInt(selectedMWRA) - 1).getD101()
+                + ",\tInd: " + familyList.get(Integer.parseInt(selectedMWRA) - 1).getIndexed()
+                + ",\t Name: " + familyList.get(Integer.parseInt(selectedMWRA) - 1).getD102()
+                + " \t");
         db = MainApp.appInfo.dbHelper;
-
-        bi.sno.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getD101());
-        bi.name.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getD102());
-        bi.index.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getIndexed());
-
         bi.setMwra(mwra);
     }
 

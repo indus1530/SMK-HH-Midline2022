@@ -36,9 +36,12 @@ public class SectionKActivity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_k);
         setSupportActionBar(bi.toolbar);
         db = MainApp.appInfo.dbHelper;
-        bi.sno.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getD101());
+        bi.toolbar.setSubtitle("SNO: " + familyList.get(Integer.parseInt(selectedMWRA) - 1).getD101()
+                + ", IND: " + familyList.get(Integer.parseInt(selectedMWRA) - 1).getIndexed()
+                + ", NAME: " + familyList.get(Integer.parseInt(selectedMWRA) - 1).getD102());
+       /* bi.sno.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getD101());
         bi.name.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getD102());
-        bi.index.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getIndexed());
+        bi.index.setText(familyList.get(Integer.parseInt(selectedMWRA) - 1).getIndexed());*/
 
         try {
             MainApp.mwra = db.getMwraByUUid();

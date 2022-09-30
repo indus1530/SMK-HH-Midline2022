@@ -130,16 +130,18 @@
     <string name="options" translatable="false">Options</string>
 
 
-    <string name="istatus"> Result of Household Questionnaire interview </string>
-    <string name="istatusi"> Discuss any result not completed with team leader </string>
-    <string name="istatus01"> Completed </string>
-    <string name="istatus02"> No HH member at home or no competent respondent at home at time of visit </string>
-    <string name="istatus03"> Entire household absent for extended period of time </string>
-    <string name="istatus04"> Refused </string>
-    <string name="istatus05"> Dwelling vacant or address not a dwelling </string>
-    <string name="istatus06"> Dwelling not found </string>
-    <string name="istatus07"> No child of 06-23 months in this household </string>
-    <string name="istatus96"> Other (Specify) </string>
+    <string name="ending">سرگرمي ختم ٿيڻ</string>
+    <string name="Q_istatus">istatus</string>
+    <string name="istatus">گھر جي سوالن جي انٽرويو جو نتيجو</string>
+    <string name="istatusi">ٽيم جي اڳواڻ سان مڪمل نه ٿيل نتيجن تي بحث ڪريو</string>
+    <string name="istatus01">پورو ٿيو</string>
+    <string name="istatus02">گهر ۾ نه ڪو گهر جو ميمبر آهي نه گهر ۾ ڪو قابل جوابدار</string>
+    <string name="istatus03">وڌايل مدي تائين سڄو گھر غير حاضر</string>
+    <string name="istatus04">انڪار ڪري ڇڏيو</string>
+    <string name="istatus05">رهائش خالي يا پتو، رهائش نه آهي</string>
+    <string name="istatus06">رهائش نه ملي</string>
+    <string name="istatus07">هن گهر ۾ 06–23 مهينن جو ڪو به ٻار ناهي</string>
+    <string name="istatus96">ڪو ٻيو سبب (وضاحت ڪريو)</string>
 
     <string name="title_activity_change_password">ChangePasswordActivity</string>
     <!-- Strings used for fragments for navigation -->
@@ -981,7 +983,7 @@
     <string name="message_preg_dialog_proceed">You have entered only %1$s of %2$s Pregnancy. \nAre you sure you want to continue?</string>
     <string name="message_preg_dialog_addmore">You have already entered %1$s Pregnancy. \nAre you sure you want to add more pregnancies?</string>
 
-    <string name="app_name">SMK-HH-ML22 \n Sindhi</string>
+    <string name="app_name"><big>S M K</big> <i><u><small>2022</small></u></i></string>
     <string name="btnSync">Download Data</string>
     <string name="btnUpload">Upload Data</string>
     <string name="prompt_email">Email</string>

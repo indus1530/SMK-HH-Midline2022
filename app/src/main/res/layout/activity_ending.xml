@@ -21,7 +21,6 @@
         android:orientation="vertical">
 
 
-        <!-- CUSTOM TOOLBAR -->
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             style="@null"
@@ -29,14 +28,18 @@
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             android:minHeight="?attr/actionBarSize"
-            android:theme="@style/ToolbarTheme"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:theme="@style/CustomToolbarTheme"
+            app:popupTheme="@style/CustomPopupTheme"
+            app:subtitle="@string/ending"
             app:subtitleTextAppearance="@style/Toolbar.SubtitleText"
+            app:title="@string/app_name"
             app:titleTextAppearance="@style/Toolbar.TitleText" />
+
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
 
             <LinearLayout
                 android:id="@+id/fldGrpEnd"
@@ -61,6 +64,11 @@
                             android:background="@drawable/bottom"
                             android:orientation="horizontal">
 
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_istatus" />
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -68,6 +76,12 @@
                                 android:text="@string/istatus" />
 
                         </LinearLayout>
+
+                        <TextView
+                            style="@style/textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/istatusi" />
 
                         <RadioGroup
                             android:id="@+id/istatus"
