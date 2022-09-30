@@ -84,24 +84,11 @@
 
         </LinearLayout>
 
-
-        <!-- h2titl2  Title   -->
-        <androidx.cardview.widget.CardView style="@style/cardView">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    style="@style/sub_labels"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/h2t02" />
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
+        <TextView
+            style="@style/sub_labels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/h2t02" />
 
 
         <ScrollView
