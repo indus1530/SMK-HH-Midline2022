@@ -3429,9 +3429,11 @@
     <string name="k105a01">Month</string>
     <string name="k105a02">Year</string>
     <string name="k105a99">Stop using now</string>
+
     <string name="k105b">Are you satisfied with the current method?</string>
     <string name="k105b01">Yes</string>
     <string name="k105b02">No</string>
+
     <string name="k105c">Reasons for Satisfaction</string>
     <string name="k105c01">No side effects</string>
     <string name="k105c02">Easily available</string>
@@ -3443,6 +3445,12 @@
     <string name="k105c08">Method is affordable</string>
     <string name="k105c09">My husband agreed for the method</string>
     <string name="k105c96">Other (Specify)</string>
+
+    <string name="Q_k105d">k105d</string>
+    <string name="k105d">Since when you have stopped using Family Planning method</string>
+    <string name="k105dm">Month</string>
+    <string name="k105dy">Year</string>
+
     <string name="k106">Reasons for not using any family planning method.</string>
     <string name="k10601">Side effects of contraceptives</string>
     <string name="k10602">Want Pregnancy</string>

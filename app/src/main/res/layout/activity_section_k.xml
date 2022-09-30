@@ -688,8 +688,11 @@
                                 android:checked="@{mwra.k103a13.equals(`13`)}"
                                 android:onClick="@{()->mwra.setK103a13(mwra.k103a13.equals(`13`)?``:`13`)}"
                                 android:text="@string/k103a13" />
+
                         </LinearLayout>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
 
@@ -1251,8 +1254,95 @@
                                 android:tag="k105c96"
                                 android:text="@={mwra.k105c96x}"
                                 android:visibility="@{mwra.k105c96.equals(`96`) ? View.VISIBLE : View.GONE}" />
+
                         </LinearLayout>
+
                     </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- k105d  Title   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVk105d"
+                    style="@style/cardView"
+                    android:visibility="@{mwra.k105a.equals(`99`) ? View.VISIBLE : View.GONE}">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_k105d" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/k105d" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/k105dm" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/k105dm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text="@={mwra.k105dm}"
+                                app:maxValue="12"
+                                app:minValue="1"
+                                app:type="range" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/k105dy" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/k105dy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="####"
+                                android:inputType="number"
+                                android:maxLength="4"
+                                android:text="@={mwra.k105dy}"
+                                app:maxValue="2022"
+                                app:minValue="1973"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
 

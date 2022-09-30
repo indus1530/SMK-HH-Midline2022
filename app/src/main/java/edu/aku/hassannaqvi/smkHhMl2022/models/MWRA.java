@@ -652,6 +652,8 @@ public class MWRA extends BaseObservable implements Observable {
     private String k105c09 = _EMPTY_;
     private String k105c96 = _EMPTY_;
     private String k105c96x = _EMPTY_;
+    private String k105dm = _EMPTY_;
+    private String k105dy = _EMPTY_;
     private String k106 = _EMPTY_;
     private String k10601 = _EMPTY_;
     private String k10602 = _EMPTY_;
@@ -7923,6 +7925,8 @@ public class MWRA extends BaseObservable implements Observable {
         setK105a01x(k105a.equals("1") ? this.k105a01x : "");
         setK105a02x(k105a.equals("2") ? this.k105a02x : "");
         setK105b(k105a.equals("99") ? "" : this.k105b);
+        setK105dm(k105a.equals("99") ? this.k105dm : "");
+        setK105dy(k105a.equals("99") ? this.k105dy : "");
         setK10601(k105a.equals("99") ? this.k10601 : "");
         setK10602(k105a.equals("99") ? this.k10602 : "");
         setK10603(k105a.equals("99") ? this.k10603 : "");
@@ -7983,6 +7987,26 @@ public class MWRA extends BaseObservable implements Observable {
     public void setK105a02x(String k105a02x) {
         this.k105a02x = k105a02x;
         notifyPropertyChanged(BR.k105a02x);
+    }
+
+    @Bindable
+    public String getK105dm() {
+        return k105dm;
+    }
+
+    public void setK105dm(String k105dm) {
+        this.k105dm = k105dm;
+        notifyPropertyChanged(BR.k105dm);
+    }
+
+    @Bindable
+    public String getK105dy() {
+        return k105dy;
+    }
+
+    public void setK105dy(String k105dy) {
+        this.k105dy = k105dy;
+        notifyPropertyChanged(BR.k105dy);
     }
 
     @Bindable
@@ -9983,6 +10007,8 @@ public class MWRA extends BaseObservable implements Observable {
             this.k105c09 = json.getString("k105c09");
             this.k105c96 = json.getString("k105c96");
             this.k105c96x = json.getString("k105c96x");
+            this.k105dm = json.has("k105dm") ? json.getString("k105dm") : "";
+            this.k105dy = json.has("k105dy") ? json.getString("k105dy") : "";
             this.k10601 = json.getString("k10601");
             this.k10602 = json.getString("k10602");
             this.k10603 = json.getString("k10603");
@@ -10771,6 +10797,8 @@ public class MWRA extends BaseObservable implements Observable {
                 .put("k105c09", k105c09)
                 .put("k105c96", k105c96)
                 .put("k105c96x", k105c96x)
+                .put("k105dm", k105dm)
+                .put("k105dy", k105dy)
                 .put("k10601", k10601)
                 .put("k10602", k10602)
                 .put("k10603", k10603)

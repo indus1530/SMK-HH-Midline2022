@@ -3168,13 +3168,16 @@
     <string name="k10507">فارميسي، ڪيميسٽ</string>
     <string name="k10508">دوست يا مائٽ </string>
     <string name="k10509">دائي ، تربيت يافتہ دائي</string>
+
     <string name="k105a">توھان اھو طريقو ڪڏھن کان استعمال ڪري رھيا آھيو؟</string>
     <string name="k105a01">مهينا</string>
     <string name="k105a02">سال</string>
     <string name="k105a99">ھاڻي استعمال ڪرڻ بند ڪري ڇڏيو آھي</string>
+
     <string name="k105b">توهان هنن طريقيڪار مان مطمئن آهيو؟</string>
     <string name="k105b01">ها</string>
     <string name="k105b02">نه</string>
+
     <string name="k105c">اطمينان جا سبب</string>
     <string name="k105c01">ڪو به پاسي اثرات</string>
     <string name="k105c02">آساني سان دستياب</string>
@@ -3186,6 +3189,12 @@
     <string name="k105c08">طريقو سستي آهي</string>
     <string name="k105c09">منهنجو مڙس هن طريقي سان اتفاق ڪيو</string>
     <string name="k105c96">ٻيا (وضاحت)</string>
+
+    <string name="Q_k105d">k105d</string>
+    <string name="k105d">ڪڏهين کان توهان فيملي پلاننگ جو طريقو استعمال ڪرڻ بند ڪيو آهي</string>
+    <string name="k105dm">مهينو</string>
+    <string name="k105dy">سال</string>
+
     <string name="k106">خانداني منصوبابندي جو طريقو استعمال نه ڪرڻ جو سبب ڇا آھي؟</string>
     <string name="k10601">مانع حمل جا غلط اثر</string>
     <string name="k10602">حمل چاھيون پيا</string>
@@ -4094,6 +4103,7 @@
     <string name='Q_k101a'>k101a</string>
     <string name='Q_k101b'>k101b </string>
     <string name='Q_k102'>k102</string>
+    <string name='Q_k103'>k103</string>
     <string name='Q_k103a'>k103a</string>
     <string name='Q_k104'>k104</string>
     <string name='Q_k105'>k105</string>
