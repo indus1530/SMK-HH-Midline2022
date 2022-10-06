@@ -40,7 +40,6 @@ public class EndingActivity extends AppCompatActivity {
         if (MainApp.superuser) bi.btnContinue.setText("End Review");
         db = MainApp.appInfo.dbHelper;
         boolean check = getIntent().getBooleanExtra("complete", false);
-        //sectionMainCheck = getIntent().getIntExtra("status", 0);
 
 
         bi.istatusa.setEnabled(check);
