@@ -1682,10 +1682,9 @@
                             android:layout_height="wrap_content">
 
                             <TextView
-                                style="@style/sub_labels"
+                                style="@style/textView"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="12dp"
                                 android:text="@string/ah26t1" />
 
                             <RadioButton
@@ -1745,10 +1744,9 @@
                                 android:text="@string/ah26g" />
 
                             <TextView
-                                style="@style/sub_labels"
+                                style="@style/textView"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="12dp"
                                 android:text="@string/ah26t2" />
 
                             <RadioButton
@@ -1800,6 +1798,7 @@
                                 android:tag="ah2696"
                                 android:text="@={form.ah2696x}"
                                 android:visibility="@{form.ah26.equals(`96`) ? View.VISIBLE : View.GONE}" />
+
                         </RadioGroup>
 
                     </LinearLayout>
