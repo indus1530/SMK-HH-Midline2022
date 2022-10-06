@@ -143,9 +143,13 @@
                                 android:checked="@{mwra.un01.equals(`2`)}"
                                 android:onClick="@{()->mwra.setUn01(`2`)}"
                                 android:text="@string/un0102" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- un02  Radio   -->
                 <androidx.cardview.widget.CardView
@@ -200,9 +204,13 @@
                                 android:checked="@{mwra.un02.equals(`2`)}"
                                 android:onClick="@{()->mwra.setUn02(`2`)}"
                                 android:text="@string/un0202" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- un03  Radio   -->
                 <androidx.cardview.widget.CardView
@@ -269,15 +277,20 @@
                                 android:checked="@{mwra.un03.equals(`4`)}"
                                 android:onClick="@{()->mwra.setUn03(`4`) + un04.clearCheck() + un05.clearCheck() + un06.clearCheck()}"
                                 android:text="@string/un0304" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:visibility="@{mwra.un03.equals(`1`) || mwra.un03.equals(`3`) ? View.VISIBLE : View.GONE}">
+
 
                     <!-- un04  Radio   -->
                     <androidx.cardview.widget.CardView
@@ -560,8 +573,11 @@
                                 android:tag="un0696"
                                 android:text="@={mwra.un0696x}"
                                 android:visibility="@{mwra.un06.equals(`96`) ? View.VISIBLE : View.GONE}" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
                 <!-- un07  Radio   -->
@@ -596,139 +612,167 @@
                         <RadioGroup
                             android:id="@+id/un07"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
 
                             <RadioButton
                                 android:id="@+id/un0701"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
                                 android:checked="@{mwra.un07.equals(`1`)}"
                                 android:onClick="@{()->mwra.setUn07(`1`)}"
                                 android:text="@string/un0701" />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/un0701x"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/un0701"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:tag="un0701"
-                                android:text="@={mwra.un0701x}"
-                                android:visibility="@{mwra.un07.equals(`1`) ? View.VISIBLE : View.GONE}"
-                                app:maxValue="29"
-                                app:minValue="1"
-                                app:type="range" />
-
                             <RadioButton
                                 android:id="@+id/un0702"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
                                 android:checked="@{mwra.un07.equals(`2`)}"
                                 android:onClick="@{()->mwra.setUn07(`2`)}"
                                 android:text="@string/un0702" />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/un0702x"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/un0702"
-                                android:inputType="number"
-                                android:maxLength="1"
-                                android:tag="un0702"
-                                android:text="@={mwra.un0702x}"
-                                android:visibility="@{mwra.un07.equals(`2`) ? View.VISIBLE : View.GONE}"
-                                app:maxValue="4"
-                                app:minValue="1"
-                                app:type="range" />
-
                             <RadioButton
                                 android:id="@+id/un0703"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
                                 android:checked="@{mwra.un07.equals(`3`)}"
                                 android:onClick="@{()->mwra.setUn07(`3`)}"
                                 android:text="@string/un0703" />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/un0703x"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/un0703"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:tag="un0703"
-                                android:text="@={mwra.un0703x}"
-                                android:visibility="@{mwra.un07.equals(`3`) ? View.VISIBLE : View.GONE}"
-                                app:maxValue="11"
-                                app:minValue="1"
-                                app:type="range" />
-
                             <RadioButton
                                 android:id="@+id/un0704"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
                                 android:checked="@{mwra.un07.equals(`4`)}"
                                 android:onClick="@{()->mwra.setUn07(`4`)}"
                                 android:text="@string/un0704" />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/un0704x"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/un0704"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:tag="un0704"
-                                android:text="@={mwra.un0704x}"
-                                android:visibility="@{mwra.un07.equals(`4`) ? View.VISIBLE : View.GONE}"
-                                app:maxValue="10"
-                                app:minValue="1"
-                                app:type="range" />
-
                             <RadioButton
                                 android:id="@+id/un0705"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
                                 android:checked="@{mwra.un07.equals(`5`)}"
                                 android:onClick="@{()->mwra.setUn07(`5`)}"
                                 android:text="@string/un0705" />
+
                         </RadioGroup>
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/un0701x"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:hint="##"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:tag="un0701"
+                            android:text="@={mwra.un0701x}"
+                            android:visibility="@{mwra.un07.equals(`1`) ? View.VISIBLE : View.GONE}"
+                            app:maxValue="29"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/un0702x"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:hint="#"
+                            android:inputType="number"
+                            android:maxLength="1"
+                            android:tag="un0702"
+                            android:text="@={mwra.un0702x}"
+                            android:visibility="@{mwra.un07.equals(`2`) ? View.VISIBLE : View.GONE}"
+                            app:maxValue="4"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/un0703x"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:hint="##"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:tag="un0703"
+                            android:text="@={mwra.un0703x}"
+                            android:visibility="@{mwra.un07.equals(`3`) ? View.VISIBLE : View.GONE}"
+                            app:maxValue="11"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/un0704x"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:hint="##"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:tag="un0704"
+                            android:text="@={mwra.un0704x}"
+                            android:visibility="@{mwra.un07.equals(`4`) ? View.VISIBLE : View.GONE}"
+                            app:maxValue="10"
+                            app:minValue="1"
+                            app:type="range" />
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
 
                 <!--EndButton LinearLayout-->
-                <LinearLayout
+                <RelativeLayout
+                    android:id="@+id/llbtn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    android:layout_marginTop="24dp"
-                    android:orientation="horizontal">
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layoutDirection="ltr"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
 
                     <Button
-                        android:id="@+id/btn_End"
-                        android:layout_width="150dp"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="12dp"
-                        android:background="@drawable/capsuler"
-                        android:elevation="20dp"
+                        android:id="@+id/btnEnd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/button_shape_red"
                         android:onClick="btnEnd"
+                        android:padding="10dp"
                         android:text="Cancel"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
                     <Button
-                        android:id="@+id/btn_Continue"
-                        android:layout_width="150dp"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="12dp"
-                        android:background="@drawable/capsuley"
-                        android:elevation="20dp"
+                        android:id="@+id/btnContinue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/button_shape_green"
+                        android:backgroundTintMode="src_atop"
                         android:onClick="btnContinue"
+                        android:padding="10dp"
                         android:text="Save"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
-                </LinearLayout>
+                </RelativeLayout>
                 <!--EndButton LinearLayout-->
 
 

@@ -93,8 +93,8 @@ public class SectionAH1Activity extends AppCompatActivity {
     }
 
     public void btnContinue(View view) {
-        bi.llbtn.setVisibility(View.GONE);
-        new Handler().postDelayed(() -> bi.llbtn.setVisibility(View.VISIBLE), 5000);
+        bi.llbtn.setEnabled(false);
+        new Handler().postDelayed(() -> bi.llbtn.setEnabled(true), 5000);
         if (!formValidation()) return;
         if (MainApp.adol.getUid().equals("") ? insertNewRecord() : updateDB()) {
             finish();

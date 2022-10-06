@@ -4,6 +4,7 @@ import static edu.aku.hassannaqvi.smkHhMl2022.core.MainApp.pregD;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -200,7 +201,8 @@ public class SectionE1BActivity extends AppCompatActivity {
 
 
     public void btnContinue(View view) {
-
+        bi.llbtn.setVisibility(View.GONE);
+        new Handler().postDelayed(() -> bi.llbtn.setVisibility(View.VISIBLE), 5000);
         if (!formValidation()) return;
         if (MainApp.pregD.getUid().equals("") ? insertNewRecord() : updateDB()) {
             setResult(RESULT_OK);

@@ -33,22 +33,16 @@ public class SectionAActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setTheme(MainApp.langRTL ? R.style.AppThemeSindhi : R.style.AppThemeEnglish1);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a);
-        setupSkips();
         setSupportActionBar(bi.toolbar);
         db = MainApp.appInfo.dbHelper;
         form.setA103(MainApp.currentHousehold.getSno());
         bi.setForm(form);
     }
 
-    private void setupSkips() {
-
-    }
 
     private boolean insertNewRecord() {
         if (!MainApp.form.getUid().equals("") || MainApp.superuser) return true;
-
         MainApp.form.populateMeta();
-
         long rowId = 0;
         try {
             rowId = db.addForm(MainApp.form);

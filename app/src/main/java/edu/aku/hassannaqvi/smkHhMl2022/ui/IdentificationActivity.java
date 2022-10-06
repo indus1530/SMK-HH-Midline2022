@@ -44,48 +44,54 @@ public class IdentificationActivity extends AppCompatActivity {
         MainApp.form = new Forms();
 
 
+        bi.a101.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                bi.btnContinue.setEnabled(false);
+                bi.a105.setText(null);
+                bi.a106.setText(null);
+                bi.a107.setText(null);
+                bi.a113.setText(null);
+                bi.fldGrpA113.setVisibility(View.GONE);
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+            }
+        });
+
+
         bi.a113.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                //  Log.d(TAG, "beforeTextChanged: charSequence-"+charSequence+" i-"+i+ " i1-"+i1 +" i2-"+i2);
                 c = charSequence.length();
-
             }
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                 c1 = charSequence.length();
                 String txt = charSequence.toString();
+                bi.btnContinue.setBackgroundTintList(ContextCompat.getColorStateList(IdentificationActivity.this, R.color.gray));
+                bi.btnContinue.setEnabled(false);
                 Log.d(TAG, "onTextChanged: c-" + c + " c1-" + c1 + "\t\t\tCHAR: " + charSequence);
                 Log.d(TAG, "onTextChanged: i-" + i + " i1-" + i1 + " i2-" + i2 + "\t\t\tCHAR: " + charSequence);
-         /*       if (c == 0 && c1 == 1)
-                    bi.a113.setText(bi.a113.getText().toString() + "-"); // A-
-                if (c == 5 && c1 == 6)
-                    bi.a113.setText(bi.a113.getText().toString() + "-"); // A-0001-
-
-                if (c == 8 && c1 == 7)
-                    bi.a113.setText(bi.a113.getText().toString().substring(0, 6)); // A-0001
-                if (c == 3 && c1 == 2)
-                    bi.a113.setText(bi.a113.getText().toString().substring(0, 1)); // A*/
-
                 if (c1 > 1 && charSequence.charAt(1) != '-') {
                     txt = txt.charAt(0) + "-" + txt.substring(1);
                     bi.a113.setText(txt);
                 }
-
                 if (c1 > 6 && charSequence.charAt(6) != '-') {
                     txt = txt.substring(0, 6) + "-" + txt.substring(6);
                     bi.a113.setText(txt);
                 }
-
-
                 bi.a113.setSelection(bi.a113.getText().length());
             }
 
             @Override
             public void afterTextChanged(Editable editable) {
-
-
             }
         });
 
