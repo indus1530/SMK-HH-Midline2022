@@ -1622,6 +1622,7 @@ public class Forms extends BaseObservable implements Observable {
             this.c101 = json.getString("c101");
             this.c102 = json.getString("c102");
             this.c103 = json.getString("c103");
+            this.iStatus96x = json.has("iStatus96x") ? json.getString("iStatus96x") : "";
         }
     }
 
@@ -1802,7 +1803,8 @@ public class Forms extends BaseObservable implements Observable {
                 .put("a11203", a11203)
                 .put("c101", c101)
                 .put("c102", c102)
-                .put("c103", c103);
+                .put("c103", c103)
+                .put("iStatus96x", iStatus96x);
         return json.toString();
     }
 
